@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.streamboxmovies" name="StreamBox Movies" version="1.0.1" provider-name="uscclarkey">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.metahandler" version="1.0.0"/>
+    <import addon="plugin.video.youtube" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Stream Movies and TV Shows</summary>
+    <description lang="en">Stream all the latest movies and tv shows. With no links, just click and watch. Cracking!</description>
+    <disclaimer lang="en">StreamBox movies does not host any files, it simply provides you a link to the file that is easily found on the web. thank you!!</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
