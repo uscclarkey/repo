@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.streamboxlive" name="StreamBox Live" version="1.1" provider-name="uscclarkey">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live Uk Tv</summary>
+    <description lang="en">LIVE UK TV Channels. By using This Plugin You will receive all the uk tv for free. AWWWW YEAH!!</description>
+    <disclaimer lang="en">All streams are provided by FilmOn, StreamBox Live do not host any streams!</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.streamboxmovies" name="StreamBox Movies" version="1.0.1" provider-name="uscclarkey">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.metahandler" version="1.0.0"/>
+    <import addon="plugin.video.youtube" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Stream Movies and TV Shows</summary>
+    <description lang="en">Stream all the latest movies and tv shows. With no links, just click and watch. Cracking!</description>
+    <disclaimer lang="en">StreamBox movies does not host any files, it simply provides you a link to the file that is easily found on the web. thank you!!</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.uscclarkey" name="uscclarkey" version="1.1" provider-name="uscclarkey">
+	<extension point="xbmc.addon.repository" name="uscclarkey Addon Repository">
+		<info compressed="false">https://github.com/uscclarkey/repo/blob/master/addons.xml</info>
+		<checksum>https://github.com/uscclarkey/repo/blob/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/uscclarkey/repo/tree/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install MY Addons</summary>
+		<description>Download and install addons from uscclarkey.......</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
