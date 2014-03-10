@@ -33,7 +33,7 @@
 </addon>
 
 <addon id="repository.uscclarkey" name="uscclarkey" version="1.2" provider-name="uscclarkey">
-	<extension point="xbmc.addon.repository" name="uscclarkey Addon Repository">
+	<extension point="xbmc.addon.repository" name="uscclarkey">
 		<info compressed="false">https://github.com/uscclarkey/repo/blob/master/addons.xml</info>
 		<checksum>https://github.com/uscclarkey/repo/blob/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://github.com/uscclarkey/repo/tree/master/zips</datadir>
