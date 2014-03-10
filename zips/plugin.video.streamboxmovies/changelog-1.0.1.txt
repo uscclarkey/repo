@@ -1,5 +1,0 @@
-v1.0.1
-Added new icon images
-
-v1.0.0
-Initial Release
