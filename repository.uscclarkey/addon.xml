@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.uscclarkey" name="uscclarkey" version="1.3" provider-name="uscclarkey">
-	<extension point="xbmc.addon.repository" name="uscclarkey">
+<addon id="repository.uscclarkey" name="Uscclarkey" version="1.0" provider-name="Uscclarkey">
+	<extension point="xbmc.addon.repository" name="Uscclarkey">
 		<info compressed="false">https://github.com/uscclarkey/repo/raw/master/addons.xml</info>
 		<checksum>https://github.com/uscclarkey/repo/raw/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://github.com/uscclarkey/repo/raw/master/zips</datadir>
