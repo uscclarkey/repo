@@ -1,3 +1,6 @@
+v1.0.2
+Changed Icon Again
+
 v1.0.1
 Changed Icon
 
