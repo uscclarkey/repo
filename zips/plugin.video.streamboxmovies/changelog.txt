@@ -1,3 +1,6 @@
+v1.0.3
+Updated the library settings
+
 v1.0.2
 Changed Icon Again
 

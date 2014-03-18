@@ -5,8 +5,8 @@
 	<setting id="results"       type="labelenum" label="Results per Page"       values="5|10|15|20|25"             default="20"/>
         <setting id="sort"          type="enum"      label="Sort Results By"        values="Release Date|Rating|Views" default="0"/>
         <setting id="play_best"     type="bool"      label="Autoplay Best Quality"  default="true"/>
-        <setting id="movie-folder"  type="folder"    label="Movie Library Folder"   default="special://userdata/addon_data/plugin.video.simplymovies/Movies"/>
-        <setting id="tvshow-folder" type="folder"    label="TV Library Folder"      default="special://userdata/addon_data/plugin.video.simplymovies/TVShows"/>
+        <setting id="movie-folder"  type="folder"    label="Movie Library Folder"   default="special://userdata/addon_data/plugin.video.streamboxmovies/Movies"/>
+        <setting id="tvshow-folder" type="folder"    label="TV Library Folder"      default="special://userdata/addon_data/plugin.video.streamboxmovies/TVShows"/>
 
 	
         <!-- Google Analytics --> 
