@@ -1,3 +1,6 @@
+v1.0.4
+Library fix
+
 v1.0.3
 Updated the library settings
 
