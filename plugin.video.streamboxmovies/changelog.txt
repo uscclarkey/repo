@@ -1,8 +1,2 @@
-v1.0.2
-Changed Icon Again
-
-v1.0.1
-Changed Icon
-
-v1.0.0
-Initial Release
+v1.0.4
+Changed library settings
