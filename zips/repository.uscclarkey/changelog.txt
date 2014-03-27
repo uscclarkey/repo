@@ -1,2 +1,5 @@
+version 1.1
+changed zips url
+
 Version 1.0
 - Initial version
