@@ -1,2 +1,5 @@
+v1.0.1
+Changed settings
+
 v1.0.0
 Initial release
