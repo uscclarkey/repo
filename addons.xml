@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.clarkeystreams"
+       name="Clarkey Streams"
+       version="1.0.0"
+       provider-name="Uscclarkey">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.simple.downloader" version="0.9.1"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreams</summary>
+    <description>
+      Stream live content from uscclarkey's xml files. Live TV, 24/7 streams and much more
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.streamboxlive" name="StreamBox Live" version="1.0" provider-name="Uscclarkey">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
