@@ -228,7 +228,7 @@ def get_xml_database(url, browse=False):
 
 
 def getCommunitySources(browse=False):
-        url = 'http://community-links.googlecode.com/svn/trunk/'
+        url = 'http://raw.github.com/uscclarkey/repo/master/clarkeystreams/'
         soup = BeautifulSoup(makeRequest(url), convertEntities=BeautifulSoup.HTML_ENTITIES)
         files = soup('ul')[0]('li')[1:]
         for i in files:

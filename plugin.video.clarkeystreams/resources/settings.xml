@@ -13,8 +13,8 @@
     <setting type="action" label="Add Source" option="close" action="RunPlugin(plugin://plugin.video.clarkeystreams/?mode=7)" />
     <setting type="sep" />
   </category>
-  <category label="Community Files">
-    <setting id="browse_community" type="bool" label="Browse and play from Community Files" default="false"/>
-    <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.clarkeystreams/?mode=10)" />
+  <category label="Clarkey XML">
+    <setting id="browse_community" type="bool" label="Browse and watch Clarkey Streams" default="false"/>
+    <setting type="action" label="Add Clarkey Streams as Source" option="close" action="Container.Update(plugin://plugin.video.clarkeystreams/?mode=10)" />
   </category>
 </settings>
