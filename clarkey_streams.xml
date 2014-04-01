@@ -1,0 +1,364 @@
+<channels>
+ 
+======================== UKTV ===================================================
+ 
+<channel>
+<name>UKTV</name>
+<thumbnail>http://network.uktv.co.uk/static/img/default_image.jpg</thumbnail>
+<items>
+ 
+<item>
+<title>BBC One</title>
+<link>http://204.107.27.219/live/_definst_/14.low.stream/chunklist_w186541709.m3u8?id=0ad5aac39bb13fbec50659446cac38033e248993cfe47a36b5fedaf0000b6f57e2e557c2e9cc51f2c9d0297d9cfd5c369282baa7ec3f2af8535a498de77cefb15b4add8b19f29097b90fdd5dfe6db5c4fc3b423d7c80885e023ff20035196c91453a5dc2843240a52f8fa76abdeb8132147e4f1246128f1739d54424f26bfc93335e1c45b997ac6d6603ef6ade903a33728cef4b10ee6796</link>
+<thumbnail>http://www.theidentgallery.com/bbc1/2010/BBC1HD-2010-ID-SPACE-1-2.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>BBC Two</title>
+<link>http://live7.gv.edge.filmon.com/live/_definst_/25.low.stream/chunklist_w621200503.m3u8?id=0ad5aac39bb13fbe1d89daecd3cc6cb98a3dcdf080c4b9850e7fb5b6635c742f1e56117a7e5514397400149a969dfc22626e04ae6204e854d140c73ee0cff702ce557d6dfc4b8ba4cb907932d1099119027d5e35922cac4fd6987adcd5bf4408faa48425326a37733fcbf918ee1e967e2958bbc57a5b622e11333d76257263ae05d9e8404a2d335709c75fb581c5edf5747a5df1348ea393</link>
+<thumbnail>http://images.digitalspy.co.uk/broadcasting/550_bbctwo_ident2007_mirror.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>ITV One</title>
+<link>rtmp://204.45.157.234/flash playpath=12028 swfUrl=http://static2.sawlive.tv/player.swf live=1 pageUrl=http://sawlive.tv/embed/watch/OTdlYmNhMzQ5YTU1OmE0NjE3OTphMDRiNmE5MjlmZWYzYjk4ZTZmOGVlMGJjYTA2Mz/BmMWYwNzRhZjgzOjdiMjA0MGJhOTE1NmRkYjlhYmI1YjU5NjNjNGJmOWQ5</link>
+<thumbnail>http://i2.cdnds.net/12/46/618x314/media_new_itv_logo.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Channel Four</title>
+<link></link>
+<thumb>http://www.creativefutur.eu/wp-content/uploads/2012/06/channel4.png</thumb>
+</item>
+ 
+<item>
+<title>Channel Five</title>
+<link></link>
+<thumb>http://static.guim.co.uk/sys-images/Media/Pix/pictures/2011/1/19/1295443888795/Channel-5-logo---January--007.jpg</thumb>
+</item>
+ 
+<item>
+<title>BBC Three / CBBC</title>
+<link>http://live7.gv.edge.filmon.com/live/_definst_/113.low.stream/chunklist_w191384449.m3u8?id=0ad5aac39bb13fbe2c0c131a237e7866bfc5dab6bcc73c8c0acd0cbec2d701513204dca0129114cb1b10e105dab63bf6392684b56862fbdffc543aa27ad997bf39029f0c79b58b62b3dba440047a36785bb3be2aca11a8f43972ff3766f7112578be0d0eca360cb5df849deb06e3145097e5191ee04222e6d4c1596eb923efaff2e20bc42fb2c0f213b6bced160b0112b508a241e122cdda</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/bb/bbc_three.png</thumbnail>
+</item>
+ 
+<item>
+<title>BBC Four / CBeebies</title>
+<link>http://live7.gv.edge.filmon.com/live/_definst_/103.low.stream/chunklist_w1700229206.m3u8?id=0ad5aac39bb13fbe0c4415aea5f5656650f9cb9b10849b2397389b871ef903a7bf273bd93ddf08d121dfbe77ec714cb914b259aefc22f474e5fe317d80f551d0b203cea254e5f19d5a4635b60b0157414ee8db856ff38261445a48b686735f6b7fb7088b0ab1e60aefd6b52befa618285ea1ace3e853e287e7a74a089c21a63fb1e36d7d3687f67d85ca6004f087bba5d732c5f4d4d0b13b</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/bb/bbc_four_uk.png</thumbnail>
+</item>
+ 
+<item>
+<title>ITV Two</title>
+<link>http://204.107.27.223/live/_definst_/67.low.stream/chunklist_w789203413.m3u8?id=0ad5aac39bb13fbeb61a7fb8ba381ea517ce19770ff341598e23df786e9ebeb810d82535b6eb0d3884444c8a58189798e818144c3aadc5463e6d0802b10aad34b0ca0f0835562f0e9af94a3bbe040ce16eb55b6932dfac2f6567a2efdc1bf45c505ba099b395d93488108ce2270bfdb77424fb9419aa02d071d24cf7059139b91b661ec4956d71c9dbf238969f56007c59805a185b7589c6</link>
+<thumbnail>http://www.tomcraine.com/wp-content/uploads/2013/03/itv2-500.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>ITV Three</title>
+<link>http://204.107.27.223/live/_definst_/26.low.stream/chunklist_w1320978681.m3u8?id=0ad5aac39bb13fbe331ed64c7b09c1e2008881abc2c2e487fc31b8d218fbf29203bca0140ea138494e0ec8d33be2a3829d3e75fee8e325f6e28ae2dbdbebeb0efef5ae9c1e7edc24c5c8fab69410abbd5ba3431046cc6e95440dd16a7443c244f54e2873076d250bd70899fa191dafbfd5e96f3f64e4010237bbe4b8de9e5a74c2c3b35a12bb510c3b2831aed69b795ab08c563aca7951ac</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ii/itv3.png</thumbnail>
+</item>
+ 
+<item>
+<title>ITV Four</title>
+<link>http://204.107.27.223/live/_definst_/101.low.stream/chunklist_w1644319791.m3u8?id=0ad5aac39bb13fbe41ffa26bba45d49729bf54ac5b6e3696835d6fa7dcff7e9b1ca8f4c2b5f0819e815800b32241ab85705cb2384684412a8ace672cbd8034a2ab5aabebda1d91769dd0efbbefee3d30ef5a732021f888f6c65924df052e962483cbc4a84a89ef0fa9427ae075f4c195f2c3c8ca082841f3b274baf4f50ccde35b63d1a8e9bb5a55db8c98540a3489bc7cc41b0bef02a554</link>
+<thumbnail>http://presscentre.itvstatic.com/presscentre/sites/presscentre/files/styles/pi_large/public/ITV4%20logo_0.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Dave</title>
+<link></link>
+<thumb>http://i1.cdnds.net/13/06/300x225/media-dave-logo.jpg</thumb>
+</item>
+ 
+<item>
+<title>E4</title>
+<link></link>
+<thumb>http://www.grimeforum.com//wp-content/uploads/2012/07/e4-youngers.jpg</thumb>
+</item>
+ 
+<item>
+<title>More4</title>
+<link></link>
+<thumb>http://www.logoed.co.uk/wp-content/uploads/2012/01/more4_logorebrand-450x250.jpg</thumb>
+</item>
+ 
+<item>
+<title>5 USA</title>
+<link>http://204.107.27.248/live/_definst_/845.low.stream/chunklist_w1947261686.m3u8?id=0ad5aac39bb13fbe609eba6acef98f24451910d661711930dae37708aaa611ca3fd479f000f42bc61d01efdcf8b1538a8e442892a85038f2459b50d4f8f7761e694eb925117903fed54b59eb7fb3c4b22270c9328b385b2afff84ea5b583e17972bc8e887b03bd8f4aadc27dd9bb980f9b50cda65498693fe35573961920dc698750d2e92d8a2c30b6a0767be5e2a3a05c0196977826ac4a</link>
+<thumbnail>http://www.frocus.net/images/logotv/original/5usa.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Pick TV</title>
+<link></link>
+<thumb>http://payload.cargocollective.com/1/4/134859/2257532/Pick%20TV%20copy.jpg</thumb>
+</item>
+ 
+</items>
+</channel>
+ 
+=================== 24/7 =======================================
+ 
+<channel>
+<name>24/7</name>
+<thumbnail>http://www.salfordprayer.info/wp-content/uploads/2012/11/24-7.jpg</thumbnail>
+<items>
+ 
+<item>
+<title>American Dad</title>
+<link>rtmp://198.27.74.25/app playpath=americandad01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+<thumbnail>http://www-deadline-com.vimg.net/wp-content/uploads/2013/05/american-dad-may-12-finale__130513162451.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>The Big Bang Theory</title>
+<link>rtmp://198.27.74.25/app playpath=tbbt01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+<thumbnail>http://www.chicagonow.com/gwynspiration-weight-loss/files/2013/02/the-big-bang-theory-10.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Arrested Development</title>
+<thumbnail>http://www-deadline-com.vimg.net/wp-content/uploads/2012/08/arrested_development__120807003750.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=arrested01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Bones</title>
+<thumbnail>http://www.disneydreaming.com/wp-content/uploads/2010/03/Fox-Bones-TV-Show-Jordin-Sparks.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=bones01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Breaking Bad</title>
+<thumbnail>http://photos.appleinsider.com/13.09.23-Breaking_Bad.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=bad01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Burn Notice</title>
+<thumbnail>http://www.studiosystemnews.com/wp-content/uploads/2013/06/burn_notice_1.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=burnnotice02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Cheers</title>
+<thumbnail>http://blog.wesellrestaurants.com/Portals/147530/images/Cheers%20Sign.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=cheers01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Community</title>
+<thumbnail>http://flavorwire.files.wordpress.com/2011/12/community1.jpg</thumbnail>
+<link>rtmp://198.27.75.99/app playpath=community01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Cops</title>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/1/18/COPS_intertitle.png</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=cops01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Curb Your Enthusiasm</title>
+<thumbnail>http://seriesandtv.com/wp-content/uploads/2010/08/Curb-Your-Enthusiasm-casting-call-open-audition.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=curbs02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Everybody Loves Raymond</title>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/184243/p184243_b_h3_aa/everybody-loves-raymond.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=elr01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Family Guy</title>
+<thumbnail>http://how2becool.com/wp-content/uploads/2013/07/Family-Guy-HD-Wallpaper.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=familyguy01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Frasier</title>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/183920/p183920_b_h3_aa/frasier.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=frasier01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>The Fresh Prince Of Bel Air</title>
+<thumbnail>http://www.tonedeaf.com.au/wp-content/uploads/39616_Fresh-Prince-Of-Bel-Air1.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=freshprince01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Friends</title>
+<thumbnail>http://collider.com/wp-content/uploads/friends-tv-show.jpg</thumbnail>
+</link>rtmp://198.27.74.25/app playpath=friends01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Futurama</title>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/d/de/Futurama_title_screen.jpg</thumbnail>
+<link>rtmp://198.27.75.99/app playpath=2501 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Hanging With Mr. Cooper</title>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/184173/p184173_b_h3_aa/hangin-with-mr-cooper.jpg</thumbnail>
+<link>rtmp://198.27.75.99/app playpath=cooper swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?cooper live=true/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Home Improvement</title>
+<thumbnail>http://1.bp.blogspot.com/-RkCCrd_5BA8/UJY3s3pI0sI/AAAAAAAAAEw/GxTVdaZwq5k/s1600/Home+Improvement.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=home01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>How I Met Your Mother</title>
+<thumbnail>http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2009/9/8/1252411098121/How-I-met-Your-Mother-001.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=himym01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>It's Always Sunny In Philadelphia</title>
+<thumbnail>http://wpc.556e.edgecastcdn.net/80556E/img.news/NE9v5gagxZERcf_1_1.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=sunny01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>The King Of Queens</title>
+<thumbnail>http://www.kstc45.com/kstc45images/koqCast.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=koq01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>King Of The Hill</title>
+<thumbnail>http://static.tvtropes.org/pmwiki/pub/images/kingofthehill.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=koth01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<itme>
+<title>Married With Children</title>
+<thumbnail>http://images2.wikia.nocookie.net/__cb20091228183917/muppet/images/1/11/Married_with_children.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=mwc01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>MASH</title>
+<thumbnail>http://i500.listal.com/image/2981119/500full.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=mash01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Modern Family</title>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/3560360/p3560360_b_h3_ab/modern-family.jpg</thumbnail>
+<link>rtmp://198.27.75.99/app playpath=mfamily01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>The Office USA</title>
+<thumbnail>http://static.hypable.com/wp-content/uploads/2012/08/the-office-key-art-season-8-1.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=office01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Roseanne</title>
+<thumbnail>http://www.mikethefanboy.com/wp/wp-content/uploads/2011/10/227_468058.jpg</thumbnail>
+<link>rtmp://198.27.75.99/app playpath=roseanne01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Rules Of Engagement</title>
+<thumbnail>http://premierguidemedia.com/wp-content/uploads/2010/12/RULES-OF-ENGAGEMENT.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=roe01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Scrubs</title>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/8/86/Scrubs-Cast-Scrubs-DVD.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=scrubs01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Seinfeld</title>
+<thumbnail>http://jivetshirts.com/wp-content/uploads/2013/03/seinfeld-cast.jpg</thumbnail>
+<link>rtmp://198.27.75.99/app playpath=seinfeld02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<link>
+<title>The Simpsons</title>
+<thumbnail>http://pinchemexicano8.files.wordpress.com/2009/05/the-simpsons-title-screen-generator-php.jpeg</thumbnail>
+<link>rtmp://198.27.75.99/app playpath=2502 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>South Park</title>
+<thumbnail>http://www.casinogamesonnet.com/images/slots/south-park-slot-logo.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=southpark01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Star Trek</title>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<link>rtmp://173.193.197.46/app playpath=15434 app=app pageURL=http://www.shidurlive.com/stream/4e7a51334d6a59314e6d493d/c47a6fc38649 swfUrl=http://udemy.com/static/flash/player5.9.swf live=true StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Star Trek Deep Space Nine</title>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=ds901 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Star Trek Enterprise</title>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=trekent01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Star Trek The Next Generation</title>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=tng01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Third Rock From The Sun</title>
+<thumbnail>http://ic.pics.livejournal.com/lmx_v3point3/24280146/15057/15057_original.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=rock01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Three's Company</title>
+<thumbnail>http://www.idealaunch.com/blog/wp-content/uploads/2009/12/Threes_Company.jpg</thumbnail>
+<link>rtmp://198.27.75.99/app playpath=3scom01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Tom and Jerry</title>
+<thumbnail>http://www.hdpaperwall.com/wp-content/uploads/2013/12/151904392_1358487195.jpg</thumbnail>
+<link>rtmp://204.45.108.2/ctv playpath=tom swfUrl=http://www.canaistv.net/swf/player.swf live=r.ates pageUrl=http://www.canaistv.net/tvamigos/tomejerry.html/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Trailor Park Boys</title>
+<thumbnail>http://1.bp.blogspot.com/-2fVfRrNidfM/TiXH0IRhuOI/AAAAAAAAARc/o-1jZhMezM8/s640/trailer_park_boys__the_big_dirty__2006_9872+2.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=tpb01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>Two And A Half Men</title>
+<thumbnail>http://img.ksl.com/slc/2503/250349/25034995.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=men01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+<item>
+<title>The X Files</title>
+<thumbnail>http://cdn.springboard.gorillanation.com/storage//upl_images/xfliesMM.jpg</thumbnail>
+<link>rtmp://198.27.74.25/app playpath=xfiles01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/StreamBox is no.1</link>
+</item>
+ 
+</items>
+</channel>
+</channels>
