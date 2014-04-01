@@ -13,8 +13,8 @@
     <setting type="action" label="Add Source" option="close" action="RunPlugin(plugin://plugin.video.clarkeystreams/?mode=7)" />
     <setting type="sep" />
   </category>
-  <category label="Community Files">
+  <category label="Clarkey's XML Files">
     <setting id="browse_community" type="bool" label="Browse and play from Community Files" default="false"/>
-    <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.clarkeystreams/?mode=10)" />
+    <setting type="action" label="Add Community File URL as Source" option="close" action="AddSource(http://pastebin.com/raw.php?i=9TNd9rU8)" />
   </category>
 </settings>
