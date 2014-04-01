@@ -202,7 +202,7 @@ def rmSource(name):
 
 def get_xml_database(url, browse=False):
         if url is None:
-            url = 'http://xbmcplus.xb.funpic.de/www-data/filesystem/'
+            url = 'http://raw.github.com/uscclarkey/repo/master/clarkeystreams/'
         soup = BeautifulSoup(makeRequest(url), convertEntities=BeautifulSoup.HTML_ENTITIES)
         for i in soup('a'):
             href = i['href']
