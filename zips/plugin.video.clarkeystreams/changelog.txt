@@ -1,11 +1,5 @@
-v1.0.4
-this is harder than it looks, change settings again
-
-v1.0.3
-changes settings for xml file
-
-v1.0.2
-changes source
+v1.0.5
+changed it all back
 
 v1.0.1
 Changed settings

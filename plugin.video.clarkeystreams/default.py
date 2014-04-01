@@ -202,7 +202,7 @@ def rmSource(name):
 
 def get_xml_database(url, browse=False):
         if url is None:
-            url = 'http://pastebin.com/raw.php?i=9TNd9rU8'
+            url = 'http://xbmcplus.xb.funpic.de/www-data/filesystem/'
         soup = BeautifulSoup(makeRequest(url), convertEntities=BeautifulSoup.HTML_ENTITIES)
         for i in soup('a'):
             href = i['href']
@@ -653,10 +653,10 @@ def addDir(name,url,mode,iconimage,fanart,description,genre,date,credits,showcon
                 contextMenu.append(('Download','XBMC.RunPlugin(%s?url=%s&mode=9&name=%s)'
                                     %(sys.argv[0], urllib.quote_plus(url), urllib.quote_plus(name))))
             elif showcontext == 'fav':
-                contextMenu.append(('Remove from Clarkey Streams Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
+                contextMenu.append(('Remove from LiveStreams Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
                                     %(sys.argv[0], urllib.quote_plus(name))))
             if not name in FAV:
-                contextMenu.append(('Add to Clarkey Streams Favorites','XBMC.RunPlugin(%s?mode=5&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
+                contextMenu.append(('Add to LiveStreams Favorites','XBMC.RunPlugin(%s?mode=5&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
                          %(sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url), urllib.quote_plus(iconimage), urllib.quote_plus(fanart), mode)))
             liz.addContextMenuItems(contextMenu)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
@@ -913,7 +913,3 @@ elif mode==16:
 elif mode==17:
     addon_log("getRegexParsed")
     getRegexParsed(regexs, url)
-
-elif mode==18:
-    addon_log("addsource")
-    addSource(http://pastebin.com/raw.php?i=9TNd9rU8)
