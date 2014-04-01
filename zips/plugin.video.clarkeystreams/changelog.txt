@@ -1,3 +1,6 @@
+v1.0.7
+xml update
+
 v1.0.6
 added xml settings
 
