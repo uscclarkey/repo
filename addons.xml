@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.clarkeystreams"
        name="Clarkey Streams"
-       version="1.0.5"
+       version="1.0.6"
        provider-name="Uscclarkey">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -16,7 +16,7 @@
   <extension point="xbmc.addon.metadata">
     <summary>livestreams</summary>
     <description>
-      Stream live content from uscclarkey's xml files. Live TV, 24/7 streams and much more
+      Stream live content from Uscclarkey's xml file. Live TV, 24/7 streams and much more. also you can add your owns xml files from a local source or online.
     </description>
     <platform>all</platform>
   </extension>
