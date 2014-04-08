@@ -227,7 +227,7 @@ def get_xml_database(url, browse=False):
                                 addDir(name,url+href,11,icon,fanart,'','','','','download')
 
 def getclarkey(browse=False):
-        url = 'https://raw.githubusercontent.com/uscclarkey/repo/master/Clarkey%20Streams/'
+        url = 'https://github.com/uscclarkey/repo/tree/master/Clarkey%20Streams'
         soup = BeautifulSoup(makeRequest(url), convertEntities=BeautifulSoup.HTML_ENTITIES)
         files = soup('ul')[0]('li')[1:]
         for i in files:
