@@ -226,6 +226,32 @@ def get_xml_database(url, browse=False):
                             else:
                                 addDir(name,url+href,11,icon,fanart,'','','','','download')
 
+def get_clarkey(url, browse=False):
+        if url is None:
+            url = 'http://pastebin.com/raw.php?i=S5MAspxk'
+        soup = BeautifulSoup(makeRequest(url), convertEntities=BeautifulSoup.HTML_ENTITIES)
+        for i in soup('a'):
+            href = i['href']
+            if not href.startswith('?'):
+                name = i.string
+                if name not in ['Parent Directory', 'recycle_bin/']:
+                    if href.endswith('/'):
+                        if browse:
+                            addDir(name,url+href,15,icon,fanart,'','','')
+                        else:
+                            addDir(name,url+href,14,icon,fanart,'','','')
+                    elif href.endswith('.xml'):
+                        if browse:
+                            addDir(name,url+href,1,icon,fanart,'','','','','download')
+                        else:
+                            if os.path.exists(source_file)==True:
+                                if name in SOURCES:
+                                    addDir(name+' (in use)',url+href,11,icon,fanart,'','','','','download')
+                                else:
+                                    addDir(name,url+href,11,icon,fanart,'','','','','download')
+                            else:
+                                addDir(name,url+href,11,icon,fanart,'','','','','download')
+
 
 def getCommunitySources(browse=False):
         url = 'http://community-links.googlecode.com/svn/trunk/'
@@ -913,3 +939,8 @@ elif mode==16:
 elif mode==17:
     addon_log("getRegexParsed")
     getRegexParsed(regexs, url)
+
+elif mode==16:
+    addon_log("browse_clarkey")
+    get_clarkey(url, True)
+    xbmcplugin.endOfDirectory(int(sys.argv[1]))

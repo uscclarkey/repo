@@ -6,18 +6,17 @@
     <setting id="debug" type="bool" label="Enable Add-on Debugging" default="false"/>
   </category>
   <category label="Add Source">
+    <setting type="action" label="Add Clarkey Streams XML" option="close" action="RunPlugin(plugin://plugin.video.clarkeystreams/?mode=16)" />
     <setting id="choose_source" type="enum" values="Choose File|Enter URL" label="Choose Source Type" default=""/>
     <setting id="new_file_source" type="file" source="files" label="Choose File" default="" visible="eq(-1,0)"/>
     <setting id="new_url_source" type="text" label="Add URL" default="" visible="eq(-2,1)"/>
     <setting type="sep" />
     <setting type="action" label="Add Source" option="close" action="RunPlugin(plugin://plugin.video.clarkeystreams/?mode=7)" />
     <setting type="sep" />
+    
   </category>
   <category label="Community Files">
     <setting id="browse_community" type="bool" label="Browse and play from Community Files" default="false"/>
     <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.clarkeystreams/?mode=10)" />
-  </category>
-  <category label="Clarkey Streams XML">
-    <setting type="action" label="Add Clarkey Streams XML" option="close" action="addSource('http://pastebin.com/raw.php?i=ef3rR8vT')" />
   </category>
 </settings>
