@@ -17,4 +17,7 @@
     <setting id="browse_community" type="bool" label="Browse and play from Community Files" default="false"/>
     <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.clarkeystreams/?mode=10)" />
   </category>
+  <category label="Clarkey Streams XML">
+    <setting type="action" label="Add Clarkey Streams XML" option="close" action="addSource('http://pastebin.com/raw.php?i=ef3rR8vT')" />
+  </category>
 </settings>
