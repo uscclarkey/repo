@@ -940,7 +940,7 @@ elif mode==17:
     addon_log("getRegexParsed")
     getRegexParsed(regexs, url)
 
-elif mode==16:
+elif mode==18:
     addon_log("browse_clarkey")
     get_clarkey(url, True)
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
