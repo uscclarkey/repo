@@ -67,8 +67,6 @@ def getSources():
             addDir('XML Database','http://xbmcplus.xb.funpic.de/www-data/filesystem/',15,icon,FANART,'','','','')
         if addon.getSetting("browse_community") == "true":
             addDir('Community Files','community_files',16,icon,FANART,'','','','')
-        if add-on.getSetting("clarkey") == "true":
-           addDir('Clarkey Streams','http://pastebin.com/raw.php?i=S5MAspxk',15,icon,FANART,'','','','')
         if os.path.exists(source_file)==True:
             sources = json.loads(open(source_file,"r").read())
             if len(sources) > 1:
