@@ -1,3 +1,6 @@
+v3.0.10
+trying icons
+
 v3.0.9
 added movies
 
