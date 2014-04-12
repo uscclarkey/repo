@@ -1,2 +1,5 @@
+v3.0.9
+added movies
+
 v3.0.8
 Initial Release
