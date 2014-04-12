@@ -1,8 +1,0 @@
-v1.0.2
-changes source
-
-v1.0.1
-Changed settings
-
-v1.0.0
-Initial release

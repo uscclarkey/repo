@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.clarkeystreams"
-       name="Clarkey Streams"
-       version="1.0.17"
+<addon id="plugin.video.IPTV"
+       name="IPTV"
+       version="3.0.7"
        provider-name="Uscclarkey">
   <requires>
-    <import addon="xbmc.python" version="2.0"/>
-    <import addon="script.module.beautifulsoup" version="3.0.8"/>
-    <import addon="script.module.simple.downloader" version="0.9.1"/>
-    <import addon="script.module.simplejson" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>livestreams</summary>
-    <description>
-      Stream live content from Uscclarkey's xml file. Live TV, 24/7 streams and much more. also you can add your owns xml files from a local source or online.
-    </description>
+    <summary>IPTV</summary>
+    <description>Stream all content form my m3u lists. Remember to click the "!Update" button regularly to keep your list up to date.</description>
     <platform>all</platform>
   </extension>
 </addon>
