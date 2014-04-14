@@ -1,0 +1,67 @@
+#EXTM3U
+#EXTINF:0, Breaking Bad
+rtmp://198.27.74.25/app playpath=bad02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?bad02
+#EXTINF:0, its always sunny in philadelphia
+rtmp://198.27.74.25/app playpath=sunny02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?sunny02
+#EXTINF:0, law and order special victims unit
+rtmp://198.27.75.99/app playpath=lawsuv02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?lawsuv02
+#EXTINF:0, the trailer park boys
+rtmp://198.27.74.25/app playpath=tpb02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?tpb02
+#EXTINF:0, everybody loves Raymond
+rtmp://198.27.74.25/app playpath=elr02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?elr02
+#EXTINF:0, home inprovement
+rtmp://198.27.75.99/app playpath=home01 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?home01
+#EXTINF:0, Frasier
+rtmp://198.27.74.25/app playpath=frasier02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?frasier02
+#EXTINF:0, scrubs
+rtmp://198.27.74.25/app playpath=scrubs02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?scrubs02
+#EXTINF:0, star trek deap space nine
+rtmp://198.27.74.25/app playpath=ds902 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?ds902
+#EXTINF:0, star trek voyager
+rtmp://173.193.197.46/app playpath=16234 swfUrl=http://cdn.shidurlive.com/player.swf pageUrl=http://www.shidurlive.com/stream/4e7a59325a6a63354d7a493d/c665fb3dea03
+#EXTINF:0, bones
+rtmp://198.27.74.25/app playpath=bones02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?bones02
+#EXTINF:0, married with children
+rtmp://198.27.74.25/app<playpath>mwc02 <swfUrl>http://www.tgun.tv/locked/player.swf <pageUrl>http://www.tgun.tv/menus/players/dlock/playerindex4.php?mwc02
+#EXTINF:0, the simpsons
+rtmp://198.27.75.99/app playpath=2502 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?2502
+#EXTINF:0, south park
+rtmp://198.27.74.25/app playpath=southp02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?southp02
+#EXTINF:0, king of the hill
+rtmp://198.27.74.25/app playpath=koth02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?koth02
+#EXTINF:0, family guy
+rtmp://198.27.74.25/app playpath=familyguy02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?familyguy02
+#EXTINF:0, the office us
+rtmp://198.27.74.25/app playpath=office02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindextab1.php?office02
+#EXTINF:0, modern family
+rtmp://198.27.75.99/app playpath=mfamily02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex5.php?mfamily02
+#EXTINF:0, burn notice
+rtmp://198.27.74.25/app playpath=burnnotice03 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?burnnotice03
+#EXTINF:0, sopranos
+rtmp://198.27.75.99/app playpath=sopranos swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?sopranos
+#EXTINF:0, cops
+rtmp://198.27.75.99/app playpath=cops01 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?cops01
+#EXTINF:0, community
+rtmp://198.27.75.99/app playpath=community01 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?community01
+#EXTINF:0, the waking dead
+rtmp://198.27.75.99/app playpath=twd02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?twd02
+#EXTINF:0, news radio
+rtmp://198.27.75.99/app playpath=nradio swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?nradio
+#EXTINF:0, the crosby show
+rtmp://198.27.75.99/app playpath=cosby swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?cosby
+#EXTINF:0, friends
+rtmp://198.27.74.25/app playpath=friends02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?friends02
+#EXTINF:0, the big bang theory
+rtmp://198.27.74.25/app playpath=tbbt02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?tbbt02
+#EXTINF:0, hanging with mr cooper
+rtmp://198.27.75.99/app playpath=cooper swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?cooper
+#EXTINF:0, the fresh prince of bel air
+rtmp://198.27.74.25/app playpath=freshprince02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?freshprince02
+#EXTINF:0, american dad
+rtmp://198.27.74.25/app playpath=americandad02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?americandad02
+#EXTINF:0, star trek
+rtmp://198.27.74.25/app playpath=tng02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?tng02
+#EXTINF:0, that 70s show
+rtmp://198.27.75.99/app playpath=that70sshow swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex6.php?that70sshow
+#EXTINF:0, betty boop network
+http://72.13.93.186/BETTYBOOP

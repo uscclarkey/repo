@@ -1,0 +1,27 @@
+#EXTM3U
+#EXTINF:-1,Sky Sports 1
+rtmpe://46.246.29.152:1935/redirect/ playpath=janu1 token=#yw%tt#w@kku swfUrl=http://77231864591d8245d027-dbd663cdd4719bbeb13e13f9ee6e6f1f.r39.cf5.rackcdn.com/bba.swf pageUrl=http://www.hdcast.org/embedlive2.php?u=janu1&vw=640&vh=460&domain=www.footyfree.tv live=true timeout=10
+#EXTINF:-1,Sky Sports 2
+rtmp://31.220.0.133:1935/live playpath=ss2x swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=ss2x&vw=620&vh=490 live=true timeout=10
+#EXTINF:-1,Sky Sports 3
+rtmp://31.220.0.134:1935/live playpath=ss3x swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=ss3x&vw=620&vh=490 live=true timeout=10
+#EXTINF:-1,Sky Sports 4
+rtmp://31.220.0.103:1935/live playpath=ss4x swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=ss4x&vw=620&vh=490 live=true timeout=10
+#EXTINF:-1,Sky Sports F1
+rtmpe://46.246.29.152:1935/redirect/ playpath=HDMSKYF1 token=#yw%tt#w@kku swfUrl=http://77231864591d8245d027-dbd663cdd4719bbeb13e13f9ee6e6f1f.r39.cf5.rackcdn.com/bba.swf pageUrl=http://www.hdcast.org/embedlive2.php?u=HDMSKYF1&vw=640&vh=460&domain=hdfoots.com live=true timeout=10
+#EXTINF:-1,Sky Sports News
+rtmp://31.220.0.134:1935/live playpath=ssnewsrx swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=ssnewsrx&vw=620&vh=490 live=true timeout=10
+#EXTINF:0, BT Sports 1 
+rtmp://31.220.0.134:1935/live playpath=bt1x swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=ss4x&vw=620&vh=490 live=true timeout=10
+#EXTINF:0, BT Sports 1
+rtmpe://play.finecast.tv/live playpath=hqbt1 swfUrl=http://www.finecast.tv/player/player.swf pageUrl=http://www.finecast.tv/ live=true timeout=10
+#EXTINF:0, BT Sports 2 
+rtmp://206.190.140.148:443/liverepeater playpath=stream6 swfUrl=http://www.longtailvideo.com/content/ova/jwplayer/player.swf pageUrl=http://cdn.kingofplayers.com/stream6.html live=true timeout=10
+#EXTINF:0, BT Sports 2 
+rtmp://31.220.0.134:1935/live playpath=bt2x swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=ss4x&vw=620&vh=490 live=true timeout=10
+#EXTINF:0, BT Sports 2 
+rtmpe://play.finecast.tv/live playpath=hqbt2 swfUrl=http://www.finecast.tv/player/player.swf pageUrl=http://www.finecast.tv/ live=true timeout=10
+#EXTINF:0, Eurosport 1 
+rtmp://31.220.0.134:1935/live playpath=euro11osjos swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?COLLCC=620504064&live=euro11osjos&vw=620&vh=490 live=true timeout=10
+#EXTINF:0, Sports Tonight
+rtmp://freeview.fms.visionip.tv/live playpath=sports_tonight-sports_tonight-live-25f-16x9-SD?ref=www.sportstonightlive.com&USER=STL_0001 swfUrl=http://embeddedplayer.visionip.tv/data/swf/f22ee95bcec532c04146635a1a1adf00559/player.swf timeout=10
