@@ -356,6 +356,7 @@ dc={
 "itv four" : "362",
 "channel four" : "353",
 "channel five" : "354",
+"5 usa" : "384",
 "dave" : "355",
 "e4" : "356",
 "more4" : "363",
@@ -371,4 +372,10 @@ dc={
 "sky sports news" : "371",
 "bt sports 1" : "351",
 "bt sports 2" : "352",
+"4 music" : "378",
+"at the races" : "379",
+"bbc news" : "380",
+"capital tv" : "381",
+"heart" : "382",
+"kiss" : "383",
 }
