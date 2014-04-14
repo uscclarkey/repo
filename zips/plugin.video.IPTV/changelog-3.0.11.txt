@@ -1,0 +1,11 @@
+v3.0.11
+trying icons again
+
+v3.0.10
+trying icons
+
+v3.0.9
+added movies
+
+v3.0.8
+Initial Release
