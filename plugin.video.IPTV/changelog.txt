@@ -1,11 +1,5 @@
-v3.0.13
-add playlists when install
-
-v3.0.12
-added all logos
-
-v3.0.11
-trying icons again
+v3.0.14
+something went wrong, rolling back
 
 v3.0.10
 trying icons

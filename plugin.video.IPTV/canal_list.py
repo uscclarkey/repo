@@ -359,7 +359,7 @@ dc={
 "dave" : "355",
 "e4" : "356",
 "more4" : "363",
-"pick" : "364",
+"pick tv" : "364",
 "sky news" : "365",
 "eurosport 1" : "358",
 "eurosport 2" : "357",
@@ -370,5 +370,5 @@ dc={
 "sky sports f1" : "370",
 "sky sports news" : "371",
 "bt sports 1" : "351",
-"bt sport 2" : "352",
+"bt sports 2" : "352",
 }

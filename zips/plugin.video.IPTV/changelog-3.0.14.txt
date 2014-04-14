@@ -1,0 +1,11 @@
+v3.0.14
+something went wrong, rolling back
+
+v3.0.10
+trying icons
+
+v3.0.9
+added movies
+
+v3.0.8
+Initial Release
