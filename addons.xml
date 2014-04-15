@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.IPTV"
        name="IPTV"
-       version="3.0.16"
+       version="3.0.17"
        provider-name="Uscclarkey">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

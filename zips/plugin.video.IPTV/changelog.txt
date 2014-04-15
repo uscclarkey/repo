@@ -1,3 +1,6 @@
+v3.0.17
+added radio
+
 v3.0.16
 added series logos
 
