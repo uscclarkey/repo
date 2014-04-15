@@ -1,3 +1,6 @@
+v3.0.19
+changed fanart
+
 v3.0.18
 added radio logos
 
