@@ -1,4 +1,7 @@
-v2.0.15
+v3.0.16
+added series logos
+
+v3.0.15
 added more logos
 
 v3.0.14
