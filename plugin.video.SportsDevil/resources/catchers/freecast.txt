@@ -1,0 +1,20 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=FreeCast - %s
+
+item_info_name=pageUrl
+item_info_from=@PARAM1@
+item_info_build=http://www.freecast.in/embed.php?file=%s&width=600&height=400
+
+item_info_name=rtmp
+item_info_from=@PARAM1@
+item_info_convert=getInfo('http://www.freecast.in/lb.php','.*(rtmp://[\.\d\S]+).*','')
+item_info_build=%s
+
+item_info_name=file
+item_info_from=@PARAM1@
+item_info_build=%s
+
+item_info_name=url
+item_info_from=rtmp + ' playpath=' + file + '_token49399 swfUrl=http://www.freecast.in/swfs/player.swf live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_build=%s

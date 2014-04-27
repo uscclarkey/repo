@@ -1,0 +1,17 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=ZengaTV - %s
+
+item_info_name=file
+item_info_from=@PARAM1@
+item_info_convert=getInfo('http://www.zengatv.com/flowlive.jsp?episode=%s','.*<jwplayer:file>([^<]+))
+item_info_build=%s
+
+item_info_name=rtmp
+item_info_from=@PARAM1@
+item_info_convert=getInfo('http://www.zengatv.com/flowlive.jsp?episode=%s','.*(rtmp://[^<]+))
+item_info_build=%s
+
+item_info_name=url
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=http://www.zengatv.com/player.swf timeout=15 live=true swfVfy=1 pageUrl=http://www.zengatv.com
+item_info_build=%s

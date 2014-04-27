@@ -1,0 +1,28 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=04stream - %s
+
+item_info_name=url
+item_info_from=@PARAM1@
+item_info_build=rtmp://46.246.29.130:1935/stream/%s.stream swfUrl=http://thecdn.04stream.com/ss/oooll53.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.04stream.com
+
+#item_info_name=pageUrl
+#item_info_from=@PARAM1@
+#item_info_build=http://www.04stream.com/embed.js?stream=%s
+#
+#item_info_name=tmp
+#item_info_from=pageUrl
+#item_info_convert=getInfo('%s','.*(http://.*?04stream.com/e\w+.php.*?)['" ].*','%s')
+#item_info_build=%swww.thefirstrow.eu
+#
+#item_info_name=tmptwo
+#item_info_from=tmp
+#item_info_convert=getInfo('%s','.*file=(rtmp[^&]+)&.*?"([^"]+\.swf)".*','@CURRENT_URL@','rtmp|swf')
+#item_info_build=%s
+#
+#item_info_name=url
+#item_info_from=rtmp + ' swfUrl=' + swf + ' live=true pageUrl=' + pageUrl
+#item_info_build=%s
+
+
+

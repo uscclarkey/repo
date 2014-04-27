@@ -1,0 +1,6 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=NewsKO - %s
+item_info_name=url
+item_info_from=@PARAM1@
+item_info_build=rtmp://lb.newsko.co.uk/redirect/%s swfUrl=http://www.udemy.com/static/flash/player5.9.swf live=1 timeout=15 swfVfy=1 pageUrl=http://www.newsko.co.uk

@@ -1,0 +1,37 @@
+item_info_name=tmp
+item_info_from=@PARAM1@
+item_info_convert=getInfo('%s','.*?write\(unescape\(\s*'([^']+)'.*','@REFERER@')
+item_info_convert=unquote('%s')
+item_info_convert=decodeRawUnicode('%s')
+item_info_build=%s
+
+item_info_name=tmp2
+item_info_from=tmp
+item_info_convert=parseText('%s','.*id=["']([^"']+).*src=["']([^"']+).*','id|js')
+item_info_build=%s
+
+item_info_name=title
+item_info_from=id
+item_info_build=AtDee - %s
+
+item_info_name=tmp3
+item_info_from=js
+item_info_convert=getInfo('%s','.*?src=['"]([^"']+).*','@REFERER@')
+item_info_build=%s
+
+item_info_name=pageUrl
+item_info_from=tmp3 + id + '&wh=600&ht=358&r=' + @PARAM1@ + '
+item_info_build=%s
+
+item_info_name=tmp5
+item_info_from=@PARAM1@
+item_info_build=%s
+
+item_info_name=tmp4
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*?['"]flashplayer['"][:,]\s*['"]([^'"]+)['"].*?['"]file['"][:,]\s*['"]([^'"]+)['"].*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','@tmp5@','swf|file|rtmp')
+item_info_build=%s
+
+item_info_name=url
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' live=true timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_build=%s

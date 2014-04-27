@@ -1,0 +1,16 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=ShareCast - %s
+
+item_info_name=pageUrl
+item_info_from=@PARAM1@
+item_info_build=http://sharecast.to/embed/%s
+
+item_info_name=rtmp
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*streamer:\s*"([^'"]+).*','@REFERER@')
+item_info_build=%s
+
+item_info_name=url
+item_info_from=rtmp + ' playpath=' + @PARAM1@ + ' swfUrl=http://sharecast.to/player/player2.swf live=true token=%Pk78(nKa@#. pageUrl=' + pageUrl
+item_info_build=%s

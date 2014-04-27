@@ -1,0 +1,23 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=MiCast - %s
+
+item_info_name=url
+item_info_from=@PARAM1@
+item_info_build=rtmp://93.174.93.50/liveedge/%s swfurl=http://micast.tv/jwplayer/jwplayer.flash.swf pageurl=http://micast.tv live=1
+
+
+
+#item_info_name=pageUrl
+#item_info_from=@PARAM1@
+#item_info_build=http://micast.tv/gen.php?ch=%s&width=700&height=480
+
+#item_info_name=rtmp
+#item_info_from=pageUrl
+#item_info_convert=getInfo('%s','.*file:\s*"([^'"]+).*','@REFERER@')
+#item_info_build=%s
+
+
+#item_info_name=url
+#item_info_from=rtmp + ' swfUrl=http://files.mica.st/jwplayer/jwplayer.flash.swf live=true pageUrl=' + pageUrl
+#item_info_build=%s

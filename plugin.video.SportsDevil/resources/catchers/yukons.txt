@@ -1,0 +1,16 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=Yukons - %s
+
+item_info_name=rtmp
+#item_info_from=@PARAM1@
+item_info_convert=getInfo('http://yukons.net/lb.php','.*srv=([^]+).*','@REFERER@')
+item_info_build=rtmp://%s
+
+item_info_name=file
+item_info_from=@PARAM1@
+item_info_build=%s?id=322e3232302e3232332e313738
+
+item_info_name=url
+item_info_from=rtmp://198.144.153.145:443/kuyo playpath=' + file + ' swfUrl=http://yukons.net/yplayerv2.swf live=true conn=S:OK timeout=15 swfVfy=true pageUrl=http://yukons.net
+item_info_build=%s

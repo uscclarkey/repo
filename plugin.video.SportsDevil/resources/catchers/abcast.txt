@@ -1,0 +1,7 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=ABCast - %s
+
+item_info_name=url
+item_info_from=@PARAM1@
+item_info_build=rtmp://cdn.abcast.biz/liverepeat/%s swfUrl=http://abcast.biz/playercanal.swf live=true timeout=15 swfVfy=1 pageUrl=http://abcast.biz

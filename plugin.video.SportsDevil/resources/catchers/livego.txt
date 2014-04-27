@@ -1,0 +1,7 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=livego - %s
+
+item_info_name=url
+item_info_from=@PARAM1@
+item_info_build=rtmp://37.221.162.223:1935/go/_definst_/%s swfUrl=http://www.livego.tv/player/player-licensed.swf pageUrl=http://www.livego.tv/ live=true swfVfy=1

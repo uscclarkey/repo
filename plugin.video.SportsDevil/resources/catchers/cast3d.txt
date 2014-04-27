@@ -1,0 +1,40 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=Cast3D - %s
+
+
+item_info_name=url
+item_info_from=@PARAM1@
+item_info_build=rtmp://stream.cast3d.tv:1935/redirect/%s swfUrl=http://www.adslijit.com/cast3dskin.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.cast3d.tv
+
+
+
+
+#item_info_name=pageUrl
+#item_info_from=@PARAM1@
+#item_info_build=http://www.cast3d.tv/embed.php?channel=%s&vw=640&vh=385&domain=lsh.streamhunter.eu
+
+#item_info_name=file
+#item_info_from=pageUrl
+#item_info_convert=getInfo('%s','.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+#item_info_build=%s
+
+#item_info_name=rtmp
+#item_info_from=pageUrl
+#item_info_convert=getInfo('%s','.*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+#item_info_build=%s
+
+#item_info_name=swf
+#item_info_from=pageUrl
+#item_info_convert=getInfo('%s','.*?['"]flashplayer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+#item_info_build=%s
+
+
+#item_info_name=rtmp
+#item_info_from=rtmp.tmp
+#item_info_convert=replace('%s','/redirect/',':1935/redirect/')
+#item_info_build=%s
+
+#item_info_name=url
+#item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+#item_info_build=%s

@@ -1,0 +1,16 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=Flexstream - %s
+
+item_info_name=pageUrl
+item_info_from=@PARAM1@
+item_info_build=http://flexstream.net/embed3.php?file=%s&width=620&height=450
+
+item_info_name=tmp
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*?file=([^"'&]+).*?streamer=([^"'&]+).*','@REFERER@','file|rtmp')
+item_info_build=%s
+
+item_info_name=url
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=http://flexstream.net/player.swf live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_build=%s
