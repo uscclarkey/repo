@@ -334,7 +334,7 @@ def get_episodes(name,url,iconimage,showname):#  cause mode is empty in this one
     
 def getSearch():
         search_entered = ''
-        keyboard = xbmc.Keyboard(search_entered, 'Search Simply Movies')
+        keyboard = xbmc.Keyboard(search_entered, 'Search StreamBox Movies')
         keyboard.doModal()
         if keyboard.isConfirmed():
             search_entered = keyboard.getText() .replace(' ','+')  # sometimes you need to replace spaces with + or %20            
@@ -445,7 +445,7 @@ def downloadPath(title):
 
     if downloadFolder is '':
         d = xbmcgui.Dialog()
-	d.ok('Simply Movies','You have not set the default download folder.\nPlease update the addon settings and try again.','','')
+	d.ok('StreamBox Movies','You have not set the default download folder.\nPlease update the addon settings and try again.','','')
 	ADDON.openSettings(sys.argv[0])
 	downloadFolder = ADDON.getSetting('download_folder')
 
@@ -506,7 +506,7 @@ def DOWNLOAD(name, url, iconimage):
 
     if savePath:
         t = 200*len(savePath)
-        xbmc.executebuiltin('XBMC.Notification(' + 'Simply Movies' + ', Downloading: ' + savePath + ',' + str(t) + ')')
+        xbmc.executebuiltin('XBMC.Notification(' + 'StreamBox Movies' + ', Downloading: ' + savePath + ',' + str(t) + ')')
         #print "Saving %s to %s" % (url, savePath)
         #urllib.urlretrieve(url, savePath)
 
@@ -592,7 +592,7 @@ def validateStream(url):
         #type    = resp.headers['Content-Type'] #expect to be 'video/mp4'
         return resp
     except Exception, e:
-        print "ERROR IN SIMPLY MOVIES: " + str(e)
+        print "ERROR IN StreamBox Movies: " + str(e)
         return None
 
 def getUrl(url, setting):
@@ -636,7 +636,7 @@ def PLAY_STREAM(name, url, iconimage, strm = False,liz=None):
     
     if not resp:
         dlg = xbmcgui.Dialog()
-        dlg.ok('Simply Movies', 'There was a problem trying to play %s' % name, '', 'Please note, some ISPs appear to block Simply Movies :-(')
+        dlg.ok('StreamBox Movies', 'There was a problem trying to play %s' % name, '', 'Please note, some ISPs appear to block StreamBox Movies :-(')
         return
 
     liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
