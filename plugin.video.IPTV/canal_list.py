@@ -164,4 +164,12 @@ dc={
 "two and a half men" : "071",
 "two broke girls" : "072",
 "x-files" : "073",
+"info" : "074",
+"movies" : "075",
+"radio" : "076",
+"russian" : "077",
+"series" : "078",
+"sports" : "079",
+"uktv" : "080",
+"kids" : "081",
 }

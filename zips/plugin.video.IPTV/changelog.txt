@@ -1,3 +1,6 @@
+v3.0.25
+added kids zone
+
 v3.0.24
 updated logos
 
