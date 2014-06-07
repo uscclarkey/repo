@@ -1,8 +1,5 @@
-3.0.27
+v3.0.28
 updated description
-
-v3.0.26
-trying fan art
 
 v3.0.25
 added kids zone

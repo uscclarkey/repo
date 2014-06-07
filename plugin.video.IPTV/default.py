@@ -20,7 +20,7 @@
 # *  http://www.gnu.org/copyleft/gpl.html
 # */
 
-import urllib2, re, string, xbmc, xbmcgui, xbmcplugin, os, urllib, cookielib, xbmcaddon,
+import urllib2, re, string, xbmc, xbmcgui, xbmcplugin, os, urllib, cookielib, xbmcaddon
 def ru(x):return unicode(x,'utf8', 'ignore')
 def xt(x):return xbmc.translatePath(x)
 	
