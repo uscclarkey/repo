@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.IPTV"
        name="IPTV"
-       version="3.0.26"
+       version="3.0.27"
        provider-name="Uscclarkey">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -13,7 +13,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>IPTV</summary>
-    <description>Stream all content form my m3u lists. Remember to click the "!Update" button regularly to keep your list up to date.</description>
+    <description>Stream all content form my m3u lists. Remember to click the "!Update" button regularly to keep your list up to date. For more info and instructions on how to use this add-on please visit the IPTV section of our website www.streamboxlive.wordpress.com</description>
     <platform>all</platform>
   </extension>
 </addon>
