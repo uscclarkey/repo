@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+	<category label="30114">
+		<setting id="enable.osd" label="30118" type="bool" default="true" enable="eq(2,false)" />
+		<setting label="30119" type="lsep" />
+		<setting id="alternative.playback" label="30120" type="bool" default="false" />
+		<setting label="30121" type="lsep" />
+	</category>
+
+	<category label="30112">
+		<setting id="notifications.enabled" label="30106" type="bool" default="true" />
+		<setting label="30108" type="action" action="RunScript($CWD/notification.py)" />
+	</category>
+</settings>
+
