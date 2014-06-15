@@ -11,7 +11,7 @@ ADDON = xbmcaddon.Addon(id=PLUGIN)
 #library=xbmc.translatePath(ADDON.getAddonInfo('profile'))
 
 ORDERBY = ['releaseDate', 'rating', 'views']
-URL     = 'http://simplymovies.net/'
+URL     = 'http://streamboxmovies.net/'
 from metahandler import metahandlers
  
 from metahandler import metacontainers 

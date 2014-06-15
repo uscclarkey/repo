@@ -54,9 +54,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.streamboxmovies" name="StreamBox Movies" version="1.0.5" provider-name="Uscclarkey">
+<addon id="plugin.video.streamboxmovies" name="StreamBox Movies" version="1.0.6" provider-name="Uscclarkey">
   <requires>
-    <import addon="xbmc.python" version="2.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.metahandler" version="1.0.0"/>
     <import addon="plugin.video.youtube" version="0.0.1"/>
   </requires>
@@ -65,7 +65,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Stream Movies and TV Shows</summary>
-    <description lang="en">Stream all the latest movies and tv shows. With no links, just click and watch. Cracking!</description>
+    <description lang="en">Stream all the latest movies and tv shows. With no links, just click and watch. For more info and instructions please visit the StreamBox Movies page of our website www.streamboxlive.wordpress.com</description>
     <disclaimer lang="en">StreamBox movies does not host any files, it simply provides you a link to the file that is easily found on the web. thank you!!</disclaimer>
     <platform>all</platform>
   </extension>
