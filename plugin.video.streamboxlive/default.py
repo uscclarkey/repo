@@ -1,7 +1,7 @@
 import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os
 import datetime
 import time
-import checks
+
 
 PLUGIN='plugin.video.streamboxlive'
 
@@ -14,7 +14,7 @@ api ='http://www.filmon.com/api/'
 
 if ADDON.getSetting('user')=='':
         dialog = xbmcgui.Dialog()
-        xbmcgui.Dialog().ok('StreamBox Live','StreamBox Live Needs Your FilmOn User Details To Work','The Next Screen Will Get You To Input These','If You Havent Got A Filmon Account Sign Up')
+        xbmcgui.Dialog().ok('StreamBox Live','Now StreamBox Live Needs Your FilmOn User Details To Work','The Next Screen Will Get You To Input These','If You Havent Got A Filmon Account go to the StreamBox Live page of www.streamboxlive.wordpress.com and click the create account link')
 if ADDON.getSetting('user')=='':
         search_entered = ''
         keyboard = xbmc.Keyboard(search_entered, 'Please Enter Email Address')
@@ -71,9 +71,9 @@ def CATEGORIES():
 def GET_STREAM(name,url,iconimage,rtmp,app,playpath):
     auth=getid(url)
     if 'mp4:' in playpath:
-        stream='%s%s?%s playpath=%s?%s app=%s swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf pageurl=http://www.filmon.com/ tcUrl=%s  live=true timeout=10'%(rtmp,playpath,auth,playpath,auth,app,rtmp)
+        stream='%s%s?%s playpath=%s?%s app=%s swfUrl=https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=51 pageurl=http://www.filmon.com/ tcUrl=%s  live=1 timeout=25 swfVfy=1'%(rtmp,playpath,auth,playpath,auth,app,rtmp)
     else:
-        stream='%s?id=%s playpath=%s app=%s%s swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf pageurl=http://www.filmon.com/ live=true timeout=10'%(rtmp,auth,playpath,app,auth)
+        stream='%s?id=%s/%s playpath=%s app=%s%s swfUrl=https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=51 pageurl=http://www.filmon.com/ tcUrl=%s live=1 timeout=25 swfVfy=1'%(rtmp,auth,playpath,playpath,app,auth,rtmp)
     if ADDON.getSetting('res')=='true':
         stream=str(stream).replace('low.stream','high.stream')
     liz=xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
@@ -111,6 +111,15 @@ def ttTTtt(i, t1, t2=[]):
  return t            
     
     
+def GET_STREAM_RESOLUTION(channels):
+    import json
+    for item in channels:
+        if 'low' in item['name']:
+            return item['url'].split('?')[1].replace('id=','')
+            
+    return None  
+ 
+ 
 def getid(id):
     url= ttTTtt(997,[54,104,197,116],[108,116,253,112,176,58,76,47,156,47,94,119,212,119,97,119,208,46,5,102,134,105,171,108,89,109,149,111,104,110,176,46,20,99,194,111,227,109,83,47,237,116,109,118,2,47,118,97,94,112,218,105,136,47,244,105,133,110,184,105,53,116,235,63,188,97,18,112,218,112,167,95,133,105,206,100,141,61,244,120,54,109,166,98,185,99,34,95,55,97,47,112,66,112,3,38,13,97,223,112,36,112,177,95,130,115,206,101,162,99,63,114,197,101,239,116,244,61,28,49,140,98,32,56,86,69,223,101,90,110,129,51,196,101])
     link=OPEN_URL(url)
@@ -118,31 +127,35 @@ def getid(id):
     sess=match[0]
     log=api+'login?session_key=%s&login=%s&password=%s' % (sess,user,password)
     OPEN_URL(log)
+    import json
     try:
         url='http://www.filmon.com/api/channel/%s?session_key=%s' % (id,sess)
         link=OPEN_URL(url)
-        match=re.compile('quality":"low","url":".+?\?id=(.+?)"').findall(link)
-        return match[0]
+        data = json.loads(link)
+        channels= data['streams']
+
+        match = GET_STREAM_RESOLUTION(channels)        
+        
+        return match
     except:
-        try:
-            url='http://www.filmon.com/api/channel/%s?session_key=%s' % (id,sess)
+        try:    
+            url='http://www.filmon.com/api/channel/1676?session_key=%s' % (sess)
             link=OPEN_URL(url)
-            match=re.compile('quality":"low","url":".+?\?(.+?)"').findall(link)
-            return match[0]
+            data = json.loads(link)
+            channels= data['streams']
+    
+            match = GET_STREAM_RESOLUTION(channels)        
+            
+            return match
         except:
-            try:    
-                url='http://www.filmon.com/api/channel/689?session_key=%s' % (sess)
-                link=OPEN_URL(url)
-                match=re.compile('"url":".+?\?id=(.+?)"').findall(link)
-                return match[0]
-            except:    
-                url='http://www.filmon.com/api/channel/689?session_key=%s' % (sess)
-                link=OPEN_URL(url)
-                match=re.compile('"url":".+?\?(.+?)"').findall(link)
-                return match[0]
-
-
-
+            url='http://www.filmon.com/api/channel/689?session_key=%s' % (sess)
+            link=OPEN_URL(url)
+            data = json.loads(link)
+            channels= data['streams']
+    
+            match = GET_STREAM_RESOLUTION(channels)        
+            
+            return match
              
     
     
