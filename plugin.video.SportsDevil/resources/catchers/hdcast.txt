@@ -1,0 +1,11 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=HdCast - %s
+
+item_info_name=url
+item_info_from=@PARAM1@
+item_info_build=rtmp://46.246.124.22:1935/private/%s swfUrl=http://77231864591d8245d027-dbd663cdd4719bbeb13e13f9ee6e6f1f.r39.cf5.rackcdn.com/dangdang.swf flashver=WIN\2012,0,0,77 timeout=15 swfVfy=1 pageUrl=http://www.hdcast.org
+
+#rtmpe://46.246.124.28:1935/redirect
+#rtmpe://rtmp.hdcast.org:1935/redirect
+#rtmpe://cp77659.live.edgefcs.net/live
