@@ -7,7 +7,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install MY Addons</summary>
-		<description>Download and install addons from uscclarkey. For more info please visit www.streamboxlive.wordpress.com</description>
+		<description>Download and install addons from uscclarkey. For more info please visit [COLOR blue]www.streamboxlive.wordpress.com[/COLOR]</description>
 		<platform>all</platform>
 	</extension>
 </addon>
