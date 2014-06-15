@@ -1,6 +1,24 @@
 item_info_name=title
 item_info_from=@PARAM1@
 item_info_build=NewsKO - %s
-item_info_name=url
+
+item_info_name=pageUrl
 item_info_from=@PARAM1@
-item_info_build=rtmp://lb.newsko.co.uk/redirect/%s swfUrl=http://www.udemy.com/static/flash/player5.9.swf live=1 timeout=15 swfVfy=1 pageUrl=http://www.newsko.co.uk
+item_info_build=http://www.newsko.co.uk/embed.php?channel=%s&vw=650&vh=460&domain=www.cv55.eu
+
+item_info_name=tmp
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*?SWFObject\(['"]([^'"]+)['"].*?['"]file['"][:,]\s*['"]([^'"]+)['"].*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@','swf|file|rtmp')
+item_info_build=%s
+
+item_info_name=url
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' live=1 timeout=14 swfVfy=1 pageUrl=' + pageUrl
+item_info_build=%s
+
+
+
+
+#item_info_name=url
+#item_info_from=@PARAM1@
+#item_info_convert=getInfo('http://www.newsko.co.uk/securetoken.php?id=%s','.*?rtmp":"([^'"]+).*',' http://www.newsko.co.uk')
+#item_info_build=%s

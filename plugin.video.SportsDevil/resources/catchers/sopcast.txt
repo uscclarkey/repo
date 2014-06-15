@@ -1,14 +1,13 @@
-#http://forum.xbmc.org/showthread.php?tid=100031&pid=1088944#pid1088944
+@IF(@PLATFORM@==Linux)@
 
 item_info_name=title
 item_info_from=@PARAM1@
-item_info_build=SopCast - %s
+item_info_build=SopCast [%s] - XSopCast Addon
 
 item_info_name=type
-@IF(@PLATFORM@==Linux)@item_info_build=command@ENDIF@
-@IF(@PLATFORM@!=Linux)@item_info_build=video@ENDIF@
+item_info_build=command
 
 item_info_name=url
 item_info_from=@PARAM1@
-@IF(@PLATFORM@==Linux)@item_info_build=RunPlugin("plugin://plugin.video.xsopcast/?sop=sop://broker.sopcast.com:3912/%s&mode=2&name=Sopcast&iconimage=special://home/addons/plugin.video.x-sopcast/icon.png")@ENDIF@
-@IF(@PLATFORM@!=Linux)@item_info_build=sop://broker.sopcast.com:3912/%s@ENDIF@
+item_info_build=RunPlugin("plugin://plugin.video.xsopcast/?sop=sop://broker.sopcast.com:3912/%s&mode=2&name=Sopcast&iconimage=special://home/addons/plugin.video.x-sopcast/icon.png")
+@ENDIF@

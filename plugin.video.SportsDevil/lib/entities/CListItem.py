@@ -30,7 +30,7 @@ class CListItem(object):
     def __str__(self):
         txt = ''
         for key in self.infos.keys():
-            txt += string.ljust(key, 15) + ':\t' + self[key] + '\n'
+            txt += str(string.ljust(key, 15)) + ':\t' + str(self[key]) + '\n'
         return txt
     
 

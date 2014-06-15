@@ -1,26 +1,19 @@
 item_info_name=title
 item_info_from=@PARAM1@
-item_info_build=HideCast - %s
+item_info_build=Zingo - %s
 
+item_info_name=pageUrl
+item_info_from=@PARAM1@
+item_info_build=http://zingo.tv/watch.php?id=%s
+
+item_info_name=tmp
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*file:\s*"([^'"]+).*','@REFERER@')
+item_info_build=%s
 
 item_info_name=url
-item_info_from=@PARAM1@
-item_info_build=rtmpe://31.7.59.98:443/liveedge1/%s swfUrl=http://hidecast.com/jwplayer/jwplayer.flash.swf pageUrl=http://hidecast.com live=true swfVfy=1
-
-
-#item_info_name=pageUrl
-#item_info_from=@PARAM1@
-#item_info_build=http://hidecast.com/gen_s.php?id=%s&width=640&height=390
-
-#item_info_name=tmp
-#item_info_from=pageUrl
-#item_info_convert=getInfo('%s','.*file:\s*"([^'"]+).*','@REFERER@')
-#item_info_build=%s
-
-
-#item_info_name=url
-#item_info_from=tmp + ' swfUrl=http://hidecast.com/jwplayer/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
-#item_info_build=%s
+item_info_from=tmp + ' swfUrl=http://zingo.tv/jwplayer/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_build=%s
 
 
 

@@ -14,10 +14,10 @@ item_info_build=%s
 
 item_info_name=swf
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*flashplayer[:,]\s*['"]([^'"]+)['"].*','%s')
+item_info_convert=getInfo('%s','.*flash', src[:,]\s*['"]([^'"]+)['"].*','%s')
 item_info_build=%s
 
-item_info_name=rtmp
+item_info_name=rtmp.tmp
 item_info_from=pageUrl
 item_info_convert=getInfo('%s','.*streamer[:,]\s*['"]([^'"]+)['"].*','%s')
 item_info_build=%s
@@ -27,6 +27,16 @@ item_info_from=pageUrl
 item_info_convert=getInfo('%s','.*file[:,]\s*['"]([^'"]+).flv['"].*','%s')
 item_info_build=%s
 
+item_info_name=rtmp
+item_info_from=rtmp.tmp
+item_info_convert=replace('%s','\','')
+item_info_build=%s
+
+item_info_name=app
+item_info_from=rtmp
+item_info_convert=parseText('%s','.*.*rtmp://[\.\w:]*/([^\s]+)')
+item_info_build=%s
+
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + file + ' swfUrl=http://player.ilive.to/player_ilive_embed.swf live=1 token=I8772LDKksadhGHGagf# timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp + ' app=' + app + ' playpath=' + file + ' swfUrl=' + swf + ' live=1 timeout=15 token=' + token + ' swfVfy=1 pageUrl=http://www.ilive.to
 item_info_build=%s

@@ -20,7 +20,7 @@
 
 <addon
   id="plugin.video.SportsDevil"
-  version="1.8.5.7"
+  version="1.8.6.9"
   name="SportsDevil"
   provider-name="MaxMustermann">
   <requires>

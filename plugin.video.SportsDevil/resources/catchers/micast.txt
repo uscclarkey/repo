@@ -4,7 +4,7 @@ item_info_build=MiCast - %s
 
 item_info_name=url
 item_info_from=@PARAM1@
-item_info_build=rtmp://93.174.93.50/liveedge/%s swfurl=http://micast.tv/jwplayer/jwplayer.flash.swf pageurl=http://micast.tv live=1
+item_info_build=rtmp://89.248.168.21:443/liveedge/%s swfurl=http://micast.tv/jwplayer/jwplayer.flash.swf pageurl=http://micast.tv live=1
 
 
 

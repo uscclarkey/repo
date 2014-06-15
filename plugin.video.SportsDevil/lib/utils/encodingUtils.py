@@ -317,15 +317,15 @@ def clean1(s): # remove &XXX;
             s = s.replace(u'&' + name + u';', value)
     return s;
 
+re_clean2 = re.compile(r'\\u(....)', re.DOTALL)
 def clean2(s): # remove \\uXXX
-    pat = re.compile(r'\\u(....)', re.DOTALL)
     def sub(mo):
         try:
             return unichr(int(mo.group(1), 16))
         except:
             return mo
     try:
-        return pat.sub(sub, smart_unicode(s))
+        return re_clean2.sub(sub, smart_unicode(s))
     except:
         return s
 
@@ -337,14 +337,14 @@ def decodeRawUnicode(s): # remove \\uXXX
             return char
         except:
             return None
-    
+
     uni = smart_unicode(s)
     result = re.split(ur"[\u200b\s]+", uni)
     uni = ''.join(result)
-    
+
     uChars = uni[2:]
     uChars = uChars.split('\\u')
-    
+
     result = u''
     for c in uChars:
         ch = sub(c)
@@ -352,17 +352,17 @@ def decodeRawUnicode(s): # remove \\uXXX
             result += ch
         else:
             result += c
-    
+
     return result
 
+re_clean3 = re.compile(r'&#(\d+);')
 def clean3(s): # remove &#XXX;
-    pat = re.compile(r'&#(\d+);')
     def sub(mo):
         try:
             return unichr(int(mo.group(1)))
         except:
             return mo
-    return decode(pat.sub(sub, smart_unicode(s)))
+    return decode(re_clean3.sub(sub, smart_unicode(s)))
 
 def decode(s):
     if not s:

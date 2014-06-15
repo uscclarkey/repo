@@ -13,5 +13,5 @@ item_info_build=%s
 
 
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + file + ' token=' + token + ' swfUrl=http://p.jwpcdn.com/6/6/jwplayer.flash.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.poong.tv
+item_info_from=rtmp + '' + file + '/playlist.m3u8 
 item_info_build=%s

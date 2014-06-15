@@ -4,34 +4,18 @@ item_info_build=iCastHD - %s
 
 item_info_name=pageUrl
 item_info_from=@PARAM1@
-item_info_build=http://www.icasthd.tv/embed.php?v=%s&vw=530&vh=400&domain=www.igoal.tv
-
-item_info_name=swf
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?['"]flashplayer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
-item_info_build=%s
-
-item_info_name=rtmp.tmp
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
-item_info_build=%s
-
+item_info_build=http://www.kbps.tv/embed.php?s=%s&width=600&height=450&domain=pogotv.eu
 
 item_info_name=file
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+item_info_convert=getInfo('%s','.*?file:\s*["']([^'"]+).*','@REFERER@')
 item_info_build=%s
 
-#item_info_name=rtmp
-#item_info_from=rtmp.tmp
-#item_info_convert=replace('%s','edge.icasthd.com:1935/redirect3','edge.icasthd.com:1935/live')
-#item_info_build=%s
-
-item_info_name=app
+item_info_name=rtmp
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?\?Ticket=([^'"]+).*','@REFERER@')
+item_info_convert=getInfo('%s','.*?streamer[:,]\s*['"]([^'"]+)['"].*','@REFERER@')
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp.tmp + ' app=live?Ticket=' + app + ' playpath=' + file + ' swfUrl=' + swf + ' live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=http://www.kbps.tv/jl/player.swf live=true swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s

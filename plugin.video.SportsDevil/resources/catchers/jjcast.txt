@@ -6,21 +6,24 @@ item_info_name=pageUrl
 item_info_from=@PARAM1@
 item_info_build=http://jjcast.com/player.php?stream=%s&width=640&height=385
 
-item_info_name=rtmp
+item_info_name=tmp
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+item_info_convert=getInfo('%s','.*?j i=[^\s]+ [^\s]+\(\)([^i]+)i.g.*','@REFERER@')
 item_info_build=%s
 
 item_info_name=file
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
-item_info_build=%s
-
-item_info_name=swf
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?['"]flashplayer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+item_info_from=tmp
+item_info_convert=replace('%s','p q()','')
+item_info_convert=replace('%s','m l()','')
+item_info_convert=replace('%s',';h.g(\'','')
+item_info_convert=replace('%s','\')','')
+item_info_convert=replace('%s',';','')
+item_info_convert=quote('%s')
+item_info_convert=replace('%s','%2527','')
+item_info_convert=unquote('%s')
+item_info_convert=unquote('%s')
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp://streamspot.jjcast.com:1935/redirect playpath=' + file + ' swfUrl=http://jjcast.com' + swf + ' live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp://93.115.7.59/redirects playpath=' + file + ' swfUrl=http://jjcast.com/jplayer.swf live=1 timeout=11 swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s

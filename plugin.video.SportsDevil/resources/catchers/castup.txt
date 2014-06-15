@@ -9,7 +9,7 @@ item_info_build=http://www.castup.tv/embed.php?channel=%s&vw=650&vh=460
 
 item_info_name=url
 item_info_from=@PARAM1@
-item_info_build=rtmpe://cdn.castup.me:1935/redirect/%s swfUrl=http://www.udemy.com/static/flash/player5.9.swf live=1 token=#@8x12pX@!x@# timeout=15 swfVfy=1 pageUrl=http://www.castup.tv
+item_info_build=rtmpe://cdn.castup.tv:80/redirect/%s swfUrl=http://www.castup.me/player/pl.swf live=1 token=#@8x12pX@!x@# timeout=15 swfVfy=1 pageUrl=http://www.castup.tv
 
 
 #item_info_name=tmp

@@ -12,5 +12,5 @@ item_info_convert=getInfo('%s','.*?file=([^"'&]+).*?streamer=([^"'&]+).*','@REFE
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + file + ' swfUrl=http://www.ppcast.net/swfs/player.swf live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp + ' app=live/' + file + ' swfUrl=http://www.ppcast.net/swfs/player.swf live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s

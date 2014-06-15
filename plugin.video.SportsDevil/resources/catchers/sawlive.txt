@@ -8,9 +8,11 @@ item_info_build=http://www.sawlive.tv/embed/%s
 
 item_info_name=tmp
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*watch/([^"']+).*','@REFERER@')
-item_info_convert=replace('%s','|iframe','')
-item_info_convert=replace('%s','|','/')
+item_info_convert=getInfo('%s','.*?400[\|/]([^"'\|/]+).*?watch[\|/]([^"'\|/]+).*','@REFERER@','key1|key2')
+item_info_build=%s
+
+item_info_name=tmp2
+item_info_from=key2 + '/' + key1 + '
 item_info_convert=getInfo('http://sawlive.tv/embed/watch/%s','.*?SWFObject\('([^']+)'.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@','swf|file|rtmp')
 item_info_build=%s
 

@@ -1,6 +1,6 @@
 item_info_name=tmp
 item_info_from=@PARAM1@
-item_info_convert=getInfo('%s','.*fid="([^"]+)','@REFERER@')
+item_info_convert=getInfo('http://www.castup.me/channel.php?id=%s','.*fid="([^"]+)','http://www.watcha.eu')
 item_info_build=%s
 
 item_info_name=title
@@ -9,11 +9,11 @@ item_info_build=EmbedTV - %s
 
 item_info_name=pageUrl
 item_info_from=tmp
-item_info_build=http://www.castup.tv/embed.php?channel=%s&vw=650&vh=460
+item_info_build=http://www.castup.me/embed.php?channel=%s&vw=650&vh=460
 
 item_info_name=tmp2
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*'([^']+\.swf)'.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','http://www.embed-tv.eu/','swf|file|rtmp')
+item_info_convert=getInfo('%s','.*'([^']+\.swf)'.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','http://www.castup.me','swf|file|rtmp')
 item_info_build=%s
 
 item_info_name=rtmp
@@ -22,5 +22,5 @@ item_info_convert=replace('%s','/redirect',':1935/redirect')
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' live=1 token=#@8x12pX@!x@# timeout=10 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=http://www.castup.me' + swf + ' live=1 token=#@8x12pX@!x@# timeout=10 swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s

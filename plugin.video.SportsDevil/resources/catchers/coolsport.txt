@@ -23,7 +23,7 @@ item_info_convert=getInfo('%s','.*?id='([^'"]+).*?src=['"]([^'"]+\.js).*','http:
 item_info_build=%s
 
 item_info_name=pageUrl
-item_info_from=http://featve.com/player' + tmp2 + '.php?id=' + ide + '&width=640&height=467
+item_info_from=http://filotv.pw/player' + tmp2 + '.php?id=' + ide + '&width=640&height=467
 item_info_build=%s
 
 item_info_name=tmp6

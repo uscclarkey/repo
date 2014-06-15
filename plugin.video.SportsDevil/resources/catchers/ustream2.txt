@@ -1,5 +1,6 @@
 item_info_name=channelid
 item_info_from=@PARAM1@
+#item_info_convert=debug
 item_info_convert=parseText('%s','.*cid=([^&]+)')
 item_info_build=%s
 
