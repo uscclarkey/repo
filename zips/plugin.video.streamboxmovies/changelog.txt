@@ -1,3 +1,6 @@
+v1.0.7
+fixed script error
+
 v1.0.6
 Update for gotham
 
