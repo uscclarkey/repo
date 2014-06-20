@@ -1,3 +1,6 @@
+v1.2
+edited login screen
+
 v1.1
 Update for Gotham
 

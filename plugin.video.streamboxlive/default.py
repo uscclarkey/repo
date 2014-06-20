@@ -14,7 +14,7 @@ api ='http://www.filmon.com/api/'
 
 if ADDON.getSetting('user')=='':
         dialog = xbmcgui.Dialog()
-        xbmcgui.Dialog().ok('StreamBox Live','Now StreamBox Live Needs Your FilmOn User Details To Work','The Next Screen Will Get You To Input These','If You Havent Got A Filmon Account go to the StreamBox Live page of www.streamboxlive.wordpress.com and click the create account link')
+        xbmcgui.Dialog().ok('StreamBox Live','StreamBox Live Needs Your Film0n user Details','If You Haven't Got A Film0n Account go to the StreamBox Live page of','www.streamboxlive.wordpress.com and click create account')
 if ADDON.getSetting('user')=='':
         search_entered = ''
         keyboard = xbmc.Keyboard(search_entered, 'Please Enter Email Address')
