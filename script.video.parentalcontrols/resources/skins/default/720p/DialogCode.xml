@@ -1,0 +1,80 @@
+<window id="109">
+	<defaultcontrol always="true">21</defaultcontrol>
+	<include>dialogeffect</include>
+	<coordinates>
+		<system>2</system>
+		<posx>480</posx>
+		<posy>145</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>320</width>
+			<height>300</height>
+			<texture border="40">DialogBack.png</texture>
+		</control>
+		<control type="image">
+			<description>Dialog Header image</description>
+			<posx>40</posx>
+			<posy>16</posy>
+			<width>240</width>
+			<height>40</height>
+			<texture>dialogheader.png</texture>
+		</control>
+		<control type="image">
+			<posx>30</posx>
+			<posy>70</posy>
+			<width>260</width>
+			<height>50</height>
+			<aspectratio>stretch</aspectratio>
+			<texture border="20">KeyboardEditArea.png</texture>
+		</control>
+		<control type="label" id="4">
+			<description>Edit Text</description>
+			<posx>35</posx>
+			<posy>70</posy>
+			<width>250</width>
+			<height>50</height>
+			<font>font13</font>
+			<textcolor>selected</textcolor>
+			<disabledcolor>grey2</disabledcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+		</control>
+		<control type="image">
+			<posx>40</posx>
+			<posy>120</posy>
+			<width>240</width>
+			<height>30</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>dialogheader.png</texture>
+		</control>
+		<control type="label" id="1">
+			<description>dialog Heading</description>
+			<posx>20</posx>
+			<posy>20</posy>
+			<width>280</width>
+			<height>35</height>
+			<font>font12_title</font>
+			<textcolor>selected</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+			<wrapmultiline>true</wrapmultiline>
+            <label>Enter Combo</label>
+		</control>
+		<control type="label" id="2">
+			<description>dialog line 1</description>
+			<posx>30</posx>
+			<posy>160   </posy>
+			<width>280</width>
+			<height>100</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>Press any combination of up, down, left, and right.  Press Enter/OK when done, or Menu/Back to cancel</label>
+            <wrapmultiline>true</wrapmultiline>
+			<font>font13</font>
+		</control>
+	</controls>
+</window>
