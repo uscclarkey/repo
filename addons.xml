@@ -154,7 +154,7 @@
        version="3.7.8"
        provider-name="Navi-X team">
   <requires>
-    <import addon="xbmc.python" version="1.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script"
              library="default.py" />
@@ -162,7 +162,7 @@
     <platform>all</platform>
     <minversion>28764</minversion>
     <summary lang="en">Media browser</summary>
-    <description lang="en">Media browser</description>
+    <description lang="en">Media browser. Frodo only. Go to the Navi-X section of [COLOR blue]www.streamboxlive.wordpress.com[/COLOR] for instructions.</description>
   </extension>
 </addon>
 
