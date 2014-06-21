@@ -1,0 +1,93 @@
+version=1
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+title=StreamBox Live!
+logo=http://1.bp.blogspot.com/-lggoOmUrLh4/UYQIAOML57I/AAAAAAAAHaE/bdtYDC_Dr3w/s1600/LIVE.png
+icon_playlist=http://1.bp.blogspot.com/-lggoOmUrLh4/UYQIAOML57I/AAAAAAAAHaE/bdtYDC_Dr3w/s1600/LIVE.png
+description=when streams go down I will find some working links as soon as possible.
+
+A selection of the most popular live streams from the UK and some USA. 
+
+ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com
+
+/description
+
+# 2124204
+type=playlist
+name=[COLOR=FFFFFF00]StreamBox UK TV Guide![/COLOR]
+thumb=http://sa.aos.ask.com/us/fi/pl/tv-guide-2013.jpg
+URL=http://www.navixtreme.com/playlist/130734/streambox_uk_tv_guide.plx
+player=default
+rating=-1.00
+
+# 2218157
+type=rss:
+name=[COLOR=FFFFFF00]UK Channels[/COLOR]
+thumb=http://www.2cuk.co.uk/wp-content/uploads/2011/10/uk-flag-3.jpg
+URL=http://pastebin.com/raw.php?i=9TNd9rU8
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+
+# 2218220
+type=rss:
+name=[COLOR=FFFFFF00]Sports[/COLOR]
+thumb=http://www.bbc.co.uk/blogs/parents/sport.jpg
+URL=http://pastebin.com/raw.php?i=wXBNKM9D
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+
+# 2218509
+type=rss:
+name=[COLOR=FFFFFF00]USA Channels[/COLOR]
+thumb=http://flag-metomorphoses.net/wp-content/uploads/2011/03/USA-flag.jpg
+URL=http://pastebin.com/raw.php?i=BJuhQTV0
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+
+# 2218512
+type=rss:
+name=[COLOR=FFFFFF00]Music[/COLOR]
+thumb=http://6269-9001.zippykid.netdna-cdn.com/wp-content/uploads/2013/08/Musical-Wallpaper.jpg
+URL=http://pastebin.com/raw.php?i=xvawXhm8
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+
+# 2218714
+type=rss:
+name=[COLOR=FFFFFF00]Kids[/COLOR]
+thumb=http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2008/02/20/spongebobmain.jpg
+URL=http://pastebin.com/raw.php?i=7BeAzKPX
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+
+# 2219593
+type=rss:
+name=[COLOR=FFFFFF00]News[/COLOR]
+thumb=http://4.bp.blogspot.com/-FIGoJgAXiaI/Utbk5xp9CBI/AAAAAAAADnY/1orEctmUQHQ/s1600/breaking-news1.png
+URL=http://pastebin.com/raw.php?i=waegF5gT
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+
+# 2218181
+type=rss:
+name=[COLOR=FFFFFF00]Radio[/COLOR]
+thumb=http://healthwatchman.com/wp-content/uploads/2012/04/20090313-radio1.jpg
+URL=http://pastebin.com/raw.php?i=1rKypSfc
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00

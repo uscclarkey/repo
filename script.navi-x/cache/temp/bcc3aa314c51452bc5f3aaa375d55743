@@ -1,0 +1,123 @@
+version=7
+background=http://media.navi-x.org/images/backgrounds/bkg_navix_bh_plain.jpg
+title=navi-xtreme [COLOR=FF888888]»[/COLOR] search for "streambox"
+logo=http://media.navi-x.org/images/logos/search.png
+
+
+type=playlist
+name=StreamBox
+thumb=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+date=2014-06-10
+URL=http://www.navixtreme.com/playlist/129965/streambox.plx
+description=ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com
+
+/description
+
+type=playlist
+name=StreamBox Live!
+thumb=http://1.bp.blogspot.com/-lggoOmUrLh4/UYQIAOML57I/AAAAAAAAHaE/bdtYDC_Dr3w/s1600/LIVE.png
+URL=http://www.navixtreme.com/playlist/121915/streambox_live.plx
+description=when streams go down I will find some working links as soon as possible.
+
+A selection of the most popular live streams from the UK and some USA. 
+
+ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com
+
+/description
+
+type=playlist
+name=StreamBox Movies!
+thumb=https://cdn.shopify.com/s/files/1/0233/6235/t/8/assets/buy-movies.jpg?405669
+date=2014-06-10
+URL=http://www.navixtreme.com/playlist/126378/streambox_movies.plx
+description=All the latest movies and a selection of my favorite movies. For FREE of corse! And all good quality!
+
+No crappy CAMS here!
+
+ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com
+
+/description
+
+type=playlist
+name=StreamBox UK TV Guide!
+thumb=http://sa.aos.ask.com/us/fi/pl/tv-guide-2013.jpg
+URL=http://www.navixtreme.com/playlist/130734/streambox_uk_tv_guide.plx
+description=[COLOR=FFFFFF00]TV GUIDE FOR UK CHANNELS. 
+
+All TIMES ARE SET TO GMT.[/COLOR]/description
+
+type=rss
+name=2/7 StreamBox Programs! (StreamBox)
+thumb=http://www.teachingchildrenmanners.com/wp-content/uploads/2011/08/Children-and-Adult-TV-Programs.jpg
+date=2014-02-07
+URL=http://pastebin.com/raw.php?i=sk9D7v5N
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+description=A selection of programs playing every episode from every series over and over 24/7.
+
+ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com/description
+
+type=video
+name=12/31 National Geographic (Streambox &lt; Streambox Live!) (navi-xtreme  -  latest media entries  -  page 42version=7)
+thumb=http://images.nationalgeographic.com/wpf/sites/common/i/presentation/NGLogo560x430-cb1343821768.png
+date=2013-12-31
+URL=rtmp://ny.premiumcdnlive.com/edge playpath=6kbqdmtkhgteyku swfUrl=http://player.ilive.to/secure_player_embed_z.swf live=1 pageUrl=http://www.ilive.to/embedplayer.php live=1 token=I8772LDKksadhGHGagf
+player=default
+rating=-1.00
+
+type=video
+name=12/31 Sky Crime & Thriller (Streambox &lt; Streambox Live!) (navi-xtreme  -  latest media entries  -  page 42version=7)
+thumb=http://www.lyngsat-logo.com/hires/ss/sky_uk_movies_crime_thriller_hd.png
+date=2013-12-31
+URL=rtmp://ny.premiumcdnlive.com/edge playpath=e20wd40c9cg0r8z swfUrl=http://player.ilive.to/secure_player_embed_z.swf live=1 pageUrl=http://www.ilive.to/embedplayer.php live=1 token=I8772LDKksadhGHGagf
+player=default
+rating=-1.00
+
+type=video
+name=12/31 Nickelodeon (Streambox &lt; Streambox Live!) (navi-xtreme  -  latest media entries  -  page 42version=7)
+thumb=http://postgradproblems.com/wp-content/uploads/2013/06/b773a3e92f8dcbc8abdda6e75885bddd.jpg
+date=2013-12-31
+URL=rtmp://live.iguide.to/edge playpath=hxoq929n5q4a9u3 swfUrl=http://player.ilive.to/player_ilive_2.swf live=1 timeout=15 swfVfy=1 pageUrl=http://www.ilive.to/embedplayer.php?width=640&height=400&channel=52987&autoplay=true token=I8772LDKksadhGHGagf#
+player=default
+rating=-1.00

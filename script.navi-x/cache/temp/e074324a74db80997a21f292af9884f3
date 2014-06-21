@@ -1,0 +1,198 @@
+###start###
+
+<item>
+<title>Sky Sports 1</title>
+<link>rtmp://37.220.36.70:443/liverepeater/23697 swfurl=http://97ff0e7e610f20512dbe-483e6ce63d68aeb3d05af6c054efb801.r29.cf1.rackcdn.com/atdedead.swf live=1 pageurl=http://1cdn.filotv.pw/ss1.html token=#atd%#$ZH</link>
+<thumb>http://tvnewsroom.co.uk/wp-content/section-images/sky-sports-1-ident-2010/Sky%20Sports%201%20Ident%20201024.jpg</thumb>
+</ítem>
+
+<item>
+<title>Sky Sports 2</title>
+<link>rtmp://37.220.36.68:443/liverepeater/33698 swfurl=http://97ff0e7e610f20512dbe-483e6ce63d68aeb3d05af6c054efb801.r29.cf1.rackcdn.com/atdedead.swf live=1 pageurl=http://1cdn.filotv.pw/ss1.html token=#atd%#$ZH</link>
+<thumb>http://tvnewsroom.co.uk/wp-content/section-images/sky-sports-2-ident-2010/Sky%20Sports%202%20Ident%20201005.jpg</thumb>
+</ítem>
+
+<item>
+<title>Sky Sports 3</title>
+<link>rtmp://37.220.36.70:443/liverepeater/23699 swfurl=http://97ff0e7e610f20512dbe-483e6ce63d68aeb3d05af6c054efb801.r29.cf1.rackcdn.com/atdedead.swf live=1 pageurl=http://1cdn.filotv.pw/ss1.html token=#atd%#$ZH</link>
+<thumb>http://tvnewsroom.co.uk/wp-content/section-images/sky-sports-3-ident-2010/TVnewsroom-2010-01-24-20h56m28s206.jpg</thumb>
+<ítem>
+
+<item>
+<title>Sky Sports 4</title>
+<link>rtmp://37.220.36.70:443/liverepeater/23700 swfurl=http://97ff0e7e610f20512dbe-483e6ce63d68aeb3d05af6c054efb801.r29.cf1.rackcdn.com/atdedead.swf live=1 pageurl=http://1cdn.filotv.pw/ss1.html token=#atd%#$ZH</link>
+<thumb>http://tvnewsroom.co.uk/wp-content/section-images/sky-sports-4-ident-2010/Sky%20Sports%204%20Ident%20201012.jpg</thumb>
+</ítem>
+
+<item>
+<title>Sky Sports F1</title>
+<link>http://87.120.6.188:9987/udp/239.100.0.143:1234</link>
+<thumb>http://www.theidentgallery.com/skysports/2012/SKYS-2012-BB-F1-1-8.jpg</thumb>
+</ítem>
+
+<item>
+<title>Sky Sports News</title>
+<link>http://87.120.6.188:9987/udp/239.100.0.145:1234</link>
+<thumb></thumb>
+</ítem>
+
+<item>
+<title>BT Sports 1</title>
+<link>rtmp://31.220.0.195:1935/live playpath=bt1x swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://www.eucast.tv/embed.php?live=b1r&vw=620&vh=490 live=1</link>
+<thumb>http://i.telegraph.co.uk/multimedia/archive/02646/btsport-mic_2646664b.jpg</thumb>
+</ítem>
+
+<item>
+<title>BT Sports 2</title>
+<link>rtmp://31.220.0.195:1935/live playpath=bt2x swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://www.eucast.tv/embed.php?live=b1r&vw=620&vh=490 live=1</link>
+<thumb>http://m.thedrum.com/uploads/drum_basic_article/108674/main_images/Screen%20Shot%202013-05-09%20at%2012.16.24_0.png</thumb>
+</ítem>
+
+<item>
+<title>Eurosport UK</title>
+<link>http://149.255.39.122/aasd/8814/index.m3u8</link>
+<thumb>http://ing-sat.what.hu/images/logo-insert/satlogos/russia/384-EuroSport[1].jpg</thumb>
+</ítem>
+
+<item>
+<title>Sports Tonight</title>
+<link>rtmp://freeview.fms.visionip.tv/live playpath=sports_tonight-sports_tonight-live-25f-16x9-SD?ref=www.sportstonightlive.com&USER=STL_0001 swfUrl=http://embeddedplayer.visionip.tv/data/swf/f22ee95bcec532c04146635a1a1adf00559/player.swf</link>
+<thumb>http://sim.in.com/62/eb208a3c3b20508831b1ea9137c57476_ft_m.jpg</thumb>
+</ítem>
+
+# 2268100
+type=video
+name=bein sport 15 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b15293 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268098
+type=video
+name=bein sport 14 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b14598 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268096
+type=video
+name=bein sport 13 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b13925 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268092
+type=video
+name=bein sport 12 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b12405 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268090
+type=video
+name=bein sport 11 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b11405 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268089
+type=video
+name=bein sport 10 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b10659 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268086
+type=video
+name=bein sport 9 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b9525 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268084
+type=video
+name=bein sport 8 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b8461 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268081
+type=video
+name=bein sport 7 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b7171 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268079
+type=video
+name=bein sport 6 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b6449 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268075
+type=video
+name=bein sport 5 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=b5578 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268072
+type=video
+name=bein sport 4 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=4679 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268070
+type=video
+name=bein sport 3 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=3812 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268068
+type=video
+name=bein sport 2 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=1b2117 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+# 2268067
+type=video
+name=bein sport 1 arabia
+thumb=http://2.bp.blogspot.com/-MK-l4fi-0ME/UrjPn8azS3I/AAAAAAAAJS8/KX1-ivxX5pM/s1600/img_1338969358_268+copy.jpg
+date=2014-06-10
+URL=rtmpe://185.56.28.204:443/c0be82e1442e7169a9a358db47fcafcb app=c0be82e1442e7169a9a358db47fcafcb playpath=1b1264 swfUrl=http://xuscacamusca.se/MjVmNGRmODg4OTU4ZTFhZjZmZTM5ZGNk/jwplayer.flash.swf live=1 pageUrl=http://xuscacamusca.se/ timeout=20
+player=default
+rating=-1.00
+
+###end###

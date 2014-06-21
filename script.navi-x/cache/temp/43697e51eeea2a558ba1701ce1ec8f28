@@ -1,0 +1,112 @@
+version=1
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+title=StreamBox
+logo=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+description=ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com
+
+/description
+
+# 2107461
+type=playlist
+name=StreamBox Live!
+thumb=http://1.bp.blogspot.com/-lggoOmUrLh4/UYQIAOML57I/AAAAAAAAHaE/bdtYDC_Dr3w/s1600/LIVE.png
+URL=http://www.navixtreme.com/playlist/121915/streambox_live.plx
+player=default
+rating=-1.00
+
+# 2219852
+type=playlist
+name=StreamBox Movies!
+thumb=https://cdn.shopify.com/s/files/1/0233/6235/t/8/assets/buy-movies.jpg?405669
+URL=http://www.navixtreme.com/playlist/126378/streambox_movies.plx
+player=default
+rating=-1.00
+
+# 2218018
+type=rss:
+name=StreamBox Programs!
+thumb=http://www.teachingchildrenmanners.com/wp-content/uploads/2011/08/Children-and-Adult-TV-Programs.jpg
+URL=http://pastebin.com/raw.php?i=sk9D7v5N
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+description=A selection of programs playing every episode from every series over and over 24/7.
+
+ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com/description
+
+# 2124203
+type=playlist
+name=StreamBox UK TV Guide!
+thumb=http://sa.aos.ask.com/us/fi/pl/tv-guide-2013.jpg
+URL=http://www.navixtreme.com/playlist/130734/streambox_uk_tv_guide.plx
+player=default
+rating=-1.00
+
+# 2153093
+type=playlist
+name=StreamBox Adult!
+thumb=http://maninhispyjamas.com/wp-content/uploads/2013/09/adult.jpg
+URL=http://www.navixtreme.com/playlist/129966/streambox_adult.plx
+player=default
+rating=-1.00
+
+# 2107715
+type=
+name=[COLOR=FFFFFF00]- - - - - - - - - - Navi-X Shortcuts - - - - - - - - - -[/COLOR]
+player=default
+rating=-1.00
+
+# 2107719
+type=playlist
+name=Most-Viewes in 24H
+URL=http://www.navixtreme.com/playlist/day.plx
+player=default
+rating=1.00
+
+# 2107722
+type=playlist
+name=Most-Viewes This Week
+URL=http://www.navixtreme.com/playlist/week.plx
+player=default
+rating=-1.00
+
+# 2107912
+type=playlist
+name=Recently Updated
+URL=http://www.navixtreme.com/playlist/update.plx
+player=default
+rating=-1.00
+
+# 2107913
+type=playlist
+name=New Entries
+URL=http://www.navixtreme.com/playlist/new.plx
+player=default
+rating=-1.00
+
+# 2107914
+type=playlist
+name=Search Navi-X
+URL=http://www.navixtreme.com/plx/search.plx
+player=default
+rating=-1.00

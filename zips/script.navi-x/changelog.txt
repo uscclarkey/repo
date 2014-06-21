@@ -1,0 +1,267 @@
+Navi-X Changelog:
+
+-------------------------------------------------------------------------------
+3.7.8
+
+-modified CFileLoader.py; readMetaData was throwing syntax error on XBMC4Xbox
+-NIPL interpreter modifications
+  * normalized line parsing
+  * rebuilt flow control engine from ground up (if/elseif/else/endif/while/endwhile logic)
+
+-------------------------------------------------------------------------------
+3.7.5
+
+Moved primary portal domain to navixtreme.com
+
+-------------------------------------------------------------------------------
+3.7.4
+
+NIPL updates:
+-added "literal_eval" function for safely converting strings into dictionary objects
+-added "data" property to lists and entries - to be used for python dictionaries
+-nested "if" statements now supported in NIPL
+-fixed issue with "None" type values returned by regex captures with alternation
+
+Downloader updates:
+-eliminated multiple server queries for megaupload / megavideo entries
+-implemented XBMC-style custom headers - URL|header1=val1&header2=val2&...
+-improved extension detection
+  * accurately determines extension from processed Youtube videos
+  * added a "safety net" which will fall back to an ".avi" extension if the parsed extension is too long
+
+General:
+-replaced deprecated os.getcwd() with xbmcaddon.Addon.getAddonInfo('path') for upcoming XBMC eden release
+
+-------------------------------------------------------------------------------
+3.7.3
+
+New:
+-multiple conditions per if/elseif statement
+-"error" method accepts a variable as an argument
+-CURLLoader.urlopen, CPlayer.play, and CPlayer.play_URL return an object instead of a single integer as their result.
+ This enables the following (so far - infinitely more flexible setup):
+    processors can produce custom error messages
+    processors can redirect to a playlist from a type=video/audio (will allow captcha-handling processors)
+
+-------------------------------------------------------------------------------
+3.7.2
+
+-"countdown" method added to NIPL interpreter
+-bug fix in elseif logic
+
+-------------------------------------------------------------------------------
+3.7.1
+
+-Backspace fixed for XBMC 11.
+-RSS parsing fix.
+
+-------------------------------------------------------------------------------
+3.7
+
+CREATE FOLDERS INSIDE THE FAVORITE LIST:
+Navi-X 3.7 allows you to create new folders inside the favorite list. You can e.g. 
+create different folders for movies, music, podcasts, etc.
+Folders can be created by selecting the option menu inside the favorite list. 
+Items can be moved between folders using cut and paste.
+
+IMPROVED DATE INFORMATION TAG:
+Playlists entries can have an optional date= information tag. In previous versions
+of Navi-X only the date could be indicated. In Navi-X 3.7 also the time can be indicated.
+Navi-X 3.7 will show the NEW information tag using hour accuracy (e.g. NEW 3 hours ago).
+date=yyy-mm-dd hh:mm:ss
+
+NEW PLAYLIST ATTRIBUTE "infotag":
+Navi-X 3.7 supports a new playlist attribute called "infotag". The info tag is a short string
+which is displayed at the right side of the list. The info tag e.g. can be used to indicate 
+the duration of a video or the bitrate of an audio stream. 
+
+RSS FEED DATE INFORMATION:
+In Navi-X 3.7 the publication date of each entry is displayed on the right side of the screen.
+The date is no longer displayed as part of the entry title.
+
+NAVI-XTREME SIGNING IN:
+The sign in dialog for Navi-Xtreme has been removed due to a number of reported problems.
+The sign in now uses standard XBMC text keyboard input fields.
+
+OTHER MINOR IMPROVEMENTS:
+-New "add favorite option" in right side screen menu.
+-If items are blocked using parental control then Navi-X automatically asks to enter a 
+new password in case no password has been set before.
+-New default background image.
+
+-------------------------------------------------------------------------------
+3.6
+
+-Panel view support (not for xbox).
+-Moved the Navi-X media portal to the Navi-Xtreme website. Visit Navi-Xtreme at http://navix.turner3d.net/.
+-Added play and download option to right side menu.
+-Minor bug fixes.
+
+-------------------------------------------------------------------------------
+3.5.4
+
+-New processor features to access more content (thanks to Turner3D);
+-Download Apple movie trailers support;
+-Set background properties (see Background context menu);
+-Minor bug fixes.
+
+-------------------------------------------------------------------------------
+3.5.1
+
+-Fixed creating of shortcut in XBMC Dharma
+-NEW: Download Speed Test. New option in the Download menu to test the 
+download/stream speed of the current selected media item.
+-NEW: Download speed indication during download.
+
+-------------------------------------------------------------------------------
+3.5
+
+-Youtube update. Fixed searching option. Added selection of next page.
+-File download improvements. Added retry option after download fails.
+-Continue downloading at start-up if download queue is not empty.
+-A number of UI improvements.
+
+-------------------------------------------------------------------------------
+3.4.3
+
+-Youtube fix.
+-Display the media source of a selected mediaitem.
+-Display download file size in Browse window.
+-Use video as background image when video is still playing.
+-Updated the installer to support XBMC Dharma.
+-Small Updates to the 720p XML file.
+
+-------------------------------------------------------------------------------
+3.4.2
+
+-Dharma Addon support.
+
+-------------------------------------------------------------------------------
+3.3
+
+-(NEW) FTP support: 
+  FTP URL according RFC 1738: ftp://user:password@host:port/path
+  Use 'type=directory' to browse a FTP-directory. 
+  Use e.g. 'type=video', type=audio' to point to a single FTP file.
+  Downloading of FTP files is also supported.
+
+-URLLoader update (credits to turner)
+-Fixed the HTTP download resume option.
+-Fixed issue with saving Navi-X settings at shutdown.
+-Added processor support in html_youtube playlists.
+
+-------------------------------------------------------------------------------
+3.2.1
+
+-URLLoader update (credits to turner)
+-Fixed the download resume option.
+-Fixed issue with saving Navi-X settings at shutdown.
+-Added processor support in html_youtube playlists.
+-Stability fix: Modified setting of the socket default timeout. Race condition.
+
+-------------------------------------------------------------------------------
+3.1.2
+
+-Fixed Youtube parser (next page select issue);
+-Added new media type 'window' that allows activation of XBMC windows while Navi-X
+is running in the background;
+-Minor fixes RSS parser;
+
+-------------------------------------------------------------------------------
+3.1
+
+-A complete new Navi-X skin based on XBMC Transparency
+ skin;
+
+-New URL loader to support the new Navi-X Instructional Processor Language, NIPL. (credits to Turner);
+-Fixed overlapping text in twitter feeds;
+-Improved text viewer. Added spinner controls for faster browsing;
+-Added scrollbar on right side of the screen.
+-Other minor fixes.
+
+-------------------------------------------------------------------------------
+3.0.1
+
+-Fixed RSS parser.
+-Fix for Apple movie trailers and XBMC 9.11. Added user agent support.
+
+-------------------------------------------------------------------------------
+2.9.3
+
+-Number of GUI changes;
+-Added cut/paste support in favorite list to make organising easier;
+-Fixed parser for flick daily interesting foto;
+-Improved exception handling for improve Navi-X stability;
+
+-------------------------------------------------------------------------------
+2.9
+
+-Improved the shoutcast parser. A auto retry mechanism has been added.
+-RSS: The link attribute is used in case the processor is set.
+-Processor: Updated the processor code. The processor now also works for file download.
+-Textview: Implemented text scrolling using up/down keys.  
+-Added skin media type. Allows installation of skins.
+-Added setting of the media type for rss feed files.
+-Added setting of the processor for plx and rss feed files.
+-Solved browse button failure.
+-Player: Solved play autonext in XBMC 9.04
+-Installer: Solved script/plugin installer in XBMC 9.04
+
+-------------------------------------------------------------------------------
+2.3
+
+-Added new playlist "description=" element. Description can be multiple lines.
+ The description shall be put in the header field above the playlist entries.
+ Description shall start with text "description=".
+ Description SHALL end with text "/description=". 
+-Youtube parser: added Youtube playlists support.
+-Youtube parser fix.
+-Youtube long video name display.
+-Improved caching for a better user experience.
+-Apple movie trailer parser fix.
+-Other minor improvements.
+
+-------------------------------------------------------------------------------
+2.0.1
+
+- Fixed Youtube parser according site changes.
+
+-------------------------------------------------------------------------------
+2.0
+
+- Youtube: Switched to high resolution mode. Also download possible.
+- Added search history. Remembers last searches.
+- Updated context menu options (Play... and View...).
+- Added view mode option in menu: Ascencding/Descencing
+- Play using menu accessible via Y-button.
+- Move items up and down the favorite list.
+- New playlist option called 'playmode. Example: 
+   playmode=autonext #plays all entries in playlist
+
+-------------------------------------------------------------------------------
+1.9.3
+- Started development again.
+- Added download resume support.
+- Added Apple movie trailer support.
+- Added new media type called 'directory'. This type retrieves all PLX-files
+  from a given local directory including sub-directories.
+- Added parsing of RSS new feeds. Link to HTML file cannot be opened.
+- Extended youtube search. Added sorting option.
+
+-------------------------------------------------------------------------------
+1.9.2
+
+- Improved caching of playlists and images to improve UI performance.
+- Slightly increased the top left user logo.
+- Moved to new server www.navi-x.nl
+
+-------------------------------------------------------------------------------
+1.9
+
+- New default skin based on Mayhem III.
+- QuickSilverScreen support.
+- Shoutcast support including search function.
+- All skinning is now handled in new skin.py file.
+  Makes the skin independent of the core functionality. 
+
+-------------------------------------------------------------------------------

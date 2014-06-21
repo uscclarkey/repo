@@ -1,0 +1,32 @@
+version=1
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+title=Streambox Adult!
+logo=http://maninhispyjamas.com/wp-content/uploads/2013/09/adult.jpg
+icon_playlist=http://maninhispyjamas.com/wp-content/uploads/2013/09/adult.jpg
+description=[COLOR=FFFFFF00]* Warning! Adult content, Viewers MUST! be 18+ *[/COLOR]
+
+ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+/description
+
+# 2106978
+type=
+name=[COLOR=FFFFFF00]* * *  Warning! Adult content, Viewers MUST! be 18+ * * *[/COLOR]
+URL=http://
+player=default
+rating=-1.00
+
+# 2219601
+type=rss:
+name=StreamBox Adult!
+thumb=http://maninhispyjamas.com/wp-content/uploads/2013/09/adult.jpg
+URL=http://pastebin.com/raw.php?i=Vd3Cytv1
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
