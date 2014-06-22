@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.1.1/53.16 -- Jan van Straaten" generator-info-url="http://www.webgrabplus.com">
   <channel id="FTV Guide">
-    <display-name lang="en">Clarkey EPG</display-name>
+    <display-name lang="en">FTV Guide</display-name>
   </channel>
   <channel id="BBC One">
     <display-name lang="en">BBC One</display-name>
@@ -24,7 +24,7 @@
     <url>http://www.theguardian.com</url>
   </channel>
   <channel id="Sky One">
-    <display-name lang="en">Sky One</display-name>
+    <display-name lang="en">Sky One*</display-name>
     <url>http://www.theguardian.com</url>
   </channel>
   <channel id="BBC 3">
@@ -479,8 +479,8 @@
     <display-name lang="en">WSFL HDTV</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
-  <channel id="WFUN Am�rica Teve">
-    <display-name lang="en">WFUN Am�rica Teve</display-name>
+  <channel id="WFUN Am?rica Teve">
+    <display-name lang="en">WFUN Am?rica Teve</display-name>
     <url>http://www.tvguide.com</url>
   </channel>
   <channel id="WMOR HDTV">
@@ -782,28 +782,28 @@
     <display-name lang="en">VoA Persian TV</display-name>
     <url>http://www.filmon.com</url>
   </channel>
-  <programme start="20140613000000 +0100" stop="20140613235900 +0100" channel="FTV Guide">
-    <title lang="en">Welcome to the Clarkey EPG</title>
-    <desc lang="en">Welcome to the Clarkey EPG, brought to you by those lovely people at XBMCHub.com!.</desc>
+  <programme start="20140621000000 +0100" stop="20140621235900 +0100" channel="FTV Guide">
+    <title lang="en">Welcome to the FTV Guide</title>
+    <desc lang="en">Welcome to the FTV Guide, brought to you by those lovely people at XBMCHub.com!.</desc>
   </programme>
-  <programme start="20140614000000 +0100" stop="20140614235900 +0100" channel="FTV Guide">
-    <title lang="en">Welcome to the Clarkey EPG</title>
-    <desc lang="en">Welcome to the Clarkey EPG, brought to you by those lovely people at XBMCHub.com!.(n)</desc>
+  <programme start="20140622000000 +0100" stop="20140622235900 +0100" channel="FTV Guide">
+    <title lang="en">Welcome to the FTV Guide</title>
+    <desc lang="en">Welcome to the FTV Guide, brought to you by those lovely people at XBMCHub.com!.(n)</desc>
   </programme>
-  <programme start="20140613002000 +0100" stop="20140613002500 +0100" channel="BBC One">
-    <title lang="en">Holiday Weatherview</title>
+  <programme start="20140621015000 +0100" stop="20140621015500 +0100" channel="BBC One">
+    <title lang="en">Weatherview</title>
     <category lang="en">Weather</category>
     <subtitles />
   </programme>
-  <programme start="20140613002500 +0100" stop="20140613060000 +0100" channel="BBC One">
+  <programme start="20140621015500 +0100" stop="20140621060000 +0100" channel="BBC One">
     <title lang="en">BBC News</title>
     <desc lang="en">The latest national and international stories as they break.</desc>
     <category lang="en">News</category>
     <subtitles />
   </programme>
-  <programme start="20140613060000 +0100" stop="20140613091500 +0100" channel="BBC One">
+  <programme start="20140621060000 +0100" stop="20140621100000 +0100" channel="BBC One">
     <title lang="en">Breakfast</title>
-    <desc lang="en">Round-up of national and international news, plus the latest from the money markets.</desc>
+    <desc lang="en">A round-up of national and international news, plus sports reports, weather forecasts and arts and entertainment features Including NewsWatch at 745.</desc>
     <category lang="en">National News</category>
     <category lang="en">International News</category>
     <category lang="en">General Social</category>
@@ -811,268 +811,67 @@
     <category lang="en">Economics</category>
     <subtitles />
   </programme>
-  <programme start="20140613091500 +0100" stop="20140613100000 +0100" channel="BBC One">
-    <title lang="en">Crimewatch Roadshow</title>
-    <sub-title lang="en">Series 6. Episode 5/20</sub-title>
-    <desc lang="en">Rav Wilding and Sian Lloyd present live from Northamptonshire, joining the county's police force and finding out how they use body-worn cameras to crack down on street crime They also report on how officers are targeting shops selling alcohol to children, and Rav appeals for viewers' help to catch the men who robbed a family at gunpoint.</desc>
-    <category lang="en">General News</category>
-    <category lang="en">Current Affairs</category>
-    <episode-num system="onscreen">S6E5/20</episode-num>
-    <subtitles />
-  </programme>
-  <programme start="20140613100000 +0100" stop="20140613110000 +0100" channel="BBC One">
-    <title lang="en">Homes under the Hammer</title>
-    <sub-title lang="en">Series 15. Episode 100/100</sub-title>
-    <desc lang="en">Developers Lucy Alexander and Martin Roberts visit a three-bed end-of-terrace in Darlington, Co Durham, a property in Fulham, west London, and a two-bed terraced house in Burnley, Lancashire, before the buildings are sold at auction.</desc>
-    <category lang="en">DIY</category>
-    <episode-num system="onscreen">S15E100/100</episode-num>
-    <previously-shown />
-    <subtitles />
-  </programme>
-  <programme start="20140613110000 +0100" stop="20140613113000 +0100" channel="BBC One">
-    <title lang="en">Claimed and Shamed</title>
-    <sub-title lang="en">Series 3. Episode 5/10</sub-title>
-    <desc lang="en">A fake insurance company nets almost £500,000 by targeting the elderly - but after two major sting operations, 14 people are put behind bars Elsewhere, a fraudulent personal injury claim for nearly £1million is dismissed after surveillance footage reveals the truth, and a driver's insurance claim hits a snag thanks to CCTV evidence from a bus.</desc>
-    <category lang="en">General Education</category>
-    <category lang="en">Science</category>
-    <category lang="en">Factual Topics</category>
-    <episode-num system="onscreen">S3E5/10</episode-num>
-    <subtitles />
-  </programme>
-  <programme start="20140613113000 +0100" stop="20140613121500 +0100" channel="BBC One">
-    <title lang="en">The Legalizer</title>
-    <sub-title lang="en">Series 1. Episode 5/5</sub-title>
-    <desc lang="en">Gary Bell looks at the case of Zahida Altaf, from Huddersfield, who suffers from cerebral palsy She bought a mobility scooter from a local dealer and when it broke down she returned it for him to fix - but never saw the item or her money again In Wales, the QC comes to the aid of Joanna Chapelle, who ordered a camper van that arrived months later and was nowhere near up to scratch Last in the series.</desc>
-    <category lang="en">General Education</category>
-    <category lang="en">Science</category>
-    <category lang="en">Factual Topics</category>
-    <episode-num system="onscreen">S1E5/5</episode-num>
-    <previously-shown />
-    <subtitles />
-  </programme>
-  <programme start="20140613121500 +0100" stop="20140613130000 +0100" channel="BBC One">
-    <title lang="en">Bargain Hunt</title>
-    <sub-title lang="en">Epsom/Dorking 21</sub-title>
-    <desc lang="en">Charlie Ross and Catherine Southon lend their expertise to two teams of enthusiasts searching for valuables at an antiques and collectibles fair at Epsom Downs Racecourse in Surrey Plus, Tim Wonnacott sets out to uncover the fascinating story behind a painting at Petworth House in West Sussex.</desc>
-    <category lang="en">Game Show</category>
-    <category lang="en">Quiz</category>
-    <category lang="en">Antiques</category>
-    <category lang="en">Collectibles</category>
-    <episode-num system="onscreen">S34E29/32</episode-num>
-    <previously-shown />
-    <subtitles />
-  </programme>
-  <programme start="20140613130000 +0100" stop="20140613133000 +0100" channel="BBC One">
-    <title lang="en">BBC News; Weather</title>
-    <category lang="en">News</category>
-    <category lang="en">Weather</category>
-    <subtitles />
-  </programme>
-  <programme start="20140613133000 +0100" stop="20140613134500 +0100" channel="BBC One">
-    <title lang="en">BBC Regional News and Weather</title>
-    <category lang="en">Regional News</category>
-    <category lang="en">Weather</category>
-    <subtitles />
-  </programme>
-  <programme start="20140613134500 +0100" stop="20140613141500 +0100" channel="BBC One">
-    <title lang="en">Doctors</title>
-    <sub-title lang="en">Baby Chain</sub-title>
-    <desc lang="en">Niamh gets involved in a family dispute when a surrogate mother changes her mind about keeping her baby Meanwhile, Heston wants to confide in Emma about his senior moments, but she is distracted by Adam, who takes over her house with a yoga class.</desc>
-    <category lang="en">Soap</category>
-    <category lang="en">Melodrama</category>
-    <category lang="en">Folkloric</category>
-    <episode-num system="onscreen">S16E41/219</episode-num>
-    <subtitles />
-  </programme>
-  <programme start="20140613141500 +0100" stop="20140613150000 +0100" channel="BBC One">
-    <title lang="en">Perfection</title>
-    <desc lang="en">Nick Knowles hosts the general knowledge quiz in which contestants can win a rolling jackpot that starts at £1,000, but only by achieving perfection If they fail in their attempt, the money is carried over to create a bigger cash prize in the following game.</desc>
-    <category lang="en">Game Show</category>
-    <category lang="en">Quiz</category>
-    <previously-shown />
-    <subtitles />
-  </programme>
-  <programme start="20140613150000 +0100" stop="20140613153000 +0100" channel="BBC One">
-    <title lang="en">Escape to the Country</title>
-    <sub-title lang="en">Perth and Kinross</sub-title>
-    <desc lang="en">Alistair Appleton travels to rural Perthshire to help find a home for a Glasgow-based couple who want to give their young twins a slice of country life While scouring the area for properties that meet a £500,000 budget, the host visits one of Queen Victoria's favourite retreats.</desc>
-    <category lang="en">DIY</category>
-    <episode-num system="onscreen">S14E14/75</episode-num>
-    <previously-shown />
-    <subtitles />
-  </programme>
-  <programme start="20140613153000 +0100" stop="20140613163000 +0100" channel="BBC One">
-    <title lang="en">Hairy Bikers' Best of British</title>
-    <sub-title lang="en">1960s</sub-title>
-    <desc lang="en">Si King and Dave Myers reflect on the 1960s, a decade of music, fashion and food trends that are still around today They prepare steak Diane and profiteroles, meet a restaurateur who made eating out trendy and look back on a time when the motorway cafe was the height of sophisticated dining for some.</desc>
-    <category lang="en">Cooking</category>
-    <episode-num system="onscreen">S2E18/20</episode-num>
-    <previously-shown />
-    <subtitles />
-  </programme>
-  <programme start="20140613163000 +0100" stop="20140613171500 +0100" channel="BBC One">
-    <title lang="en">Antiques Road Trip</title>
-    <sub-title lang="en">Series 8. Episode 30/30</sub-title>
-    <desc lang="en">Experts James Braxton and Helen Hall conclude their road trip, beginning in Hampstead, north-west London, before stopping off in Brighton, East Sussex, en route to an auction in Lewes Last in the series.</desc>
-    <category lang="en">Antiques</category>
-    <category lang="en">Collectibles</category>
-    <episode-num system="onscreen">S8E30/30</episode-num>
-    <subtitles />
-  </programme>
-  <programme start="20140613171500 +0100" stop="20140613180000 +0100" channel="BBC One">
-    <title lang="en">Pointless</title>
-    <sub-title lang="en">Series 11. Episode 36/55</sub-title>
-    <desc lang="en">Quiz show in which pairs of contestants try to score the fewest points possible by giving the least obvious correct answers to questions posed to 100 people before the show At the end of each round, the team with the most points is eliminated until the final two pairs battle for the chance to compete for a cash prize Presented by Alexander Armstrong and Richard Osman.</desc>
-    <category lang="en">Game Show</category>
-    <category lang="en">Quiz</category>
-    <episode-num system="onscreen">S11E36/55</episode-num>
-    <subtitles />
-  </programme>
-  <programme start="20140613180000 +0100" stop="20140613183000 +0100" channel="BBC One">
-    <title lang="en">BBC News</title>
-    <category lang="en">News</category>
-    <subtitles />
-  </programme>
-  <programme start="20140613183000 +0100" stop="20140613190000 +0100" channel="BBC One">
-    <title lang="en">BBC London News</title>
-    <category lang="en">Regional News</category>
-    <subtitles />
-  </programme>
-  <programme start="20140613190000 +0100" stop="20140613193000 +0100" channel="BBC One">
-    <title lang="en">EastEnders</title>
-    <desc lang="en">Roxy is puzzled by what she saw between Aleks and Ronnie last night, so she questions her sister - but when that does no good, she goes snooping around her boyfriend's bedroom in search of answers Having finally got a new lead, Peter and Lauren continue their investigation into Lucy's death, only to find themselves in a risky situation Denise returns home from holiday, only to find Ian no better than when she left, Phil starts making business decisions behind Sharon's back and Shirley doubts Tina's loyalty to Tosh.</desc>
-    <category lang="en">Soap</category>
-    <category lang="en">Melodrama</category>
-    <category lang="en">Folkloric</category>
-    <subtitles />
-  </programme>
-  <programme start="20140613193000 +0100" stop="20140613221000 +0100" channel="BBC One">
-    <title lang="en">Match of the Day Live</title>
-    <sub-title lang="en">Spain v Netherlands</sub-title>
-    <desc lang="en">(Kick-off 800pm) Coverage of the opening World Cup Group B match for both teams, which takes place at the Arena Fonte Nova in Salvador, Brazil Spain enter the tournament as the reigning champions after beating the Netherlands in the 2010 World Cup final in South Africa What was expected to be a showpiece contest turned into an ill-tempered affair that produced 14 yellow cards, and saw Dutch player Johnny Heitinga sent off following a second booking in extra time, shortly before Spain produced a winner through Andres Iniesta This evening's fixture could prove to be another cagey encounter, especially as both nations will be eager to start the campaign with a positive result, as they attempt to navigate their passage to the knockout stage from a group that also includes Australia and Chile While the Spanish side will be among the favourites for glory once again after winning their last three major tournaments and reaching the final of the Confederations Cup in Brazil last year, the Dutch will fancy their chances after going undefeated in the qualifying campaign, winning nine of their 10 fixtures Presented by Gary Lineker.</desc>
-    <category lang="en">Sport</category>
-    <category lang="en">World Cup</category>
-    <category lang="en">Football - International</category>
-    <category lang="en">Football</category>
-    <category lang="en">Soccer</category>
-    <premiere />
-    <subtitles />
-  </programme>
-  <programme start="20140613221000 +0100" stop="20140613223500 +0100" channel="BBC One">
-    <title lang="en">BBC News</title>
-    <category lang="en">News</category>
-    <subtitles />
-  </programme>
-  <programme start="20140613223500 +0100" stop="20140613224500 +0100" channel="BBC One">
-    <title lang="en">BBC Regional News and Weather</title>
-    <category lang="en">Regional News</category>
-    <category lang="en">Weather</category>
-    <subtitles />
-  </programme>
-  <programme start="20140613224500 +0100" stop="20140613233000 +0100" channel="BBC One">
-    <title lang="en">The Graham Norton Show</title>
-    <sub-title lang="en">Series 15. Episode 11/13</sub-title>
-    <desc lang="en">The host is joined in the studio by Hollywood star Samuel L Jackson, Oscar-nominated actress Keira Knightley and Formula One ace Jenson Button for more light-hearted chat Kasabian provide the music ahead of their headline slot at Glastonbury later this month, and the host subjects more audience members to the dreaded red chair - so their stories had better be good.</desc>
-    <category lang="en">Talk Show</category>
-    <category lang="en">Comedy</category>
-    <episode-num system="onscreen">S15E11/13</episode-num>
-    <subtitles />
-  </programme>
-  <programme start="20140613233000 +0100" stop="20140614000000 +0100" channel="BBC One">
-    <title lang="en">Uncle</title>
-    <sub-title lang="en">Favourites</sub-title>
-    <desc lang="en">Over a family lunch hosted by Errol's grandmother Joan (Hadyn Gwynne), Andy desperately tries to retain his bond with his nephew when Errol's other `cool' uncle, Rex, returns home from holiday Meanwhile, Sam and Ben hit a snag in their custody battle, Errol learns he has a secret admirer, and Andy cannot help feeling tense around Joan Comedy, .(n)</desc>
-    <credits>
-      <actor>Nick Helm</actor>
-      <actor>Elliot Speller-Gillott. Previously shown on BBC3</actor>
-    </credits>
-    <category lang="en">Sitcom</category>
-    <episode-num system="onscreen">S1E4/6</episode-num>
-    <subtitles />
-  </programme>
-  <programme start="20140614000000 +0100" stop="20140614015500 +0100" channel="BBC One">
-    <title lang="en">EastEnders</title>
-    <desc lang="en">Omnibus Cora warns Peter that searching for Lucy's mystery cab driver is too dangerous, so Lauren ends up going off alone - and when her friend is unable to get hold of her, he reluctantly turns to Max for help Sonia is put in an awkward position when Tosh reveals she knows what the nurse has been up to with her girlfriend Tina, while Sharon's preoccupation with the bar is causing tension to mount between her and Phil Aleks buys Roxy a fancy necklace to apologise for not taking their relationship seriously, while on the market he proves he's capable of bending a few rules by allowing Bianca to sell dodgy fake tan - for a cut of the profits.(n)</desc>
-    <category lang="en">Soap</category>
-    <category lang="en">Melodrama</category>
-    <category lang="en">Folkloric</category>
-    <subtitles />
-  </programme>
-  <programme start="20140614015500 +0100" stop="20140614020000 +0100" channel="BBC One">
-    <title lang="en">Weatherview</title>
-    <category lang="en">Weather</category>
-    <subtitles />
-  </programme>
-  <programme start="20140614020000 +0100" stop="20140614060000 +0100" channel="BBC One">
-    <title lang="en">BBC News</title>
-    <desc lang="en">The latest national and international stories as they break.(n)</desc>
-    <category lang="en">News</category>
-    <subtitles />
-  </programme>
-  <programme start="20140614060000 +0100" stop="20140614090000 +0100" channel="BBC One">
-    <title lang="en">Breakfast</title>
-    <desc lang="en">A round-up of national and international news, plus sports reports, weather forecasts and arts and entertainment features Including NewsWatch at 745.(n)</desc>
-    <category lang="en">National News</category>
-    <category lang="en">International News</category>
-    <category lang="en">General Social</category>
-    <category lang="en">Political Issues</category>
-    <category lang="en">Economics</category>
-    <subtitles />
-  </programme>
-  <programme start="20140614090000 +0100" stop="20140614103000 +0100" channel="BBC One">
+  <programme start="20140621100000 +0100" stop="20140621113000 +0100" channel="BBC One">
     <title lang="en">Saturday Kitchen Live</title>
-    <desc lang="en">Host James Martin is joined by guest chefs John Williams and Michael Caines.(n)</desc>
+    <desc lang="en">James Martin is joined in the studio by chefs Vivek Singh and Jason Atherton, along with three-time Formula One world champion and former team owner Jackie Stewart, who faces either food heaven or food hell Plus, the presenter introduces highlights from Celebrity MasterChef and The Greedy Italians, and wine expert Susy Atkins chooses drinks to match the dishes.</desc>
     <category lang="en">Cooking</category>
     <premiere />
     <subtitles />
   </programme>
-  <programme start="20140614103000 +0100" stop="20140614130500 +0100" channel="BBC One">
-    <title lang="en">Trooping the Colour</title>
-    <desc lang="en">Huw Edwards and Suzi Perry introduce live coverage of the military ceremony at Horse Guards Parade in Whitehall, central London, where the Queen's Colour of Nijmegen Company, Grenadier Guards, is trooped to mark Elizabeth II's official birthday.(n)</desc>
-    <category lang="en">General Education</category>
-    <category lang="en">Science</category>
-    <category lang="en">Factual Topics</category>
+  <programme start="20140621113000 +0100" stop="20140621120000 +0100" channel="BBC One">
+    <title lang="en">Paul Hollywood's Pies &amp; Puds</title>
+    <sub-title lang="en">Series 1. Episode 1/20</sub-title>
+    <desc lang="en">The baker rustles up some traditional treats, featuring classic pies and puddings He is joined by pastry chef Falko, who shows him how to make an apple strudel, before the roles are reversed as Paul prepares gypsy tart and corned-beef hash.</desc>
+    <category lang="en">Cooking</category>
+    <episode-num system="onscreen">S1E1/20</episode-num>
+    <previously-shown />
     <subtitles />
   </programme>
-  <programme start="20140614130500 +0100" stop="20140614132000 +0100" channel="BBC One">
+  <programme start="20140621120000 +0100" stop="20140621121500 +0100" channel="BBC One">
     <title lang="en">BBC News; Weather</title>
     <category lang="en">News</category>
     <category lang="en">Weather</category>
     <subtitles />
   </programme>
-  <programme start="20140614132000 +0100" stop="20140614160000 +0100" channel="BBC One">
-    <title lang="en">Tennis from Queen's</title>
-    <sub-title lang="en">Semi-Finals</sub-title>
-    <desc lang="en">The AEGON Championships Sue Barker introduces coverage of the semi-finals of the Wimbledon warm-up event, held at the Queen's Club in London, where Andy Murray was victorious last year Murray came through a tough semi-final against Jo-Wilfried Tsonga 12 months ago to set up a final against Marin Cilic, who defeated Lleyton Hewitt to continue the defence of his title Coverage continues on BBC2.(n)</desc>
+  <programme start="20140621121500 +0100" stop="20140621160000 +0100" channel="BBC One">
+    <title lang="en">Live Athletics</title>
+    <sub-title lang="en">Day One</sub-title>
+    <desc lang="en">The European Team Championships Jonathan Edwards presents coverage of the opening day at the Eintracht Stadion in Braunschweig, Germany, where disciplines include the opening heats in the men's and women's 100m, as Britain look to improve on last year's third-place finish With commentary by Steve Cram, Ronald McIntosh, Mike Costello and Paula Radcliffe, analysis by Denise Lewis and Colin Jackson, and reports by Phil Jones.</desc>
     <category lang="en">Sport</category>
-    <category lang="en">Tennis</category>
-    <subtitles />
-  </programme>
-  <programme start="20140614160000 +0100" stop="20140614163000 +0100" channel="BBC One">
-    <title lang="en">Match of the Day</title>
-    <sub-title lang="en">Preview</sub-title>
-    <desc lang="en">A look ahead to this evening's opening World Cup Group D match between England and Italy, which takes place at the Arena Amazonia in Manaus, Brazil, featuring interviews with the players and managers, and a tactical analysis of the fixture Presented by Gary Lineker and Dan Walker.(n)</desc>
-    <category lang="en">Sport</category>
-    <category lang="en">Football</category>
-    <category lang="en">Soccer</category>
-    <subtitles />
-  </programme>
-  <programme start="20140614163000 +0100" stop="20140614191000 +0100" channel="BBC One">
-    <title lang="en">Match of the Day Live</title>
-    <sub-title lang="en">Colombia v Greece</sub-title>
-    <desc lang="en">(Kick-off 500pm) Coverage of the opening World Cup match for both teams, as Group C commences with this clash at the Estadio Mineirao in Belo Horizonte, Brazil Greece are making just their third appearance at a World Cup finals, and they will be looking to progress beyond the group stage for the first time having failed to do so at both the 1994 and 2010 tournaments Their record in qualifying was exceptional, winning eight and drawing one of their 10 fixtures, but they still had to settle for second place behind Bosnia-Herzegovina by virtue of an inferior goal difference, and so had to come through a two-legged play-off against Romania to book their place in Brazil Colombia also qualified in good fashion, finishing second in the CONMEBOL region to Argentina, and ahead of Chile, Ecuador and Uruguay While their home form was a major factor during that campaign, they did manage to claim four victories on the road, as well as a valuable draw away to the Argentinians, although they are without star striker Radamel Falcao due to injury Presented by Gary Lineker.(n)</desc>
-    <credits>
-      <actor>Kevin Kilbane</actor>
-    </credits>
-    <category lang="en">Sport</category>
-    <category lang="en">World Cup</category>
-    <category lang="en">Football - International</category>
-    <category lang="en">Football</category>
-    <category lang="en">Soccer</category>
+    <category lang="en">Athletics</category>
     <premiere />
     <subtitles />
   </programme>
-  <programme start="20140614191000 +0100" stop="20140614193000 +0100" channel="BBC One">
+  <programme start="20140621160000 +0100" stop="20140621164500 +0100" channel="BBC One">
+    <title lang="en">Bargain Hunt</title>
+    <sub-title lang="en">Peterborough 21</sub-title>
+    <desc lang="en">The competition heads to Peterborough, where Charlie Ross ignores his own advice and the red team fails to pay heed to Thomas Plant's words of wisdom Meanwhile, Tim Wonnacott travels to Exeter, where he visits the Royal Albert Memorial Museum.</desc>
+    <category lang="en">Game Show</category>
+    <category lang="en">Quiz</category>
+    <category lang="en">Antiques</category>
+    <category lang="en">Collectibles</category>
+    <episode-num system="onscreen">S32E8/32</episode-num>
+    <previously-shown />
+    <subtitles />
+  </programme>
+  <programme start="20140621164500 +0100" stop="20140621180000 +0100" channel="BBC One">
+    <title lang="en">Formula 1 - Austrian Grand Prix: Qualifying</title>
+    <desc lang="en">Suzi Perry presents highlights of the session from the eighth round of the season at the Red Bull Ring in Spielberg This is the first time Austria has hosted a Grand Prix since 2003, when the likes of current drivers Kimi Raikkonen, Fernando Alonso and Jenson Button were among the field With commentary by Ben Edwards and David Coulthard.</desc>
+    <category lang="en">Sport</category>
+    <category lang="en">Formula One</category>
+    <subtitles />
+  </programme>
+  <programme start="20140621180000 +0100" stop="20140621183000 +0100" channel="BBC One">
+    <title lang="en">Celebrity Mastermind</title>
+    <sub-title lang="en">Series 11. Episode 5/10</sub-title>
+    <desc lang="en">John Humphrys tests the knowledge of more famous faces Citizen Khan star Adil Ray, TV doctor Mark Porter, comedy actor Kevin Eldon and one half of Rizzle Kicks Jordan Stephens answer questions on Fawlty Towers, the history of the Porsche 911, the music of the Beatles and the life and times of Ross Geller from Friends.</desc>
+    <category lang="en">Game Show</category>
+    <category lang="en">Quiz</category>
+    <episode-num system="onscreen">S11E5/10</episode-num>
+    <previously-shown />
+    <subtitles />
+  </programme>
+  <programme start="20140621183000 +0100" stop="20140621185000 +0100" channel="BBC One">
     <title lang="en">BBC News; Regional News and Weather</title>
     <category lang="en">General News</category>
     <category lang="en">Current Affairs</category>
@@ -1080,41 +879,215 @@
     <category lang="en">Weather</category>
     <subtitles />
   </programme>
-  <programme start="20140614193000 +0100" stop="20140614202000 +0100" channel="BBC One">
-    <title lang="en">Pointless Celebrities</title>
-    <sub-title lang="en">Series 5. Episode 10/12</sub-title>
-    <desc lang="en">Alexander Armstrong and Richard Osman challenge more famous faces to plumb the depths of their general knowledge The teams are Coronation Street star Jennie McAlpine (Fiz) and radio DJ Justin Moorhouse, impressionists Alistair McGowan and Kate Robbins, Kate's comedian brother Ted Robbins and fellow funnyman Mark Little, and husband-and-wife TV presenters Trey Farley and Katy Hill.(n)</desc>
+  <programme start="20140621185000 +0100" stop="20140621193000 +0100" channel="BBC One">
+    <title lang="en">A Question of Sport: Super Saturday</title>
+    <sub-title lang="en">Series 1. Episode 1/5</sub-title>
+    <desc lang="en">New series Jason Manford presents this spin-off of the light-hearted quiz to coincide with the World Cup.</desc>
     <category lang="en">Game Show</category>
     <category lang="en">Quiz</category>
-    <episode-num system="onscreen">S5E10/12</episode-num>
-    <previously-shown />
+    <episode-num system="onscreen">S1E1/5</episode-num>
     <subtitles />
   </programme>
-  <programme start="20140614202000 +0100" stop="20140614211000 +0100" channel="BBC One">
-    <title lang="en">The National Lottery: In It to Win It</title>
-    <sub-title lang="en">Series 16. Episode 10/10</sub-title>
-    <desc lang="en">Dale Winton hosts the quiz in which five contestants pit their wits to scoop a big cash prize Only those in the winners' row will have a chance of taking home the loot, so they will need to get all the answers right - as well as a little bit of luck on their side Gaby Roslin presents the Lotto and Thunderball draws Last in the series.(n)</desc>
-    <category lang="en">Game Show</category>
-    <category lang="en">Quiz</category>
-    <episode-num system="onscreen">S16E10/10</episode-num>
+  <programme start="20140621193000 +0100" stop="20140621221000 +0100" channel="BBC One">
+    <title lang="en">Match of the Day Live</title>
+    <sub-title lang="en">Germany v Ghana</sub-title>
+    <desc lang="en">(Kick-off 800pm) Coverage of the second World Cup Group G match for both sides, which comes from the Estadio Castelao in Fortaleza, Brazil Germany have already thrashed Portugal 4-0 in their opener.</desc>
+    <category lang="en">Sport</category>
+    <category lang="en">World Cup</category>
+    <category lang="en">Football - International</category>
+    <premiere />
     <subtitles />
   </programme>
-  <programme start="20140614211000 +0100" stop="20140614220000 +0100" channel="BBC One">
-    <title lang="en">Casualty</title>
-    <sub-title lang="en">Unhinged</sub-title>
-    <desc lang="en">A man with dementia is brought in after suffering a bump to the head, and after giving the staff the runaround he finally settles down thanks to Connie But as his condition worsens, can she save him? Jeff and Tamzin are called out to a party where the boiler has exploded, putting intense pressure on an already busy department as an influx of revellers turn in the ED Ethan and Rita suspect one of the partygoers of being bulimic, while a frustrated father is forced to leave without his ill son being seen Next week's episode is on Sunday.(n)</desc>
-    <category lang="en">Soap</category>
-    <category lang="en">Melodrama</category>
-    <category lang="en">Folkloric</category>
-    <category lang="en">General Movie</category>
-    <category lang="en">Drama</category>
-    <episode-num system="onscreen">S28E41/48</episode-num>
-    <subtitles />
-  </programme>
-  <programme start="20140614220000 +0100" stop="20140614222000 +0100" channel="BBC One">
+  <programme start="20140621221000 +0100" stop="20140621223000 +0100" channel="BBC One">
     <title lang="en">BBC News; Weather</title>
     <category lang="en">News</category>
     <category lang="en">Weather</category>
     <subtitles />
   </programme>
-</tv>
+  <programme start="20140621223000 +0100" stop="20140621224000 +0100" channel="BBC One">
+    <title lang="en">The National Lottery Live</title>
+    <desc lang="en">Jenni Falconer pushes the button to reveal the results of the Lotto and Thunderball draws.</desc>
+    <category lang="en">General Education</category>
+    <category lang="en">Science</category>
+    <category lang="en">Factual Topics</category>
+    <premiere />
+    <subtitles />
+  </programme>
+  <programme start="20140621224000 +0100" stop="20140622011000 +0100" channel="BBC One">
+    <title lang="en">Match of the Day Live</title>
+    <sub-title lang="en">Nigeria v Bosnia-Herzegovina</sub-title>
+    <desc lang="en">(Kick-off 1100pm) Coverage of the second World Cup Group F match for both nations, which takes place at the Arena Pantanal in Cuiaba, Brazil The Bosnians lost their opener 2-1 to Argentina, while Nigeria were involved in the first draw of the tournament, a dull 0-0 affair against Iran Given the relatively recent existence of Bosnia-Herzegovina as an independent state, it is little surprise that this is the first competitive meeting between the sides While Argentina are the clear favourites to top the group, both of these countries will feel confident that they can also progress to the last 16, and both have players in their squads who will be familiar to fans of the Premier League Bosnia's qualification saw them win eight of their 10 matches.(n)</desc>
+    <category lang="en">Sport</category>
+    <category lang="en">World Cup</category>
+    <category lang="en">Football - International</category>
+    <premiere />
+    <subtitles />
+  </programme>
+  <programme start="20140622011000 +0100" stop="20140622011500 +0100" channel="BBC One">
+    <title lang="en">Weatherview</title>
+    <category lang="en">Weather</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622011500 +0100" stop="20140622060000 +0100" channel="BBC One">
+    <title lang="en">BBC News</title>
+    <category lang="en">News</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622060000 +0100" stop="20140622090000 +0100" channel="BBC One">
+    <title lang="en">Breakfast</title>
+    <desc lang="en">A round-up of national and international news, plus sports reports, weather forecasts and arts and entertainment features.(n)</desc>
+    <category lang="en">National News</category>
+    <category lang="en">International News</category>
+    <category lang="en">General Social</category>
+    <category lang="en">Political Issues</category>
+    <category lang="en">Economics</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622090000 +0100" stop="20140622100000 +0100" channel="BBC One">
+    <title lang="en">The Andrew Marr Show</title>
+    <desc lang="en">Baroness Trumpington, a Member of the House of Lords, joins the host for a round-up of the week's stories and a look through the Sunday papers Including news and weather at 900.(n)</desc>
+    <category lang="en">General News</category>
+    <category lang="en">Current Affairs</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622100000 +0100" stop="20140622110000 +0100" channel="BBC One">
+    <title lang="en">Sunday Morning Live</title>
+    <desc lang="en">New series Sian Williams is joined by EastEnders star June Brown, better known as Dot Cotton - now Branning, who reveals how she wears her religious beliefs on her sleeve just like her on-screen persona Plus, the audience at home is also invited to join in the debate.(n)</desc>
+    <category lang="en">Discussion</category>
+    <category lang="en">Debate</category>
+    <premiere />
+    <subtitles />
+  </programme>
+  <programme start="20140622110000 +0100" stop="20140622121500 +0100" channel="BBC One">
+    <title lang="en">Sunday Politics</title>
+    <desc lang="en">The week's events at Westminster, presented by Andrew Neil Including news and a regional round-up.(n)</desc>
+    <category lang="en">News Magazine</category>
+    <category lang="en">Current Affairs</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622121500 +0100" stop="20140622130000 +0100" channel="BBC One">
+    <title lang="en">Bargain Hunt</title>
+    <sub-title lang="en">Devon 25</sub-title>
+    <desc lang="en">Philip Serrell and Charles Hanson offer advice to two teams of antiques-hunters as they visit Westpoint Fair in Exeter to search for collectibles to sell at auction Host Tim Wonnacott takes time out to visit Antony House in Cornwall.(n)</desc>
+    <category lang="en">Game Show</category>
+    <category lang="en">Quiz</category>
+    <category lang="en">Antiques</category>
+    <category lang="en">Collectibles</category>
+    <episode-num system="onscreen">S32E13/32</episode-num>
+    <previously-shown />
+    <subtitles />
+  </programme>
+  <programme start="20140622130000 +0100" stop="20140622131500 +0100" channel="BBC One">
+    <title lang="en">BBC News</title>
+    <category lang="en">News</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622131500 +0100" stop="20140622141000 +0100" channel="BBC One">
+    <title lang="en">Countryfile</title>
+    <sub-title lang="en">Port Talbot</sub-title>
+    <desc lang="en">The team is in Port Talbot, south Wales, where Shauna Lowry switches on the largest electricity generating waterwheel in Europe after its refurbishment, Ellie Harrison has a go at the country's fastest-growing watersport and Matt Baker goes in pursuit of an unusual animal in Margam Park Also, Tom Heap looks at predictions that more than 40 British beaches will next year be labelled as unsuitable for bathing because of new European regulations and Adam Henson meets the old boys of a little-known pre-war farm training scheme.(n)</desc>
+    <category lang="en">Nature</category>
+    <category lang="en">Animals</category>
+    <category lang="en">Environment</category>
+    <category lang="en">Rural</category>
+    <category lang="en">Agricultural</category>
+    <previously-shown />
+    <subtitles />
+  </programme>
+  <programme start="20140622141000 +0100" stop="20140622145500 +0100" channel="BBC One">
+    <title lang="en">Flog It!</title>
+    <sub-title lang="en">Kilmarnock</sub-title>
+    <desc lang="en">Experts James Lewis and David Fletcher view items brought by the public to the Prince's Theatre in Kilmarnock, East Ayrshire.(n)</desc>
+    <category lang="en">Antiques</category>
+    <category lang="en">Collectibles</category>
+    <episode-num system="onscreen">S8E37/75</episode-num>
+    <previously-shown />
+    <subtitles />
+  </programme>
+  <programme start="20140622145500 +0100" stop="20140622154000 +0100" channel="BBC One">
+    <title lang="en">Escape to the Country</title>
+    <sub-title lang="en">Worcestershire</sub-title>
+    <desc lang="en">Alistair Appleton helps a couple with a budget of ??500,000 buy their first home together in the Worcestershire countryside During his journey, Alistair travels to the Wyre Forest to meet the pigs that form part of a landscape regeneration project.(n)</desc>
+    <category lang="en">DIY</category>
+    <episode-num system="onscreen">S12E62/75</episode-num>
+    <previously-shown />
+    <subtitles />
+  </programme>
+  <programme start="20140622154000 +0100" stop="20140622155500 +0100" channel="BBC One">
+    <title lang="en">Points of View</title>
+    <desc lang="en">Jeremy Vine presents a selection of viewers' comments on BBC shows, a chance to see memorable clips, and an insight into what goes on behind the scenes of new programmes.(n)</desc>
+    <category lang="en">General Education</category>
+    <category lang="en">Science</category>
+    <category lang="en">Factual Topics</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622155500 +0100" stop="20140622163000 +0100" channel="BBC One">
+    <title lang="en">Songs of Praise</title>
+    <sub-title lang="en">Summertime</sub-title>
+    <desc lang="en">David Grant and Diane Louise Jordan head to the seaside to celebrate the British summertime, and discover the connection between one of the country's most famous holiday camps and the Church Plus, they reveal the nation's favourite hymn and explore the reasons why it continues to be a popular choice.(n)</desc>
+    <category lang="en">Folk</category>
+    <category lang="en">Traditional Music</category>
+    <category lang="en">Spiritual</category>
+    <category lang="en">Religious</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622163000 +0100" stop="20140622190500 +0100" channel="BBC One">
+    <title lang="en">Match of the Day Live</title>
+    <sub-title lang="en">Belgium v Russia</sub-title>
+    <desc lang="en">(Kick-off 500pm) Coverage of the World Cup Group H clash at the Estadio do Maracana in Rio de Janeiro, Brazil, as the sides play their second match of the group stage The last time these nations met at a World Cup finals was in 2002, when they were also paired in the same group, and an enthralling 3-2 victory for the Belgians ensured they progressed to the last 16 at the expense of Russia, although they would soon be eliminated by eventual winners Brazil Belgium have not appeared at a major tournament since then, but while the national team has been out of the global spotlight, they have used that time to develop a fine crop of players and qualified without tasting defeat, winning eight of their 10 games in the process However, things almost did not go to plan for them in the opener, as they went 1-0 down against Algeria before goals from substitutes Marouane Fellaini and Dries Mertens gave them a hard-fought win Russia have not competed at a World Cup finals themselves since 2002, and they also had to work hard in their first match, eventually earning a 1-1 draw against South Korea Presented by Gary Lineker.(n)</desc>
+    <credits>
+      <actor>Martin Keown</actor>
+    </credits>
+    <category lang="en">Sport</category>
+    <category lang="en">World Cup</category>
+    <category lang="en">Football - International</category>
+    <premiere />
+    <subtitles />
+  </programme>
+  <programme start="20140622190500 +0100" stop="20140622192500 +0100" channel="BBC One">
+    <title lang="en">BBC News; Regional News and Weather</title>
+    <category lang="en">News</category>
+    <category lang="en">Regional News</category>
+    <category lang="en">Weather</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622192500 +0100" stop="20140622201500 +0100" channel="BBC One">
+    <title lang="en">Countryfile</title>
+    <sub-title lang="en">Oxenhope</sub-title>
+    <desc lang="en">As Yorkshire gears up to host the start of the Tour de France, Countryfile is in and around the village of Oxenhope, near Bradford Ellie Harrison gets on her bike and meets an artist using the Yorkshire hills as a giant canvas and tells the tale of a world-beating woman cyclist, while John Craven meets a cyclist who has immortalised England's steepest incline in grass Tom Heap investigates the use of nicotine-based pesticides and the controversial ban on bee-killing insecticides, and Adam Henson sees how the farm-winner is getting on in Snowdonia Including Weather for the Week Ahead.(n)</desc>
+    <category lang="en">Nature</category>
+    <category lang="en">Animals</category>
+    <category lang="en">Environment</category>
+    <category lang="en">Rural</category>
+    <category lang="en">Agricultural</category>
+    <subtitles />
+  </programme>
+  <programme start="20140622201500 +0100" stop="20140622211500 +0100" channel="BBC One">
+    <title lang="en">Antiques Roadshow</title>
+    <sub-title lang="en">Sainsbury Centre Norwich 2</sub-title>
+    <desc lang="en">Fiona Bruce and the team pay a return visit to the Sainsbury Centre for Visual Arts at the University of East Anglia, Norwich, where members of the public bring along treasured antiques and collectibles to hear their stories and find out their worth Items include a rare 18th-century glass bought from a charity shop for 10p, a pair of Queen Victoria's surprisingly large knickers and a medal awarded during an early 20th-century expedition to the Antarctic Red button viewers can play along by guessing the valuations.(n)</desc>
+    <category lang="en">Antiques</category>
+    <category lang="en">Collectibles</category>
+    <episode-num system="onscreen">S36E24/26</episode-num>
+    <subtitles />
+  </programme>
+  <programme start="20140622211500 +0100" stop="20140622220500 +0100" channel="BBC One">
+    <title lang="en">Casualty</title>
+    <sub-title lang="en">Falling - Part One</sub-title>
+    <desc lang="en">Hospital drama with the staff of Holby's accident and emergency department as they deal with more sick and injured patients.(n)</desc>
+    <category lang="en">Soap</category>
+    <category lang="en">Melodrama</category>
+    <category lang="en">Folkloric</category>
+    <category lang="en">General Movie</category>
+    <category lang="en">Drama</category>
+    <episode-num system="onscreen">S28E42/48Hospitaldramawiththestaff/Holby'saccidentandemergencydepartmentastheydealwithmoresickandinjuredpatients&lt;span&gt;</episode-num>
+    <subtitles />
+  </programme>
+  <programme start="20140622220500 +0100" stop="20140622223000 +0100" channel="BBC One">
+    <title lang="en">BBC News; Regional News and Weather</title>
+    <category lang="en">News</category>
+    <category lang="en">Regional News</category>
+    <category lang="en">Weather</category>
+    <subtitles />
+  </programme>
+  </tv>
