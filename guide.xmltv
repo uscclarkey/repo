@@ -117,7 +117,7 @@
     <url>http://www.filmon.com</url>
   </channel>
   <channel id="Sky News">
-    <display-name lang="en">Sky News*</display-name>
+    <display-name lang="en">Sky News</display-name>
     <url>http://www.theguardian.com</url>
   </channel>
   <channel id="4Music">
@@ -129,15 +129,15 @@
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="BT Sport 1">
-    <display-name lang="en">BT Sport 1*</display-name>
+    <display-name lang="en">BT Sport 1</display-name>
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="BT Sport 2">
-    <display-name lang="en">BT Sport 2*</display-name>
+    <display-name lang="en">BT Sport 2</display-name>
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="Sky Sports 1">
-    <display-name lang="en">Sky Sports 1*</display-name>
+    <display-name lang="en">Sky Sports 1</display-name>
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="Sky Sports 2">
@@ -145,27 +145,27 @@
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="Sky Sports 3">
-    <display-name lang="en">Sky Sports 3*</display-name>
+    <display-name lang="en">Sky Sports 3</display-name>
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="Sky Sports 4">
-    <display-name lang="en">Sky Sports 4*</display-name>
+    <display-name lang="en">Sky Sports 4</display-name>
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="Sky Spts News">
-    <display-name lang="en">Sky Spts News*</display-name>
+    <display-name lang="en">Sky Spts News</display-name>
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="Sky Sports F1">
-    <display-name lang="en">Sky Sports F1*</display-name>
+    <display-name lang="en">Sky Sports F1</display-name>
     <url>http://www.uk-Skyuk.com</url>
   </channel>
   <channel id="British Eurosport">
-    <display-name lang="en">British EuroSport 1*</display-name>
+    <display-name lang="en">British EuroSport 1</display-name>
     <url>http://www.theguardian.com</url>
   </channel>
   <channel id="Eurosport2 UK">
-    <display-name lang="en">British EuroSport 2*</display-name>
+    <display-name lang="en">British EuroSport 2</display-name>
     <url>http://www.theguardian.com</url>
   </channel>
   <programme start="20140621015000 +0100" stop="20140621015500 +0100" channel="BBC One">
