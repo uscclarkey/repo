@@ -4,6 +4,170 @@
     <display-name lang="en">BBC One</display-name>
     <url>http://www.theguardian.com</url>
   </channel>
+  <channel id="BBC Two">
+    <display-name lang="en">BBC Two</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="ITV1">
+    <display-name lang="en">ITV1</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="Channel 4">
+    <display-name lang="en">Channel 4</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="Channel 5">
+    <display-name lang="en">Channel 5</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="BBC 3">
+    <display-name lang="en">BBC Three</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="BBC 4">
+    <display-name lang="en">BBC Four</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="ITV +1">
+    <display-name lang="en">ITV1+1</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="ITV 2">
+    <display-name lang="en">ITV2</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="ITV 2+1">
+    <display-name lang="en">ITV2+1</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="ITV 3">
+    <display-name lang="en">ITV3</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="ITV 3+1">
+    <display-name lang="en">ITV3+1</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="ITV 4">
+    <display-name lang="en">ITV4</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="ITV 4+1">
+    <display-name lang="en">ITV4+1</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="E4">
+    <display-name lang="en">E4</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="More4">
+    <display-name lang="en">More4</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="Dave">
+    <display-name lang="en">Dave</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="CBS Drama">
+    <display-name lang="en">CBS Drama</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="CBS Reality">
+    <display-name lang="en">CBS Reality</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="CBS Reality+1">
+    <display-name lang="en">CBS Reality+1</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="Pick TV">
+    <display-name lang="en">Pick</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="QUEST">
+    <display-name lang="en">QUEST</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="Really">
+    <display-name lang="en">Really</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="Yesterday">
+    <display-name lang="en">YESTERDAY</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="5 USA">
+    <display-name lang="en">5USA</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="CBBC">
+    <display-name lang="en">CBBC</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="CBeebies">
+    <display-name lang="en">CBeebies</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="Film4">
+    <display-name lang="en">Film4</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="BBC News">
+    <display-name lang="en">BBC News</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="Sky News">
+    <display-name lang="en">Sky News*</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="4Music">
+    <display-name lang="en">4Music</display-name>
+    <url>http://www.filmon.com</url>
+  </channel>
+  <channel id="VIVA">
+    <display-name lang="en">VIVA</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="BT Sport 1">
+    <display-name lang="en">BT Sport 1*</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="BT Sport 2">
+    <display-name lang="en">BT Sport 2*</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="Sky Sports 1">
+    <display-name lang="en">Sky Sports 1*</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="Sky Sports 2">
+    <display-name lang="en">Sky Sports 2*</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="Sky Sports 3">
+    <display-name lang="en">Sky Sports 3*</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="Sky Sports 4">
+    <display-name lang="en">Sky Sports 4*</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="Sky Spts News">
+    <display-name lang="en">Sky Spts News*</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="Sky Sports F1">
+    <display-name lang="en">Sky Sports F1*</display-name>
+    <url>http://www.uk-Skyuk.com</url>
+  </channel>
+  <channel id="British Eurosport">
+    <display-name lang="en">British EuroSport 1*</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
+  <channel id="Eurosport2 UK">
+    <display-name lang="en">British EuroSport 2*</display-name>
+    <url>http://www.theguardian.com</url>
+  </channel>
   <programme start="20140621015000 +0100" stop="20140621015500 +0100" channel="BBC One">
     <title lang="en">Weatherview</title>
     <category lang="en">Weather</category>
