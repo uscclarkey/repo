@@ -1,8 +1,0 @@
-1.2
-guide update 0.2
-
-1.1
-guide update
-
-1.0
-Initial release
