@@ -811,9 +811,9 @@ class XMLTVSource(Source):
 
     def __init__(self, addon):
         #self.logoFolder = os.path.join(xbmcaddon.Addon().getAddonInfo('path'), 'resources', 'logos/')
-        self.logoFolder = 'http://remoteman.tv/ftv/logos/'
-        self.xmltvFile = 'http://remoteman.tv/ftv/guide.xmltv'
-        self.xmltvUrl = 'http://remoteman.tv/ftv/guide.xmltv'
+        self.logoFolder = 'http://raw.github.com/uscclarkey/repo/master/logos/'
+        self.xmltvFile = 'http://raw.github.com/uscclarkey/repo/master/guide.xmltv'
+        self.xmltvUrl = 'http://raw.github.com/uscclarkey/repo/master/guide.xmltv'
         self.xmltvType = 0
 
         if not self.xmltvFile or not xbmcvfs.exists(self.xmltvFile):
