@@ -4,7 +4,7 @@
 	<setting id="user" type="text" label="Email" default="" enable="!eq(-1,false)"/>
 	<setting id="pass" type="text" option="hidden" label="Password" default="" enable="!eq(-2,false)"/>
     <setting type="lsep" label="Resolution:"/>
-	<setting id="res" type="bool" label="Enable For HD" default="false"/>
+	<setting id="res" type="bool" label="Enable For HD" default="true"/>
     <setting type="lsep" label="Automatic Views:"/>
 	<setting id="auto-view" type="bool" label="Enable Automatic View" default="true"/>
 	<setting id="default" type="number" label="Everything" default="500" enable="!eq(-1,false)"/>
@@ -21,15 +21,15 @@
     <setting id="4" type="bool" label="Channel 4" default="true"/>
     <setting id="5" type="bool" label="Channel 5" default="true"/>
     <setting id="6" type="bool" label="ITV 2" default="true"/>
-    <setting id="7" type="bool" label="ITV 3" default="false"/>
+    <setting id="7" type="bool" label="ITV 3" default="true"/>
     <setting id="8" type="bool" label="ITV 4" default="true"/>
     <setting id="30" type="bool" label="ITV1+1" default="true"/>
     <setting id="31" type="bool" label="ITV2+1" default="true"/>
     <setting id="32" type="bool" label="ITV3+1" default="true"/>
     <setting id="33" type="bool" label="ITV4+1" default="true"/>
-    <setting id="9" type="bool" label="E4" default="false"/>
+    <setting id="9" type="bool" label="E4" default="true"/>
     <setting id="10" type="bool" label="BBC HD" default="true"/>
-    <setting id="11" type="bool" label="More4" default="false"/>
+    <setting id="11" type="bool" label="More4" default="true"/>
     <setting id="12" type="bool" label="5USA" default="true"/>
     <setting id="13" type="bool" label="5USA+1" default="true"/>
     <setting id="14" type="bool" label="5*" default="true"/>
@@ -47,7 +47,7 @@
     <setting id="26" type="bool" label="Viva" default="true"/>
     <setting id="27" type="bool" label="4 Music" default="true"/>
     <setting id="28" type="bool" label="Really" default="true"/>
-    <setting id="29" type="bool" label="Yesterday" default="false"/>
+    <setting id="29" type="bool" label="Yesterday" default="true"/>
     
     
     <!-- FOR SAVING CHANNELS -->    
