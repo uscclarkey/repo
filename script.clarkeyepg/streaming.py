@@ -29,7 +29,7 @@ import xbmcaddon
 class StreamsService(object):
     def __init__(self):
         #path = os.path.join(xbmcaddon.Addon().getAddonInfo('path'), 'resources', 'addons.ini')
-        path = 'http://raywilsondesign.com/ftvguide/addons.ini'
+        path = 'http://remoteman.tv/ftv/addons.ini'
 
         self.addonsParser = ConfigParser.ConfigParser(dict_type=OrderedDict)
         self.addonsParser.optionxform = lambda option: option
