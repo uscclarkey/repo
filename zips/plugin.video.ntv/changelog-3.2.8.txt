@@ -1,0 +1,59 @@
+v3.2.0
+Fix Payments Service
+
+v3.1.9
+Fixed Playable Url Issue
+
+v3.1.8
+Fixed TLBB Record
+
+v3.1.3
+Fixed Card Processing
+
+v3.1.2
+Genre Fix Thank You (jmh2002)
+
+v3.1.1
+Faster GUI
+Added Toggle Favourites
+Better Login Implementation
+Added My Account
+Added New Subscriptions
+Added Extend Subscription
+Added PAy Via Plugin
+
+
+
+
+
+v3.0.5
+Added RTMP Timeout
+
+v3.0.4
+Fixed Addon.xml
+
+v3.0.3
+Fixed Genre
+
+v3.0.2
+Added Register Via Plugin
+Added Record Function Enable In Settings(Thank You You Know WHo YOu Are)
+Added AutoView
+Added Description Per Channel
+Added Icons Per Channel
+
+v3.0.1
+Quick Fix
+
+v3.0.0
+Added Tv Guide
+
+v2.0.4
+Added List Via Genre
+
+v2.0.3
+Added Tv Guide
+Added Instant Tv Guide
+
+v1.0.0
+Initial Release
