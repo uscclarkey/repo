@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+<channels>
+=======================================================================================================================================
+
+<channel>
+<name>Entertainment</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/entertainment.png</thumbnail>
+<fanart>http://www.spotted.tv/media/Freeview-UK-TV1.jpg</fanart>
+   
+<subchannel>
+<name>BBC One</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20One.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/bbc1/m3u8/bbc1.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20One.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch101.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20One.png</thumbnail>
+</subitem>
+<subitem>
+<title>HD</title>
+<link>http://wpc.AC3A.edgecastcdn.net/80AC3A/001/hls/m3u8/bbc1hd.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20One.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>BBC Two</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Two.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/bbc2/m3u8/bbc2.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Two.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch102.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Two.png</thumbnail>
+</subitem>
+<subitem>
+<title>HD</title>
+<link>http://wpc.AC3A.edgecastcdn.net/80AC3A/001/hls/m3u8/bbc2hd.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Two.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>ITV</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV1.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/itv1/m3u8/itv1.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV1.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch103.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV1.png</thumbnail>
+</subitem>
+<subitem>
+<title>HD</title>
+<link>http://wpc.AC3A.edgecastcdn.net/80AC3A/001/hls/m3u8/itv1hd.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV1.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>Channel Four</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%204.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/channel4/m3u8/channel4.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%204.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch104.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%204.png</thumbnail>
+</subitem>
+<subitem>
+<title>HD</title>
+<link>http://wpc.AC3A.edgecastcdn.net/80AC3A/001/hls/m3u8/channel4hd.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%204.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>Channel Five</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%205.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/00AC3A/channel5/m3u8/channel5.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%205.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch105.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%205.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>BBC Three</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20THREE.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/bbc3/m3u8/bbc3.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20THREE.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch112.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20THREE.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>BBC Four</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20FOUR.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/bbc4/m3u8/bbc4.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20FOUR.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch111.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20FOUR.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>ITV 2</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV2.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/itv2/m3u8/itv2.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV2.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch107.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV2.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>ITV 3</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV3.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/itv3/m3u8/itv3.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV3.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch108.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV3.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>ITV 4</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV4.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/itv4/m3u8/itv4.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV4.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch109.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV4.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>E4</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/E4.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/e4-master.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/E4.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch125.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/E4.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>More4</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/More4.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/more4.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/More4.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch126.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/More4.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<item>
+<title>4Seven</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/fourseven.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/4seven.png</thumbnail>
+</item>
+
+<subchannel>
+<name>5*</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/5%20Star.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/fivestar.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/5%20Star.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch116.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/5%20Star.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>5USA</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/5%20USA.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/fiveusa-master.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/5%20USA.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch115.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/5%20USA.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<item>
+<title>Pick</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/pick.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Pick.png</thumbnail>
+</item>
+
+<item>
+<title>CBS Action</title>
+<link>http://5.254.106.22:8081/live/ch117.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CBS.png</thumbnail>
+</item>
+
+<item>
+<title>CBS Reality</title>
+<link>http://5.254.106.22:8081/live/ch119.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CBS%20Reality.png</thumbnail>
+</item>
+
+<item>
+<title>Food Network</title>
+<link>http://5.254.106.22:8081/live/ch120.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Food%20Network.png</thumbnail>
+</item>
+
+<subchannel>
+<name>True Entertainment</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-ENTERTAINMENT-1-6.jpg</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/trueent.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-ENTERTAINMENT-1-6.jpg</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch124.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-ENTERTAINMENT-1-6.jpg</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<item>
+<title>True Drama</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/truedrama.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-DRAMA-1-2.jpg</thumbnail>
+</item>
+
+<subchannel>
+<name>RTE 1</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/RTE%20One.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/002/hls/m3u8/rteone.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/RTE%20One.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch127.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/RTE%20One.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>RTE 2</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/RTE%20Two.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/002/hls/m3u8/rtetwo.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/RTE%20Two.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch128.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/RTE%20Two.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>TV3</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TV3.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TV3.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch130.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TV3.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>TG 4</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TG4.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/002/hls/m3u8/tgfour.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TG4.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch129.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TG4.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+ 
+</channel>
+=======================================================================================================================================
+ 
+<channel>
+<name>Sports</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/sports.png</thumbnail>
+<fanart>http://www.bbc.co.uk/blogs/parents/sport.jpg</fanart>
+   
+<item>
+<title>Sky Sports 1</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 2</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+</channel>
+=======================================================================================================================================
+ 
+<channel>
+<name>Movies</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/movies.png</thumbnail>
+<fanart>https://www.plymouth.edu/office/sage/files/2013/09/Movie_Reel_22.jpg</fanart>
+   
+<subchannel>
+<name>Film4</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Film4.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/80AC3A/001/hls/m3u8/film4.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Film4.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch110.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Film4.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>Horror Channel</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Horror%20Channel.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/002/hls/m3u8/e-horror.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Horror%20Channel.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch118.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Horror%20Channel.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>True Movies 1</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-MOVIES1-1-2.jpg</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/truemovies1.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-MOVIES1-1-2.jpg</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch122.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-MOVIES1-1-2.jpg</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>True Movies 2</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-MOVIES2-2-4.jpg</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/truemovies2.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-MOVIES2-2-4.jpg</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch123.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-MOVIES2-2-4.jpg</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<item>
+<title>MBC Action</title>
+<link>http://5.254.106.22:8081/live/ch114.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/mbc_ae_action.png</thumbnail>
+</item>
+
+<item>
+<title>MBC 2 Movies</title>
+<link>http://5.254.106.22:8081/live/ch113.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/mbc2_ae.png</thumbnail>
+</item>
+ 
+</channel>
+======================================================================================================================================
+ 
+<channel>
+<name>Documentaries</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/documentaries.png</thumbnail>
+<fanart>http://i.telegraph.co.uk/multimedia/archive/02087/frozen_2087943c.jpg</fanart>
+
+<item>
+<title>Discovery Channel</title>
+<link>http://5.254.106.22:8081/live/ch162.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Discovery%20Channel.png</thumbnail>
+</item>
+
+<item>
+<title>Animal Planet</title>
+<link>http://5.254.106.22:8081/live/ch161.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Animal%20Planet.png</thumbnail>
+</item>
+
+<item>
+<title>National Geographic</title>
+<link>http://5.254.106.22:8081/live/ch160.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Nat%20Geo.png</thumbnail>
+</item>
+
+</channel>
+======================================================================================================================================
+
+<channel>
+<name>Music</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/music.png</thumbnail>
+<fanart>http://www.w8themes.com/wp-content/uploads/2013/08/Musical-Wallpapers.jpg</fanart>
+   
+<item>
+<title>The Vault</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/thevault.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/theVault.jpeg</thumbnail>
+</item>
+
+<subchannel>
+<name>Bliss</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/blissTV.jpg</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/bliss.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/blissTV.jpg</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch121.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/blissTV.jpg</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+ 
+</channel>
+=======================================================================================================================================
+
+<channel>
+<name>Kids</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/kids.png</thumbnail>
+<fanart>http://www.skyinfrance.co.uk/cmsimages/med_kids(1).jpg</fanart>
+
+<subchannel>
+<name>CBBC</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CBBC.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/bbc3/m3u8/bbc3.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CBBC.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch112.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CBBC.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<subchannel>
+<name>CBeebies</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CBeebies.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net/00AC3A/bbc4/m3u8/bbc4.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CBeebies.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch111.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CBeebies.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<item>
+<title>Kix</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/kix.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/kix-logo.png</thumbnail>
+</item>
+
+<item>
+<title>RTE Junior</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/002/hls/m3u8/rtejunior.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/rtejr.jpg</thumbnail>
+</item>
+
+</channel>
+======================================================================================================================================
+ 
+<channel>
+<name>News</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/news.png</thumbnail>
+<fanart>http://ak5.picdn.net/shutterstock/videos/1738405/preview/stock-footage-breaking-news-broadcast-graphics-title.jpg</fanart>
+   
+<item>
+<title>BBC News</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/bbcnews.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20News.png</thumbnail>
+</item>
+
+<subchannel>
+<name>Sky News</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20News.png</thumbnail>
+<subitems>
+<subitem>
+<title>Link 1</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/001/hls/m3u8/skynews.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20News.png</thumbnail>
+</subitem>
+<subitem>
+<title>Link 2</title>
+<link>http://5.254.106.22:8081/live/ch106.stream/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20News.png</thumbnail>
+</subitem>
+</subitems>    
+</subchannel>
+
+<item>
+<title>RTE News</title>
+<link>http://wpc.AC3A.edgecastcdn.net:80/80AC3A/002/hls/m3u8/rtenews.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/rte-news-now-1.jpg</thumbnail>
+</item>
+
+ 
+</channel>
+=======================================================================================================================================
+
+<channel>
+<name>Radio</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/radio.png</thumbnail>
+<fanart></fanart>
+
+<item>
+<title>Central FM</title>
+<link>http://85.17.177.8:8040/stream</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Spectrum FM</title>
+<link>http://5.63.151.52:8029/;stream.nsv</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Talk Radio Europe</title>
+<link>http://s3.streammonster.com:8286/;stream.nsv</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Capital FM</title>
+<link>http://media-ice.musicradio.com/CapitalMP3.m3u</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Heart FM</title>
+<link>http://media-ice.musicradio.com/HeartCambridgeMP3</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Kiss FM</title>
+<link>http://tx.whatson.com/icecast.php?i=kissnationallow.mp3</link>
+<thumbnail></thumbnail>
+</item>
+
+</channel>
+=======================================================================================================================================
+</channels>
