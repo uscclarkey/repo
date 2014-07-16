@@ -10,11 +10,11 @@
     <setting id="new_file_source" type="file" source="files" label="Choose File" default="" visible="eq(-1,0)"/>
     <setting id="new_url_source" type="text" label="Add URL" default="" visible="eq(-2,1)"/>
     <setting type="sep" />
-    <setting type="action" label="Add Source" option="close" action="RunPlugin(plugin://plugin.video.iptv/?mode=7)" />
+    <setting type="action" label="Add Source" option="close" action="RunPlugin(plugin://plugin.video.IPTV/?mode=7)" />
     <setting type="sep" />
   </category>
   <category label="Clarkey Streams">
     <setting id="browse_clarkey" type="bool" label="Browse and play from Clarkey Streams" default="True"/>
-    <setting type="action" label="Add Clarkey Streams as a Source" option="close" action="Container.Update(plugin://plugin.video.iptv/?mode=10)" />
+    <setting type="action" label="Add Clarkey Streams as a Source" option="close" action="Container.Update(plugin://plugin.video.IPTV/?mode=10)" />
   </category>
 </settings>
