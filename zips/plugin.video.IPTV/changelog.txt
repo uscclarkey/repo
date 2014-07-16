@@ -1,3 +1,6 @@
+V3.1
+update for XBMC Gotham compatibility and completely re-vamped this add-on making it much easier, faster and cleaner for the end user.
+
 v3.0.28
 updated description
 
