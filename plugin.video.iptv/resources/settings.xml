@@ -14,7 +14,6 @@
     <setting type="sep" />
   </category>
   <category label="Clarkey Streams">
-    <setting id="browse_clarkey" type="bool" label="Browse and play from Clarkey Streams" default="True"/>
-    <setting type="action" label="Add Clarkey Streams as a Source" option="close" action="Container.Update(plugin://plugin.video.IPTV/?mode=10)" />
+    <setting id="browse_clarkey" type="bool" label="Browse and play from Clarkey Streams" default="true"/>
   </category>
 </settings>
