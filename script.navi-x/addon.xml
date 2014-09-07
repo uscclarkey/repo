@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.navi-x"
        name="Navi-X"
-       version="3.7.8"
-       provider-name="Navi-X team">
+       version="3.8.2"
+       provider-name="Team Navi-X and XBMCHUB.com">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="repository.xbmchub" optional="true" />
+    <import addon="script.module.urlresolver"  />
   </requires>
-  <extension point="xbmc.python.script"
-             library="default.py" />
+  <extension point="xbmc.python.script" library="default.py" >
+    <provides>executable video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup">
+  </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <minversion>28764</minversion>
-    <summary lang="en">Media browser</summary>
-    <description lang="en">Media browser. Frodo only. Go to the Navi-X section of [COLOR blue]www.streamboxlive.wordpress.com[/COLOR] for instructions.</description>
+    <summary>Media Browser Addon for XBMC.</summary>
+    <description>Navi-X is the oldest and most trusted add-on for XBMC, used by millions of people worldwide. You'll find everything from live television to your favourite movies and television shows, easily accessible.</description>
+    <disclaimer>http://www.navixtreme.com/terms/</disclaimer>
+    <forum>http://www.xbmchub.com/forums/forums/38-NAVI-X-MEDIA-BROWSER</forum>
+    <website>http://www.navixtreme.com/</website>
+    <source></source>
+    <email></email>
   </extension>
 </addon>

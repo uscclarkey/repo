@@ -76,6 +76,8 @@ class MainWindow(xbmcgui.WindowXML):
                 os.mkdir(favoritesDir) 
             if not os.path.exists(RootDir+favorite_file):
                 shutil.copyfile(initDir+favorite_file, RootDir+favorite_file)            
+            if not os.path.exists(xbmc.translatePath(os.path.join(datapaths,favorite_file))):
+                shutil.copyfile(initDir+favorite_file, xbmc.translatePath(os.path.join(datapaths,favorite_file)) )            
 
             #Create playlist object contains the parsed playlist data. The self.list control displays
             #the content of this list
@@ -118,18 +120,24 @@ class MainWindow(xbmcgui.WindowXML):
                 self.history.load_plx(history_list) 
               
             #check if My Playlists exists, otherwise copy it from the init dir
-            if not os.path.exists(myPlaylistsDir + "My Playlists.plx"): 
-                shutil.copyfile(initDir+"My Playlists.plx", myPlaylistsDir+"My Playlists.plx")
+            #if not os.path.exists(myPlaylistsDir + "My Playlists.plx"): 
+            if not os.path.exists(xbmc.translatePath(os.path.join(myPlaylistsDir,"My Playlists.plx"))): 
+                #shutil.copyfile(initDir+"My Playlists.plx", myPlaylistsDir+"My Playlists.plx")
+                shutil.copyfile(initDir+"My Playlists.plx", xbmc.translatePath(os.path.join(myPlaylistsDir,"My Playlists.plx")))
+                
 
             #check if My Playlists exists, otherwise copy it from the init dir
-            if not os.path.exists(myPlaylistsDir + "My Playlists.plx"): 
-                shutil.copyfile(initDir+"My Playlists.plx", myPlaylistsDir+"My Playlists.plx")
+            #if not os.path.exists(myPlaylistsDir + "My Playlists.plx"): 
+            if not os.path.exists(xbmc.translatePath(os.path.join(myPlaylistsDir,"My Playlists.plx"))): 
+                #shutil.copyfile(initDir+"My Playlists.plx", myPlaylistsDir+"My Playlists.plx")
+                shutil.copyfile(initDir+"My Playlists.plx", xbmc.translatePath(os.path.join(myPlaylistsDir,"My Playlists.plx")))
             
             #Set the socket timeout for all urllib2 open functions.
             socket_setdefaulttimeout(url_open_timeout)
              
             #Next a number of class private variables
             self.home=home_URL
+            self.home_dat=home_URL
             self.dwnlddir=myDownloadsDir
             self.History = [] #contains the browse history
             self.history_count = 0 #number of entries in history array
@@ -258,7 +266,7 @@ class MainWindow(xbmcgui.WindowXML):
             self.state_action = 1                                        
                  
             #always allow Exit even if busy
-            if (action == ACTION_SELECT_ITEM) and (self.getFocus() == self.list3):
+            if ((action == ACTION_SELECT_ITEM) and (self.getFocus() == self.list3)): #or ((action == ACTION_SELECT_ITEM) and (self.getFocus() == self.exitbutton2)):
                 pos = self.list3.getSelectedPosition()
                 if (platform == 'xbox') and (pos == 5) or (pos == 6):
                     self.state_busy = 1
@@ -283,7 +291,8 @@ class MainWindow(xbmcgui.WindowXML):
                             if pos >= 0:
                                 self.SelectItem(self.playlist, pos)
                     #button option
-                    if self.getFocus() == self.list3:
+                    try:
+                      if self.getFocus() == self.list3:
                         #Left side option menu
                         pos = self.list3.getSelectedPosition()
                         if (platform == 'xbox') and (pos > 2):
@@ -324,7 +333,9 @@ class MainWindow(xbmcgui.WindowXML):
                                     dialog = xbmcgui.Dialog()                            
                                     dialog.ok(" Sign out", "Sign out successful.")
                                     self.version.setLabel('version: '+ Version + '.' + SubVersion)                              
-                    if self.getFocus() == self.list4:
+                    except: pass
+                    try:
+                      if self.getFocus() == self.list4:
                         #Right side option menu
                         pos = self.list4.getSelectedPosition()
                         if self.descr_view == True:
@@ -364,6 +375,7 @@ class MainWindow(xbmcgui.WindowXML):
                                 self.selectBoxDownloadsList()
                             else:   
                                 self.selectBoxMainList()                            
+                    except: pass
 
                 elif (action == ACTION_PARENT_DIR) or (action == ACTION_PREVIOUS_MENU) or (action == ACTION_PREVIOUS_MENU2):
                     if self.descr_view == True:
@@ -447,6 +459,20 @@ class MainWindow(xbmcgui.WindowXML):
             elif controlId == BUTTON_RIGHT:  
                 self.onAction1(ACTION_CONTEXT_MENU)
                 #self.setFocus(self.list4)
+            elif controlId == BUTTON_EXIT2:  
+                #print 'pressed exit button'
+                #self.setFocus(self.list3); xbmc.sleep(10); self.onAction1(ACTION_SELECT_ITEM)
+                dialog=xbmcgui.Dialog()
+                if dialog.yesno("Navi-X", "Are you sure you want to leave?")==True:
+                    self.state_busy = 1
+                    #self.setInfoText("Shutting Down Navi-X...") 
+                    SetInfoText("Shutting Down Navi-X...", setlock=True) 
+                    self.onSaveSettings()
+                    self.bkgndloadertask.kill()
+                    self.bkgndloadertask.join(10) #timeout after 10 seconds.
+                    self.downloader.kill()
+                    self.downloader.join(10) #timeout after 10 seconds.
+                    self.close() #exit            
             else:
                 self.onAction1(ACTION_SELECT_ITEM)       
 
@@ -476,7 +502,17 @@ class MainWindow(xbmcgui.WindowXML):
 
             if pos >= 0:
                 #Display media source
-                str_url=self.pl_focus.list[pos].URL;
+                try: str_url=self.pl_focus.list[pos].URL;
+                except: str_url=""
+                try:
+                  if "://" in str_url: ProtocolMarker=str_url.split("://")[0]
+                  else: ProtocolMarker=""
+                except: ProtocolMarker=""
+                print "ProtocolMarker (navix.py): "+ProtocolMarker; 
+                try: self.labProtocol.setLabel(ProtocolMarker); 
+                except: 
+                	try: self.labProtocol.setLabel(""); 
+                	except: pass
                 str_server_report=""
                 if str_url != "" and self.pl_focus.list[pos].type != "playlist":
                     match=re_server.search(str_url)
@@ -576,17 +612,22 @@ class MainWindow(xbmcgui.WindowXML):
                 elif type == 'directory':
                     result = playlist.load_dir(URL, mediaitem, proxy)
                 else: #assume playlist file
-                    if (param_proxy == "") and (self.smartcache == 'true'):
-                        result = playlist.load_plx(URL, mediaitem, proxy="SMARTCACHE")
+                    #if (param_proxy == "") and (self.smartcache == 'true'):
+                    if (proxy == "CACHING") and (self.smartcache == 'true'):
+                        for n in range(2):
+                            try: result = playlist.load_plx(URL, mediaitem, proxy="SMARTCACHE")                      
+                            except: result = -3
                     else:
-                        result = playlist.load_plx(URL, mediaitem, proxy)
+                        try: result = playlist.load_plx(URL, mediaitem, proxy) #proxy="SMARTCACHE"
+                        except: result = -2
                 
                 if result == -1: #error
-                    dialog = xbmcgui.Dialog()
-                    dialog.ok("Error", "This playlist requires a newer Navi-X version")
+                    dialog = xbmcgui.Dialog(); dialog.ok("Error", "This playlist requires a newer Navi-X version")
                 elif result == -2: #error
-                    dialog = xbmcgui.Dialog()
-                    dialog.ok("Error", "Cannot open file.")
+                    dialog = xbmcgui.Dialog(); dialog.ok("Error", "Cannot open file.")
+                elif result == -3: #server error
+                    if URL == '' : URL = 'Unknown URL'
+                    print 'Error with  ' +URL; dialog = xbmcgui.Dialog(); dialog.ok("Error", "Can not connect to server and no cached file exists.")
                 
                 if result != 0: #failure
                     self.loading.setVisible(0)
@@ -776,8 +817,10 @@ class MainWindow(xbmcgui.WindowXML):
             self.setFocus(listcontrol)
 
             pos = self.getPlaylistPosition()
-            self.listpos.setLabel(str(pos+1) + '/' + str(self.pl_focus.size()))              
-
+            self.listpos.setLabel(str(pos+1) + '/' + str(self.pl_focus.size()))
+            try: self.labProtocol.setLabel(""); 
+            except: pass
+            
             listcontrol.selectItem(start_pos)      
 
             self.state_busy = 0            
@@ -1031,7 +1074,7 @@ class MainWindow(xbmcgui.WindowXML):
                     else:
                         MyPlayer = CPlayer(self.player_core, function=self.myPlayerChanged)
 
-                    result = MyPlayer.play_URL(mediaitem.URL, mediaitem)
+                    print 'line 1053: '; print mediaitem.URL; result = MyPlayer.play_URL(mediaitem.URL, mediaitem); 
                                                         
                 SetInfoText("")
                 
@@ -1191,7 +1234,7 @@ class MainWindow(xbmcgui.WindowXML):
                 #self.setInfoText("Loading...") 
                 SetInfoText("Loading...", setlock=True) 
                 if autonext == False:
-                    result = MyPlayer.play_URL(URL, mediaitem) 
+                    print 'line 1213: '; print URL; result = MyPlayer.play_URL(URL, mediaitem); 
                 else:
                     size = self.pl_focus.size()
                     #play from current position to end of list.
@@ -1330,25 +1373,49 @@ class MainWindow(xbmcgui.WindowXML):
         # Return     : -
         ######################################################################
         def OpenTextFile( self, URL='', mediaitem=CMediaItem()):
+          #try:
             #self.setInfoText("Loading...") #loading text on
             SetInfoText("Loading...", setlock=True)
                     
             if (mediaitem.background == 'default') and (self.pl_focus.background != 'default'):
                 mediaitem = copy.copy(mediaitem)
                 mediaitem.background = self.pl_focus.background
-            
+            print URL; 
             #textwnd = CTextView("CTextViewskin.xml", os.getcwd())
-            textwnd = CTextView("CTextViewskin.xml", addon.getAddonInfo('path'))
-            result = textwnd.OpenDocument(URL, mediaitem)
+            #textwnd = CTextView("CTextViewskin2.xml", addon.getAddonInfo('path'))
+            #result = textwnd.OpenDocument(URL, mediaitem)
+            
+            print ['URL',URL]; print ['mediaitem.URL',mediaitem.URL]; 
+            if len(mediaitem.URL)==0:
+              if ('http://' in URL.lower()) or ('https://' in URL.lower()):
+                SplashTxt=UrlDoGet(URL); print 'txt is a remote file'; 
+              elif (':' in URL): SplashTxt=FileDoOpen(URL); print 'txt is a local file in a different path'; 
+              else: SplashTxt=FileDoOpen(os.path.join(RootDir,URL)); print os.path.join(RootDir,URL); print 'txt is a local file in the addon path'; 
+            else:
+              if ('http://' in mediaitem.URL.lower()) or ('https://' in mediaitem.URL.lower()):
+                SplashTxt=UrlDoGet(mediaitem.URL); print 'txt is a remote file'; 
+              elif (':' in mediaitem.URL): SplashTxt=FileDoOpen(mediaitem.URL); print 'txt is a local file in a different path'; 
+              else: SplashTxt=FileDoOpen(os.path.join(RootDir,mediaitem.URL)); print os.path.join(RootDir,mediaitem.URL); print 'txt is a local file in the addon path'; 
+            import splash_highway as splash
+            #print "SplashTxt:"; print SplashTxt
+            xbmc.sleep(20); 
+            splash.do_My_TextSplash3(SplashTxt,SplashBH,12,TxtColor='0xff00ff00',Font='font10',BorderWidth=70,ImgexitBtn=ExitBH); 
+            
             #self.setInfoText(visible=0) #loading text off   
             SetInfoText("")
 
-            if result == 0:
-                textwnd.doModal()
-            else:
-                dialog = xbmcgui.Dialog()
-                dialog.ok("Error", "Cannot open file.")
-                
+            #if result == 0:
+            #    #textwnd.doModal()
+            #    #SplashTxt=str(textwnd.text)
+            #    #import splash_highway as splash
+            #    #splash.do_My_TextSplash2(SplashTxt,SplashBH,12,TxtColor='0xff00ff00',Font='font14',BorderWidth=70,ImgexitBtn=ExitBH); 
+            #    pass
+            #else:
+            #    dialog = xbmcgui.Dialog()
+            #    dialog.ok("Error", "Cannot open file.")
+          #except:
+          #      dialog = xbmcgui.Dialog()
+          #      dialog.ok("Error", "Cannot open file.")
         ######################################################################
         # Description: Handles image slideshow.
         # Parameters : playlist=the source playlist
@@ -1614,7 +1681,7 @@ class MainWindow(xbmcgui.WindowXML):
         ######################################################################
         def onSelectURL(self):
             #browsewnd = CDialogBrowse("CBrowseskin.xml", os.getcwd())
-            browsewnd = CDialogBrowse("CBrowseskin.xml", addon.getAddonInfo('path'))
+            browsewnd = CDialogBrowse("CBrowseskin2.xml", addon.getAddonInfo('path'))
             browsewnd.SetFile('', self.URL, 1, "Browse File:")
             browsewnd.doModal()
             
@@ -1640,7 +1707,8 @@ class MainWindow(xbmcgui.WindowXML):
             #Show the favorite list
             #self.ParsePlaylist(reload=False) #display favorite list
             
-            self.SelectItem(iURL=RootDir + favorite_file) #display favorite list
+            #self.SelectItem(iURL=RootDir + favorite_file) #display favorite list
+            self.SelectItem(iURL=xbmc.translatePath(os.path.join(datapaths,favorite_file))) #display favorite list
 
         ######################################################################
         # Description: Handles selection within favorite list.
@@ -1664,7 +1732,8 @@ class MainWindow(xbmcgui.WindowXML):
         def addToFavorites(self, item):
             #load the favorite list
             playlist = CPlayList()
-            result = playlist.load_plx(RootDir + favorite_file)
+            #result = playlist.load_plx(RootDir + favorite_file)
+            result = playlist.load_plx( xbmc.translatePath(os.path.join(datapaths,favorite_file)) )
             if result != 0:
                 return
             
@@ -1682,7 +1751,8 @@ class MainWindow(xbmcgui.WindowXML):
                 choice = dialog.select("Select Favorite List", possibleChoices)
             if choice == 0:
                 playlist.add(item)
-                playlist.save(RootDir + favorite_file)             
+                #playlist.save(RootDir + favorite_file)             
+                playlist.save( xbmc.translatePath(os.path.join(datapaths,favorite_file)) )
             else:
                 for m in playlist.list:
                     if (m.type == "playlist") and (m.URL.find(favoritesDir) != -1) and (m.name == possibleChoices[choice]):
@@ -1729,7 +1799,8 @@ class MainWindow(xbmcgui.WindowXML):
             file = self.URL
             
             if self.URL == favorite_file:
-                file = RootDir + favorite_file
+                #file = RootDir + favorite_file
+                file = xbmc.translatePath(os.path.join(datapaths,favorite_file))
             
             #validate the selected item
             if choice == 0: #Download
@@ -1778,7 +1849,7 @@ class MainWindow(xbmcgui.WindowXML):
                     return
                 self.home = self.URL                    
             elif choice == 7: #Create new playlist
-                if (file != RootDir + favorite_file):
+                if (file != RootDir + favorite_file) and (file != xbmc.translatePath(os.path.join(datapaths,favorite_file))):
                     dialog = xbmcgui.Dialog()
                     dialog.ok("Error", "Not possible to create new playlist here.")
                 else:
@@ -1788,16 +1859,16 @@ class MainWindow(xbmcgui.WindowXML):
                         playlistname = keyboard.getText()
                         playlistfile = playlistname.replace(' ','')    
                         playlistfile = playlistfile.lower()
-                        if not os.path.exists(favoritesDir + playlistfile + ".plx"):  
+                        if not os.path.exists(xbmc.translatePath(os.path.join(favoritesDir, playlistfile + ".plx"))):  
                             newplaylist = CPlayList()
                             newplaylist.title = playlistname
-                            newplaylist.save(favoritesDir + playlistfile + ".plx")
+                            newplaylist.save(xbmc.translatePath(os.path.join(favoritesDir, playlistfile + ".plx")))
                         tmp = CMediaItem() #create new item
                         tmp.type = "playlist"
                         tmp.name = playlistname 
                         tmp.icon = imageDir + "icon_favorites.png"
                         tmp.thumb = imageDir + "thumb_favorites.png"
-                        tmp.URL = favoritesDir + playlistfile + ".plx"  
+                        tmp.URL = xbmc.translatePath(os.path.join(favoritesDir, playlistfile + ".plx"))
                         playlist.add(tmp)
                         playlist.save(file)    
                         self.ParsePlaylist(reload=False) #display favorite list            
@@ -2177,6 +2248,7 @@ class MainWindow(xbmcgui.WindowXML):
 
                 possibleChoices = ["Download...", \
                                     "Play...", \
+                                    "Play with UrlResolver...", \
                                     "View...", \
                                     "Clear Recent History...", \
                                     "Parental Control...", \
@@ -2198,21 +2270,35 @@ class MainWindow(xbmcgui.WindowXML):
                 self.onDownload()
             elif choice == 1: #play...
                 self.onPlayUsing()
-            elif choice == 2: #view...
+            elif choice == 2: #Play With URL Resolver...
+                try:
+                  pos = self.getPlaylistPosition()
+                  tempUrl=self.playlist.list[pos].URL
+                  print "attempting to use local UrlResolver"; print ['tempUrl',tempUrl]; 
+                  import urlresolver
+                  if urlresolver.HostedMediaFile(tempUrl).valid_url()==True:
+                    tempUrl=urlresolver.HostedMediaFile(tempUrl).resolve(); 
+                    print ['tempUrl',tempUrl]; 
+                    #xbmc.Player.play(tempUrl)
+                    MyPlayer=CPlayer(self.player_core,function=self.myPlayerChanged)
+                    MyPlayer.play_media(tempUrl)
+                  else: print "invalid url"
+                except: pass
+            elif choice == 3: #view...
                 self.onView()
-            elif choice == 3: #Clear Recent History
+            elif choice == 4: #Clear Recent History
                 self.onClearHistory()                
-            elif choice == 4: #Block selected playlist
+            elif choice == 5: #Block selected playlist
                 self.onParentalControl()   
-            elif choice == 5: #Set default player
+            elif choice == 6: #Set default player
                 self.onSetDefaultPlayer()
-            elif choice == 6: #Set Background
+            elif choice == 7: #Set Background
                 self.onSetBackGround()
-            elif choice == 7: #Slideshow
+            elif choice == 8: #Slideshow
 
                 pos = self.getPlaylistPosition()            
                 self.viewImage(self.playlist, pos, 1) #slide show show
-            elif choice == 8: #Add selected item to Favorites
+            elif choice == 9: #Add selected item to Favorites
                 pos = self.getPlaylistPosition()
                 tmp = CMediaItem() #create new item
                 tmp.type = self.playlist.list[pos].type
@@ -2233,7 +2319,7 @@ class MainWindow(xbmcgui.WindowXML):
                     tmp.player = self.playlist.list[pos].player
                     tmp.processor = self.playlist.list[pos].processor
                     self.addToFavorites(tmp)                    
-            elif choice == 9: #Add playlist to Favorites
+            elif choice == 10: #Add playlist to Favorites
                 tmp = CMediaItem() #create new item
                 tmp.type = self.mediaitem.type
                 
@@ -2253,19 +2339,19 @@ class MainWindow(xbmcgui.WindowXML):
                 tmp.background = self.mediaitem.background
                 tmp.processor = self.mediaitem.processor
                 self.addToFavorites(tmp)                
-            elif choice == 10: # Create playlist shortcut
+            elif choice == 11: # Create playlist shortcut
                 self.CreateShortCut()
-            elif choice == 11: #Set Playlist as Home
+            elif choice == 12: #Set Playlist as Home
                 if dialog.yesno("Message", "Overwrite current Home playlist?") == False:
                     return
                 self.home = self.URL
  #               self.onSaveSettings()
-            elif choice == 12: #View playlist source
+            elif choice == 13: #View playlist source
                 self.pl_focus.save(RootDir + 'source.plx')            
                 self.OpenTextFile(RootDir + "source.plx")      
-            elif choice == 13: #Set smart caching on/off
+            elif choice == 14: #Set smart caching on/off
                 self.onSetSmartCaching()
-            elif choice == 14: #about Navi-X
+            elif choice == 15: #about Navi-X
                 self.OpenTextFile('readme.txt')
 
         ######################################################################
@@ -2350,7 +2436,10 @@ class MainWindow(xbmcgui.WindowXML):
                 data = f.read()
                 data = data.split('\n')
                 if data[0] != '': 
-                    self.home=data[0]
+                    if core_homepage.lower()=='default':
+                      self.home=data[0]
+                    self.home_dat=data[0]
+                    
                 if data[1] != '': 
                     self.dwnlddir=data[1]
                 if data[2] != '':
@@ -2379,7 +2468,8 @@ class MainWindow(xbmcgui.WindowXML):
         def onSaveSettings(self):
             f=open(RootDir + 'settings.dat', 'w')
             #note: the newlines in the string are removed using replace().
-            f.write(self.home.replace('\n',"")  + '\n')
+            #f.write(self.home.replace('\n',"")  + '\n')
+            f.write(self.home_dat.replace('\n',"")  + '\n')
             f.write(self.dwnlddir.replace('\n',"") + '\n')
             f.write(self.password.replace('\n',"") + '\n')
             f.write(self.hideblocked.replace('\n',"") + '\n')
@@ -2550,7 +2640,9 @@ class MainWindow(xbmcgui.WindowXML):
         # Return     : True if favorite list has focus
         ######################################################################  
         def IsFavoriteListFocus(self):
-            if (self.URL == RootDir + favorite_file) or (self.URL == favorite_file) or (self.URL.find(favoritesDir) != -1):
+            if (self.URL == xbmc.translatePath(os.path.join(datapaths,favorite_file))) or (self.URL == favorite_file) or (self.URL.find(favoritesDir) != -1):
+                return True
+            elif (self.URL == RootDir + favorite_file) or (self.URL == favorite_file) or (self.URL.find(favoritesDir) != -1):
                 return True
             
             return False

@@ -176,7 +176,7 @@ class CDownLoader(threading.Thread):
         
         #browsewnd = CDialogBrowse("CBrowseskin.xml", os.getcwd())
         curdir = addon.getAddonInfo('path')
-        browsewnd = CDialogBrowse("CBrowseskin.xml", curdir)
+        browsewnd = CDialogBrowse("CBrowseskin2.xml", curdir)
         browsewnd.SetFile(dir, localfile, 3, heading)
         browsewnd.doModal()
 
@@ -230,6 +230,7 @@ class CDownLoader(threading.Thread):
                 f = urllib2.urlopen(req)
                 #loc_url=f.geturl()
                 size_string = f.headers['Content-Length']
+                #print ['size_string',size_string]
                 size = int(size_string)
                 f.close()
             except:
@@ -273,6 +274,8 @@ class CDownLoader(threading.Thread):
         if len(ext)>6:
             ext='.avi'
 
+        ##print [ext, size]
+        ##if (ext.lower()=='.plx') and (size==0): size=1
         return ext, size
         
     ######################################################################
@@ -436,6 +439,22 @@ class CDownLoader(threading.Thread):
             #Message("Remaining: " + str(size))
                         
 #todo: size may be existsize if file is downloaded exactly 50%            
+            ##print ['size',str(size)]
+            ##if (size == 1) and (size != existSize):
+            ##    bytes = existSize #bytes downloaded already
+            ##    size = size + existSize #total size
+            ##    #Message("Total: " + str(size))
+            ##    size_MB = float(size) / (1024 * 1024) #total size MB
+            ##    #DL-speed calculation
+            ##    starttime = time.time(); startsize = bytes deltatime = 0; deltasize = 0; dlspeed = 0
+            ##    #download in chunks of 100kBytes                
+            ##    data=f.read()
+            ##    file.write(data)
+            ##    f.close() #close the URL
+            ##    file.close() #close the destination file                 
+            ##    #if (self.killed == True) or (self.running == False):
+            ##    #    self.state = -2 #failed to download the file
+            #elif (size > 0) and (size != existSize):
             if (size > 0) and (size != existSize):
                 bytes = existSize #bytes downloaded already
                 size = size + existSize #total size

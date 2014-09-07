@@ -1,0 +1,11 @@
+<settings>
+	<category label="General">
+		<setting visible="true" id="core-homepage" type="labelenum" label="Home Page" values="Default|Offshore|Github|GoogleCode" default="Default"/>
+		<setting visible="true" type="bool" default="false" id="scripts-testers" 	label="Use Tester's List of Updates" />
+		<setting visible="true" type="text" default="" id="scripts-testers2" 	label="Tester's Password" enable="!eq(-1,false)" />
+		<setting visible="false" type="bool" default="false" id="use-LocalUrlResolver" 	label="Use Local UrlResolver" />
+		<setting visible="false" type="text" id="LastVerMessageID"	default=""	label="Last Version Message ID" />
+		<setting visible="false" type="bool" default="false" id="debug-enable" 	label="Enable Debugging to File" />
+		<setting visible="false" type="bool" default="false" id="debug-show" 		label="Enable Debugging to Notice(s)" />
+	</category>
+</settings>

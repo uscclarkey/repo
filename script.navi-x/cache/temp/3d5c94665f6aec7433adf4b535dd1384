@@ -1,0 +1,13 @@
+version=7
+
+title=Project - Free TV
+description=/description
+
+type=playlist
+name=Movies
+URL=http://www.navixtreme.com/cgi-bin/boseman/Scrapers/ct_freetv?q=getmovies
+
+type=playlist
+name=TV-Shows
+URL=http://www.navixtreme.com/cgi-bin/boseman/Scrapers/ct_freetv?q=gettvshows
+

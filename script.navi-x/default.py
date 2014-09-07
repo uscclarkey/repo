@@ -29,13 +29,15 @@ import urllib2
 import zipfile
 import shutil
 import sys
+import downloader
+import extract
 
 # Script constants
 __scriptname__ = "Navi-X"
 __author__ = "Navi-X team"
 __url__ = "http://code.google.com/p/navi-x/"
 __credits__ = "Navi-X team"
-__version__ = "3.78"
+__version__ = "3.8.0"
 
 addon = xbmcaddon.Addon(id='script.navi-x')
 RootDir = addon.getAddonInfo('path')
@@ -52,6 +54,32 @@ else:
 version_default = '0.0.0'
 version_URL=''
 update_URL=''
+
+##########Install Hub Repo#############################################################
+def HUBINSTALL(name,url,description,filetype,repourl):
+    try:
+        path=xbmc.translatePath(os.path.join('special://home','addons','packages'))
+        dp=xbmcgui.DialogProgress()
+        dp.create("Checking Structure:","Installing Proper Repo ",'','Only Shown on First Launch')
+        lib=os.path.join(path,name+'.zip')
+        try: os.remove(lib)
+        except: pass
+        downloader.download(url, lib, dp)
+        if filetype == 'addon':
+            addonfolder = xbmc.translatePath(os.path.join('special://home','addons'))
+        time.sleep(2)
+        #dp.update(0,"","Installing selections.....")
+        print '======================================='
+        print addonfolder
+        print '======================================='
+        extract.all(lib,addonfolder,'')
+        xbmc.executebuiltin("XBMC.UpdateLocalAddons()")
+    except: pass
+
+hubpath=xbmc.translatePath(os.path.join('special://home','addons','repository.xbmchub'))
+if not os.path.exists(hubpath): HUBINSTALL('xbmchubrepo','https://offshoregit.com/xbmchub/xbmc-hub-repo/raw/master/repository.xbmchub/repository.xbmchub-1.0.3.zip','','addon','none')
+
+
 
 #############################################################################
 def onReadVersion():
@@ -193,10 +221,43 @@ platform = get_system_platform()
 
 
 #############################################################################
+#Splash Screen
+#############################################################################
+def SettingG(setting):
+	try: return addon.getSetting(setting)
+	except: return ""
+def SettingS(setting,value): addon.setSetting(id=setting,value=value)
+def gAI(t):
+	try: return addon.getAddonInfo(t)
+	except: return ""
+import splash_highway as splash
+mediaFolder=os.path.join(RootDir,'resources','skins','Default','media')
+SplashBH=os.path.join(mediaFolder,'default-panel1.png')
+ExitBH=os.path.join(mediaFolder,'navi-x3.png')
+try: LastVerMessageID=str(SettingG("LastVerMessageID"))
+except: LastVerMessageID=""
+try: curVerID=str(gAI("version"))
+except: curVerID=''
+#print [LastVerMessageID,curVerID]
+#LastVerMessageID="" ## Used for testing.
+if (len(LastVerMessageID)==0) or (not LastVerMessageID==curVerID):
+	SettingS("LastVerMessageID",curVerID)
+	#SplashTxt="Hello User,\n\n        "
+	#SplashTxt+="NAVI-X may now be found for download on the XBMCHUB.COM repository."
+	SplashTxt="Navi-X and Team XBMCHUB.com\n\n"
+	SplashTxt+="If you're receiving this message it\n"
+	SplashTxt+="means that Navi-X has for the first\n"
+	SplashTxt+="time updated automatically on your\n"
+	SplashTxt+="system and is now located in the\n"
+	SplashTxt+="XBMCHUB.com repository!"
+	#splash.do_My_TextSplash(SplashTxt,SplashBH,12,TxtColor='0xff00ff00',Font='font14',BorderWidth=70); 
+	splash.do_My_TextSplash2(SplashTxt,SplashBH,12,TxtColor='0xff00ff00',Font='font14',BorderWidth=70,ImgexitBtn=ExitBH); 
+	
+#############################################################################
 #Start Navi-X
 #############################################################################
 import navix
-win = navix.MainWindow("skin.xml", addon.getAddonInfo('path'))
+win = navix.MainWindow("skin2.xml", addon.getAddonInfo('path')) #,'Default','720p'
 win.doModal()
 del win
 

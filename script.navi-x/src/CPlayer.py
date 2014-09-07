@@ -79,7 +79,8 @@ class CPlayer(xbmc.Player):
 
         if first == last:
             URL = playlist.list[first].URL
-            xbmc.Player.play(self, URL)
+            self.Attempt_to_play_URL(URL)
+            #xbmc.Player.play(self, URL)
         else:
         
             index = first
@@ -106,7 +107,8 @@ class CPlayer(xbmc.Player):
                         
                         if self.pls.size() == 1:
                             #start playing, continue loading                      
-                            xbmc.Player.play(self, self.pls)
+                            self.Attempt_to_play_URL(URL)
+                            #xbmc.Player.play(self, self.pls)
                 index = index + 1
             
             if self.pls.size() == 0:
@@ -115,6 +117,19 @@ class CPlayer(xbmc.Player):
                 
         return {"code":0}
 
+    ######################################################################
+    ######################################################################            
+    def Attempt_to_play_URL(self, URL):
+        try: xbmc.Player.play(self, URL)
+        except:
+          try:
+              import urlresolver; print "Normal playback failed, attempting to use urlresolver method instead."; print URL; 
+              if urlresolver.HostedMediaFile(URL).valid_url()==True:
+                print "valid url"; 
+                URL=urlresolver.HostedMediaFile(URL).resolve(); print "resolved url:"; print URL; 
+                xbmc.Player.play(self, URL)
+              else: print "invalid url"
+          except: print "error while attempting fallback @ playback."
     ######################################################################
     ######################################################################            
     def play_URL(self, URL, mediaitem=0):
@@ -165,7 +180,8 @@ class CPlayer(xbmc.Player):
             cmd = 'xbmc.PlayMedia(%s)' % URL
             xbmc.executebuiltin(cmd)
         else:
-            xbmc.Player.play(self, URL)
+            self.Attempt_to_play_URL(URL)
+            #xbmc.Player.play(self, URL)
             
     ######################################################################
     ###################################################################### 

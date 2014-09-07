@@ -128,7 +128,7 @@ class CServer:
     ######################################################################            
     def rate_item(self, mediaitem):    
         #rate = CDialogRating("CRatingskin.xml", os.getcwd())
-        rate = CDialogRating("CRatingskin.xml", addon.getAddonInfo('path'))
+        rate = CDialogRating("CRatingskin2.xml", addon.getAddonInfo('path'))
         rate.doModal()
         if rate.state != 0:
             return -2

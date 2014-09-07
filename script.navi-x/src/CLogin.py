@@ -103,4 +103,4 @@ class CDialogLogin(xbmcgui.WindowXMLDialog):
         
 #use singleton
 #login = CDialogLogin("CLoginskin.xml", os.getcwd())
-login = CDialogLogin("CLoginskin.xml", addon.getAddonInfo('path'))
+login = CDialogLogin("CLoginskin2.xml", addon.getAddonInfo('path'))

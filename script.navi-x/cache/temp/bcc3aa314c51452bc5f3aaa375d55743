@@ -7,8 +7,7 @@ logo=http://media.navi-x.org/images/logos/search.png
 type=playlist
 name=StreamBox
 thumb=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
-date=2014-06-10
-URL=http://www.navixtreme.com/playlist/129965/streambox.plx
+URL=http://www.navixtreme.com/playlist/139204/streambox.plx
 description=ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
 
 IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
@@ -20,35 +19,11 @@ ENJOY!!
 
 Keep up with the latest added and recently modified links on the Navi-x section of our blog.
 www.streamboxlive.wordpress.com
-
-/description
-
-type=playlist
-name=StreamBox Live!
-thumb=http://1.bp.blogspot.com/-lggoOmUrLh4/UYQIAOML57I/AAAAAAAAHaE/bdtYDC_Dr3w/s1600/LIVE.png
-URL=http://www.navixtreme.com/playlist/121915/streambox_live.plx
-description=when streams go down I will find some working links as soon as possible.
-
-A selection of the most popular live streams from the UK and some USA. 
-
-ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
-
-IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
-
-Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
-
-NAVI-X IS MEANT TO BE FREE...
-ENJOY!!
-
-Keep up with the latest added and recently modified links on the Navi-x section of our blog.
-www.streamboxlive.wordpress.com
-
 /description
 
 type=playlist
 name=StreamBox Movies!
 thumb=https://cdn.shopify.com/s/files/1/0233/6235/t/8/assets/buy-movies.jpg?405669
-date=2014-06-10
 URL=http://www.navixtreme.com/playlist/126378/streambox_movies.plx
 description=All the latest movies and a selection of my favorite movies. For FREE of corse! And all good quality!
 
@@ -77,10 +52,70 @@ description=[COLOR=FFFFFF00]TV GUIDE FOR UK CHANNELS.
 All TIMES ARE SET TO GMT.[/COLOR]/description
 
 type=rss
-name=2/7 StreamBox Programs! (StreamBox)
+name=7/15 StreamBox Sports! (StreamBox)
+thumb=http://www.bbc.co.uk/blogs/parents/sport.jpg
+date=2014-07-15
+URL=http://goo.gl/NF5a4W
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+description=ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com/description
+
+type=rss
+name=7/15 StreamBox Live! (StreamBox)
+thumb=http://1.bp.blogspot.com/-lggoOmUrLh4/UYQIAOML57I/AAAAAAAAHaE/bdtYDC_Dr3w/s1600/LIVE.png
+date=2014-07-15
+URL=http://goo.gl/xY9hMH
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+description=ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com/description
+
+type=rss
+name=7/23 StreamBox Movies! (StreamBox)
+thumb=https://cdn.shopify.com/s/files/1/0233/6235/t/8/assets/buy-movies.jpg?405669
+date=2014-07-23
+URL=http://goo.gl/Bv4LBg
+background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
+player=default
+rating=-1.00
+description=ALL STREAMS ARE CHECKED ON A REGULAR BASIS!
+
+IN CASE OF BUFFERING, PRESS PAUSE, MAKE A CUP OF TEA OR WASTE 5 MINUTES THEN PRESS PLAY. THAT SHOULD HELP.
+
+Providing you with links to streams freely found around the web! I provide links to streams hosted by others! 
+
+NAVI-X IS MEANT TO BE FREE...
+ENJOY!!
+
+Keep up with the latest added and recently modified links on the Navi-x section of our blog.
+www.streamboxlive.wordpress.com/description
+
+type=rss
+name=7/14 StreamBox Programs (StreamBox)
 thumb=http://www.teachingchildrenmanners.com/wp-content/uploads/2011/08/Children-and-Adult-TV-Programs.jpg
-date=2014-02-07
-URL=http://pastebin.com/raw.php?i=sk9D7v5N
+date=2014-07-14
+URL=http://goo.gl/g0WAQR
 background=http://streamboxlive.files.wordpress.com/2013/11/streambox.png
 player=default
 rating=-1.00

@@ -253,7 +253,17 @@ class CBackgroundLoader(threading.Thread):
     # Return     : -
     ######################################################################        
     def DisplayMediaSource(self, pos):
-        str_url=self.MainWindow.pl_focus.list[pos].URL
+        try: str_url=self.MainWindow.pl_focus.list[pos].URL
+        except: str_url=""
+        try:
+          if "://" in str_url: ProtocolMarker=str_url.split("://")[0]
+          else: ProtocolMarker=""
+        except: ProtocolMarker=""
+        #print "ProtocolMarker (CBackgroundLoader.py): "+ProtocolMarker; 
+        try: self.MainWindow.labProtocol.setLabel(ProtocolMarker.upper()); 
+        except:
+          try: self.MainWindow.labProtocol.setLabel(""); 
+          except: pass
         str_server_report=""
         if str_url != "" and self.MainWindow.pl_focus.list[pos].type != "playlist":
             match=re_server.search(str_url)

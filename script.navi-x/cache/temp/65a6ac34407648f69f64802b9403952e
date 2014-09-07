@@ -1,0 +1,134 @@
+﻿#######################################################################################################################################
+<poster>FELVER</poster>
+<fanart>https://scontent-b-ord.xx.fbcdn.net/hphotos-prn2/t1.0-9/1375903_10153348455540206_513150697_n.jpg</fanart>
+############################################################################################################################
+
+<channel>
+<name>[COLOR=FF0198E1]Tv channels & Shows[/COLOR][COLOR=FFd81417] Updated [/COLOR][COLOR=FF00FFFF] 20/05/14[/COLOR]</name>
+<thumbnail>https://scontent-a-lga.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10418476_10154222131025206_935623511042762236_n.jpg</thumbnail>
+<info></info>
+<fanart>https://scontent-a-lga.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10418476_10154222131025206_935623511042762236_n.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR=FFFF4500]ABC[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=abc1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=abc1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]AMC[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=amc1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=amc1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]CBS[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=cbss1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=cbss1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]Cinemax[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=cinemax1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=cinemax1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]Nick[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=nick1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=nick1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]FX[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=fx1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=fx1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]FOX[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=fox1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=fox1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]FOX[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=foxnews1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=foxnews1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]HBO[/COLOR] </title>
+<link>rtmp://81.17.20.46/iguide playpath=0bf02qe6msgtu4s swfUrl=http://cdn.iguide.to/player/secure_player_iguide_token.swf pageUrl=http://www.iguide.to/view/1/watch-live-HBO-channel-for-free token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://img3.wikia.nocookie.net/__cb20091102104541/logopedia/images/a/a0/HBO_intro_1983.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]MSNBC[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=msnbc1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=msnbc1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]MTV[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=mtv1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=mtv1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]Show Time[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=show1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=show1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]SYFY[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=syfy1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=syfy1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]TBS[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=tbs1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=tbs1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]TNT[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=tnt1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=tnt1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]USA[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=usanet1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=usanet1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]CNN[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=cnn1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=cnn1569&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]Cartoon Network[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=cartoonet100 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=cartoonet100&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]BBC World News[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmpe://live.wowcast.tv:1935/redirect/ playpath=bbcccc swfUrl=http://www.wowcast.tv/player/player.swf pageUrl=http://www.wowcast.tv/embed.php?stream=bbcccc&vw=600&vh=430</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR=FFFF4500]CBC[/COLOR][COLOR=brown] * [/COLOR]</title>
+<link>rtmp://d.cdn.newschat.tv/edge playpath=canadas_live swfUrl=http://msnbclive.eu/player.swf live=1 pageUrl=http://www.livenewschat.eu/canada/</link>
+<thumbnail>https://raw.githubusercontent.com/mash2k3/MashUpK1m05/master/k1m05.Images/Guide/Entertainment.jpg</thumbnail>
+</item>
+
+</items>
+</channel>

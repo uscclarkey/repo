@@ -1,0 +1,1415 @@
+version=1
+background=http://football24.ua/resources/photos/news/201304/154442_234095.jpg
+title=Sport channels@TopIPTV.org  -  1 to 198 of 297
+logo=http://football24.ua/resources/photos/news/201304/154442_234095.jpg
+player=mplayer
+icon_playlist=http://football24.ua/resources/photos/news/201304/154442_234095.jpg
+description=Follow me on twitter Halow TV HDnavix
+
+I have all the best sports channel follow me, I will always put in more and more/description
+
+type=playlist
+name=Sorted [COLOR=FF00FF00]by user-assigned order[/COLOR]
+icon=http://media.navi-x.org/images/icons/2downarrow.png
+URL=http://www.navixtreme.com/playlist/141984/sport_channelstopiptv.org_-_1_to_198_of_297.plx?action=sortsel&cur=ord
+
+# 2334780
+type=video
+name=VisionSport
+date=2014-08-28
+URL=rtsp://46.249.213.93/broadcast/classicgoals-tablet.3gp
+player=default
+rating=-1.00
+
+# 2334781
+type=video
+name=ProSport 1
+thumb=http://4.bp.blogspot.com/-U-mw57ol9QA/U_DhnXibXsI/AAAAAAAABtw/SVS0OfZN2Jc/s1600/Pro%2Bsports%2Biptv.jpg
+date=2014-08-28
+URL=http://mbcprosports03-live.hls.adaptive.level3.net/hls-live/mbc-mbcprosports01/_definst_/live.m3u8
+player=default
+rating=-1.00
+
+# 2334782
+type=video
+name=ProSport 2
+thumb=http://4.bp.blogspot.com/-U-mw57ol9QA/U_DhnXibXsI/AAAAAAAABtw/SVS0OfZN2Jc/s1600/Pro%2Bsports%2Biptv.jpg
+date=2014-08-28
+URL=http://mbcprosports02-live.hls.adaptive.level3.net/hls-live/mbc-mbcprosports02/_definst_/live.m3u8
+player=default
+rating=-1.00
+
+# 2334783
+type=video
+name=ProSport3
+thumb=http://4.bp.blogspot.com/-U-mw57ol9QA/U_DhnXibXsI/AAAAAAAABtw/SVS0OfZN2Jc/s1600/Pro%2Bsports%2Biptv.jpg
+date=2014-08-28
+URL=http://mbcprosports02-live.hls.adaptive.level3.net/hls-live/mbc-mbcprosports03/_definst_/live.m3u8
+player=default
+rating=-1.00
+
+# 2334787
+type=video
+name=SPORTSKOOL
+date=2014-08-28
+URL=rtmp://204.107.26.252:8086/live/686.high.stream
+player=default
+rating=-1.00
+
+# 2334788
+type=video
+name=Rossiya 2 Sports
+date=2014-08-28
+URL=http://hls.novotelecom.ru/streaming/sport/tvrec/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334789
+type=video
+name=FANATIK SPOR
+date=2014-08-28
+URL=rtmp://live.fanatik.cubecdn.net/fanatiktv/stream_720
+player=default
+rating=-1.00
+
+# 2334784
+type=video
+name=TRACE SPORTS
+date=2014-08-28
+URL=rtsp://46.249.213.87/broadcast/tracetvsports-tablet.3gp
+player=default
+rating=-1.00
+
+# 2334778
+type=video
+name=RUS - Football
+date=2014-08-28
+URL=http://hls.novotelecom.ru/streaming/futbol/tvrec/playlist.m3u8?
+player=default
+rating=-1.00
+
+# 2334792
+type=video
+name=ROMANYA+MOLDOVA - MD - Moldova Sport
+date=2014-08-28
+URL=http://sportmoldova.web.tvbox.md
+player=default
+rating=-1.00
+
+# 2334793
+type=video
+name=MMA SPORT
+date=2014-08-28
+URL=rtmp://extondemand.livestream.com:80/ondemand/trans/dv10/mogulus-user-files/chmmabaytv/2010/09/12/d9fbeee7-79aa-4ec2-98d2-1f1f168b91a3
+player=default
+rating=-1.00
+
+# 2334794
+type=video
+name=KOREA - MFS Golf
+date=2014-08-28
+URL=http://lm01.everyon.tv:1935/ptv/pld58/hasbahca.m3u8
+player=default
+rating=-1.00
+
+# 2334795
+type=video
+name=DEUTSCH-Sportschau Feed 1
+date=2014-08-28
+URL=rtmp://mdr-tv-event1livefs.fplive.net:1935/mdr-tv-event1live-live%20playpath=stream_livetvmdrevent1_de_576%20swfUrl=http://www.mdr.de/resources/flash/mdr_av_player.swf%20pageUrl=http://www.mdr.de/mediathek/livestreams/fernsehen/livestream-mdr-plus100.html%20live=1
+player=default
+rating=-1.00
+
+# 2334796
+type=video
+name=CT 4 Sport
+date=2014-08-28
+URL=rtsp://46.249.213.93/broadcast/climbon-tablet.3gp
+player=default
+rating=-1.00
+
+# 2334797
+type=video
+name=TV Pocos - Sports
+date=2014-08-28
+URL=rtmp://rtmp.cdn.upx.net.br/00084/myStream.sdp
+player=default
+rating=-1.00
+
+# 2334798
+type=video
+name=beIN Sport 6
+date=2014-08-28
+URL=http://hls01-06.az.myvideo.az/hls-live/livepkgr/sport6/sport6/sport6.m3u8?mfamwuUL6IpOXDJ8WwxJ
+player=default
+rating=-1.00
+
+# 2334799
+type=video
+name=beIN Sport 5
+date=2014-08-28
+URL=http://hls01-06.az.myvideo.az/hls-live/livepkgr/sport5/sport5/sport5.m3u8?mfamwuUL6IpOXDJ8WwxJ
+player=default
+rating=-1.00
+
+# 2334800
+type=video
+name=beIN Sport 4
+date=2014-08-28
+URL=http://hls01-04.az.myvideo.az/hls-live/livepkgr/sport4/sport4/sport4.m3u8?mfamwuUL6IpOXDJ8WwxJ
+player=default
+rating=-1.00
+
+# 2334801
+type=video
+name=Sky  sport AUSTRIA
+date=2014-08-28
+URL=rtmp://94.102.49.192/liveedge//channel12
+player=default
+rating=-1.00
+
+# 2334802
+type=video
+name=bin sport 7
+date=2014-08-28
+URL=rtmp://94.102.49.192/liveedge//channel10
+player=default
+rating=-1.00
+
+# 2334803
+type=video
+name=SUPER SPORT
+date=2014-08-28
+URL=rtmp://94.102.49.192/liveedge//channel4
+player=default
+rating=-1.00
+
+# 2334804
+type=video
+name=FUTBOLL LIVE HD
+date=2014-08-28
+URL=rtmp://94.102.49.192/liveedge//channel15
+player=default
+rating=-1.00
+
+# 2334805
+type=video
+name=SKY SPORTS 1
+date=2014-08-28
+URL=rtmp://94.102.49.192/liveedge//channel8
+player=default
+rating=-1.00
+
+# 2334806
+type=video
+name=SPORT TV 1
+date=2014-08-28
+URL=rtmp://94.102.49.192/liveedge//channel5
+player=default
+rating=-1.00
+
+# 2334807
+type=video
+name=SPORT TV
+date=2014-08-28
+URL=rtmp://94.102.49.192/liveedge//channel2
+player=default
+rating=-1.00
+
+# 2334811
+type=video
+name=Sky 1
+date=2014-08-28
+URL=http://83.139.104.101/Content/HLS/Live/Channel(Sk_1)/Stream(03)/index.m3u8
+player=default
+rating=-1.00
+
+# 2334812
+type=video
+name=SKY 3
+date=2014-08-28
+URL=http://83.139.104.101/Content/HLS/Live/Channel(Sk_3)/Stream(03)/index.m3u8
+player=default
+rating=-1.00
+
+# 2334814
+type=video
+name=Sport HD
+date=2014-08-28
+URL=http://37.130.226.156:80/iptv/2QZCACM8PH/123/index.m3u8
+player=default
+rating=-1.00
+
+# 2334815
+type=video
+name=Sports Futbol HD
+date=2014-08-28
+URL=http://37.130.226.156:80/iptv/2QZCACM8PH/124/index.m3u8
+player=default
+rating=-1.00
+
+# 2334813
+type=video
+name=NTV Sport
+date=2014-08-28
+URL=http://iptv1.zargacum.net/iptv/2QZCACM8PH/123/index.m3u8
+player=default
+rating=-1.00
+
+# 2334816
+type=video
+name=NTV Futbol HD
+date=2014-08-28
+URL=http://iptv1.zargacum.net/iptv/2QZCACM8PH/124/index.m3u8
+player=default
+rating=-1.00
+
+# 2334817
+type=video
+name=Fighter HD
+date=2014-08-28
+URL=rtmp://94.242.221.176:1937/live/stream47
+player=default
+rating=-1.00
+
+# 2334818
+type=video
+name=Fight Sports HD
+date=2014-08-28
+URL=http://202.75.23.37:1400/live/ch20/03.m3u8
+player=default
+rating=-1.00
+
+# 2334819
+type=video
+name=bein sports 4
+date=2014-08-28
+URL=rtmp://wzmatch.uforone.net:1935/live/_definst_/beinsports4
+player=default
+rating=-1.00
+
+# 2334820
+type=video
+name=bein sports 3
+date=2014-08-28
+URL=rtmp://wzmatch.uforone.net:1935/live/_definst_/beinsports3
+player=default
+rating=-1.00
+
+# 2334821
+type=video
+name=bein sports 2
+date=2014-08-28
+URL=rtmp://wzmatch.uforone.net:1935/live/_definst_/beinsports2
+player=default
+rating=-1.00
+
+# 2334823
+type=video
+name=Sport HD
+date=2014-08-28
+URL=http://149.255.39.122/aasd/8743/index.m3u8
+player=default
+rating=-1.00
+
+# 2334828
+type=video
+name=Sports Tonight
+date=2014-08-28
+URL=rtmp://freeview.fms.visionip.tv/live///%20playpath=sports_tonight-sports_tonight-live-25f-16x9-SD%20swfUrl=http://negmtv.altervista.org/play/jwplayer.flash.swf%20pageUrl=http://negmtv.altervista.org/php/sportplayer.php?ch=sportstonight%20live=1%20timeout=10
+player=default
+rating=-1.00
+
+# 2334829
+type=video
+name=WAAR SPORT TV
+thumb=https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/c0.67.851.315/p851x315/1559389_1485446668355641_226675272529584668_o.jpg
+date=2014-08-28
+URL=rtmp://live.karwan.tv:1936/live/waarsport
+player=default
+rating=-1.00
+
+# 2334830
+type=video
+name=Sport HD
+date=2014-08-28
+URL=rtmp://108.168.206.90/cdnsm%20playpath=cdnsm%20swfUrl=http://cdn.com.do/wp-content/themes/cdn/js/player.swf%20live=1%20timeout=13%20pageUrl=http://cdn.com.do/%20AnisotropicTV
+player=default
+rating=-1.00
+
+# 2334831
+type=video
+name=GMG SPORT FULL HD
+thumb=http://www.frosat.net/images/logotv/original/gmg-ge.jpg
+date=2014-08-28
+URL=rtmp://edge01-02.nl.myvideo.ge/dvrh264/gmgfoot/%20playpath=mp4:gmgfoot%20swfUrl=http://www.myvideo.ge/?act=dvrdvr/dvrH.swf?v=1.2%20live=1%20timeout=13%20pageUrl=http://www.myvideo.ge/%20AnisotropicTV
+player=default
+rating=-1.00
+
+# 2334832
+type=video
+name=GMG SPORT HD
+thumb=http://www.frosat.net/images/logotv/original/gmg-ge.jpg
+date=2014-08-28
+URL=rtmp://edge01-02.nl.myvideo.ge/dvrh264/gmgsport/%20playpath=mp4:gmgsport%20swfUrl=http://www.myvideo.ge/?act=dvrdvr/dvrH.swf?v=1.2%20live=1%20timeout=13%20pageUrl=http://www.myvideo.ge/%20AnisotropicTV
+player=default
+rating=-1.00
+
+# 2334833
+type=video
+name=GMG sport 2
+thumb=http://www.frosat.net/images/logotv/original/gmg-ge.jpg
+date=2014-08-28
+URL=rtmp://edge01-02.nl.myvideo.ge/dvrh264/gmgsport2/%20playpath=mp4:gmgsport2%20swfUrl=http://www.myvideo.ge/?act=dvrdvr/dvrH.swf?v=1.2%20live=1%20timeout=13%20pageUrl=http://www.myvideo.ge/%20AnisotropicTV
+player=default
+rating=-1.00
+
+# 2334834
+type=video
+name=sky sports 1
+thumb=http://ballbyballlivescore.com/wp-content/uploads/2014/01/sky.jpg
+date=2014-08-28
+URL=rtmp://89.248.169.48:443/liverepeater%20playpath=66%20swfUrl=http://static.surk.tv/atdedead.swf%20live=1%20pageUrl=http://xxcast.pm/player2.php?id=8&amp;width=640&amp;height=460%20token=#atd%#$ZH
+player=default
+rating=-1.00
+
+# 2334835
+type=video
+name=sky sports 2
+thumb=http://ballbyballlivescore.com/wp-content/uploads/2014/01/sky.jpg
+date=2014-08-28
+URL=rtmp://89.248.169.48:443/liverepeater%20playpath=43%20swfUrl=http://static.surk.tv/atdedead.swf%20live=1%20pageUrl=http://xxcast.pm/player2.php?id=8&amp;width=640&amp;height=460%20token=#atd%#$ZH
+player=default
+rating=-1.00
+
+# 2334836
+type=video
+name=sky sports 3
+thumb=http://ballbyballlivescore.com/wp-content/uploads/2014/01/sky.jpg
+date=2014-08-28
+URL=rtmp://31.220.0.104:1935/live/sskk3%20pageUrl=http://www.flashtv.co/hpg_disco%20token=%ZZri(nKa@#Z
+player=default
+rating=-1.00
+
+# 2334837
+type=video
+name=sky sports 4
+thumb=http://ballbyballlivescore.com/wp-content/uploads/2014/01/sky.jpg
+date=2014-08-28
+URL=rtmp://31.220.0.86:1935/live%20playpath=skks4%20swfUrl=http://www.flashtv.co/ePlayerr.swf%20live=1%20pageUrl=http://www.flashtv.co/%20token=%ZZri(nKa@#Z
+player=default
+rating=-1.00
+
+# 2334838
+type=video
+name=sky sports 5
+thumb=http://ballbyballlivescore.com/wp-content/uploads/2014/01/sky.jpg
+date=2014-08-28
+URL=rtmp://31.220.0.104:1935/live/sskk5%20pageUrl=http://www.flashtv.co/hpg_disco%20token=%ZZri(nKa@#Z
+player=default
+rating=-1.00
+
+# 2334839
+type=video
+name=MBC2 pro sport
+thumb=https://scontent-b-ams.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10511368_1452831941667764_3938715179830731756_n.jpg?oh=3a184c2d888e30472d9f298a461be714&amp;oe=546618F4
+date=2014-08-28
+URL=http://mbcprosports02-live.hls.adaptive.level3.net/hls-live/mbc-mbcprosports02/_definst_/live/stream1.m3u8
+player=default
+rating=-1.00
+
+# 2334840
+type=video
+name=MBC 1 pro sport
+thumb=https://scontent-b-ams.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10511368_1452831941667764_3938715179830731756_n.jpg?oh=3a184c2d888e30472d9f298a461be714&amp;oe=546618F4
+date=2014-08-28
+URL=http://mbcprosports03-live.hls.adaptive.level3.net/hls-live/mbc-mbcprosports01/_definst_/live/stream1.m3u8
+player=default
+rating=-1.00
+
+# 2334842
+type=video
+name=BEIN TV
+thumb=https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCS3pKJje7BXRyzwhryDEiksspsy2uOZMPrZ1i5UyGgquPiFCW
+date=2014-08-28
+URL=rtmp://213.152.181.10/stream//565rgrh.stream
+player=default
+rating=-1.00
+
+# 2334843
+type=video
+name=sport
+date=2014-08-28
+URL=http://lswb-de-08.servers.octoshape.net:1935/live/kanalsport_1000k/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334844
+type=video
+name=VIAPLAY SPORT 2 HD
+date=2014-08-28
+URL=http://viasatlive5-i.akamaihd.net/hls/live/207018/tv3sport2HD/2h5416erG1v.m3u8
+player=default
+rating=-1.00
+
+# 2334845
+type=video
+name=KTV Sport TV
+date=2014-08-28
+URL=rtmp://91.140.238.7/rtmplive/rtpencoder//ch3.sdp
+player=default
+rating=-1.00
+
+# 2334846
+type=video
+name=GTV Sport TV
+date=2014-08-28
+URL=rtmp://skylite.pointcdn.net/skylite/ams//gtv-sports
+player=default
+rating=-1.00
+
+# 2334847
+type=video
+name=Cnopt sport HD
+date=2014-08-28
+URL=http://iptv1.zargacum.net/iptv/2QZCACM8PH/123/index.m3u8?sd=10&amp;rebase=on
+player=default
+rating=-1.00
+
+# 2334849
+type=video
+name=FIFA WORLD CUP 2014 HD
+date=2014-08-28
+URL=rtmp://edge1.stream-server.org/livestv/%20playpath=orf1.stream%20swfUrl=http://stream.live-stream.tv/player.php%20live=1%20pageUrl=http://www.live-stream.tv/online/fernsehen/zdf.html#tab2-tab
+player=default
+rating=-1.00
+
+# 2334850
+type=video
+name=WORD CUP 2014
+date=2014-08-28
+URL=rtmp://213.16.167.187/live//sportfun2_02xm9n
+player=default
+rating=-1.00
+
+# 2334851
+type=video
+name=word cup 2014
+date=2014-08-28
+URL=http://cmorehlsedc-i.akamaihd.net/hls/live/208150/cmlivehd/02.m3u8
+player=default
+rating=-1.00
+
+# 2334852
+type=video
+name=Chelsea TV - London - Watch Online
+thumb=https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThXpOxzZx2g0h9UEFbp_yc0ByapEkAFgN7qFOCxx9RQZAmPqRu
+date=2014-08-28
+URL=rtmp://cp96798.live.edgefcs.net:443/live//ChelTV_Ch01_1000k@26291
+player=default
+rating=-1.00
+
+# 2334853
+type=video
+name=GSTV HD
+date=2014-08-28
+URL=rtmp://cdn21.motiwe.com/live////gstv370
+player=default
+rating=-1.00
+
+# 2334854
+type=video
+name=Bein Sports 1 HD live
+thumb=http://top2day.info/up/uploads/toop2day.com_9318e57ab4df1.jpg
+date=2014-08-28
+URL=rtmp://live1.fifaembed.com/live?wmsAuthSign=c2VydmVyX3RpbWU9Ny8yLzIwMTQgMjozOToxOCBQTSZoYXNoX3ZhbHVlPStDN2c3d3Yrd056Vkd5MFQxSGM2M2c9PSZ2YWxpZG1pbnV0ZXM9MjA=//bein14-hq
+player=default
+rating=-1.00
+
+# 2334855
+type=video
+name=Sk 1
+date=2014-08-28
+URL=rtmp://37.220.36.68:443/liverepeater%20playpath=42%20token=#atd%#$ZH%20swfUrl=http://static.surk.tv/atdedead.swf%20live=1%20pageUrl=http://filotv.pw/%20timeout=10
+player=default
+rating=-1.00
+
+# 2334856
+type=video
+name=Sk 4
+date=2014-08-28
+URL=rtmp://rtmp.goodcast.org:1935/liverepeater/_definst_/151317
+player=default
+rating=-1.00
+
+# 2334825
+type=video
+name=eurosport2
+date=2014-08-28
+URL=http://149.255.39.122/aasd/8815/index.m3u8
+player=default
+rating=-1.00
+
+# 2334826
+type=video
+name=eurosportHD
+date=2014-08-28
+URL=http://149.255.39.122/aasd/8814/index.m3u8
+player=default
+rating=-1.00
+
+# 2334857
+type=video
+name=canal+sport
+date=2014-08-28
+URL=rtsp://l125.polwizjer.com:1935/pl/2014tvcanalplussport
+player=default
+rating=-1.00
+
+# 2334858
+type=video
+name=beinsport2
+date=2014-08-28
+URL=http://202.75.23.37:8800/live/ch19/03.m3u8
+player=default
+rating=-1.00
+
+# 2334859
+type=video
+name=beinsport1
+date=2014-08-28
+URL=http://202.75.23.37:8800/live/ch18/live.m3u8
+player=default
+rating=-1.00
+
+# 2334841
+type=video
+name=beinsport
+date=2014-08-28
+URL=http://149.255.39.122/aasd/8817/index.m3u8
+player=default
+rating=-1.00
+
+# 2334860
+type=video
+name=TURK.HD
+date=2014-08-28
+URL=rtmp://goodgame.z-1.cdnnow.ru:1941/stream//20932
+player=default
+rating=-1.00
+
+# 2334861
+type=video
+name=test
+date=2014-08-28
+URL=http://202.75.23.33:8800/live/ch26/01.m3u8
+player=default
+rating=-1.00
+
+# 2334862
+type=video
+name=SPORT TELEMADRID
+date=2014-08-28
+URL=http://iphone.telemadrid.es.edgesuite.net/telemadridsat_iphone.m3u8
+player=default
+rating=-1.00
+
+# 2334863
+type=video
+name=SPORT
+date=2014-08-28
+URL=http://iphonelive.rtve.es/TDP_LV3_IPH_1C/TDP_LV3_IPH_1C.m3u8
+player=default
+rating=-1.00
+
+# 2334865
+type=video
+name=11 FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=rtmp://173.192.81.180:443/liverepeater%20playpath=22%20token=#atd%#$ZH%20swfUrl=http://kingofplayers.com/atdedead.swf%20live=true%20timeout=15%20pageUrl=http://kingofplayers.com/player2.php?id=22&amp;width=640&amp;height=460
+player=default
+rating=-1.00
+
+# 2334866
+type=video
+name=9 FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=http://edge-20-gtd.edge.mdstrm.com/tvn-live/_definst_/smil:7cb6048ff45cb5cdf7f5fed828597fd1/chunklist_b950000.m3u8
+player=default
+rating=-1.00
+
+# 2334867
+type=video
+name=8FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=rtmp://31.220.0.193:1935/redirect%20playpath=51%20token=#atd%#$ZH%20swfUrl=http://static.surk.tv/atdedead.swf%20live=1%20pageUrl=http://filotv.pw/player3.php?id=53&amp;width=640&amp;height=460
+player=default
+rating=-1.00
+
+# 2334868
+type=video
+name=7 FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=rtmp://94.20.21.34:1935/live/zdf.stream
+player=default
+rating=-1.00
+
+# 2334869
+type=video
+name=6 FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=http://202.75.23.37:8800/live/ch19/04.m3u8?
+player=default
+rating=-1.00
+
+# 2334870
+type=video
+name=5FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=http://202.75.23.37:8800/live/ch18/04.m3u8?
+player=default
+rating=-1.00
+
+# 2334864
+type=video
+name=4FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=http://motorsport.hopto.org:8080/
+player=default
+rating=-1.00
+
+# 2334871
+type=video
+name=2FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=rtmpe://46.246.29.150:1935/redirect%20playpath=espn2%20token=Fo5_n0w?U.rA6l3-70w47ch%20swfUrl=http://cdn.watchjsc.us/jwplayer.swf%20pageUrl=http://www.hdcast.org/%20swfVfy=true%20live=true%20timeout=15
+player=default
+rating=-1.00
+
+# 2334848
+type=video
+name=1 FIFA WORD CUP 2014 BARZIL HD
+date=2014-08-28
+URL=http://edge-20-gtd.edge.mdstrm.com/tvn-live/_definst_/smil:7cb6048ff45cb5cdf7f5fed828597fd1/chunklist_b1500000.m3u8
+player=default
+rating=-1.00
+
+# 2334872
+type=video
+name=Bursa Spor
+date=2014-08-28
+URL=rtsp://stream.yayindayiz.biz:80/Bursaspor/bursaspor
+player=default
+rating=-1.00
+
+# 2334873
+type=video
+name=C5N WORD CUP 2014
+date=2014-08-28
+URL=rtmp://c5n.stweb.tv/c5n/live
+player=default
+rating=-1.00
+
+# 2334790
+type=video
+name=SportsTV3
+date=2014-08-28
+URL=http://stream.sportstv.com.tr:1935/sportstv/SportsTV3/hasbahca.m3u8
+player=default
+rating=-1.00
+
+# 2334874
+type=video
+name=sport moldova HD
+date=2014-08-28
+URL=http://sportmoldova.web.tvbox.md/
+player=default
+rating=-1.00
+
+# 2334875
+type=video
+name=bein sport 11 word cup 2014
+date=2014-08-28
+URL=rtmpe://159.253.143.36:1935/redirect%20playpath=bein11%20swfUrl=http://cdn.watchjsc.us/jwplayer.swf%20pageUrl=http://cdn.watchjsc.us/embed.php?u=bein11&amp;vw=640&amp;vh=460&amp;domain=hdfoots.com%20live=true%20timeout=10%20token=Fo5_n0w?U.rA6l3-70w47ch
+player=default
+rating=-1.00
+
+# 2334876
+type=video
+name=Bein sport 2 word cup 2014
+date=2014-08-28
+URL=rtmpe://159.253.143.36:1935/redirect%20playpath=bein2%20swfUrl=http://cdn.watchjsc.us/jwplayer.swf%20pageUrl=http://cdn.watchjsc.us/embed.php?u=bein11&amp;vw=640&amp;vh=460&amp;domain=hdfoots.com%20live=true%20timeout=10%20token=Fo5_n0w?U.rA6l3-70w47ch
+player=default
+rating=-1.00
+
+# 2334878
+type=video
+name=GK TV Sport WORD CUP 2014
+thumb=http://files.hevitv.webnode.com/200000043-322253415c/gk%20tv%20sport.jpg
+date=2014-08-28
+URL=rtmp://64.150.177.45:1936/live2/myStream
+player=default
+rating=-1.00
+
+# 2334880
+type=video
+name=itv word cup 2014
+date=2014-08-28
+URL=rtmpe://46.246.124.26:1935/redirect%20playpath=itv%20swfUrl=http://www.hdcast.org/players.swf%20pageUrl=http://www.hdcast.org/embedlive2.php?u=itv&amp;vw=600&amp;vh=450&amp;domain=strmh24.com%20live=true%20timeout=10%20token=Fo5_n0w?U.rA6l3-70w47ch
+player=default
+rating=-1.00
+
+# 2334881
+type=video
+name=Channel 100% Live Sport BG
+date=2014-08-28
+URL=mms://83.222.161.217/100livesport
+player=default
+rating=-1.00
+
+# 2334883
+type=video
+name=ESPN WORLD CUP BARZIL 2014
+date=2014-08-28
+URL=rtmp://31.204.153.71/live/master05
+player=default
+rating=-1.00
+
+# 2334884
+type=video
+name=Hi span TV WORD CUP 2014
+date=2014-08-28
+URL=rtmp://mtv.fms-01.visionip.tv/live/mtv-m_tv-live-25f-4x3-SDh
+player=default
+rating=-1.00
+
+# 2334885
+type=video
+name=World Cup 2014 TV HD
+date=2014-08-28
+URL=rtmp://cp98516.edgefcs.net/ondemand/videos/26255223
+player=default
+rating=-1.00
+
+# 2334882
+type=video
+name=World Cup 2014 TV  HD 1
+date=2014-08-28
+URL=rtmp://msh0178.itstream.tv/live/itstream165_live
+player=default
+rating=-1.00
+
+# 2334886
+type=video
+name=NHK
+date=2014-08-28
+URL=rtmp://37.9.228.45:1957/itstream227/itstream227
+player=default
+rating=-1.00
+
+# 2334887
+type=video
+name=ZDF HD WORLD CUP 2014
+date=2014-08-28
+URL=rtmp://server.az1.stream-server.org:1935/live/zdf.stream
+player=default
+rating=-1.00
+
+# 2334879
+type=video
+name=SPORT TV HD
+date=2014-08-28
+URL=rtmp://46.246.29.140/stream///%20playpath=oookifhndk.stream%20swfUrl=http://04stream.com/p/ooolo1.swf%20live=1
+player=default
+rating=-1.00
+
+# 2334888
+type=video
+name=CANAL + HD
+date=2014-08-28
+URL=rtmp://109.123.114.162/live%20playpath=pluspontucanal?id=15108%20swfUrl=http://www.ezcast.tv/static/scripts/eplayer.swf%20live=1%20pageUrl=http://www.ezcast.tv/%20Conn=S:OK%20?live
+player=default
+rating=-1.00
+
+# 2334889
+type=video
+name=Bein sport 15
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein15%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein15%20timeout=10
+player=default
+rating=-1.00
+
+# 2334890
+type=video
+name=Bein sport 14
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein14%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein14%20timeout=10
+player=default
+rating=-1.00
+
+# 2334891
+type=video
+name=Bein sport 13
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein13%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein13%20timeout=10
+player=default
+rating=-1.00
+
+# 2334892
+type=video
+name=Bein sport 12
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein12%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein12%20timeout=10
+player=default
+rating=-1.00
+
+# 2334893
+type=video
+name=Bein sport 11
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein11%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein11%20timeout=10
+player=default
+rating=-1.00
+
+# 2334894
+type=video
+name=Bein sport 10
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein10%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein10%20timeout=10
+player=default
+rating=-1.00
+
+# 2334895
+type=video
+name=Bein sport 9
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein9%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein9%20timeout=10
+player=default
+rating=-1.00
+
+# 2334896
+type=video
+name=Bein sport 8
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein8%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein8%20timeout=10
+player=default
+rating=-1.00
+
+# 2334897
+type=video
+name=Bein sport 7
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein7%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein7%20timeout=10
+player=default
+rating=-1.00
+
+# 2334898
+type=video
+name=Bein sport 5
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein6%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein6%20timeout=10
+player=default
+rating=-1.00
+
+# 2334899
+type=video
+name=Bein sport 4
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein4%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein4%20timeout=10
+player=default
+rating=-1.00
+
+# 2334900
+type=video
+name=Bein sport 3
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=rtmp://94.242.228.110/liveedge%20playpath=mootembein3%20pageUrl=http://www.livevideostreams.tv/front/embed/mootembein3%20timeout=10
+player=default
+rating=-1.00
+
+# 2334901
+type=video
+name=Bein sport 2
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=http://202.75.23.37:8800/live/ch19/04.m3u8?sd=10&amp;rebase=on
+player=default
+rating=-1.00
+
+# 2334902
+type=video
+name=bein sport 1
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/20/Bein_sport_logo.png
+date=2014-08-28
+URL=http://202.75.23.37:8800/live/ch18/04.m3u8?sd=10&amp;rebase=on
+player=default
+rating=-1.00
+
+# 2334903
+type=video
+name=idman TV  SPORT
+date=2014-08-28
+URL=rtmp://live.mediabay.tv/live//mpegtsIdman_750.stream
+player=default
+rating=-1.00
+
+# 2334904
+type=video
+name=GOL TV HD
+date=2014-08-28
+URL=http://cdnvir-edge01.mediapro.es/niceLiveServer/_definst_/53662626/af476381c21fbecc29d1e8c487a6051a/golt_live_24h_MB_2000/media_w886217303_8915.m3u8?wowzasessionid=186825503
+player=default
+rating=-1.00
+
+# 2334791
+type=video
+name=Russia / Sport 1 HD
+date=2014-08-28
+URL=http://hls.novotelecom.ru/streaming/sport1/tvrec/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334906
+type=video
+name=Russia / Pyhon Sports
+date=2014-08-28
+URL=http://178.49.132.73/streaming/futbol/tvrec/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334907
+type=video
+name=Russia / Sport 2
+date=2014-08-28
+URL=http://178.49.132.73/streaming/sport/tvrec/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334908
+type=video
+name=Sport Max
+thumb=http://564ccca6a641eac6e5b0-38e3bbf162f44470d3635a7244f7971b.r55.cf3.rackcdn.com/sport-max-channel-images-logo-large.png?1362388705
+date=2014-08-28
+URL=http://46.249.213.93/iPhone/broadcast/sportmax-tablet.3gp/sportmax-tablet.3gp-mr497k.m3u8
+player=default
+rating=-1.00
+
+# 2334877
+type=video
+name=Sport TV
+thumb=http://www.lyngsat-logo.com/logo/tv/ss/sportv_br.png
+date=2014-08-28
+URL=rtmp://94.102.56.186/%20app=freelivestreamHD%20playpath=sportv24h%20swfUrl=http://www.freelivestream.tv/swfs/player.swf%20live=true%20timeout=15%20pageUrl=http://www.freelivestream.tv/embedPlayer.php?file=sportv24h&amp;width=480&amp;height=360
+player=default
+rating=-1.00
+
+# 2334909
+type=video
+name=Viasat Hockey HD
+thumb=http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg
+date=2014-08-28
+URL=http://viasatlive4-i.akamaihd.net/hls/live/202772/viasathockey/2dif.m3u8
+player=default
+rating=-1.00
+
+# 2334910
+type=video
+name=Canal 8 FOTBOLL
+date=2014-08-28
+URL=http://viasatlive1-i.akamaihd.net/hls/live/206922/canal8dkebs/4arp.m3u8
+player=default
+rating=-1.00
+
+# 2334911
+type=video
+name=Sport 3
+date=2014-08-28
+URL=http://hls.novotelecom.ru/streaming/1kanal/tvrec/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334905
+type=video
+name=Football HD
+date=2014-08-28
+URL=http://hls.novotelecom.ru/streaming/futbol/tvrec/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334912
+type=video
+name=SPORT HD
+date=2014-08-28
+URL=http://lswb-de-08.servers.octoshape.net:1935/live/kanalsport_2000k/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334913
+type=video
+name=BOX NATION
+thumb=http://upload.wikimedia.org/wikipedia/commons/c/c3/BoxNation_logo.jpg
+date=2014-08-28
+URL=rtmp://rtmp.bestcast.me:1935/liverepeater/_definst_/151324
+player=default
+rating=-1.00
+
+# 2334914
+type=video
+name=Bursaspor /turkish
+date=2014-08-28
+URL=http://stream.yayindayiz.biz/Bursaspor/bursaspor/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2334786
+type=video
+name=Galatsaray Sky Sport / Turkish
+date=2014-08-28
+URL=rtmp://cdn21.motiwe.com/live/gstv370
+player=default
+rating=-1.00
+
+# 2334915
+type=video
+name=SportsTV3 turkish
+date=2014-08-28
+URL=rtmp://stream.sportstv.com.tr/sportstv//SportsTV3
+player=default
+rating=-1.00
+
+# 2334916
+type=video
+name=Eurosport 2 HD  UK
+date=2014-08-28
+URL=rtmp://31.220.0.134:1935/live%20playpath=euro2x%20token=%ZZri(nKa@#Z%20pageUrl=http://www.eucast.tv/embed.php?live=ss4x&amp;vw=620&amp;vh=490%20live=true%20timeout=10
+player=default
+rating=-1.00
+
+# 2334917
+type=video
+name=Eurosport HD UK
+date=2014-08-28
+URL=rtmp://31.220.0.134:1935/live%20playpath=euro1x%20token=%ZZri(nKa@#Z%20pageUrl=http://www.eucast.tv/embed.php?live=ss4x&amp;vw=620&amp;vh=490%20live=true%20timeout=10
+player=default
+rating=-1.00
+
+# 2334918
+type=video
+name=Eurosport HD
+date=2014-08-28
+URL=http://goo.gl/CyilYU
+player=default
+rating=-1.00
+
+# 2334919
+type=video
+name=Sky italia 1
+date=2014-08-28
+URL=rtmp://31.220.0.103:1935/live%20playpath=sky1italia%20swfUrl=http://static2.sawlive.tv/player.swf%20live=1%20pageUrl=http://www.eucast.tv%20token=%ZZri(nKa@#Z
+player=default
+rating=-1.00
+
+# 2334920
+type=video
+name=Sky italia 2
+date=2014-08-28
+URL=rtmp://31.220.0.103:1935/live%20playpath=sky2italia%20swfUrl=http://static2.sawlive.tv/player.swf%20live=1%20pageUrl=http://www.eucast.tv%20token=%ZZri(nKa@#Z
+player=default
+rating=-1.00
+
+# 2334921
+type=video
+name=Sky italia 3
+date=2014-08-28
+URL=rtmp://31.220.0.103:1935/live%20playpath=sky3italia%20swfUrl=http://static2.sawlive.tv/player.swf%20live=1%20pageUrl=http://www.eucast.tv%20token=%ZZri(nKa@#Z
+player=default
+rating=-1.00
+
+# 2334922
+type=video
+name=Telearena italy
+date=2014-08-28
+URL=http://wma07.fluidstream.net/TeleArena/livestream/sansar.m3u8
+player=default
+rating=-1.00
+
+# 2334923
+type=video
+name=MFS Golf Korea
+date=2014-08-28
+URL=rtmp://lm01.everyon.tv:1935/ptv/pld58
+player=default
+rating=-1.00
+
+# 2334924
+type=video
+name=oman TV2 sport HD
+date=2014-08-28
+URL=rtmp://38.96.148.30:1935/live/omantv2
+player=default
+rating=-1.00
+
+# 2334925
+type=video
+name=TVP  Sport
+date=2014-08-28
+URL=rtmp://s2.goodcast.tv/live/%20playpath=tvpsport.stream%20swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf%20live=1%20pageUrl=http://goodcast.tv/%20timeout=10
+player=default
+rating=-1.00
+
+# 2334926
+type=video
+name=canal + deportes
+date=2014-08-28
+URL=rtmp://37.130.228.52/live%20playpath=vivamejicod?id=14818%20swfUrl=http://www.ezcast.tv/static/scripts/eplayer.swf%20live=1%20pageUrl=http://www.ezcast.tv/embedded/vivamejicod/1/645/395%20Conn=S:OK
+player=default
+rating=-1.00
+
+# 2334927
+type=video
+name=canal+ futbol
+date=2014-08-28
+URL=rtmp://50.7.137.90/iguide%20playpath=yr9edw1f4e8s567%20swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf%20live=1%20pageUrl=http://www.iguide.to/%20token=#ed%h0#w18623jsda6523lDGD
+player=default
+rating=-1.00
+
+# 2334928
+type=video
+name=Canal+ Liga campeones
+date=2014-08-28
+URL=rtmp://95.211.168.161/vl/_definst_%20playpath=abralacabra1%20swfUrl=http://www.veemi.com/player/player-licensed.swf%20live=1%20pageUrl=http://www.veemi.com/embed.php
+player=default
+rating=-1.00
+
+# 2334929
+type=video
+name=Canal + HD LIGA
+date=2014-08-28
+URL=rtmp://50.7.137.106/iguide%20playpath=euxk7ataczy5ri5%20swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf%20live=1%20pageUrl=http://www.iguide.to/%20token=#ed%h0#w18623jsda6523lDGD
+player=default
+rating=-1.00
+
+# 2334930
+type=video
+name=spain Esport3
+date=2014-08-28
+URL=rtmp://tv-nogeo-flashlivefs.fplive.net/tv-nogeo-flashlive-live/%20playpath=stream_ES3_FLV%20swfUrl=http://04stream.com/p/boopo.swf%20live=1%20pageUrl=http://negmtv.altervista.org/php/sportsplayer3.php?ch=Esport3
+player=default
+rating=-1.00
+
+# 2334810
+type=video
+name=Spain sevilla FC
+date=2014-08-28
+URL=rtmp://flash0.80137-live0.dna.qbrick.com/80137-live0/sevillafc
+player=default
+rating=-1.00
+
+# 2334931
+type=video
+name=PREMIER LEAGUE TV
+date=2014-08-28
+URL=rtmp://live305.edge.filmon.com/live/?id=0ad5aac39bb13fbe0c47ef2d02d50576715a21eb9b84453faa13bff05f40c3fca6f1f39a98c37ba5f8304a29e39edcc389f0f2abfb61f816c4dc749fc554251e56f97b85f1531be2a0e356cb65f32e65fb4e5cb50587026199dd3ad1aa89d21121d6abd6f6947f3728d9b5b9620ec74c89fface22a74fdc7fb468c1c57237f9eec8c58ac5cd41e448bbc417d98b175562996b370c3a68fd6/374.low.stream
+player=default
+rating=-1.00
+
+# 2334932
+type=video
+name=bein_sport_2
+thumb=http://data.nimages.fr/beport2a65.png
+date=2014-08-28
+URL=http://202.75.23.37:8800/live/ch19/01.m3u8
+player=default
+rating=-1.00
+
+# 2334933
+type=video
+name=bein_sport_1
+thumb=http://advar.ps/wp-content/uploads/2014/04/beIN-SPORT-1.jpg
+date=2014-08-28
+URL=http://202.75.23.37:8800/live/ch18/01.m3u8
+player=default
+rating=-1.00
+
+# 2334934
+type=video
+name=SKY SPORTS 1
+thumb=http://www.igoal.tv/ch/sky_sports1.jpg
+date=2014-08-28
+URL=rtmp://37.220.32.52:443/liverepeater/23697%20swfUrl=http://rackcdn.com/atdedead.swf%20live=1%20pageUrl=http://1cdn.filotv.pw/%20live=true%20timeout=10%20token=#atd%#$ZH
+player=default
+rating=-1.00
+
+# 2334935
+type=video
+name=SKY SPORTS 2
+thumb=http://www.igoal.tv/ch/sky_sports2.jpg
+date=2014-08-28
+URL=rtmp://37.220.36.71:443/liverepeater%20playpath=33698%20swfUrl=http://static.surk.tv/player.swf%20pageUrl=http://1cdn.filotv.pw/ss2.html%20live=true%20timeout=10%20token=#atd%#$ZH
+player=default
+rating=-1.00
+
+# 2334936
+type=video
+name=SKY SPORTS 3
+thumb=http://www.igoal.tv/ch/sky_sports3.jpg
+date=2014-08-28
+URL=rtmp://37.220.32.55:443/liverepeater/23699%20swfUrl=http://rackcdn.com/atdedead.swf%20live=1%20pageUrl=http://1cdn.filotv.pw/%20live=true%20timeout=10%20token=#atd%#$ZH
+player=default
+rating=-1.00
+
+# 2334937
+type=video
+name=SKY SPORTS 4
+thumb=http://i2.cdnds.net/09/53/160x120_broadcasting_ss4logo.jpg
+date=2014-08-28
+URL=rtmp://37.220.32.53:443/liverepeater/23700%20swfUrl=http://rackcdn.com/atdedead.swf%20live=1%20pageUrl=http://1cdn.filotv.pw/%20live=10%20timeout=10%20token=#atd%#$ZH
+player=default
+rating=-1.00
+
+# 2334938
+type=video
+name=WWE Network
+date=2014-08-28
+URL=rtmp://37.220.36.71:443/liverepeater%20playpath=stream38%20swfUrl=http://static.surk.tv/player.swf%20pageUrl=http://1cdn.filotv.pw/stream38.html%20live=1%20timeout=10
+player=default
+rating=-1.00
+
+# 2334940
+type=video
+name=Xtreme Impacts
+date=2014-08-28
+URL=http://46.249.213.93/iPhone/broadcast/xtremeimpacts-tablet.3gp/xtremeimpacts-tablet.3gp-mr647k.m3u8
+player=default
+rating=-1.00
+
+# 2334941
+type=video
+name=Bay Area
+date=2014-08-28
+URL=http://www.xrxs.net/video/live-p12baya-4728.m3u8
+player=default
+rating=-1.00
+
+# 2334942
+type=video
+name=Arizona
+thumb=http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg
+date=2014-08-28
+URL=http://www.xrxs.net/video/live-p12ariz-4728.m3u8
+player=default
+rating=-1.00
+
+# 2334943
+type=video
+name=National
+thumb=http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg
+date=2014-08-28
+URL=http://www.xrxs.net/video/live-p12netw-4728.m3u8
+player=default
+rating=-1.00
+
+# 2334944
+type=video
+name=Sport club 3
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://85.114.139.20:2047/
+player=default
+rating=-1.00
+
+# 2334945
+type=video
+name=Sport club 2
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://85.114.139.20:2045/
+player=default
+rating=-1.00
+
+# 2334946
+type=video
+name=Sport club 1
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://85.114.139.20:2029/
+player=default
+rating=-1.00
+
+# 2334947
+type=video
+name=Arena sport 4
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://85.114.139.20:2049/
+player=default
+rating=-1.00
+
+# 2334948
+type=video
+name=Arena sport 3
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://85.114.139.20:2048/
+player=default
+rating=-1.00
+
+# 2334949
+type=video
+name=Arena sport 1
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://85.114.139.20:17213/
+player=default
+rating=-1.00
+
+# 2334950
+type=video
+name=Boxnation
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=rtmp://46.246.124.22:1935/private/_definst_/boxnation
+player=default
+rating=-1.00
+
+# 2334939
+type=video
+name=Supersport 1 HD
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://149.255.39.122/aasd/8733/index.m3u8
+player=default
+rating=-1.00
+
+# 2334824
+type=video
+name=Supersport 2 HD
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://149.255.39.122/aasd/8734/index.m3u8
+player=default
+rating=-1.00
+
+# 2334827
+type=video
+name=Supersport 3 HD
+thumb=http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg
+date=2014-08-28
+URL=http://149.255.39.122/aasd/8741/index.m3u8
+player=default
+rating=-1.00
+
+
+# cached

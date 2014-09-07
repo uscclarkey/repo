@@ -1,0 +1,501 @@
+version=1
+title=tv
+logo=C:\Users\paul\AppData\Roaming\XBMC\addons\Navi-X\resources\skins\Default\media\thumb_favorites.png
+
+type=playlist
+name=Sorted by user-assigned order
+icon=http://media.navi-x.org/images/icons/2downarrow.png
+URL=http://www.navixtreme.com/playlist/142009/tv.plx?action=sortsel&cur=ord
+
+# 2337978
+type=video
+name=A & E
+thumb=http://www.freelogovectors.net/wp-content/uploads/2012/04/a-e_network_logo.jpg
+date=2014-08-29
+URL=http://goo.gl/SkE93i
+rating=-1.00
+
+# 2337919
+type=video
+name=ABC news
+thumb=http://shavarross.com/wp-content/uploads/2010/10/ABC-TELEVISION-LOGO.jpg
+date=2014-08-29
+URL=http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8?sd=10&b=1200&rebase=on
+player=default
+rating=-1.00
+
+# 2337947
+type=video
+name=ABC news
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8
+player=default
+rating=-1.00
+
+# 2337920
+type=video
+name=ANIMAL PLANET
+thumb=http://static.ddmcdn.com/en-us/apl/images/network-default-still-v4.jpg
+date=2014-08-29
+URL=http://goo.gl/oV9W1i
+player=default
+rating=-1.00
+
+# 2337948
+type=video
+name=ANIMAL PLANET
+thumb=http://members.home.nl/djheemstra/MeediOS/icons/evolution/AnimalPlanet.png
+date=2014-08-29
+URL=http://202.75.23.34:1400/live/ch31/03.m3u8
+rating=-1.00
+
+# 2337921
+type=video
+name=BIO
+thumb=http://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Biography_Channel_(1999-2007)_logo.svg/299px-Biography_Channel_(1999-2007)_logo.svg.png
+date=2014-08-29
+URL=http://goo.gl/xVgkON
+rating=-1.00
+
+# 2337949
+type=video
+name=BIO
+thumb=http://t1.ftcdn.net/jpg/00/35/14/56/400_F_35145644_akON9JUenipn1HPh768BPLhv5rO3la9B.jpg
+date=2014-08-29
+URL=http://202.75.23.36:1400/live/ch46/03.m3u8
+rating=-1.00
+
+# 2337950
+type=video
+name=BLOOMBERG NEWS
+thumb=http://whatsonline.tv/wp-content/uploads/2014/04/bloomberg_logo.jpg
+date=2014-08-29
+URL=http://cdn3.videos.bloomberg.com/btv/us/master.m3u8
+player=default
+rating=-1.00
+
+# 2337915
+type=video
+name=THE BOX UK
+thumb=http://www.specialeffects.uk.com/communities/9/004/008/213/639/images/4536665957.jpg
+date=2014-08-29
+URL=http://goo.gl/MCBwlo
+rating=-1.00
+
+# 2337922
+type=video
+name=BRITISH EUROSPORT 2
+thumb=http://www.worldseriesofbackgammon.com/commons/images/Logo_EuroSport2.gif
+date=2014-08-29
+URL=rtmp://31.220.0.104:1935/live/eurs2 pageUrl=http://www.flashtv.co/hpg_disco token=%ZZri(nKa@#Z
+rating=-1.00
+
+# 2337923
+type=video
+name=BT SPORT 1
+thumb=http://i.dailymail.co.uk/i/pix/2013/04/26/article-2315191-197F4877000005DC-125_306x71.jpg
+date=2014-08-29
+URL=rtmp://176.31.192.7/live/bt1 live=1
+player=default
+rating=-1.00
+
+# 2337924
+type=video
+name=BT SPORT 1
+thumb=http://www.dvtv.tv/images/pictuers/bt_sport_1.jpg
+date=2014-08-29
+URL=rtmp://31.220.0.104:1935/live/btssk1 pageUrl=http://www.flashtv.co/hpg_disco token=%ZZri(nKa@#Z
+rating=-1.00
+
+# 2337925
+type=video
+name=SKY SPORTS 1
+date=2014-08-29
+URL=rtmp://31.220.0.134:1935/live playpath=ass1 swfUrl=http://www.flashtv.co/ePlayerr.swf live=1 pageUrl=http://www.flashtv.co/ token=%ZZri(nKa@#Z
+player=default
+rating=-1.00
+
+# 2337969
+type=video
+name=BT SPORT 2
+thumb=http://www.techkaos.co.uk/streams/images/bt-sport2.png
+date=2014-08-29
+URL=rtmp://89.248.169.48:443/liverepeater playpath=72 token=#atd%#$ZH swfUrl=http://static.surk.tv/atdedead.swf live=1 timeout=13 pageUrl=http://filotv.pw/ AnisotropicTV
+player=default
+rating=-1.00
+
+# 2337926
+type=video
+name=CARTOON NETWORK
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=http://goo.gl/2VwrKS
+player=default
+rating=-1.00
+
+# 2337966
+type=video
+name=CARTOONITO
+thumb=http://i48.tinypic.com/fuvtye.jpg
+date=2014-08-29
+URL=http://secure.ilikehd.com:8080/livetv/player/totlink.m3u8?channel_id=dff1502eb25c4912aea009df5d0fde9b&bitrate=1500
+rating=-1.00
+
+# 2337973
+type=video
+name=CBBC
+thumb=http://www.woapa.co.uk/upload/U584063_cbbc_logo.jpg
+date=2014-08-29
+URL=http://goo.gl/9cSBhT
+player=default
+rating=-1.00
+
+# 2337951
+type=video
+name=CNN
+thumb=http://www.userlogos.org/files/logos/tl/cnn.png
+date=2014-08-29
+URL=rtmp://c.cdn.livenewschat.eu/edge playpath=cnn_live swfUrl=http://msnbclive.eu/player.swf swfVfy=1 live=1 pageUrl=http://weplaylive.tv timeout=15
+rating=-1.00
+
+# 2337952
+type=video
+name=COMEDY CENTRAL
+thumb=http://fc00.deviantart.net/fs71/i/2013/087/1/3/comedy_central_icon_by_slamiticon-d5zbm1h.png
+date=2014-08-29
+URL=http://secure.ilikehd.com:8080/livetv/player/totlink.m3u8?channel_id=2f18d4ba25224edaa8bb9aac94b00d4f&bitrate=1500
+rating=-1.00
+
+# 2337927
+type=video
+name=CRIME INVESTIGATION NETWORK
+thumb=http://www.crimeandinvestigation.nl/docroot/images/international/genericTonightImage.jpg
+date=2014-08-29
+URL=http://goo.gl/21Z4sj
+rating=-1.00
+
+# 2337953
+type=video
+name=DANCE TV
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=rtsp://91.82.85.16:1935/relay10/dancetv1.sdp
+player=default
+rating=-1.00
+
+# 2337928
+type=video
+name=DISCOVERY CHANNEL
+thumb=http://www.aidsresponseeffort.org/wp-content/uploads/2012/03/discovery_channel_answer_1_xlarge1.jpg
+date=2014-08-29
+URL=http://goo.gl/XCNC5R
+player=default
+rating=-1.00
+
+# 2337967
+type=video
+name=DISCOVERY HOME & HEALTH
+thumb=http://3.bp.blogspot.com/-j6wFZoZMmLk/TdRFqHuDSDI/AAAAAAAABYY/DGL6tDCrBBM/s400/Discovery+Home+%2526+Health+promo+ID+B.jpg
+date=2014-08-29
+URL=http://202.75.23.34:1400/live/ch34/03.m3u8
+rating=-1.00
+
+# 2337968
+type=video
+name=DISCOVERY KIDS
+thumb=http://images.all-free-download.com/images/graphiclarge/discovery_kids_134940.jpg
+date=2014-08-29
+URL=http://202.75.23.35:1400/live/ch36/03.m3u8
+rating=-1.00
+
+# 2337954
+type=video
+name=DISCOVERY SCI
+thumb=http://www.hdicon.com/wp-content/uploads/2010/06/Discovery_Channel_1995.png
+date=2014-08-29
+URL=http://202.75.23.34:1400/live/ch33/03.m3u8
+rating=-1.00
+
+# 2337955
+type=video
+name=DISCOVERY WORLD
+thumb=http://www.aidsresponseeffort.org/wp-content/uploads/2012/03/discovery_channel_answer_1_xlarge1.jpg
+date=2014-08-29
+URL=http://202.75.23.34:1400/live/ch30/03.m3u8
+player=default
+rating=-1.00
+
+# 2337977
+type=video
+name=DISNEY
+thumb=http://fc01.deviantart.net/fs70/i/2011/234/a/d/disney_channel_folder_pack_by_ibibikov73-d47hhes.png
+date=2014-08-29
+URL=http://goo.gl/vGP2Bb
+rating=-1.00
+
+# 2337957
+type=video
+name=EURO NEWS
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=http://hd1.lsops.net/live/euronews_en_340/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2337974
+type=video
+name=EUROSPORT 1 HD
+thumb=http://upload.wikimedia.org/wikipedia/commons/1/1a/Eurosport_hd.png
+date=2014-08-29
+URL=http://149.255.39.122/aasd/8814/index.m3u8
+rating=-1.00
+
+# 2337975
+type=video
+name=EUROSPORT 2 HD
+thumb=http://www.racexpress.nl/imgitems/article/2012/07/Eurosport%202%20in%20HD%20RX%20500.jpg
+date=2014-08-29
+URL=http://149.255.39.122/aasd/8815/index.m3u8
+rating=-1.00
+
+# 2337929
+type=video
+name=FOX NEWS
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Fox_News_Channel.svg/1098px-Fox_News_Channel.svg.png
+date=2014-08-29
+URL=rtmpe://watch.playfooty.tv/live playpath=foxnews1569 swfUrl=http://www.playfooty.tv/play/player/player.swf live=1 pageUrl=http://www.playfooty.tv/play/embed.php?u=foxnews1569&vw=600&vh=430
+rating=-1.00
+
+# 2337972
+type=video
+name=FX
+thumb=http://www.logoeps.net/wp-content/uploads/2012/04/fx-tv-channel-logo.jpg
+date=2014-08-29
+URL=http://secure.ilikehd.com:8080/livetv/player/totlink.m3u8?channel_id=2e0e4b05aa6e428593f3b45b710045b7
+rating=-1.00
+
+# 2337931
+type=video
+name=HBO
+thumb=http://www.boomtron.com/wp-content/uploads/2011/07/HBO-logo.jpg
+date=2014-08-29
+URL=rtmp://81.17.20.46/iguide playpath=0bf02qe6msgtu4s swfUrl=http://cdn.iguide.to/player/secure_player_iguide_token.swf pageUrl=http://www.iguide.to/view/1/watch-live-HBO-channel-for-free token=#ed%h0#w18623jsda6523lDGD
+rating=-1.00
+
+# 2337914
+type=video
+name=HEAT TV UK
+thumb=http://www.heatworld.com/images/109957_615x10000_STD/2012/6/heat_logo_x.jpg
+date=2014-08-29
+URL=http://goo.gl/wKIC0B
+rating=-1.00
+
+# 2337958
+type=video
+name=HISTORY
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=http://202.75.23.36:1400/live/ch45/03.m3u8
+player=default
+rating=-1.00
+
+# 2337918
+type=video
+name=HIT MUSIC CHANNEL
+thumb=http://users2.ml.mindenkilapja.hu/users/tv-onlinecsatornak/uploads/HiTMC_logo.png
+date=2014-08-29
+URL=rtmp://92.249.129.130:1935/live playpath=music1 swfUrl=http://myhit.tv/flash/flowplayer_3/flowplayer.musicchannel.swf pageUrl=http://myhit.tv token=mafUp8VaxEcRegEn# live=1
+rating=-1.00
+
+# 2337930
+type=video
+name=ITV CHOICE
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/3/34/ITV_Choice.svg/150px-ITV_Choice.svg.png
+date=2014-08-29
+URL=http://goo.gl/yzOAGH
+rating=-1.00
+
+# 2337976
+type=video
+name=ITV1 HD
+thumb=http://www.thedrum.com/uploads/news/old/21072/master.cl.jpg
+date=2014-08-29
+URL=http://goo.gl/sFTg2o
+rating=-1.00
+
+# 2337913
+type=video
+name=KISS TV UK
+thumb=http://www.radio-now.co.uk/bigimages/kisslogo.jpg
+date=2014-08-29
+URL=http://goo.gl/lvr1Hh
+rating=-1.00
+
+# 2337959
+type=video
+name=LIFETIME
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=http://202.75.23.36:1400/live/ch48/03.m3u8
+processor=http://www.rpmtalent.net/wp-content/uploads/2014/05/lifetime.jpeg
+player=default
+rating=-1.00
+
+# 2337917
+type=video
+name=MAGIC
+thumb=http://www.freeview.co.uk/wp-content/uploads/2013/05/Magic-Ident-Still-470x264.jpg
+date=2014-08-29
+URL=http://goo.gl/ScmPOQ
+rating=-1.00
+
+# 2337933
+type=video
+name=MTV HITS
+thumb=http://thetvroom.com/images/pool-i/132/main-000-615.jpg
+date=2014-08-29
+URL=http://217.113.227.239/mtvhits/mtvhits.m3u8
+rating=-1.00
+
+# 2337934
+type=video
+name=MTV
+thumb=http://tvfishbowl.com/wp-content/uploads/2013/01/200px-MTV_Logo.svg_.png
+date=2014-08-29
+URL=rtmp://67.228.177.198/mtv/?jacob#MDdlYmYxMDEwNWU2LnBuZzwvdXJsTG9nbz48U0FMQUNPTkZJR19ET1dOTE9BRFM%2BMTwvU0#james/ playpath=87hd swfUrl=http://75.126.217.6/site/flash/player_aovivo.swf?v=1.3 pageUrl=http://75.126.217.6/videoteca/play live=1
+rating=-1.00
+
+# 2337971
+type=video
+name=NAT GEO PEOPLE
+thumb=http://www.broadbandtvnews.com/wp-content/uploads/2014/04/Nat-Geo-People-e1397071023754.png
+date=2014-08-29
+URL=http://goo.gl/KuFqrG
+rating=-1.00
+
+# 2337960
+type=video
+name=NATIONAL GEO
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=http://202.75.23.35:1400/live/ch38/03.m3u8
+player=default
+rating=-1.00
+
+# 2337935
+type=video
+name=NICKELODEON
+thumb=http://i1.ytimg.com/vi/NzurqdEXin0/hqdefault.jpg
+date=2014-08-29
+URL=http://goo.gl/vMPeOh
+player=default
+rating=-1.00
+
+# 2337961
+type=video
+name=NICKELODEON
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=http://202.75.23.36:1400/live/ch43/03.m3u8
+player=default
+rating=-1.00
+
+# 2337936
+type=video
+name=NOW THATS WHAT I CALL MUSIC
+thumb=http://www.broadbandtvnews.com/wp-content/uploads/2013/10/NOW-MUSIC-300x211.jpg
+date=2014-08-29
+URL=http://rrr.sz.xlcdn.com/?account=AATW&file=nowmusic&type=live&service=wowza&protocol=http&output=playlist.m3u8
+rating=-1.00
+
+# 2337937
+type=video
+name=POP MUSIC TV
+thumb=http://w3.popmusic.com/IMAGES/pop-music---logo-band-400.gif
+date=2014-08-29
+URL=mmsh://194.88.200.11:80/pop?MSWMExt=.asf
+rating=-1.00
+
+# 2337938
+type=video
+name=SKY NEWS
+thumb=http://www.thedrum.com/uploads/news/old/23516/master.skynews.jpg
+date=2014-08-29
+URL=http://goo.gl/hpQM1w
+rating=-1.00
+
+# 2337941
+type=video
+name=SKY SPORTS 2
+thumb=http://img4.wikia.nocookie.net/__cb20100803180424/logopedia/images/a/ae/Sky_Sports_2_2010.png
+date=2014-08-29
+URL=rtmp://89.248.169.48:443/liverepeater playpath=43 swfUrl=http://static.surk.tv/atdedead.swf live=1 pageUrl=http://xxcast.pm/player2.php?id=8&width=640&height=460 token=#atd%#$ZH
+rating=-1.00
+
+# 2337942
+type=video
+name=SKY SPORTS 3
+thumb=http://img2.wikia.nocookie.net/__cb20100803180611/logopedia/images/7/79/Sky_Sports_3_2010.png
+date=2014-08-29
+URL=rtmp://31.220.0.104:1935/live/sskk3 pageUrl=http://www.flashtv.co/hpg_disco token=%ZZri(nKa@#Z
+rating=-1.00
+
+# 2337943
+type=video
+name=SKY SPORTS 4
+thumb=http://samistream.com/thumbs/skysports4.png
+date=2014-08-29
+URL=rtmp://31.220.0.86:1935/live playpath=skks4 swfUrl=http://www.flashtv.co/ePlayerr.swf live=1 pageUrl=http://www.flashtv.co/ token=%ZZri(nKa@#Z
+rating=-1.00
+
+# 2337944
+type=video
+name=SKY SPORTS 5
+thumb=http://images.football365.com/14/06/800x600/sslandingpageinset-skysports5-newchannel_3156591.jpg
+date=2014-08-29
+URL=rtmp://31.220.0.104:1935/live/sskk5 pageUrl=http://www.flashtv.co/hpg_disco token=%ZZri(nKa@#Z
+rating=-1.00
+
+# 2337970
+type=video
+name=SKY SPORTS NEWS
+thumb=http://www.fm-base.co.uk/forum/attachments/football-manager-2012-stories/268180d1300972362-juventus-il-nuovo-barca-new-barcelona-sky-sports-news-logo-1.png
+date=2014-08-29
+URL=rtmp://31.220.0.104:1935/live/skksnews pageUrl=http://www.flashtv.co/hpg_disco token=%ZZri(nKa@#Z
+rating=-1.00
+
+# 2337916
+type=video
+name=SMASH  HITS
+thumb=http://news.bbc.co.uk/media/images/38273000/jpg/_38273448_smashhits300.jpg
+date=2014-08-29
+URL=http://goo.gl/7KfTxb
+rating=-1.00
+
+# 2337995
+type=video
+name=TRING MAX
+thumb=http://www.smartworldtv.com/repository/images/path/Tring_Max_725537.PNG
+date=2014-08-29
+URL=http://goo.gl/uHlvKe
+rating=-1.00
+
+# 2337964
+type=video
+name=VEVO TV 1
+thumb=http://i723.photobucket.com/albums/ww232/superbubble12345/9fd65086fa385e73d0d41b394dcf7b8e.gif~original
+date=2014-08-29
+URL=http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/05/prog_index.m3u8
+rating=-1.00
+
+# 2337945
+type=video
+name=VH 1
+thumb=http://static.myfreeconcert.com/mfc_images/vh1logo.jpg
+date=2014-08-29
+URL=http://hls01-03.az.myvideo.az/hls-live/livepkgr/vh1/vh1/vh1.m3u8?mfamwuUL6IpOXDJ8WwxJ
+rating=-1.00
+
+
+# cached

@@ -64,7 +64,8 @@ LIST_LIST4 = 127
 BUTTON_RATE = 128
 LIST_LIST5 = 129
 BUTTON_RIGHT = 130
-
+BUTTON_EXIT2 = 2125
+Label_Protocol = 2108
 ######################################################################
 # Description: creates internal variables for the widget controls
 # Parameters : window: handle to the main window
@@ -94,6 +95,9 @@ def load_skin(window):
     window.loading = window.getControl(LABEL_LOADING)
     window.loading.setVisible(False)
     window.listpos = window.getControl(LABEL_LISTPOS)
+    
+    try: window.labProtocol = window.getControl(Label_Protocol)
+    except: pass
     
     #lists
     window.list1 = window.getControl(LIST_LIST1)
@@ -140,6 +144,9 @@ def load_skin(window):
     #textbox
     window.list3tb = window.getControl(TEXT_BOX_LIST3)
     window.list3tb.setVisible(False) 
+    
+    #exit button
+    #window.exitbutton2 = window.getControl(BUTTON_EXIT2)
     
     #set the large list as default
     window.list = window.list1

@@ -56,20 +56,64 @@ class CURLLoader:
 ######################################################################
     def urlopen(self, URL, mediaitem=0):
         result = {"code":0} #successful
-
+        try: import urlresolver; 
+        except: pass
+        try:
+        	#import urlresolver; 
+        	if urlresolver.HostedMediaFile(mediaitem.URL).valid_url()==True:
+        		print "valid url for local UrlResolver"; 
+        		self.loc_url=urlresolver.HostedMediaFile(mediaitem.URL).resolve(); print "loc_url:"; print self.loc_url; 
+        		if '://' in self.loc_url: self.processed=True; return {"code":0}; 
+        except urllib2.URLError, e: print e; pass
+        except Exception, e: print e; pass
+        except: pass
+        
         if mediaitem.processor != '':
-            result = self.geturl_processor(mediaitem)
+          #if tfalse(SettingG("use-LocalUrlResolver"))==True:
+          #  try:
+          #    #import urlresolver; 
+          #    print "using urlresolver method"; print "mediaitem.URL"; 
+          #    if urlresolver.HostedMediaFile(mediaitem.URL).valid_url()==True:
+          #      print "valid url"; 
+          #      self.loc_url=urlresolver.HostedMediaFile(mediaitem.URL).resolve(); print "loc_url:"; print self.loc_url; 
+          #      self.processed=True; return {"code":0}; 
+          #  except: ## Fall back to site processors
+          #    result=self.geturl_processor(mediaitem)
+          #else: 
+          result=self.geturl_processor(mediaitem)
+          #print "======================================="; print mediaitem.processor; print mediaitem.URL; print result; print "======================================="; 
         elif URL.find('http://www.youtube.com') != -1:
-            mediaitem.processor = "http://www.navixtreme.com/proc/youtube"
-            result = self.geturl_processor(mediaitem)
+          #if tfalse(SettingG("use-LocalUrlResolver"))==True:
+          #  try:
+          #    import urlresolver; print "using urlresolver method"; print "mediaitem.URL"; 
+          #    if urlresolver.HostedMediaFile(mediaitem.URL).valid_url():
+          #      print "valid url"; 
+          #      self.loc_url=urlresolver.HostedMediaFile(mediaitem.URL).resolve(); print "loc_url:"; print self.loc_url; 
+          #      self.processed=True; return {"code":0}; 
+          #  except: ## Fall back to site processors
+          #    mediaitem.processor="http://www.navixtreme.com/proc/youtube"; 
+          #    result=self.geturl_processor(mediaitem); 
+          #else:
+          mediaitem.processor="http://www.navixtreme.com/proc/youtube"; 
+          result=self.geturl_processor(mediaitem); 
+          #print "======================================="; print URL; print mediaitem.processor; print mediaitem.URL; print result; print "======================================="; 
         elif URL[:4] == 'http':
-            if mediaitem.processed == True:
-                self.loc_url = mediaitem.URL
+            if mediaitem.processed==True:
+                self.loc_url=mediaitem.URL
             else:
-                result = self.geturl_redirect(URL, mediaitem) 
+                result=self.geturl_redirect(URL,mediaitem) 
         else:
-            self.loc_url = URL
-               
+            self.loc_url=URL
+        print "======================================="; print URL; print mediaitem.processor; print mediaitem.URL; print result; print "======================================="; 
+        try:
+          if (not result["code"] == 0) and ('http' in mediaitem.URL): ## Thus far result['code'] seems to be 0 even if online processor fails.
+              #import urlresolver; 
+              print "using urlresolver method as final fallback attempt"; print "mediaitem.URL"; 
+              if urlresolver.HostedMediaFile(mediaitem.URL).valid_url()==True:
+                print "valid url"; 
+                self.loc_url=urlresolver.HostedMediaFile(mediaitem.URL).resolve(); print "loc_url:"; print self.loc_url; 
+                self.processed=True; result={"code":0}; 
+        except: pass
         return result
 
 ######################################################################
@@ -126,7 +170,12 @@ class CURLLoader:
         if htmRaw=="":
             print "Processor: phase 1 - query\n URL: "+mediaitem.URL+"\n Processor: "+mediaitem.processor
             SetInfoText("Processor: getting filter...")
+            #print 'mediaitem.processor'; print mediaitem.processor; 
+            #mediaitem.processor=mediaitem.processor.replace('navi','n_a_v_i'); print mediaitem.processor; 
             htmRaw=getRemote(mediaitem.processor+'?url='+urllib.quote_plus(mediaitem.URL),{'cookie':'version='+Version+'.'+SubVersion+'; platform='+platform})['content']
+            #print "testing for htmRaw"; 
+            #print htmRaw; 
+            #if ("urllib2.URLError" in htmRaw) or ("urllib2.URLError" in htmRaw):
             proc_ori=htmRaw
 
         if htmRaw <= '':

@@ -1,0 +1,713 @@
+﻿#######################################################################################################################################
+<poster>FELVER</poster>
+<fanart>https://scontent-b-ord.xx.fbcdn.net/hphotos-prn2/t1.0-9/1375903_10153348455540206_513150697_n.jpg</fanart>
+############################################################################################################################
+
+<channels>
+
+<channel>
+<name>LIVE TV Channels 1[COLOR aqua] updated on 05/26/14[/COLOR]</name>
+<thumbnail>https://dl.dropboxusercontent.com/u/62302783/Stream%20Logos/Navix/sports.jpg</thumbnail>
+<fanart>http://moochbar.co.uk/wp-content/uploads/2013/07/Live-Sports.jpg</fanart>
+<items>
+
+<item>
+<title>[COLOR=FF00FF00]All links updated on 05/26/14[/COLOR]</title>
+<link> </link>
+<thumbnail>https://dl.dropboxusercontent.com/u/62302783/Stream%20Logos/Sports/info.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]NBA on BT[/COLOR]</title>
+<link>rtmp://37.220.32.56:443/liverepeater playpath=20724 swfUrl=http://www.longtailvideo.com/content/ova/jwplayer/player.swf pageUrl=http://1cdn.filotv.pw/stream1.html token=#atd%#$ZH token=#atd%#$ZH</link>
+<thumbnail>http://www.thefightlounge.co.uk/wp-content/uploads/2013/08/BT.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]TSN 2[/COLOR]</title>
+<link>rtmpe://5.153.29.69:1935/redirect playpath=tsn2hdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf live=1 pageUrl=http://cdn.watchjsc.us/embed.php?u=tsn2hdfoot&vw=640&vh=460&domain=hdfoots.com token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.artsigns.com/urls/TSN_Canada/TSN_Canada%27s_Sports_Leader_pict/TSN_boardroom.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR lime]NBA on TNT 9pm[/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=tnt1569 swfUrl=http://get.adobe.com/flashplayer pageUrl=http://www.playfooty.tv/play/embed.php?u=tnt1569&vw=600&vh=430 live=1 timeout=10|</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tnt_lam.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]NBA TV[/COLOR]</title>
+<link>rtmp://31.7.58.122:1935/stream/l8s9S4H7.stream playpath=N1V3R0h8.stream  swfUrl=http://thecdn.04stream.com/p/bbp.swf live=true timeout=15 pageUrl=http://www.04stream.com/NBA TV</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/62302783/Stream%20Logos/TV%20Channels/nbatv.png</thumbnail>
+<fanart>https://dl.dropboxusercontent.com/u/62302783/Channel%20Fanarts/nba.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>[COLOR aqua]Wrestling TV[/COLOR]</title>
+<link>rtmp://77.50.145.30/live/rtplive</link>
+<thumbnail>http://www.lezha.eu/wp-content/uploads/2012/09/wrestlingtv.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR aqua]DocuBox HD[/COLOR][COLOR yellow]Eng/Russ[/COLOR]</title>
+<link>http://totiptv.no-ip.org:8080/77774220bb8e40aa94e549e29ff3ed8a.m3u8</link>
+<thumbnail>http://www.satelitnatv.sk/wp-content/uploads/2012/07/docubox3.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR aqua]NBC Sports Network HD[/COLOR]</title>
+<link>http://xrxs.net/video/live-nbcs-4296.m3u8</link>
+<thumbnail>http://archive.11alive.com/images/640/360/2/assetpool/images/110801031445_nbc-sports-network801.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR aqua]GOLF HD[/COLOR]</title>
+<link>http://xrxs.net/video/live-golf-4096.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/gg/golf_channel_us.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR aqua]Solar Sports [/COLOR]</title>
+<link>rtmp://cp106256.live.edgefcs.net/live?videoId=1895620936001&lineUpId=&pubId=1213020456001&playerId=2520541709001&affiliateId=/ playpath=iwantsolarsports-600@71269?videoId=1895620936001&lineUpId=&pubId=1213020456001&playerId=2520541709001&affiliateId= swfUrl=http://www.longtailvideo.com/jwplayer/jwplayer.flash.swf pageUrl=http://www.phstream.com/2014/03/solarsports.html live=1 timeout=10</link>
+<thumbnail>http://www.hoo.ph/wp-content/uploads/solar-sports.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]A&E[/COLOR]</title>
+<link>rtmpe://107.150.45.130:1935/goLive playpath=nJlMXBYX7p9ZVsJ swfUrl=http://b17014255105be61b178-d8c0dbd82389bad2adcb7a22d1883b64.r92.cf5.rackcdn.com/jwplayer.flash.swf live=1 pageUrl=http://envivo.pw/ token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://godish.com/media/43701/a_e-dish-logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ABC[/COLOR]</title>
+<link>http://8.12.105.44:8085/udp/237.33.10.4:1234</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/aa/abc_us.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ABC Family[/COLOR]</title>
+<link>rtmpe://173.208.201.162:1935/goLive playpath=OhiYoc6et5pslGH swfUrl=http://b17014255105be61b178-d8c0dbd82389bad2adcb7a22d1883b64.r92.cf5.rackcdn.com/jwplayer.flash.swf live=1 pageUrl=http://envivo.pw/ token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/aa/abc_us.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]All Sport[/COLOR]</title>
+<link>rtmp://37.220.34.18:443/liverepeater playpath=20724 swfUrl=http://www.longtailvideo.com/content/ova/jwplayer/player.swf pageUrl=http://1cdn.filotv.pw/stream1.html live=1 timeout=10</link>
+<thumbnail>http://images.all-free-download.com/images/graphiclarge/all_sport_1_75212.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]AMC[/COLOR]</title>
+<link>rtmpe://173.208.201.162:1935/goLive playpath=JXazhC6b72u1gWK swfUrl=http://b17014255105be61b178-d8c0dbd82389bad2adcb7a22d1883b64.r92.cf5.rackcdn.com/jwplayer.flash.swf live=1 pageUrl=http://envivo.pw/ token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://holygrenade.com/wp-content/uploads/2013/09/amc-tv-channel.jpg </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Antenna TV LA[/COLOR]</title>
+<link>rtmp://204.107.26.32/live/?id=0ad5aac39bb13fbea6edb948f51439c76f0cc31f20823b6bf1aa93b32742013a41288f52797290bad1349b6a63cf73ba73200fe65decef04a72308fd0a8f78858c01727a8172a500e7d33dc1dc88af5b21e4a698650b857a3bc88852575a196eff2f6543f53a8a68947514ce9b1d382f2da20b5706413e58752ab1ef670d0f0f7fd4fe3ea0d2c66c8a3522179625effbcff7b191b701d321 playpath=2327.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=52 pageUrl=http://www.filmon.com/tv/antenna-los-angeles live=1 timeout=10</link>
+<thumbnail>https://pbs.twimg.com/profile_images/1539760129/Antenna_TV_logo_3.PNG</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]At The Races[/COLOR] </title>
+<link>rtmp://37.220.34.18:443/liverepeater playpath=20826 swfUrl=http://static.surk.tv/player.swf pageUrl=http://1cdn.filotv.pw/stream7.html</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/b/b6/New_at_the_races_logo_2008.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]BBC 1[/COLOR]</title>
+<link>rtmpe://5.135.128.157:1935/ula playpath=bbc16041 swfUrl=www.zingo.tv/jwplayer/player.swf pageUrl=http://zingo.tv/watch.php?id=16&width=600&height=450 live=true timeout=10</link>
+<thumbnail>http://www.marketingweek.co.uk/pictures/web/images/MarketingWeek/462_BB102578-BBC-One-Ident.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Bein 11[/COLOR]</title>
+<link>rtmpe://159.253.143.36:1935/redirect playpath=bein11 swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=bein11&vw=640&vh=460&domain=hdfoots.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://the11.ca/wp-content/uploads/2013/08/bein-sport-logo-300x249.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Big Ten Network[/COLOR]</title>
+<link>http://bigten247.cdnak.bigtenhd.neulion.com/nlds/btn2go/btnnetwork/as/live/btnnetwork_hd_3000.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/big_ten_network.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Box Nation[/COLOR]</title>
+<link>rtmpe://46.246.29.160:1935/redirect playpath=boxnation swfUrl=http://77231864591d8245d027-dbd663cdd4719bbeb13e13f9ee6e6f1f.r39.cf5.rackcdn.com/pl5.swf pageUrl=http://www.hdcast.org/embedlive2.php?u=boxnation&vw=600&vh=400&domain=strmh24.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://i1.ytimg.com/i/KtAvPsMiDdKUqSN5G5lgsA/mq1.jpg?v=52c53c7c</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Bravo[/COLOR]</title>
+<link>rtmpe://live.envivo.pw/redirect playpath=FmmPzBH1dOnQMX0 swfUrl=http://www.envivo.pw/jwplayer/player-licensed.swf pageUrl=http://envivo.pw/embed.php?a=1097&id=&width=579&height=400&autostart=true&strech= token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://hub.tv-ark.org.uk/images/otherchannels/bravo_images/bravo_ident1997a.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Breakfast TV Vancouver[/COLOR]</title>
+<link>http://btflash-lh.akamaihd.net/BTVANFLASH_live_6@120224?videoId=2562154574001&lineUpId=&pubId=2226196965001&playerId=2419934892001&affiliateId=&v=3.3.0&fp=WIN%2013,0,0,206&r=NMUQK&g=EKFOUJFRWGFC</link>
+<thumbnail>http://www.newertech.com/Static/articles/images/breakfasttv.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]BT Sports 1 [/COLOR]</title>
+<link>rtmpe://46.246.124.27:1935/redirect playpath=bt1hqsport swfUrl=http://www.hdcast.org/players.swf pageUrl=http://www.hdcast.org/embedlive2.php?u=bt1hqsport&vw=600&vh=400&domain=hqsport.tv live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.thefightlounge.co.uk/wp-content/uploads/2013/08/BT.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]BT Sports 2 [/COLOR]</title>
+<link>rtmpe://46.246.124.27:1935/redirect playpath=bt2hqsport swfUrl=http://www.hdcast.org/players.swf pageUrl=http://www.hdcast.org/embedlive2.php?u=bt2hqsport&vw=600&vh=400&domain=hqsport.tv live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.thefightlounge.co.uk/wp-content/uploads/2013/08/BT.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]CBS[/COLOR]</title>
+<link>http://8.12.105.44:8085/udp/237.33.10.1:1234</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/cc/cbs.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Chelsea TV[/COLOR]</title>
+<link>rtmp://cp96798.live.edgefcs.net/live playpath=ChelTV_Ch01_1000k@26291 swfUrl=http://player.longtailvideo.com/player.swf?file=ChelTV_Ch01_1000k@26291&streamer=rtmp://cp96798.live.edgefcs.net/live&autostart=true pageUrl=http://coolsport.tv/chelseatv.html live=1 timeout=10</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/cc/chelsea_tv.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Cinemax [/COLOR]</title>
+<link>rtmp://31.204.128.75/live/ playpath=53 swfUrl=http://www.cdnbr.biz/swf/player.swf pageUrl=http://www.cdnbr.biz/mastertv/Cinemax.html live=1 timeout=10</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]CN[/COLOR]</title>
+<link>http://8.12.105.44:8085/udp/239.34.153.85:1234</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/cc/cartoon_network.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]CNN[/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=cnn1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=cnn1569&vw=600&vh=435 live=true timeout=10</link>
+<thumbnail>http://3.bp.blogspot.com/-uU6FfIfrUbc/UcoKoTLHFUI/AAAAAAAAvZ8/sJv_D5I0lyI/s1600/CNN+International+June+2013.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]CW BOSTON[/COLOR]</title>
+<link>rtmp://38.79.128.43/live/?id=0ad5aac39bb13fbea6211741e361e9443db7a1fc7fc3dce2b8e47a8b9e24009d620f176c6a745b491575c5f532093c068b470dfa5d1baa7edfdedc7b169a25a18fda8b86666f38a3545a99a14dac5dd1e6bc3ccbc276b2829ddebeef3fe13af721e755f71bfa93a33f06130bed0e1570ac0f02080f2e40d5370b5265a4e2ea862931ba9a404a5e5d23626c384eee9ee52b7dc3f30ffc73cd playpath=2859.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=52 pageUrl=http://www.filmon.com/tv/this-tv-boston-whdh-72 live=true timeout=10</link>
+<thumbnail>http://www.cw56.com/images/blue/main/wlvi_logo1.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]C TV[/COLOR]</title>
+<link>http://cnmg.live.cdn.bitgravity.com/cnmg/live/ctv</link>
+<thumbnail>http://www.cartoonbrew.com/wp-content/uploads/cbtv_logo_f.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]CW[/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=cw1569 swfUrl=http://www.playfooty.tv/play/player/player.swf pageUrl=http://www.playfooty.tv/play/embed.php?u=cw1569&vw=600&vh=430 live=true swfVfy=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/corp/tt/the_cw_network.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]Drift 4 Ever[/COLOR]</title>
+<link>http://46.249.213.93/iPhone/broadcast/drift4ever-tablet.3gp/drift4ever-tablet.3gp-mr647k.m3u8?trackingid=4551740000&os=desktop</link>
+<thumbnail>http://pictures.4ever.eu/data/674xX/sport/rally,-drifting-159223.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]ESPN 2[/COLOR]</title>                                                                                                                                             
+<link>rtmpe://5.153.29.69:1935/redirect playpath=espn2hdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=espn2hdfoot&vw=640&vh=460&domain=funkeysports.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/espn_2.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ESPN 3[/COLOR]</title>                                                                                                                                             
+<link>rtmp://31.220.0.82:1935/live playpath=espnk swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://www.eucast.tv/embed.php?live=espnk&vw=620&vh=490 live=1 timeout=10 token=%bZve(nKa@#Z</link>
+<thumbnail>http://i.imgur.com/T8VKF.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ESPN[/COLOR]</title>
+<link>rtmp://46.246.29.130:1935/stream/46terg.stream swfUrl=http://04stream.com/p/boopo.swf live=1 </link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/espn_us.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ESPN UK[/COLOR]</title>
+<link>rtmpe://play.finecast.tv/live playpath=espnukkk8 swfUrl=http://www.finecast.tv/player/player.swf pageUrl=http://www.finecast.tv/embed.php?u=espnukkk8&vw=600&vh=400 live=1 timeout=10</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/espn_us.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]Eurosport 1[/COLOR]</title>
+<link>rtmp://31.220.0.104:1935/live playpath=euro1x swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=euro1x&vw=620&vh=490 live=true timeout=10 token=%bZve(nKa@#Z</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ee/eurosport.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Eurosport 2[/COLOR]</title>
+<link>rtmp://31.220.0.133:1935/live playpath=euro2x swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=euro2x&vw=620&vh=490 live=true timeout=10 token=%bZve(nKa@#Z</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ee/eurosport.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Extreme Sports[/COLOR]</title>
+<link>http://2.61.252.232:1234/udp/233.7.70.147:5000</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/extreme_sports_nl.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fight Box[/COLOR]</title>
+<link>http://spi-live.ercdn.net/spi/smil:fightboxhd_0.smil/bayash.m3u8</link>
+<thumbnail>http://img1.wikia.nocookie.net/__cb20121202034638/tvpedia/ru/images/2/23/FightBOX_HD.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Food Network[/COLOR]</title>
+<link>rtmp://cp106256.live.edgefcs.net:443/live/ playpath=iwantvfoodnetwork-600@130501 swfUrl=http://www.longtailvideo.com/jwplayer/jwplayer.flash.swf pageUrl=http://www.streamsportlive.me/35.html live=1 timeout=10</link>
+<thumbnail>https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp0qxi0pjsfbu75mxH5J0ug19H9QMeWQO4XptghdJKdQ01NyZUPg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fox Network[/COLOR]</title>
+<link>rtmpe://173.208.201.162:1935/goLive playpath=Wrt71g0jgwxgsHq swfUrl=http://b17014255105be61b178-d8c0dbd82389bad2adcb7a22d1883b64.r92.cf5.rackcdn.com/jwplayer.flash.swf live=1 pageUrl=http://envivo.pw/ token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://t0.gstatic.com/images?q=tbn:ANd9GcR7Nc354gxQgw1dNlSeIQ7PcvYDOyHAMD7zWF_8a-ctJx6LLYY_</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fox Deportes[/COLOR]</title>
+<link>rtmp://208.101.9.155/live playpath=asdffoxsdfpo?id=202294 Conn=S:OK swfUrl=http://www.mips.tv/content/scripts/eplayer.swf pageUrl=http://www.mips.tv/embedplayer/asdffoxsdfpo/1/600/400 live=true timeout=10</link>
+<thumbnail>http://media.foxdeportes.com/assets/images/fxd_logo_450.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fox Sports 1[/COLOR]</title>
+<link>rtmp://31.220.0.104:1935/live playpath=fox1 swfUrl=http://www.eucast.tv/player5.9.swf live=1 pageUrl=http://www.eucast.tv/ live=true timeout=10 token=%bZve(nKa@#Z</link>
+<thumbnail>http://www.eurweb.com/wp-content/uploads/2013/04/fox-sports.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fox Sports 2[/COLOR]</title>
+<link>rtmpe://5.153.25.44:1935/redirect playpath=fox2hdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=fox2hdfoot&vw=640&vh=460&domain=funkeysports.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.eurweb.com/wp-content/uploads/2013/04/fox-sports.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Golf channel live[/COLOR]</title>
+<link>rtmp://173.192.81.176:443/liverepeater playpath=stream31 swfUrl=http://static.surk.tv/player.swf pageUrl=http://cdn.kingofplayers.com/stream31.html live=true timeout=10</link>
+<thumbnail>http://www.pga.com/nationalchampionship/2007/news/images/golf_channel_448x266.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Grand Prix[/COLOR] </title>
+<link>rtmp://27.131.141.254/grandprix/live</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/gg/grand_prix_channel_th.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]History International[/COLOR] </title>
+<link>rtmpe://46.246.124.13:1935/redirect/espn2 live=1 pageUrl=http://www.hdcast.org/</link>
+<thumbnail>http://nowwatchtvlive.com/wp-content/uploads/2012/05/History-2-logo-2011.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]HBO[/COLOR] </title>
+<link>rtmp://81.17.20.46/iguide playpath=0bf02qe6msgtu4s swfUrl=http://cdn.iguide.to/player/secure_player_iguide_token.swf pageUrl=http://www.iguide.to/view/1/watch-live-HBO-channel-for-free token=#ed%h0#w18623jsda6523lDGD</link>
+<thumbnail>http://img3.wikia.nocookie.net/__cb20091102104541/logopedia/images/a/a0/HBO_intro_1983.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV 1[/COLOR]</title>
+<link>rtmpe://46.246.124.30:1935/redirect playpath=itv swfUrl=http://77231864591d8245d027-dbd663cdd4719bbeb13e13f9ee6e6f1f.r39.cf5.rackcdn.com/pl5.swf pageUrl=http://www.hdcast.org/embedlive2.php?u=itv&vw=600&vh=450&domain=strmh24.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPEDGLgOYfdJ0jBkyUXoExYSk9vww3S4lH0v6bApc6MjGPiLLE</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV 2[/COLOR] </title>
+<link>rtmp://198.50.226.53:1935/send/_definst_/itv2</link>
+<thumbnail>http://img2.wikia.nocookie.net/__cb20101223194131/logopedia/images/a/a0/ITV2_logo_2002.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV 3[/COLOR] </title>
+<link>rtmp://198.50.226.53:1935/send/_definst_/itv3</link>
+<thumbnail>http://i215.photobucket.com/albums/cc260/Mister-Link/ITV3Breakbumper.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV 4[/COLOR] </title>
+<link>rtmp://198.50.226.53:1935/send/_definst_/itv4</link>
+<thumbnail>http://img.photobucket.com/albums/v669/22061985/itv4.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]KTLA Channel 5[/COLOR]</title>
+<link>rtmp://204.107.26.32/live/?id=0ad5aac39bb13fbef56fce7e299a52a0bfc54872b68cdda115a6a43cb039e1610d4c92234089f19746d66f5e51075b20ee75da738eb75b7f9203f6b32f1c0759fef282cf58638cbe79a83388071c003f2f03177c6286ce76407cc082d44628dffac1f45940284daa2a062187659a85d99badab7aea6892b15272d7e0995212d0914ea8abddf6bb933f89f730ad7ae17cfb2c54547056224b playpath=2326.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=52 pageUrl=http://www.filmon.com/tv/ktla-dt-los-angeles live=1 timeout=10</link>
+<thumbnail>http://www.autogeekonline.net/gallery/data/500/ktla_5.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]LFC TV[/COLOR]</title>
+<link>rtmp://50.22.223.7:443/liverepeater playpath=stream26 swfUrl=http://static.surk.tv/player.swf pageUrl=http://cdn.kingofplayers.com/stream26.html live=1 timeout=10</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/1/1f/LFC_TV_logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]MiamiTV[/COLOR]</title>
+<link>rtmp://198.143.152.18/live/ playpath=miamitvhd swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://nowwatchtvlive.com/channel-tab-frame/miamitv-1.php live=true timeout=10</link>
+<thumbnail>http://e-canlitvizle.org/wp-content/uploads/2013/04/miami-tv-logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Motors TV[/COLOR]</title>
+<link>rtmp://109.123.126.34/live playpath=zx2motorstv?id=68118 Conn=S:OK swfUrl=http://www.ucaster.eu/static/scripts/eplayer.swf pageUrl=http://www.ucaster.eu/embedded/zx2motorstv/1/600/450 live=true timeout=10</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/motors_tv_fr.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Mixed Bag of sports[/COLOR] MUTV,ESPN,etc.</title>
+<link>rtmp://37.220.34.18:443/liverepeater playpath=stream1 swfUrl=http://www.longtailvideo.com/content/ova/jwplayer/player.swf pageUrl=http://1cdn.filotv.pw/stream1.html live=1 timeout=10</link>
+<thumbnail>http://b.vimeocdn.com/ts/171/577/171577559_640.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]MUTV[/COLOR]</title>
+<link>rtmp://173.193.219.179:443/liverepeater playpath=stream27 swfUrl=http://static.surk.tv/player.swf pageUrl=http://cdn.kingofplayers.com/stream27.html live=1 timeout=10</link>
+<thumbnail>http://i2.cdnds.net/13/04/300x225/media-mutv-logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]NBA TV[/COLOR]</title>
+<link>rtmp://31.7.58.122:1935/stream/I8s9S4H7.stream swfUrl=http://thecdn.04stream.com/p/bbp.swf live=true pageUrl=http://www.04stream.com/ live=1 timeout=10</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nba_tv.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]NBCSN[/COLOR]</title>
+<link>rtmpe://159.253.131.74:1935/redirect playpath=nbcsnhdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=nbcsnhdfoot&vw=640&vh=460&domain=hdfoots.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>https://pbs.twimg.com/profile_images/1722177197/NBCSN_A_POSITIVE.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]NFL Network[/COLOR]</title>
+<link>rtmp://31.7.58.250:1935/stream/ playpath=0XB9uW6aK5.stream swfUrl=http://04stream.com/p/boopo.swf pageUrl=http://negmtv.altervista.org/php/sportsplayer3.php?ch=NFL live=1 timeout=10</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nfl_network.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Nick[/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=nick1569 swfUrl=http://www.playfooty.tv/play/player/player.swf live=1 pageUrl=http://www.playfooty.tv/play/embed.php?u=nick1569&vw=600&vh=430</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/1/17/Nickelodeon_logo.png </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Outdoor Channel[/COLOR]</title>
+<link>rtmp://lm02.everyon.tv:1935/ptv2/pld613</link>
+<thumbnail>http://www.simracingdesign.com/~files/outdoorchannel-logo_e21.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]PBS[/COLOR]</title>
+<link>rtmp://128.104.144.134/WisconsinChannel playpath=mystream swfUrl=http://www.wpt5.org/sites/all/themes/wptomega/js/player-licensed.swf pageUrl=http://nowwatchtvlive.com/channel-tab-frame/pbschannel-1.php live=1 timeout=10</link>
+<thumbnail>http://www.briansolis.com/wp-content/uploads/2009/11/pbs_logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Premier Sports[/COLOR]</title>
+<link>rtmpe://146.185.31.234:1935/redirect playpath=premiersportshdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=premiersportshdfoot&vw=640&vh=460&domain=hdfoots.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://media15.tv/img/client-premier-sports.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Racing UK[/COLOR]</title>
+<link>rtmpe://5.153.25.44:1935/redirect playpath=racingukhdfoots swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=racingukhdfoots&vw=640&vh=460&domain=hdfoots.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.becreative.co.uk/wp-content/uploads/2013/07/RacingUK_logo.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Red Bull TV[/COLOR]</title>
+<link>http://live.iphone.redbull.de.edgesuite.net/iphone.m3u8</link>
+<thumbnail>http://1.bp.blogspot.com/-u2CGnReZK6E/T2Dyn-vHVxI/AAAAAAAAU3E/rlXNnRRB8yE/s1600/red-bull1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Seattle Channel[/COLOR]</title>
+<link>rtmp://video.seattle.gov/livepkgr/ playpath=ChannelLiveHD2 swfUrl=http://www.seattlechannel.org/videos/player510.swf pageUrl=http://www.seattlechannel.org/viewer_live.asp live=true timeout=10</link>
+<thumbnail>http://www.seattlechannel.org/images/videoImages/scLogo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Setanta Sports[/COLOR]</title>
+<link>rtmpe://146.185.31.234:1935/redirect playpath=setantahdfoots swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=setantahdfoots&vw=640&vh=460&domain=hdfoots.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://storesatellite.com/shop/72-large/setanta-Sports-ireland.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Showtime[/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=show1569 swfUrl=http://www.playfooty.tv/play/player/player.swf live=1 pageUrl=http://www.playfooty.tv/play/embed.php?u=show1569&vw=600&vh=430</link>
+<thumbnail>http://cdn3-www.craveonline.com/assets/uploads/2012/12/file_202059_0_Showtime_Logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY F1[/COLOR]</title>
+<link>rtmp://31.220.0.82:1935/live playpath=ssf1x swfUrl=http://www.eucast.tv/ePlayer.swf pageUrl=http://www.eucast.tv/embed.php?live=ssf1x&vw=620&vh=490 live=true timeout=10 token=%bZve(nKa@#Z</link>
+<thumbnail>http://www.igoal.tv/ch/skyf1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sky Poker[/COLOR]</title>
+<link>rtmp://rtmp.playback.cdn1.showcaster.com/orcadigital-live06/_definst_/ playpath=stream1352471543352014903_hi swfUrl=https://c177371.ssl.cf3.rackcdn.com/jwplayer.commercial-5.9.swf pageUrl=https://play.showcaster.com/moduleVideoPlayer.jsp?SEID=135247&isMainCanvas=FALSE live=true timeout=10</link>
+<thumbnail>http://www.gavinbloom.tv/images/skypokerlarge.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 1[/COLOR] - [COLOR yellow]The Ballazz TEST[/COLOR]</title>
+<link>rtmpe://cp76676.live.edgefcs.net/live playpath=janu1_1_1@2725 swfUrl=http://www.hdcast.org/players.swf pageUrl=http://hdcast.org/embedwihd.php?id=janu1&width=640&height=460 live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.igoal.tv/ch/sky_sports1.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 1[/COLOR]</title>
+<link>rtmp://37.220.32.52:443/liverepeater/23697 swfUrl=http://rackcdn.com/atdedead.swf live=1 pageUrl=http://1cdn.filotv.pw/ live=true timeout=10 token=#atd%#$ZH</link>
+<thumbnail>http://www.igoal.tv/ch/sky_sports1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 2[/COLOR] </title>
+<link>rtmp://37.220.36.71:443/liverepeater playpath=33698 swfUrl=http://static.surk.tv/player.swf pageUrl=http://1cdn.filotv.pw/ss2.html live=true timeout=10 token=#atd%#$ZH</link>
+<thumbnail>http://www.igoal.tv/ch/sky_sports2.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 3 [/COLOR]</title>
+<link>rtmp://37.220.32.55:443/liverepeater/23699 swfUrl=http://rackcdn.com/atdedead.swf live=1 pageUrl=http://1cdn.filotv.pw/ live=true timeout=10 token=#atd%#$ZH</link>
+<thumbnail>http://www.igoal.tv/ch/sky_sports3.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 4 [/COLOR]</title>
+<link>rtmp://37.220.32.53:443/liverepeater/23700 swfUrl=http://rackcdn.com/atdedead.swf live=1 pageUrl=http://1cdn.filotv.pw/ live=10 timeout=10 token=#atd%#$ZH</link>
+<thumbnail>http://i2.cdnds.net/09/53/160x120_broadcasting_ss4logo.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Sky Sports News[/COLOR] </title>
+<link>rtmp://37.220.32.56:443/liverepeater playpath=23701 swfUrl=http://static.surk.tv/player.swf pageUrl=http://1cdn.filotv.pw/ss.html live=true timeout=10</link>
+<thumbnail>https://si0.twimg.com/profile_images/2609290856/pdxh1cly8vvggvzwjkoh.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]Spike Tv[/COLOR]</title>
+<link>rtmpe://173.208.201.162:1935/goLive playpath=OuTMDUaJxi3Hmqh swfUrl=http://b17014255105be61b178-d8c0dbd82389bad2adcb7a22d1883b64.r92.cf5.rackcdn.com/jwplayer.flash.swf live=1 pageUrl=http://envivo.pw/ token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/spike_tv.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Sport Max[/COLOR]</title>
+<link>http://46.249.213.93/iPhone/broadcast/sportmax-tablet.3gp/sportmax-tablet.3gp-mr497k.m3u8</link>
+<thumbnail>http://564ccca6a641eac6e5b0-38e3bbf162f44470d3635a7244f7971b.r55.cf3.rackcdn.com/sport-max-channel-images-logo-large.png?1362388705</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sports Mix[/COLOR]</title>
+<link>rtmp://46.246.29.140:1935/stream// playpath=fsgdf78gds.stream swfUrl=http://04stream.com/p/boopo.swf live=1 pageUrl=http://negmtv.altervista.org/php/sportsplayer3.php?ch=dircttv</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/dd/directv_sports_mix.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sportsnet One[/COLOR]</title>
+<link>rtmpe://185.2.138.124:1935/redirect playpath=snonehdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=snonehdfoot&vw=640&vh=460&domain=hdfoots.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sportsnet_ca_short.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sportsnet Ontario[/COLOR]</title>
+<link>rtmpe://5.153.29.69:1935/redirect playpath=snontariohdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=snontariohdfoot&vw=640&vh=460&domain=hdfoots.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sportsnet_ca_short.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sportsnet World[/COLOR]</title>
+<link>rtmpe://146.185.31.234:1935/redirect playpath=snwlhdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=snwlhdfoot&vw=640&vh=460&domain=funkeysports.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>https://www.swimming.ca/images/news/sportsnet-web-schedule.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sports Tonight[/COLOR]</title>
+<link>rtmp://freeview.fms.visionip.tv/live/// playpath=sports_tonight-sports_tonight-live-25f-16x9-SD swfUrl=http://negmtv.altervista.org/play/jwplayer.flash.swf pageUrl=http://negmtv.altervista.org/php/sportplayer.php?ch=sportstonight live=1 timeout=10</link>
+<thumbnail>http://static.ibnlive.com/pix/minicms/Sport_tonight.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Star Sports[/COLOR]</title>
+<link>rtmp://stream-7.antenne.de/liveedge playpath=rtmp://198.204.255.66/live/tensports swfUrl=http://www.kbps.tv/jl/player.swf pageUrl=http://www.kbps.tv/embed.php?s=tensports&width=600&height=430&domain=cricwebtv.com live=true timeout=10</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/star_sports.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Syfy[/COLOR]</title>
+<link>rtmpe://107.150.45.130:1935/goLive playpath=IlAtS62o00lVArb swfUrl=http://b17014255105be61b178-d8c0dbd82389bad2adcb7a22d1883b64.r92.cf5.rackcdn.com/jwplayer.flash.swf live=1 pageUrl=http://envivo.pw/ token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/syfy.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]TBS[/COLOR]</title>
+<link>rtmpe://173.208.201.162:1935/goLive playpath=QB80x8dFgycQ8im swfUrl=http://b17014255105be61b178-d8c0dbd82389bad2adcb7a22d1883b64.r92.cf5.rackcdn.com/jwplayer.flash.swf live=1 pageUrl=http://envivo.pw/ token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tbs_east.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Ten Action[/COLOR]</title>
+<link>rtmp://46.28.53.38/live playpath=s247etenadd?id=13881 Conn=S:OK swfUrl=http://www.janjua.tv/resources/scripts/eplayer.swf pageUrl=http://www.janjua.tv/embedplayer/s247etenadd/2/600/430 live=true timeout=10</link>
+<thumbnail>http://t1.gstatic.com/images?q=tbn:ANd9GcQGs88SIW6cE9M2UXthCo9FMUgjeoNA3WjZi1jNjCXpy7pbJDHZ</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR bisque]Ten Sports[/COLOR]</title>
+<link>rtmp://31.220.0.104:1935/live playpath=tensports swfUrl=http://www.eucast.tv/player5.9.swf pageUrl=http://www.eucast.tv/embed.php?live=tensports&vw=620&vh=490 live=true timeout=10 token=%bZve(nKa@#Z</link>
+<thumbnail>http://i866.photobucket.com/albums/ab224/Avi_1895/TEN-Sports-TV.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]This TV BOSTON[/COLOR]</title>
+<link>rtmp://38.79.128.43/live/?id=0ad5aac39bb13fbef7a2ec834aca275eb9a264f866b166e9cc8165499edffd08ad7ed65e25757e9c1db37bc53641d4ffee01a60b292e0df0cd39cbce28d61ed4423659ca24f37719bee438181aa9807072592db30b1c577af6aead32a2c02db3b19c1816f9a0c0a7442a1d8e98b169b1b3613316215eb6348cc7f0448f316a876b75db7d8dde1cb073eb221cb66cafaa73b9253b3cd10bdd playpath=2862.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=52 pageUrl=http://www.filmon.com/tv/this-tv-boston-whdh-72 live=true timeout=10</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/f/f1/This_TV_Network_Logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]TLC[/COLOR]</title>
+<link>http://37.208.111.234:8084/btv_00000229/</link>
+<thumbnail>http://b.vimeocdn.com/ts/117/152/117152149_640.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]TNT[/COLOR]</title>
+<link>rtmpe://watch.playfooty.tv/live playpath=tnt1569 swfUrl=http://get.adobe.com/flashplayer pageUrl=http://www.playfooty.tv/play/embed.php?u=tnt1569&vw=600&vh=430 live=1 timeout=10|</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tnt_lam.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Travel Channel[/COLOR]</title>
+<link>http://178.165.45.203:4022/udp/239.0.0.176:1234</link>
+<thumbnail>http://img2.wikia.nocookie.net/__cb20111026232439/g__/ghostadventures/images/d/d7/Travelchannel.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]TSN 1[/COLOR]</title>
+<link>rtmpe://159.253.131.74:1935/redirect playpath=tsnhdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf pageUrl=http://cdn.watchjsc.us/embed.php?u=tsnhdfoot&vw=640&vh=460&domain=funkeysports.com live=true timeout=10 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.artsigns.com/urls/TSN_Canada/TSN_Canada%27s_Sports_Leader_pict/TSN_boardroom.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]TSN 2[/COLOR]</title>
+<link>rtmpe://5.153.29.69:1935/redirect playpath=tsn2hdfoot swfUrl=http://cdn.watchjsc.us/jwplayer.swf live=1 pageUrl=http://cdn.watchjsc.us/embed.php?u=tsn2hdfoot&vw=640&vh=460&domain=hdfoots.com token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.artsigns.com/urls/TSN_Canada/TSN_Canada%27s_Sports_Leader_pict/TSN_boardroom.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]TVA2/TVA SPORTS[/COLOR] </title>
+<link>rtmp://cp39414.live.edgefcs.net/live/shoptva@9752 playpath=shoptva@9752 swfUrl=http://player.longtailvideo.com/player.swf live=1 pageUrl=http://tv.webactu-webtv.com/canada3/tva2.html</link>
+<thumbnail>http://2.bp.blogspot.com/-0hGGVvRdzr4/Uyq-QkZctUI/AAAAAAAAFg8/rayRT4e4kTI/s1600/KgEX6O.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]WNET NY Channel 13[/COLOR]</title>
+<link>rtmp://38.74.192.121/live/?id=0ad5aac39bb13fbe0034d180638c096461e29a77361132b2950f38dabddb7eb2c5746a735d1c41a2d26a51fb3637517b35b561e2084afc015149aa6c03b7fb14b55676c5f3dbaead14fe6c3973283b9cc5da792d4cb8b79c6110c53407b2636bbbc0132a3626dfeef63b01ba190fdfeebb7770fff56ec815e085e9af3913ef5b5db31206c16c5de539549aa39f11888ff7dc73b9e36f0b51 playpath=2438.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=51 pageUrl=http://www.filmon.com/ live=1 timeout=10</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/4/42/WNET_logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]VH1[/COLOR]</title>
+<link>http://37.208.111.234:8084/btv_00000231/</link>
+<thumbnail>http://www.vh1.com/franchises/config/themes/vh1classic/281x211_logo.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]WWE Network[/COLOR]</title>
+<link>rtmp://37.220.36.71:443/liverepeater playpath=stream38 swfUrl=http://static.surk.tv/player.swf pageUrl=http://1cdn.filotv.pw/stream38.html live=1 timeout=10</link>
+<thumbnail>http://www.wwe.com/f/styles/ep_trending/public/article/thumb/2014/02/wwe-network/20140102_EPLIGHT_Network_Announcement_nodate_C.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Xtreme Impacts[/COLOR]</title>
+<link>http://46.249.213.93/iPhone/broadcast/xtremeimpacts-tablet.3gp/xtremeimpacts-tablet.3gp-mr647k.m3u8</link>
+<thumbnail>http://564ccca6a641eac6e5b0-38e3bbf162f44470d3635a7244f7971b.r55.cf3.rackcdn.com/xtreme-impacts-channel-images-logo-large.png?1367922579</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Zuus Country[/COLOR]</title>
+<link>rtmp://92.122.49.164/live?_fcs_vhost=cp76676.live.edgefcs.net playpath=I0dmlzZDrIL2dwBwbZE9is85OA-AkFxE_640_480_1064@135069 Conn=S:OK swfUrl=http://player.ooyala.com/static/cacheable/43566953138cff6647a8c7c1fad97dc6/player_v2.swf/[[DYNAMIC]]/2 pageUrl=http://www.zuus.com/music-videos/live/265 live=true timeout=10</link>
+</item>
+
+<item>
+<title>[COLOR violet] Pac-12 Net[/COLOR] National</title>
+<link>http://www.xrxs.net/video/live-p12netw-4728.m3u8</link> 
+<thumbnail>http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR violet] Pac-12 Net[/COLOR] Arizona</title>
+<link>http://www.xrxs.net/video/live-p12ariz-4728.m3u8</link> 
+<thumbnail>http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR violet] Pac-12 Net[/COLOR] Bay Area</title>
+<link>http://www.xrxs.net/video/live-p12baya-4728.m3u8</link> 
+<thumbnail>http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR violet] Pac-12 Net[/COLOR] Los Angeles</title>
+<link>http://www.xrxs.net/video/live-p12losa-4728.m3u8</link> 
+<thumbnail>http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR violet] Pac-12 Net[/COLOR] Mountain</title>
+<link>http://www.xrxs.net/video/live-p12moun-4728.m3u8</link> 
+<thumbnail>http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR violet] Pac-12 Net[/COLOR] Oregon</title>
+<link>http://www.xrxs.net/video/live-p12oreg-4728.m3u8</link> 
+<thumbnail>http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR violet] Pac-12 Net[/COLOR] Washington</title>
+<link>http://www.xrxs.net/video/live-p12wash-4728.m3u8</link> 
+<thumbnail>http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg</thumbnail>
+</item>
+
+</items>
+</channel>
+

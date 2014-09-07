@@ -1,0 +1,1324 @@
+version=1
+background=http://images.all-free-download.com/images/graphiclarge/black_texture_texture_background_07_hd_pictures_169900.jpg
+title=[COLOR=FFFFFF00]  The UnderGround..... Constant Updates.....TV Streams.....Movie Streams.....And More..... [/COLOR]
+logo=http://voz.vn/wp-content/uploads/2009/12/Full-HD-1080p-logo.jpg
+icon_playlist=http://voz.vn/wp-content/uploads/2009/12/Full-HD-1080p-logo.jpg
+description=I put many hours and hard work into making all of this possible for everybody.  So sit back and enjoy, and if you like my playlist please help out and send your donations to the link below, thanks everybody..........          
+                                
+                                 http://tinyurl.com/m52twmq
+
+Also check out this cool Movie Server when you get a chance you will love it------------       http://192.168.1.4:501/Movies//description
+
+type=playlist
+name=Sorted [COLOR=FF00FF00]by user-assigned order[/COLOR]
+icon=http://media.navi-x.org/images/icons/2downarrow.png
+URL=http://www.navixtreme.com/playlist/133304/_the_underground....._constant_updates.....tv_streams.....movie_streams.....and_more....._.plx?action=sortsel&cur=ord
+
+# 2338921
+type=text
+name=A REALLY NICE MOVIE COLLECTION
+thumb=http://3.bp.blogspot.com/_Fv90J7eTcis/TJsHSkEnFrI/AAAAAAAAHSs/gKAetPAW9UY/s1600/M-Net+Movies+1+HD+night+time+look+logo.jpg
+date=2014-08-31
+URL=http://www.navixtreme.com/text/2338921/a_really_nice_movie_collection.txt
+player=default
+rating=-1.00
+description=A very nice collection of movies collected each month.  You must check this out, it's awesome.   Enjoy/description
+
+# 2330635
+type=playlist
+name=******************* Project Free TV **********************
+thumb=http://www.free-tv-video-online.me/images/projectfree4.gif
+URL=http://www.navixtreme.com/cgi-bin/boseman/Scrapers/ct_freetv?q=gettvshows.plx
+player=default
+rating=-1.00
+
+# 2305102
+type=audio
+name=80's Music Radio
+thumb=https://lh4.googleusercontent.com/-lbGJzpGuJo4/AAAAAAAAAAI/AAAAAAAAAAA/-viLvaIxjss/photo.jpg
+URL=http://31.12.64.204:8000/A-RADIO-80s-JUICE
+player=default
+rating=-1.00
+
+# 2338546
+type=video
+name=A&E TV Channel
+thumb=http://www.freelogovectors.net/wp-content/uploads/2012/04/a-e_network_logo.jpg
+date=2014-08-30
+URL=http://goo.gl/SkE93i
+player=default
+rating=-1.00
+
+# 2317231
+type=video
+name=ABC NEWS
+thumb=http://shq.lasdnews.net/images/ABCNewsLogo-SML.jpg
+URL=http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8
+player=default
+rating=-1.00
+
+# 2311148
+type=video
+name=Aljazeera News (English)
+thumb=http://www.comm.lsa.umich.edu/blog/wp-content/uploads/2011/03/aljazeera_logo.jpg
+URL=rtmp://aljazeeraflashlivefs.fplive.net/aljazeeraflashlive-live/aljazeera_eng_high
+player=default
+rating=-1.00
+
+# 2301933
+type=video
+name=American Horrors
+thumb=http://traumaticcinematic.com/wp-content/uploads/2013/10/American-Horrors-Title-300x200.jpg
+URL=rtmp://204.107.26.252:8086/live/393.high.stream
+player=default
+rating=-1.00
+
+# 2317276
+type=video
+name=Animal Planet HD
+thumb=http://www.twohandsfourpaws.com/wp-content/uploads/2012/01/animal-planet-logo.jpg
+URL=http://202.75.23.34:1400/live/ch31/04.m3u8
+player=default
+rating=-1.00
+
+# 2317278
+type=video
+name=Animal Planet Low Stream
+thumb=http://www.twohandsfourpaws.com/wp-content/uploads/2012/01/animal-planet-logo.jpg
+URL=http://202.75.23.34:1400/live/ch31/01.m3u8
+player=default
+rating=-1.00
+
+# 2317277
+type=video
+name=Animal Planet SD
+thumb=http://www.twohandsfourpaws.com/wp-content/uploads/2012/01/animal-planet-logo.jpg
+URL=http://202.75.23.34:1400/live/ch31/03.m3u8
+player=default
+rating=-1.00
+
+# 2309346
+type=video
+name=Animated Films
+thumb=http://upload.wikimedia.org/wikipedia/en/0/0b/Batman_the_Animated_Series_logo.jpg
+URL=mms://72.13.93.186/animatedfilms
+player=default
+rating=-1.00
+
+# 2313086
+type=video
+name=At The Races   (Horse Racing)
+thumb=http://www.mcn.com.au/Upload/FileStore/Cache/media/7318-logo-17980181.jpg
+URL=rtmp://89.248.169.48:443/liverepeater playpath=8 swfUrl=http://static.surk.tv/atdedead.swf live=1 pageUrl=http://xxcast.pm/player2.php?id=8&width=640&height=460 token=#atd%#$ZH
+player=default
+rating=-1.00
+
+# 2318199
+type=video
+name=ATP World Tour
+thumb=http://www.smg-insight.com/wp-content/uploads/2014/07/ATP-Case-Study-4-940x250px.jpg
+URL=http://goo.gl/m3lC71
+player=default
+rating=-1.00
+
+# 2318202
+type=video
+name=AutoSport TV
+thumb=http://fourtitude.com/wp-content/uploads/2013/11/autosport-logo-600x241.jpg
+URL=mms://100automoto.tv/100livesport
+player=default
+rating=-1.00
+
+# 2317286
+type=audio
+name=BBC 5 Live
+thumb=http://vozplus.com/wp-content/uploads/bbc-radio5-live1.jpg
+URL=http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_he_5live_p
+player=default
+rating=-1.00
+
+# 2317288
+type=audio
+name=BBC 5 Sports Extra
+thumb=http://www.qassimy.com/channel-tv-live/files/image/bbc-radio-five-5-sports_extra-live-london-united-kingdom-online-for-free.jpg
+URL=http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_he_5sportxtra_p
+player=default
+rating=-1.00
+
+# 2317285
+type=audio
+name=BBC Radio 4 Extra
+thumb=http://www.jonathanpinnock.com/wp-content/uploads/2012/11/BBCRadio4ExtraLogo_386x260.jpg
+URL=http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_he_radio4extra_p
+player=default
+rating=-1.00
+
+# 2317283
+type=audio
+name=BBC Radio 4
+thumb=http://www.worksoppriory.net/head/files/2012/03/bbc-radio-4.jpg
+URL=http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_he_radio4_p
+player=default
+rating=-1.00
+
+# 2312617
+type=video
+name=Big Ten Network
+thumb=http://payload.cargocollective.com/1/3/109141/1518850/Big10_05.jpg
+URL=http://goo.gl/uANOuK
+player=default
+rating=-1.00
+
+# 2317254
+type=video
+name=BIO CHANNEL HD
+thumb=http://t1.ftcdn.net/jpg/00/35/14/56/400_F_35145644_akON9JUenipn1HPh768BPLhv5rO3la9B.jpg
+URL=http://202.75.23.36:1400/live/ch46/04.m3u8
+player=default
+rating=-1.00
+
+# 2317273
+type=video
+name=BIO Channel Low Stream
+thumb=http://t1.ftcdn.net/jpg/00/35/14/56/400_F_35145644_akON9JUenipn1HPh768BPLhv5rO3la9B.jpg
+URL=http://202.75.23.36:1400/live/ch46/01.m3u8
+player=default
+rating=-1.00
+
+# 2317255
+type=video
+name=BIO Channel SD
+thumb=http://t1.ftcdn.net/jpg/00/35/14/56/400_F_35145644_akON9JUenipn1HPh768BPLhv5rO3la9B.jpg
+URL=http://202.75.23.36:1400/live/ch46/03.m3u8
+player=default
+rating=-1.00
+
+# 2330810
+type=video
+name=BIO
+thumb=http://t1.ftcdn.net/jpg/00/35/14/56/400_F_35145644_akON9JUenipn1HPh768BPLhv5rO3la9B.jpg
+URL=http://202.75.23.36:1400/live/ch46/03.m3u8
+player=default
+rating=-1.00
+
+# 2301934
+type=video
+name=Bloomberg News
+thumb=http://whatsonline.tv/wp-content/uploads/2014/04/bloomberg_logo.jpg
+URL=http://cdn3.videos.bloomberg.com/btv/us/master.m3u8
+player=default
+rating=-1.00
+
+# 2320193
+type=video
+name=BONANZA
+thumb=http://img.sharetv.com/shows/standard/bonanza.jpg
+URL=http://72.13.93.186/bonanza
+player=default
+rating=-1.00
+
+# 2338545
+type=video
+name=THE BOX  (Music Videos)
+thumb=http://hub.tv-ark.org.uk/images/otherchannels/thebox_images/thebox_promo2_99a.jpg
+date=2014-08-29
+URL=http://goo.gl/MCBwlo
+player=default
+rating=-1.00
+
+# 2330813
+type=video
+name=BOXNATION
+thumb=http://www.c-linie.com/en/images/zee/box-nation-logo.png
+URL=rtmp://94.102.51.67:443/liverepeater playpath=38 swfUrl=http://static.surk.tv/atdedead.swf
+player=default
+rating=-1.00
+
+# 2331537
+type=video
+name=BRAZZERS PORN TV
+thumb=http://upload.wikimedia.org/wikipedia/commons/0/09/Brazzers-logo.png
+URL=http://195.154.188.161/hls/sexy.m3u8
+player=default
+rating=-1.00
+
+# 2330201
+type=playlist
+name=Breaking Bad
+thumb=http://image.tmdb.org/t/p/w396/4yMXf3DW6oCL0lVPZaZM2GypgwE.jpg
+URL=http://www.navixtreme.com/playlist/140560/breaking_bad_(2008)_finished.plx
+player=default
+rating=-1.00
+
+# 2330814
+type=video
+name=BREAKING BAD  24/7
+thumb=http://fc06.deviantart.net/fs71/i/2011/220/6/4/breaking_bad_mac_os_x_folder_by_nabucodorozor-d45w8yq.png
+URL=rtmp://192.99.38.122/app/ playpath=bad02 swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=bad02
+player=default
+rating=-1.00
+
+# 2330815
+type=video
+name=BURN NOTICE
+thumb=http://fc05.deviantart.net/fs71/f/2013/141/2/0/burn_notice__folder_icon__by_voidsentinel-d664eyo.png
+URL=rtmp://192.99.38.122/app/ playpath=burnnotice03 swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=burnnotice03
+player=default
+rating=-1.00
+
+# 2330816
+type=video
+name=CARTOON NETWORK english and russian audio options
+URL=http://goo.gl/2VwrKS
+player=default
+rating=-1.00
+
+# 2320161
+type=video
+name=Channel News Asia HD
+thumb=http://www.channelnewsasia.com/blob/542314/1357893003000/about-us-logo-data.png
+URL=http://202.75.23.37:1400/live/ch15/04.m3u8
+player=default
+rating=-1.00
+
+# 2301935
+type=video
+name=Clubbing Tv
+thumb=http://564ccca6a641eac6e5b0-38e3bbf162f44470d3635a7244f7971b.r55.cf3.rackcdn.com/clubbing-tv-channel-images-logo-large.png?1360086983
+URL=rtmp://204.107.26.252:8086/live/691.high.stream
+player=default
+rating=-1.00
+
+# 2312561
+type=video
+name=CNN
+thumb=http://www.userlogos.org/files/logos/tl/cnn.png
+URL=rtmp://c.cdn.livenewschat.eu/edge playpath=cnn_live swfUrl=http://msnbclive.eu/player.swf swfVfy=1 live=1 pageUrl=http://weplaylive.tv timeout=15
+player=default
+rating=-1.00
+
+# 2330818
+type=video
+name=COMEDY CENTRAL
+thumb=http://fc00.deviantart.net/fs71/i/2013/087/1/3/comedy_central_icon_by_slamiticon-d5zbm1h.png
+URL=http://secure.ilikehd.com:8080/livetv/player/totlink.m3u8?channel_id=2f18d4ba25224edaa8bb9aac94b00d4f&bitrate=1500
+player=default
+rating=-1.00
+
+# 2330819
+type=video
+name=COPS
+thumb=http://icons.iconseeker.com/png/fullsize/tv-shows/cops.png
+URL=rtmp://198.27.75.99/app/ playpath=cops01 swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=cops01
+player=default
+rating=-1.00
+
+# 2332184
+type=video
+name=Crime Investigation Network
+thumb=http://www.thisismonarchy.tv/blog/wp-content/uploads/2014/03/CI-HERO-LOGO-BLACK.jpg
+URL=http://secure.ilikehd.com:8080/livetv/player/totlink.m3u8?channel_id=9961a963920f45f4bc0d81c3e478b334
+player=default
+rating=-1.00
+
+# 2338553
+type=video
+name=CRIME INVESTIGATION NETWORK
+thumb=http://www.crimeandinvestigation.nl/docroot/images/international/genericTonightImage.jpg
+date=2014-08-30
+URL=http://goo.gl/21Z4sj
+player=default
+rating=-1.00
+
+# 2312710
+type=video
+name=Dance TV
+thumb=http://564ccca6a641eac6e5b0-38e3bbf162f44470d3635a7244f7971b.r55.cf3.rackcdn.com/dancemusic-tv-channel-images-logo-large.png?1360087026
+URL=rtsp://91.82.85.16:1935/relay10/dancetv1.sdp
+player=default
+rating=-1.00
+
+# 2317324
+type=video
+name=Deluxe American
+thumb=http://www.catamountrecording.com/PICS/GearPics/23Metallica.jpg
+URL=http://flash1.ipercast.net/deluxemusic.tv/staging/120227-american-catchup.mp4.mp4/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2317323
+type=video
+name=Deluxe Disco
+thumb=http://winlights.com/disco-lights/lighting-21.jpg
+URL=http://flash1.ipercast.net/deluxemusic.tv/staging/120228-disco-deluxe-catchup.mp4.mp4/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2317322
+type=video
+name=Deluxe Soul
+thumb=https://i.ytimg.com/i/wkjsZW8O99UuNlzrD38-Og/mq1.jpg?v=bbfeea
+URL=http://flash1.ipercast.net/deluxemusic.tv/staging/120216-soul-catchup.mp4.mp4/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2309238
+type=video
+name=Denver 8 TV
+thumb=http://www.ourwebtv.com/Logos/Denver%208%20TV%20USA.png
+URL=mms://207.7.154.96/G0080_002?wmcache=0
+player=default
+rating=-1.00
+
+# 2317256
+type=video
+name=Discovery Channel HD
+thumb=http://chfd.net/images/Discovery_Channel.jpg
+URL=http://202.75.23.34:1400/live/ch29/04.m3u8
+player=default
+rating=-1.00
+
+# 2330820
+type=video
+name=DISCOVERY SCIENCE
+thumb=http://www.hdicon.com/wp-content/uploads/2010/06/Discovery_Channel_1995.png
+URL=http://202.75.23.34:1400/live/ch33/03.m3u8
+player=default
+rating=-1.00
+
+# 2317262
+type=video
+name=Discovery World HD
+thumb=http://chfd.net/images/Discovery_Channel.jpg
+URL=http://202.75.23.34:1400/live/ch30/04.m3u8
+player=default
+rating=-1.00
+
+# 2317265
+type=video
+name=Discovery World Low Stream
+thumb=http://chfd.net/images/Discovery_Channel.jpg
+URL=http://202.75.23.34:1400/live/ch30/01.m3u8
+player=default
+rating=-1.00
+
+# 2317263
+type=video
+name=Discovery World SD
+URL=http://202.75.23.34:1400/live/ch30/03.m3u8
+player=default
+rating=-1.00
+
+# 2330822
+type=video
+name=DISCOVERY WORLD
+thumb=http://www.tele-com.tv/img/icons/DiscoveryWorld.png
+URL=http://202.75.23.34:1400/live/ch30/03.m3u8
+player=default
+rating=-1.00
+
+# 2330823
+type=video
+name=DISCOVERY
+thumb=http://icons.iconseeker.com/png/fullsize/tv-shows/discovery-channel.png
+URL=http://202.75.23.34:1400/live/ch29/04.m3u8
+player=default
+rating=-1.00
+
+# 2313096
+type=video
+name=Dubai  Racing
+thumb=http://cdnhwedubaitv.endavomedia.com/images/media/a/a882eb90135f163e4877617f48620309.png
+URL=http://goo.gl/AUEhzU
+player=default
+rating=-1.00
+
+# 2302271
+type=video
+name=eScapes HD
+thumb=http://www.escapestv.com/media/escapes.png
+URL=rtmp://204.107.26.252:8086/live/341.high.stream
+player=default
+rating=-1.00
+
+# 2316681
+type=video
+name=Euro News
+thumb=http://nowwatchtvlive.com/wp-content/uploads/2011/07/EuroNews1.jpeg
+URL=http://hd1.lsops.net/live/euronews_en_340/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2317260
+type=video
+name=EVE Low Stream
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Eve_Channel_Logo.PNG/250px-Eve_Channel_Logo.PNG
+URL=http://202.75.23.34:1400/live/ch34/01.m3u8
+player=default
+rating=-1.00
+
+# 2317258
+type=video
+name=EVE SD
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Eve_Channel_Logo.PNG/250px-Eve_Channel_Logo.PNG
+URL=http://202.75.23.34:1400/live/ch34/03.m3u8
+player=default
+rating=-1.00
+
+# 2317257
+type=video
+name=EVE
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Eve_Channel_Logo.PNG/250px-Eve_Channel_Logo.PNG
+URL=http://202.75.23.34:1400/live/ch34/04.m3u8
+player=default
+rating=-1.00
+
+# 2330821
+type=video
+name=EVE
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Eve_Channel_Logo.PNG/250px-Eve_Channel_Logo.PNG
+URL=http://202.75.23.34:1400/live/ch34/03.m3u8
+player=default
+rating=-1.00
+
+# 2306208
+type=video
+name=FASHION TV
+thumb=http://www.katapult-soelden.com/uploads/pics/fashion-tv_01.jpg
+URL=http://edgeb.streaming.sk/fashiontv/fashiontv.stream/playlist_b125000_w304569164.m3u8
+player=default
+rating=-1.00
+
+# 2330825
+type=video
+name=FIGHT SPORTS
+thumb=http://images.gmanews.tv/v3/webpics/v3/2013/11/2013_11_21_10_12_19.jpg
+URL=http://202.75.23.37:1400/live/ch20/03.m3u8
+player=default
+rating=-1.00
+
+# 2338547
+type=video
+name=FOX NEWS 2
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Fox_News_Channel.svg/1098px-Fox_News_Channel.svg.png
+date=2014-08-30
+URL=rtmpe://watch.playfooty.tv/live playpath=foxnews1569 swfUrl=http://www.playfooty.tv/play/player/player.swf live=1 pageUrl=http://www.playfooty.tv/play/embed.php?u=foxnews1569&vw=600&vh=430
+player=default
+rating=-1.00
+
+# 2330827
+type=video
+name=FOX NEWS
+thumb=http://www.iairtv.com/belizelive/pics/fox_icon.png
+URL=rtmpe://watch.playfooty.tv/live playpath=foxnews1569 swfUrl=http://www.playfooty.tv/play/player/player.swf live=1 pageUrl=http://www.playfooty.tv/play/embed.php?u=foxnews1569&vw=600&vh=430
+player=default
+rating=-1.00
+
+# 2312567
+type=video
+name=Fox Sports 1
+thumb=http://msn.foxsports.com/speed/wp-content/uploads/2013/08/1129922_article_img_xlarge6.jpg
+URL=rtmp://31.220.0.104:1935/live playpath=fox1x token=%ZZri(nKa@#Z swfUrl=http://www.flashtv.co/ePlayerr.swf live=1 timeout=13 pageUrl=http://www.flashtv.co/ AnisotropicTV
+player=default
+rating=-1.00
+
+# 2312568
+type=video
+name=Fox Sports 2
+thumb=http://sport.sky.it/static/contentimages/original/sezioni/sport/altri_sport/2013/12/19/visore_foxsports2.jpg
+URL=rtmp://31.220.0.104:1935/live playpath=fox2x token=%ZZri(nKa@#Z swfUrl=http://www.flashtv.co/ePlayerr.swf live=1 timeout=13 pageUrl=http://www.flashtv.co/ AnisotropicTV
+player=default
+rating=-1.00
+
+# 2332182
+type=video
+name=FX
+thumb=http://www.logoeps.net/wp-content/uploads/2012/04/fx-tv-channel-logo.jpg
+URL=http://secure.ilikehd.com:8080/livetv/player/totlink.m3u8?channel_id=2e0e4b05aa6e428593f3b45b710045b7
+player=default
+rating=-1.00
+
+# 2330198
+type=playlist
+name=Game Of Thrones
+thumb=http://image.tmdb.org/t/p/w396/pVC9o9LLnhuPpas0B0p9spqAxNg.jpg
+URL=http://www.navixtreme.com/playlist/140516/game_of_thrones_(2011)_returns_(2015-04-05).plx
+player=default
+rating=-1.00
+
+# 2330829
+type=video
+name=Game of Thrones
+thumb=http://icons.iconarchive.com/icons/atti12/tv-series-folder/512/Game-of-Thrones-icon.png
+URL=rtmp://198.27.75.99/app playpath=got02 swfUrl=http://www.tgun.tv/locked/player.swf live=1 pageUrl=http://www.tgun.tv
+playpath=got02
+player=default
+rating=-1.00
+
+# 2330830
+type=video
+name=GOLF CHANNEL
+thumb=http://www.satnews.com/images_upload/483577009/Golf-Channel-icon.jpg
+URL=http://xrxs.net/video/live-golf-4096.m3u8
+player=default
+rating=-1.00
+
+# 2312085
+type=video
+name=HBO Movies
+thumb=http://nowwatchtvlive.com/wp-content/uploads/2011/07/HBO-Channel-logo.png
+URL=rtmp://81.17.20.46/iguide playpath=0bf02qe6msgtu4s swfUrl=http://cdn.iguide.to/player/secure_player_iguide_token.swf pageUrl=http://www.iguide.to/view/1/watch-live-HBO-channel-for-free token=#ed%h0#w18623jsda6523lDGD
+player=default
+rating=-1.00
+
+# 2338549
+type=video
+name=HEAT TV  (Music Videos)
+thumb=http://www.heatworld.com/images/109957_615x10000_STD/2012/6/heat_logo_x.jpg
+date=2014-08-30
+URL=http://goo.gl/wKIC0B
+player=default
+rating=-1.00
+
+# 2317267
+type=video
+name=History  SD
+thumb=http://www.freelogovectors.net/wp-content/uploads/2012/04/history_channel-logo.jpg
+URL=http://202.75.23.36:1400/live/ch45/03.m3u8
+player=default
+rating=-1.00
+
+# 2320206
+type=video
+name=History HD
+thumb=http://www.freelogovectors.net/wp-content/uploads/2012/04/history_channel-logo.jpg
+URL=http://202.75.23.36:1400/live/ch45/04.m3u8
+player=default
+rating=-1.00
+
+# 2320205
+type=video
+name=History Low
+thumb=http://www.freelogovectors.net/wp-content/uploads/2012/04/history_channel-logo.jpg
+URL=http://202.75.23.36:1400/live/ch45/01.m3u8
+player=default
+rating=-1.00
+
+# 2313146
+type=video
+name=HSN 2
+thumb=http://homeshoppingista.files.wordpress.com/2010/10/hsn2.jpg
+URL=rtmp://hsn.mpl.miisolutions.net:1935/hsn-live01/_definst_/mp4:468p500kB31 playpath=mp4:468p500kB31
+player=default
+rating=-1.00
+
+# 2310371
+type=video
+name=HSN
+thumb=http://www.americancable.org/files/images/HSN%20NEW%20RESIZED.JPG
+URL=rtmp://hsn.mpl.miisolutions.net:1935/hsn-live01/_definst_/mp4:420p500kB31 playpath=mp4:420p500kB31
+player=default
+rating=-1.00
+
+# 2302269
+type=video
+name=iFlix
+thumb=http://www.shockya.com/news/wp-content/uploads/iflixtv-logo.jpg
+URL=rtmp://204.107.26.252:8086/live/1991.high.stream
+player=default
+rating=-1.00
+
+# 2317269
+type=video
+name=Lifetime HD
+thumb=https://yt3.ggpht.com/-B6Ik9Cag8L8/AAAAAAAAAAI/AAAAAAAAAAA/SjhIYodiMRQ/s900-c-k-no/photo.jpg
+URL=http://202.75.23.36:1400/live/ch48/04.m3u8
+player=default
+rating=-1.00
+
+# 2317274
+type=video
+name=Lifetime Low Stream
+thumb=https://yt3.ggpht.com/-B6Ik9Cag8L8/AAAAAAAAAAI/AAAAAAAAAAA/SjhIYodiMRQ/s900-c-k-no/photo.jpg
+URL=http://202.75.23.36:1400/live/ch48/01.m3u8
+player=default
+rating=-1.00
+
+# 2317270
+type=video
+name=Lifetime SD
+thumb=https://yt3.ggpht.com/-B6Ik9Cag8L8/AAAAAAAAAAI/AAAAAAAAAAA/SjhIYodiMRQ/s900-c-k-no/photo.jpg
+URL=http://202.75.23.36:1400/live/ch48/03.m3u8
+player=default
+rating=-1.00
+
+# 2338550
+type=video
+name=LIFETIME TV Channel
+thumb=http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/59/60/596099a9183ef05b86ee239631c8856c.png?itok=-XktcyDw
+date=2014-08-30
+URL=http://202.75.23.36:1400/live/ch48/03.m3u8
+player=default
+rating=-1.00
+
+# 2330831
+type=video
+name=LIFETIME
+thumb=http://upload.wikimedia.org/wikipedia/commons/2/28/Lifetime_tv_logo.png
+URL=http://202.75.23.36:1400/live/ch48/04.m3u8
+player=default
+rating=-1.00
+
+# 2330832
+type=video
+name=MASH
+thumb=http://epguides.com/mash/cast.jpg
+URL=rtmp://192.99.38.122/app/ playpath=mash02 swfUrl=http://tgun.tv/jwplayer/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=mash02
+player=default
+rating=-1.00
+
+# 2330835
+type=video
+name=MAX CHANNEL
+thumb=http://3.bp.blogspot.com/-pnz2J8eHw2Q/T-m1Jq-viCI/AAAAAAAAAXs/XDKMl9k7vII/s1600/max-television-logo-sri-lanka-tv-channels.jpg
+URL=http://149.255.39.122/aasd/8769/index.m3u8
+player=default
+rating=-1.00
+
+# 2311121
+type=video
+name=Max HD
+thumb=http://3.bp.blogspot.com/-pnz2J8eHw2Q/T-m1Jq-viCI/AAAAAAAAAXs/XDKMl9k7vII/s1600/max-television-logo-sri-lanka-tv-channels.jpg
+URL=rtmp://109.200.202.124/live/maxhd
+player=default
+rating=-1.00
+
+# 2331990
+type=playlist
+name=Movie List - A
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97719/movie_list_a.plx
+player=default
+rating=-1.00
+
+# 2331991
+type=playlist
+name=Movie List - B
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97720/movie_list_b.plx
+player=default
+rating=-1.00
+
+# 2331992
+type=playlist
+name=Movie List - C
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97724/movie_list_c.plx
+player=default
+rating=-1.00
+
+# 2331993
+type=playlist
+name=Movie List - D
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97723/movie_list_d.plx
+player=default
+rating=-1.00
+
+# 2332002
+type=playlist
+name=Movie List - H
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97728/movie_list_h.plx
+player=default
+rating=-1.00
+
+# 2331994
+type=playlist
+name=Movie List - I
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97729/movie_list_i.plx
+player=default
+rating=-1.00
+
+# 2331995
+type=playlist
+name=Movie List - J
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97730/movie_list_j.plx
+player=default
+rating=-1.00
+
+# 2332001
+type=playlist
+name=Movie List - K
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97731/movie_list_k.plx
+player=default
+rating=-1.00
+
+# 2331996
+type=playlist
+name=Movie List - L
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97732/movie_list_l.plx
+player=default
+rating=-1.00
+
+# 2331997
+type=playlist
+name=Movie List - M
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97733/movie_list_m.plx
+player=default
+rating=-1.00
+
+# 2332000
+type=playlist
+name=Movie List - P
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97736/movie_list_p.plx
+player=default
+rating=-1.00
+
+# 2331999
+type=playlist
+name=Movie List - S
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97739/movie_list_s.plx
+player=default
+rating=-1.00
+
+# 2331998
+type=playlist
+name=Movie List - T
+thumb=http://www.officialpsds.com/images/thumbs/movies-logo-psd51861.png
+URL=http://www.navixtreme.com/playlist/97740/movie_list_t.plx
+player=default
+rating=-1.00
+
+# 2312559
+type=video
+name=MSNBC
+thumb=http://imgs.abduzeedo.com/files/tutorials/MSNBC_New_Header_in_Photoshop/Step_7.jpg
+URL=rtmp://c.cdn.livenewschat.eu/edge playpath=msnbc_live swfUrl=http://msnbclive.eu/player.swf swfVfy=1 live=1 pageUrl=http://weplaylive.tv timeout=15
+player=default
+rating=-1.00
+
+# 2333079
+type=video
+name=NAT GEO PEOPLE
+thumb=http://www.broadbandtvnews.com/wp-content/uploads/2014/04/Nat-Geo-People-e1397071023754.png
+date=2014-08-24
+URL=http://goo.gl/KuFqrG
+player=default
+rating=-1.00
+
+# 2317266
+type=video
+name=National Geographic Channel
+thumb=http://img1.wikia.nocookie.net/__cb20130305223526/logopedia/images/f/f1/National_Geographic_Channel_Canada.png
+URL=http://202.75.23.35:1400/live/ch38/03.m3u8
+player=default
+rating=-1.00
+
+# 2312641
+type=video
+name=NBA Network
+thumb=http://s3files.core77.com/blog/images/2013/04/nbatv-set-02.jpg
+URL=rtmp://46.246.29.157:1935/stream/ playpath=y8m0NU0.stream swfUrl=http://thecdn.04stream.com/p/ooolo1.swf live=1 pageUrl=http://www.04stream.com/
+player=default
+rating=-1.00
+
+# 2312642
+type=video
+name=NBC Golf Channel
+thumb=http://upload.wikimedia.org/wikipedia/en/9/98/Golf_Channel_old_logo.png
+URL=http://goo.gl/sDqqEi
+player=default
+rating=-1.00
+
+# 2320154
+type=video
+name=Nickelodeon HD
+thumb=http://img3.wikia.nocookie.net/__cb20111007092753/logopedia/images/d/d9/NICK_Splat_Logo.png
+URL=http://202.75.23.36:1400/live/ch43/04.m3u8
+player=default
+rating=-1.00
+
+# 2320158
+type=video
+name=Nickelodeon Low
+thumb=http://img3.wikia.nocookie.net/__cb20111007092753/logopedia/images/d/d9/NICK_Splat_Logo.png
+URL=http://202.75.23.36:1400/live/ch43/01.m3u8
+player=default
+rating=-1.00
+
+# 2320156
+type=video
+name=Nickelodeon SD
+thumb=http://img3.wikia.nocookie.net/__cb20111007092753/logopedia/images/d/d9/NICK_Splat_Logo.png
+URL=http://202.75.23.36:1400/live/ch43/03.m3u8
+player=default
+rating=-1.00
+
+# 2317189
+type=video
+name=Now Music UK
+thumb=http://www.broadbandtvnews.com/wp-content/uploads/2013/10/NOW-MUSIC-300x211.jpg
+URL=http://rrr.sz.xlcdn.com/?account=AATW&file=nowmusic&type=live&service=wowza&protocol=http&output=playlist.m3u8
+player=default
+rating=-1.00
+
+# 2310378
+type=video
+name=The Out-Door Channel
+thumb=http://www.ghostblind.com/images/logo_OutdoorChannel_header.jpg?ts=1367440227127
+URL=rtmp://lm02.everyon.tv:1935/ptv2/pld613
+player=default
+rating=-1.00
+
+# 2330837
+type=video
+name=OZ
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Ozposter.jpg/225px-Ozposter.jpg
+URL=rtmp://198.27.75.99/app playpath=oz02 swfUrl=http://www.tgun.tv/locked/player.swf live=1 pageUrl=http://www.tgun.tv
+playpath=oz02
+player=default
+rating=-1.00
+
+# 2331984
+type=video
+name=PAC 12 Arizona
+thumb=http://media.jrn.com/images/640*360/Pac+12.jpg
+URL=http://goo.gl/N0hRkX
+player=default
+rating=-1.00
+
+# 2331985
+type=video
+name=PAC 12 Bay Area
+thumb=http://media.jrn.com/images/640*360/Pac+12.jpg
+URL=http://goo.gl/2ieQt2
+player=default
+rating=-1.00
+
+# 2331986
+type=video
+name=PAC 12 Los Angeles
+thumb=http://media.jrn.com/images/640*360/Pac+12.jpg
+URL=http://goo.gl/yric8V
+player=default
+rating=-1.00
+
+# 2331987
+type=video
+name=PAC 12 Network
+thumb=http://media.jrn.com/images/640*360/Pac+12.jpg
+URL=http://goo.gl/bktdcf
+player=default
+rating=-1.00
+
+# 2331988
+type=video
+name=PAC 12 Oregon
+thumb=http://media.jrn.com/images/640*360/Pac+12.jpg
+URL=http://goo.gl/Lb3tFm
+player=default
+rating=-1.00
+
+# 2331989
+type=video
+name=PAC 12 Washington
+thumb=http://media.jrn.com/images/640*360/Pac+12.jpg
+URL=http://goo.gl/m8huPB
+player=default
+rating=-1.00
+
+# 2311140
+type=video
+name=Party TV
+thumb=http://www.lyngsat-logo.com/logo/tv/pp/party_channel_th.png
+URL=http://api.viglink.com/api/click?format=go&jsonp=vglnk_jsonp_14068358915159&key=5a5e09c99bf477b62bf79c1924e231f7&libId=82c3b15b-9a0e-40a7-8e4a-15ebcff6e0c0&loc=http%3A%2F%2Fsatworld.forumotion.com%2Ft18701p49-topic&v=1&out=http%3A%2F%2F149.11.34.6%3A1935%2Flive%2Fpartytv.stream%2Fplaylist.m3u8&ref=http%3A%2F%2Fsatworld.forumotion.com%2Ft18701-topic&title=IPTV%20LINKS%2001-07-2014%20RTMP%20VLC%20ACESTREAM%20SIMPLE%20TV%20LIVE%20WORKING%20FREE%20TV%20-%20Page%202&txt=http%3A%2F%2F149.11.34.6%3A1935%2Flive%2Fpartytv.stream%2Fplaylist.m3u8
+player=default
+rating=-1.00
+
+# 2304489
+type=video
+name=Pink Action Movies
+thumb=http://www.lyngsat-logo.com/logo/tv/pp/pink_action.png
+URL=http://goo.gl/B2FdVc
+player=default
+rating=-1.00
+
+# 2310373
+type=video
+name=PRESS NEWS TV
+thumb=http://www.presstv.com/images/logo1.jpg
+URL=rtmp://204.107.26.252:8086/live/905.high.stream
+player=default
+rating=-1.00
+
+# 2305790
+type=video
+name=Psychic Today
+thumb=http://i776.photobucket.com/albums/yy47/MargaretRuth/psychic-5.jpg
+URL=rtmp://204.107.26.252:8086/live/1711.high.stream
+player=default
+rating=-1.00
+
+# 2305784
+type=video
+name=QVC Shopping Channel
+thumb=http://www.ddrewdesign.com/blogimages/20090713_qvc.png
+URL=rtmp://204.107.26.252:8086/live/413.high.stream
+player=default
+rating=-1.00
+
+# 2312713
+type=video
+name=Rouge TV
+thumb=http://www.lyngsat-logo.com/hires/rr/rouge_tv.png
+URL=http://rtmp.infomaniak.ch/livecast/rougetv/playlist.m3u8?by_HasBahCa
+player=default
+rating=-1.00
+
+# 2310375
+type=video
+name=RT American News
+thumb=http://2.bp.blogspot.com/-M2KGWH9Y3YU/UI2IGdsB3KI/AAAAAAAAd78/v6508qIk5F0/s1600/Russia+Today+presidential+debate+third+parties+Jill+Stein+Gary+Johnson.jpg
+URL=http://odna.octoshape.net/f3f5m2v4/cds/ch4_320p/blizznow.m3u8
+player=default
+rating=-1.00
+
+# 2333006
+type=video
+name=SKY NEWS
+thumb=http://www.thedrum.com/uploads/news/old/23516/master.skynews.jpg
+date=2014-08-24
+URL=http://goo.gl/hpQM1w
+player=default
+rating=-1.00
+
+# 2318235
+type=video
+name=Sky Sports 1
+thumb=http://www.newstelevisions.com/wp-content/uploads/2012/09/Sky-Sports-1-HD.jpg
+URL=rtmp://31.220.0.104:1935/live/ playpath=sskk1 token=%ZZri(nKa@#Z swfUrl=http://www.flashtv.co/ePlayerr.swf live=1 timeout=13 pageUrl=http://www.flashtv.co/ AnisotropicTV
+playpath=66
+player=default
+rating=-1.00
+
+# 2318236
+type=video
+name=Sky Sports 2
+thumb=http://4.bp.blogspot.com/-OQpW-i8prUs/USyl6edugaI/AAAAAAAAAtE/T0fFCfbBs0M/s1600/Sky+2.jpg
+URL=rtmp://89.248.169.48:443/liverepeater playpath=43 swfUrl=http://static.surk.tv/atdedead.swf pageUrl=http://xxcast.pm/player2.php?id=8&width=640&height=460 token=#atd%#$ZH
+playpath=43
+player=default
+rating=-1.00
+
+# 2318237
+type=video
+name=Sky Sports 3
+thumb=http://img2.wikia.nocookie.net/__cb20100803180611/logopedia/images/7/79/Sky_Sports_3_2010.png
+URL=rtmp://89.248.169.48:443/liverepeater playpath=44 swfUrl=http://static.surk.tv/atdedead.swf pageUrl=http://xxcast.pm/player2.php?id=8&width=640&height=460 token=#atd%#$ZH
+playpath=44
+player=default
+rating=-1.00
+
+# 2332186
+type=video
+name=Smash Hits
+thumb=http://news.bbc.co.uk/media/images/38273000/jpg/_38273448_smashhits300.jpg
+URL=http://csm-e.cds1.yospace.com/csm/live/86561609.m3u8
+player=default
+rating=-1.00
+
+# 2330199
+type=playlist
+name=Sons Of Anarchy
+thumb=http://image.tmdb.org/t/p/w396/jFsuB5kXUyZQeVmIKXfcXjFrvWk.jpg
+URL=http://www.navixtreme.com/playlist/141449/sons_of_anarchy_(2008)_returns_(2014-09-09).plx
+player=default
+rating=-1.00
+
+# 2332123
+type=video
+name=SONY TV
+thumb=http://www.india-forums.com/tellybuzz/images/uploads/Sony_TV_logo_copy.png
+URL=http://goo.gl/dLQPp4
+player=default
+rating=-1.00
+
+# 2330843
+type=video
+name=SOPRANOS 24\7
+thumb=http://thetvdb.com/banners/_cache/episodes/75299/167545.jpg
+URL=rtmp://198.27.75.99/app/ playpath=sopranos swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=sopranos
+player=default
+rating=-1.00
+
+# 2338604
+type=video
+name=Spike TV
+thumb=http://e9bbcba794ec60672475-693158ff2c1c99d0e4a41d57d491843d.r93.cf2.rackcdn.com/wp-content/uploads/2011/01/SPIKE-TV-LOGO.jpg
+date=2014-08-30
+URL=rtmpe://31.220.0.199/live/ playpath=spikeusa_usa pageUrl=http://www.ukcast.co/ AnisotropicTV
+player=default
+rating=-1.00
+
+# 2313095
+type=video
+name=SportMax
+thumb=http://564ccca6a641eac6e5b0-38e3bbf162f44470d3635a7244f7971b.r55.cf3.rackcdn.com/sport-max-channel-images-logo-large.png?1362388705
+URL=http://goo.gl/KnW6up
+player=default
+rating=-1.00
+
+# 2338543
+type=video
+name=Sports News
+thumb=http://www.fm-base.co.uk/forum/attachments/football-manager-2012-stories/268180d1300972362-juventus-il-nuovo-barca-new-barcelona-sky-sports-news-logo-1.png
+date=2014-08-29
+URL=http://goo.gl/QN2JXN
+player=default
+rating=-1.00
+
+# 2310386
+type=video
+name=SPORTS
+thumb=http://i.vimeocdn.com/video/442665831_640.jpg
+URL=rtmp://204.107.26.252:8086/live/686.high.stream
+player=default
+rating=-1.00
+
+# 2318197
+type=video
+name=Sportsnet East
+thumb=http://www.graphicsmafia.com/wp-content/uploads/2011/10/Sportsnet8.jpg
+URL=http://goo.gl/E6OhRL
+player=default
+rating=-1.00
+
+# 2318200
+type=video
+name=Sportsnet Pacific
+thumb=http://www.graphicsmafia.com/wp-content/uploads/2011/10/Sportsnet8.jpg
+URL=http://goo.gl/bUPQ3F
+player=default
+rating=-1.00
+
+# 2318201
+type=video
+name=Sportsnet West
+thumb=http://www.graphicsmafia.com/wp-content/uploads/2011/10/Sportsnet8.jpg
+URL=http://goo.gl/k9N1sY
+player=default
+rating=-1.00
+
+# 2313097
+type=video
+name=SportTime TV 1
+thumb=http://i29.tinypic.com/2b7kgl.jpg
+URL=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel1_1200
+player=default
+rating=-1.00
+
+# 2313098
+type=video
+name=SportTime TV 2
+thumb=http://i29.tinypic.com/2b7kgl.jpg
+URL=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel2_1200
+player=default
+rating=-1.00
+
+# 2313099
+type=video
+name=SportTime TV 3
+thumb=http://i29.tinypic.com/2b7kgl.jpg
+URL=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel3_1200
+player=default
+rating=-1.00
+
+# 2313100
+type=video
+name=SportTime TV 4
+thumb=http://i29.tinypic.com/2b7kgl.jpg
+URL=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel4_1200
+player=default
+rating=-1.00
+
+# 2313101
+type=video
+name=SportTime TV 7
+thumb=http://i29.tinypic.com/2b7kgl.jpg
+URL=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel7_1200
+player=default
+rating=-1.00
+
+# 2330849
+type=video
+name=STAR TREK  24/7
+thumb=http://tweeting.com/wp-content/uploads/2012/08/original-Star-Trek-cast-Facebook-Cover1.jpg
+URL=rtmp://192.99.38.122/app/ playpath=tng02 swfUrl=http://tgun.tv/jwplayer/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=tng02
+player=default
+rating=-1.00
+
+# 2316277
+type=video
+name=Super Sport 3
+thumb=http://sportblog.co.za/wp-content/uploads/2013/10/SuperSport-logo-2010-on-screen-001-1024x768.jpg
+URL=http://149.255.39.122/aasd/8741/index.m3u8
+player=default
+rating=-1.00
+
+# 2330854
+type=video
+name=SYFY
+thumb=http://unitedmonkee.files.wordpress.com/2011/02/syfy-logo.jpg
+URL=http://secure.ilikehd.com:8080/livetv/player/totlink.m3u8?channel_id=71f197de056e499a85265c03b44bdab1&bitrate=1500
+player=default
+rating=-1.00
+
+# 2330855
+type=video
+name=THREE`S COMPANY
+thumb=http://ecolemanpr.files.wordpress.com/2008/10/threes-21.jpg
+URL=rtmp://198.27.75.99/app/ playpath=3scom01 swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=3scom01
+player=default
+rating=-1.00
+
+# 2330857
+type=video
+name=TLC
+thumb=http://www.freelogovectors.net/wp-content/uploads/2012/04/tls-logo.jpg
+URL=http://202.75.23.34:1400/live/ch35/03.m3u8
+player=default
+rating=-1.00
+
+# 2333830
+type=video
+name=TRING FANTASY
+thumb=http://www.shqiplive.info/img/tv/tring_fantasy.jpg
+date=2014-08-26
+URL=http://goo.gl/AgPXzM
+player=default
+rating=-1.00
+
+# 2333458
+type=video
+name=TRING MAX
+thumb=http://www.smartworldtv.com/repository/images/path/Tring_Max_725537.PNG
+date=2014-08-25
+URL=http://goo.gl/uHlvKe
+player=default
+rating=-1.00
+
+# 2330202
+type=playlist
+name=True Blood
+thumb=http://image.tmdb.org/t/p/w396/cxqlullYBMBczxxesO8PpKrWlhC.jpg
+URL=http://www.navixtreme.com/playlist/140926/true_blood_(2007)_finished.plx
+player=default
+rating=-1.00
+
+# 2310377
+type=video
+name=TWIT
+thumb=http://upload.wikimedia.org/wikipedia/en/thumb/6/6d/TWiT.svg/130px-TWiT.svg.png
+URL=http://iphone-streaming.ustream.tv/ustreamVideo/1524/streams/live/playlist.m3u8
+player=default
+rating=-1.00
+
+# 2330200
+type=playlist
+name=The Vampire Diaries
+thumb=http://image.tmdb.org/t/p/w396/hEfpJnnPYQlrdbD1FrEFdFNJENz.jpg
+URL=http://www.navixtreme.com/playlist/141653/the_vampire_diaries_(2009)_returns_(2014-10-02).plx
+player=default
+rating=-1.00
+
+# 2309358
+type=video
+name=VEVO TV 1
+thumb=http://tech.co/wp-content/uploads/2013/03/VevoTV.jpg
+URL=http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/05/prog_index.m3u8
+player=default
+rating=-1.00
+
+# 2309359
+type=video
+name=VEVO TV 2
+thumb=http://tech.co/wp-content/uploads/2013/03/VevoTV.jpg
+URL=http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/05/prog_index.m3u8
+player=default
+rating=-1.00
+
+# 2309360
+type=video
+name=VEVO TV 3
+thumb=http://tech.co/wp-content/uploads/2013/03/VevoTV.jpg
+URL=http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/05/prog_index.m3u8
+player=default
+rating=-1.00
+
+# 2309361
+type=video
+name=VH1 Tv
+URL=rtmp://94.242.221.176:1937/live/stream44
+player=default
+rating=-1.00
+
+# 2330860
+type=video
+name=VIKINGS  24/7
+thumb=http://fc09.deviantart.net/fs71/f/2013/108/6/b/vikings_tv_s__folder_icon_by_prestigee-d6252kw.png
+URL=rtmp://198.27.75.99/app/ playpath=vikings02 swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=vikings02
+player=default
+rating=-1.00
+
+# 2302270
+type=video
+name=Wealth TV
+thumb=http://www.limetv.com/images/channel-logos/wealth-tv.jpg
+URL=rtmp://204.107.26.252:8086/live/403.high.stream
+player=default
+rating=-1.00
+
+# 2330861
+type=video
+name=X FILES
+thumb=http://image.tmdb.org/t/p/w500/cpvwMPMkvsZLzThJTcnh8wcNPMH.jpg
+URL=rtmp://192.99.38.122/app/ playpath=xfiles02 swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://tgun.tv/shows/ch1
+playpath=xfiles02
+player=default
+rating=-1.00
+
+# 2333070
+type=video
+name=Xtreme Impacts
+thumb=http://564ccca6a641eac6e5b0-38e3bbf162f44470d3635a7244f7971b.r55.cf3.rackcdn.com/xtreme-impacts-channel-images-logo-large.png?1367922579
+date=2014-08-24
+URL=http://46.249.213.93/iPhone/broadcast/xtremeimpacts-tablet.3gp/xtremeimpacts-tablet.3gp-mr647k.m3u8
+player=default
+rating=-1.00
+
+# 2305782
+type=video
+name=YouToo TV
+thumb=http://upload.wikimedia.org/wikipedia/en/2/29/Youtoo.jpg
+URL=rtmp://204.107.26.252:8086/live/773.high.stream
+player=default
+rating=-1.00
+
+
+# cached

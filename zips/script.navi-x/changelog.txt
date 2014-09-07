@@ -1,6 +1,70 @@
 Navi-X Changelog:
 
 -------------------------------------------------------------------------------
+3.8.2
+- src/navix.py line 621'ish
+* use of non-SmartCache method.
+- version up for public release.
+- Userdata Location instead of Root Addon Location.
+3.8.1.001
+- Misc. stuff....
+- removed old skin files
+- resources/settings.xml, src/settings.py, src/navix.py
+* Home Page option in Addon Settings.  Set as Default for custom url.
+- default.py
+* try/except on XBMCHUB.com Repository installer.  This is for sake of xbox and devices that have path issues.
+
+-------------------------------------------------------------------------------
+3.8.1
+- version up for public release.
+3.8.0.003
+- put 2 on end of each .xml files to deal with SiOS and other skins trying to use their name and id to force a dif look.
+3.8.0.002
+- changes to the 2 PAL skin folders.
+3.8.0.001
+- try/except for previous skin additions.
+
+-------------------------------------------------------------------------------
+3.8.0
+
+- src/CPlayList.py, src/CFileLoader.py, resources/settings.xml
+  * Always live pulls for updates list.
+  * Updates List for Testers.
+- src/CURLLoader.py
+  * UrlResolver usage attempt by default first, before processor.
+- src/CBackgroundLoader.py, src/navix.py, .../skin.xml, src/skin.py
+  * A second info label for selected items to show the (protocol):// such as HTTP or RTSP.
+- src/CFileLoader.py
+  * Code fix for when pages come up less than 300 bytes and .old cached version is atleast 200bytes larger.  Title header only pages @ the blank page point.
+- Play with UrlResolver option in context menu.
+- list-focus2.png to list-focus2g.png
+- panel-focus1.png to panel-focus1g.png
+- ColorDifuse added to new TextWindow method and main screen.
+- TextWindow Changed.
+- XBMCHUB Repo Auto Installer.
+- addon.xml, splash_highway.py, service.py
+  * One Time Splash at Navi-X run or XBMC Startup time after version update of Navi-X.
+- src/CURLLoader.py, src/settings.py, resources/settings.xml
+  * Optional Local UrlResolver usage for in case the site can't be connected to or doesn't have a host supported.
+  *  ~ This option is in addon settings, enable it to use local UrlResolver, or disable it to use site processors.
+- src/navix.py
+  * Non-Existent Control 0 runetime error handling try/except usage for list3 and list4
+- default.py, splash_highway.py
+  * Added splash screen system by TheHighway.
+  * setup a version update informational text/bg splash message.
+- src/navix.py, src/skin.py, resources/skins/Default/720p/skin.xml
+  * Added Exit button using the NAVIX X-icon, navi-x3.png.  This is for easy exits without use of side menu.
+- addon.xml adjustments:
+  * Python Version
+  * Category to both Program addons and Video addons
+- Editing in Fixes by CRZEN for navix.py, CFileLoader.py, and CPlayList.py
+  * Reference For navix.py and CFileLoader.py:  http://www.xbmchub.com/forums/threads/12025-Navi-X-quot-please-wait-quot-freeze
+  *  ~ access to cached search favs and history when server is down.
+  *  ~ stopped lockup on the portal and when trying to open playlists.
+  * Seems to be just spacing issues in CPlayList.py
+
+
+-------------------------------------------------------------------------------
 3.7.8
 
 -modified CFileLoader.py; readMetaData was throwing syntax error on XBMC4Xbox
