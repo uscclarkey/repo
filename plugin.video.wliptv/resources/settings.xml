@@ -1,0 +1,32 @@
+<settings>
+<category label="[COLOR yellow][B]Settings[/B][/COLOR]">
+	<setting id="user" type="text" label="[COLOR yellow][B]Email[/B][/COLOR]" default=""/>
+	<setting id="pass" type="text" label="[COLOR yellow][B]Password[/B][/COLOR]" default=""/>
+    <setting id="streamtype" type="enum" values="HLS|RTMP" label="[COLOR yellow][B]Stream Type[/B][/COLOR]" default="0"/>
+	<setting id="tvguide" type="bool" label="[COLOR yellow][B]Enable Instant Guide[/B][/COLOR]" default="true"/>
+	<setting id="genre" type="bool" label="[COLOR yellow][B]Use Genre For Listings[/B][/COLOR]" default="true"/>
+</category>
+<category label="[COLOR red][B]Recording[/B][/COLOR]">
+	<setting id="enable_record" type="bool" label="[COLOR red][B]Enable Recording[/B][/COLOR]" default="false"/>
+	<setting id="record_path" type="folder" label="[COLOR red][B]Set Recording Path[/B][/COLOR]" default="" enable="!eq(-1,false)"/>
+	<setting id="os" type="enum" values="Android Arm|Android x86|ATV1 Linux|ATV1 Stock|ATV2|IOS|Linux 32bit|Linux 64bit|Mac 32bit|Mac 64bit|Rasberry Pi|Windows|TLBB" label="Choose Your Operating System" default="0" enable="!eq(-2,false)" />
+</category>
+
+<category label="[COLOR blue][B]Auto View[/B][/COLOR]">
+	<setting id="auto-view" type="bool" label="[COLOR blue][B]Enable Automatic View[/B][/COLOR]" default="true"/>
+	<setting id="main-view" type="number" label="[COLOR blue][B]Main View[/B][/COLOR]" default="50" enable="!eq(-1,false)"/>
+	<setting id="channels-view" type="number" label="[COLOR blue][B]Channels View[/B][/COLOR]" default="503" enable="!eq(-2,false)"/>
+	<setting id="tvguide-view" type="number" label="[COLOR blue][B]TV Guide View[/B][/COLOR]" default="503" enable="!eq(-3,false)"/>
+	<setting id="default-view" type="number" label="[COLOR blue][B]Default View[/B][/COLOR]" default="50" enable="!eq(-4,false)"/>
+	
+    <!-- Google Analytics --> 
+    <setting id="ga_time" type="text" label="GA Called" default="2000-01-01 00:00:00" visible="false"/>
+    <setting id="timezone" type="text" label="timezone" default="" visible="false"/>
+    <setting id="firstrun" type="text" label="First Run" default="" visible="false"/>
+    <setting id="update" type="text" label="UpDate Plugin" default="123456789" visible="false"/>
+    <setting id="delete" type="text" label="Delete PY" default="" visible="false"/>
+    <setting id="start_Padding" type="text" label="Record Start" default="" visible="false"/>
+    <setting id="end_Padding" type="text" label="Record End" default="" visible="false"/>
+</category>
+
+</settings>
