@@ -1,3 +1,6 @@
+v1.3c
+Major update added TV guide and favs
+
 v1.3
 fixed my booboo
 
