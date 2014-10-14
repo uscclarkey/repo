@@ -106,7 +106,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.ftvguide 30304]</label>
+            <label>$ADDON[script.larkeyepg 30304]</label>
         </control>
         <control type="label"><!-- Choose Stream Text -->
             <posx>20</posx>
@@ -115,7 +115,7 @@ For any more help please visit TVAddons.ag</label>
             <height>200</height>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.ftvguide 30305]</label>
+            <label>$ADDON[script.larkeyepg 30305]</label>
             <wrapmultiline>true</wrapmultiline>
 			<visible>false</visible>
         </control>
@@ -159,7 +159,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.ftvguide 30307]</label>
+            <label>$ADDON[script.larkeyepg 30307]</label>
         </control>
         <control type="button" id="4004"><!-- QUIT -->
             <posx>20</posx>
@@ -174,7 +174,7 @@ For any more help please visit TVAddons.ag</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.ftvguide 30308]</label>
+            <label>$ADDON[script.larkeyepg 30308]</label>
 			<visible>false</visible>
         </control>
 		

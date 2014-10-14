@@ -1,3 +1,6 @@
+1.7
+small fixes
+
 1.6
 re-render
 

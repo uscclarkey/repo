@@ -1,6 +1,6 @@
 # XBMC Media Center language file
-# Addon Name: FTV Guide
-# Addon id: script.ftvguide
+# Addon Name: Clarkey EPG
+# Addon id: script.clarkeyepg
 # Addon Provider: rayw1986, bluezed
 msgid ""
 msgstr ""
@@ -163,11 +163,11 @@ msgid "URL"
 msgstr ""
 
 msgctxt "#30126"
-msgid "FTV (All)"
+msgid "Clarkey EPG (All)"
 msgstr ""
 
 msgctxt "#30127"
-msgid "FTV (Basic)"
+msgid "Clarkey EPG (Basic)"
 msgstr ""
 
 msgctxt "#30128"
@@ -231,7 +231,7 @@ msgid "Custom File"
 msgstr ""
 
 msgctxt "#30143"
-msgid "FTV Guide"
+msgid "Clarkey EPG"
 msgstr ""
 
 msgctxt "#30144"
@@ -277,7 +277,7 @@ msgid "It looks like your current skin has a special"
 msgstr ""
 
 msgctxt "#30155"
-msgid "version of the FTV Guide skin that is not up-to-date."
+msgid "version of the Clarkey EPG skin that is not up-to-date."
 msgstr ""
 
 msgctxt "#30156"
@@ -285,7 +285,7 @@ msgid "Please try with a different skin..."
 msgstr ""
 
 msgctxt "#30157"
-msgid "It looks like the FTV Guide database is broken."
+msgid "It looks like the Clarkey EPG database is broken."
 msgstr ""
 
 msgctxt "#30158"
@@ -430,7 +430,7 @@ msgid "Play channels using the Weeb.Tv addon"
 msgstr ""
 
 msgctxt "#30802"
-msgid "FTV Guide is configured to stream using Weeb.Tv"
+msgid "Clarkey EPG is configured to stream using Weeb.Tv"
 msgstr ""
 
 msgctxt "#30803"
