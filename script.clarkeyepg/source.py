@@ -2,6 +2,9 @@
 #      Copyright (C) 2013 Tommy Winther
 #      http://tommy.winther.nu
 #
+#      Modified for FTV Guide (09/2014 onwards)
+#      by Thomas Geppert [bluezed] - bluezed.apps@gmail.com
+#
 #  This Program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation; either version 2, or (at your option)
@@ -17,14 +20,12 @@
 #  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 #  http://www.gnu.org/copyleft/gpl.html
 #
-import StringIO
 import os
 import threading
 import datetime
 import time
 import urllib2
 from xml.etree import ElementTree
-import buggalo
 
 from strings import *
 
@@ -103,7 +104,7 @@ class DatabaseSchemaException(sqlite3.DatabaseError):
 
 class Database(object):
     SOURCE_DB = 'source.db'
-    CHANNELS_PER_PAGE = 9
+    CHANNELS_PER_PAGE = 8
 
     def __init__(self):
         self.conn = None
@@ -117,10 +118,6 @@ class Database(object):
         self.updateFailed = False
         self.settingsChanged = None
         self.alreadyTriedUnlinking = False
-        #buggalo.addExtraData('source', self.source.KEY)
-        #for key in SETTINGS_TO_CHECK:
-        #    buggalo.addExtraData('setting: %s' % key, ADDON.getSetting(key))
-
         self.channelList = list()
 
         profilePath = xbmc.translatePath(ADDON.getAddonInfo('profile'))
@@ -159,7 +156,6 @@ class Database(object):
 
             except Exception:
                 print 'Database.eventLoop() >>>>>>>>>> exception!'
-                buggalo.onExceptionRaised()
 
         print 'Database.eventLoop() >>>>>>>>>> exiting...'
 
@@ -311,6 +307,17 @@ class Database(object):
         sqlite3.register_adapter(datetime.datetime, self.adapt_datetime)
         sqlite3.register_converter('timestamp', self.convert_datetime)
 
+        # if the xmltv data needs to be loaded the database
+        # should be reset to avoid ghosting!
+        if self.source.needReset:
+            self.updateInProgress = True
+            c = self.conn.cursor()
+            c.execute("DELETE FROM updates")
+            c.execute("UPDATE sources SET channels_updated=0")
+            self.conn.commit()
+            c.close()
+            self.updateInProgress = False
+            self.source.needReset = False
         if not self._isCacheExpired(date):
             return
 
@@ -805,33 +812,97 @@ class Source(object):
 
 
 class XMLTVSource(Source):
+    PLUGIN_DATA = xbmc.translatePath(os.path.join("special://profile/addon_data","script.clarkeyepg"))
+    FTV_BASIC = 'guide_basic.xmltv'
+    FTV_ALL = 'guide.xmltv'
+    FTV_UKBASIC = 'guide_ukbasic.xmltv'
+    FTV_UKSKY = 'guide_uksky.xmltv'
+    FTV_USTV = 'guide_ustvnow.xmltv'
+    FTV_USUKBASIC = 'guide_usukbasic.xmltv'
+    FTV_URL = 'http://remoteman.tv/ftv/'
     KEY = 'xmltv'
-    TYPE_LOCAL_FILE = 0
-    TYPE_URL = 1
+    INI_FILE = 'addons.ini'
+    TYPE_FTV_ALL = 0
+    TYPE_FTV_BASIC = 1
+    TYPE_FTV_UKBASIC = 2
+    TYPE_FTV_UKSKY = 3
+    TYPE_FTV_USTV = 4
+    TYPE_FTV_USUKBASIC = 5
+    TYPE_CUSTOM = 6
+    INTERVAL_ALWAYS = 0
+    INTERVAL_12 = 1
+    INTERVAL_24 = 2
+    INTERVAL_48 = 3
+    LOGO_SOURCE_FTV = 0
+    LOGO_SOURCE_CUSTOM = 1
 
     def __init__(self, addon):
-        #self.logoFolder = os.path.join(xbmcaddon.Addon().getAddonInfo('path'), 'resources', 'logos/')
-        self.logoFolder = 'http://remoteman.tv/ftv/logos/'
-        self.xmltvFile = 'http://remoteman.tv/ftv/guide.xmltv'
-        self.xmltvUrl = 'http://remoteman.tv/ftv/guide.xmltv'
-        self.xmltvType = 0
+        self.needReset = False
+        self.xmltvType = int(addon.getSetting('xmltv.type'))
+        self.xmltvInterval = int(addon.getSetting('xmltv.interval'))
+        self.logoSource = int(addon.getSetting('logos.source'))
+
+        if (self.logoSource == XMLTVSource.LOGO_SOURCE_FTV):
+            self.logoFolder = XMLTVSource.FTV_URL + 'logos/'
+        else:
+            self.logoFolder = str(addon.getSetting('logos.folder'))
+
+        if (self.xmltvType == XMLTVSource.TYPE_FTV_ALL):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_ALL)
+        elif (self.xmltvType == XMLTVSource.TYPE_FTV_BASIC):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_BASIC)
+        elif (self.xmltvType == XMLTVSource.TYPE_FTV_UKBASIC):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_UKBASIC)
+        elif (self.xmltvType == XMLTVSource.TYPE_FTV_UKSKY):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_UKSKY)
+        elif (self.xmltvType == XMLTVSource.TYPE_FTV_USTV):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_USTV)
+        elif (self.xmltvType == XMLTVSource.TYPE_FTV_USUKBASIC):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_USUKBASIC)
+        elif (self.xmltvType == XMLTVSource.TYPE_CUSTOM):
+            self.xmltvFile = str(addon.getSetting('xmltv.file')) # uses local file provided by user!
+
+        # make sure the ini file is fetched as well if necessary
+        self.updateLocalFile(XMLTVSource.INI_FILE)
 
         if not self.xmltvFile or not xbmcvfs.exists(self.xmltvFile):
             raise SourceNotConfiguredException()
 
-    def getDataFromExternal(self, date, progress_callback=None):
-        if self.xmltvType == XMLTVSource.TYPE_LOCAL_FILE:
-            f = FileWrapper(self.xmltvFile)
-            context = ElementTree.iterparse(f, events=("start", "end"))
-            size = f.size
+    def updateLocalFile(self, name):
+        path = os.path.join(XMLTVSource.PLUGIN_DATA, name)
+        fetchFile = not os.path.exists(path) # always fetch if file doesn't exist!
+ 
+        # check the interval if not set to "Always"
+        if (not fetchFile and self.xmltvInterval <> XMLTVSource.INTERVAL_ALWAYS):
+            modTime = datetime.datetime.fromtimestamp(os.path.getmtime(path))
+            td = datetime.datetime.now() - modTime
+            # need to do it this way cause Android doesn't support .total_seconds() :(
+            diff = (td.microseconds + (td.seconds + td.days * 24 * 3600) * 10**6) / 10**6
+            if ((self.xmltvInterval == XMLTVSource.INTERVAL_12 and diff >= 43200) or
+                (self.xmltvInterval == XMLTVSource.INTERVAL_24 and diff >= 86400) or
+                (self.xmltvInterval == XMLTVSource.INTERVAL_48 and diff >= 172800)):
+                fetchFile = True
+                xbmc.log('[script.tvguide] Interval reached, fetching remote file...', xbmc.LOGDEBUG)
         else:
-            u = urllib2.urlopen(self.xmltvUrl, timeout=30)
-            xml = u.read()
-            u.close()
+            fetchFile = True
+            xbmc.log('[script.tvguide] Interval set to always or file doesn\'t exist. Fetching...', xbmc.LOGDEBUG)
+ 
+        if (fetchFile):
+            f = open(path,'wb')
+            f.write(urllib2.urlopen(XMLTVSource.FTV_URL + name).read())
+            f.close()
 
-            f = StringIO.StringIO(xml)
-            context = ElementTree.iterparse(f)
-            size = len(xml)
+            if (name <> XMLTVSource.INI_FILE):
+                self.needReset = True
+        else:
+            xbmc.log('[script.tvguide] Remote file fetching not due yet...', xbmc.LOGDEBUG)
+        return path
+
+    def getDataFromExternal(self, date, progress_callback=None):
+
+        f = FileWrapper(self.xmltvFile)
+        context = ElementTree.iterparse(f, events=("start", "end"))
+        size = f.size
 
         return self.parseXMLTV(context, f, size, self.logoFolder, progress_callback)
 
@@ -898,12 +969,11 @@ class XMLTVSource(Source):
                     title = elem.findtext("display-name")
                     logo = None
                     if logoFolder:
-                        logo = os.path.join(logoFolder, title + '.png')
-                        logo = logo.replace(' ', '%20')
-                    if not logo:
-                        iconElement = elem.find("icon")
-                        if iconElement is not None:
-                            logo = iconElement.get("src")
+                        logoFile = os.path.join(logoFolder, title + '.png')
+                        if (self.logoSource == XMLTVSource.LOGO_SOURCE_FTV):
+                            logo = logoFile.replace(' ', '%20') # needed due to fetching from a server!
+                        elif xbmcvfs.exists(logoFile):
+                            logo = logoFile # local file instead of remote!
                     streamElement = elem.find("stream")
                     streamUrl = None
                     if streamElement is not None:

@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: FTV Guide
 # Addon id: script.ftvguide
-# Addon Provider: twinther
+# Addon Provider: rayw1986, bluezed
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Addons\n"
@@ -25,7 +25,7 @@ msgid "[B]Loading data from external source...[/B]"
 msgstr ""
 
 msgctxt "#30002"
-msgid "Calculating remaning time..."
+msgid "Calculating remaining time..."
 msgstr ""
 
 msgctxt "#30003"
@@ -126,7 +126,9 @@ msgctxt "#30116"
 msgid "Search for channel logos in"
 msgstr ""
 
-#empty string with id 30117
+msgctxt "#30117"
+msgid "Show Channel Logos"
+msgstr ""
 
 msgctxt "#30118"
 msgid "Enable OSD menu"
@@ -160,7 +162,99 @@ msgctxt "#30125"
 msgid "URL"
 msgstr ""
 
-#empty strings from id 30126 to 30149
+msgctxt "#30126"
+msgid "FTV (All)"
+msgstr ""
+
+msgctxt "#30127"
+msgid "FTV (Basic)"
+msgstr ""
+
+msgctxt "#30128"
+msgid "File download interval"
+msgstr ""
+
+msgctxt "#30129"
+msgid "every start"
+msgstr ""
+
+msgctxt "#30130"
+msgid "every 12 hrs"
+msgstr ""
+
+msgctxt "#30131"
+msgid "every 24 hrs"
+msgstr ""
+
+msgctxt "#30132"
+msgid "every 48 hrs"
+msgstr ""
+
+msgctxt "#30133"
+msgid "UK (Freeview)"
+msgstr ""
+
+msgctxt "#30134"
+msgid "UK (Sky Go)"
+msgstr ""
+
+msgctxt "#30135"
+msgid "USTVNow"
+msgstr ""
+
+msgctxt "#30136"
+msgid "US/UK (Basic)"
+msgstr ""
+
+msgctxt "#30137"
+msgid "** WARNING! ** Resetting your database will cause you to lose all settings!"
+msgstr ""
+
+msgctxt "#30138"
+msgid "Only do so if your database has become corrupt!"
+msgstr ""
+
+msgctxt "#30139"
+msgid "Yes, Reset Database"
+msgstr ""
+
+msgctxt "#30140"
+msgid "Reset Database"
+msgstr ""
+
+msgctxt "#30141"
+msgid "Guide Theme"
+msgstr ""
+
+msgctxt "#30142"
+msgid "Custom File"
+msgstr ""
+
+msgctxt "#30143"
+msgid "FTV Guide"
+msgstr ""
+
+msgctxt "#30144"
+msgid "addons.ini selection"
+msgstr ""
+
+msgctxt "#30145"
+msgid "addons.ini file"
+msgstr ""
+
+msgctxt "#30146"
+msgid "Logo source"
+msgstr ""
+
+msgctxt "#30147"
+msgid "Custom Folder"
+msgstr ""
+
+msgctxt "#30148"
+msgid "Appearance"
+msgstr ""
+
+#empty strings from id 30149 to 30149
 
 msgctxt "#30150"
 msgid "Oops, sorry about that!"
@@ -239,7 +333,7 @@ msgid "You can choose your own .strm file to play, when you want to watch this c
 msgstr ""
 
 msgctxt "#30306"
-msgid "Remove stream file"
+msgid "Remove Stream"
 msgstr ""
 
 msgctxt "#30307"

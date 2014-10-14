@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: FTV Guide
 # Addon id: script.ftvguide
-# Addon Provider: twinther
+# Addon Provider: rayw1986, bluezed
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Addons\n"
@@ -124,6 +124,10 @@ msgctxt "#30116"
 msgid "Search for channel logos in"
 msgstr "Suche nach geänderten Senderlogos"
 
+msgctxt "#30117"
+msgid "Show Channel Logos"
+msgstr "Kanallogos anzeigen"
+
 msgctxt "#30118"
 msgid "Enable OSD menu"
 msgstr "OSD Menü aktivieren"
@@ -155,6 +159,100 @@ msgstr "Lokale Datei"
 msgctxt "#30125"
 msgid "URL"
 msgstr "URL"
+
+msgctxt "#30126"
+msgid "FTV (All)"
+msgstr "FTV (Alle)"
+
+msgctxt "#30127"
+msgid "FTV (Basic)"
+msgstr "FTV (Basis)"
+
+msgctxt "#30128"
+msgid "File download interval"
+msgstr "Herunterladen in diesem Intervall"
+
+msgctxt "#30129"
+msgid "every start"
+msgstr "jeder Start"
+
+msgctxt "#30130"
+msgid "every 12 hrs"
+msgstr "alle 12 Std."
+
+msgctxt "#30131"
+msgid "every 24 hrs"
+msgstr "alle 24 Std."
+
+msgctxt "#30132"
+msgid "every 48 hrs"
+msgstr "alle 48 Std."
+
+msgctxt "#30133"
+msgid "UK (Freeview)"
+msgstr "UK (Freeview)"
+
+msgctxt "#30134"
+msgid "UK (Sky Go)"
+msgstr "UK (Sky Go)"
+
+msgctxt "#30135"
+msgid "USTVNow"
+msgstr "USTVNow"
+
+msgctxt "#30136"
+msgid "US/UK (Basic)"
+msgstr "US/UK (Basis)"
+
+msgctxt "#30137"
+msgid "** WARNING! ** Resetting your database will cause you to lose all settings!"
+msgstr "** WARNUNG! ** Durch Zurücksetzen der Datenbank gehen alle Einstellungen verloren!"
+
+msgctxt "#30138"
+msgid "Only do so if your database has become corrupt!"
+msgstr "Führen Sie diesen Schritt nur aus wenn Ihre Datenbank fehlerhaft ist!"
+
+msgctxt "#30139"
+msgid "Yes, Reset Database"
+msgstr "Ja, Datenbank zurücksetzen"
+
+msgctxt "#30140"
+msgid "Reset Database"
+msgstr "Datenbank zurücksetzen"
+
+msgctxt "#30141"
+msgid "Guide Theme"
+msgstr "Design ändern"
+
+msgctxt "#30142"
+msgid "Custom File"
+msgstr "Eigene Datei"
+
+msgctxt "#30143"
+msgid "FTV Guide"
+msgstr "FTV Guide"
+
+msgctxt "#30144"
+msgid "addons.ini selection"
+msgstr "addons.ini wählen"
+
+msgctxt "#30145"
+msgid "addons.ini file"
+msgstr "addons.ini Datei"
+
+msgctxt "#30146"
+msgid "Logo source"
+msgstr "Logo-Quelle"
+
+msgctxt "#30147"
+msgid "Custom Folder"
+msgstr "Eigener Ordner"
+
+msgctxt "#30148"
+msgid "Appearance"
+msgstr "Darstellung"
+
+#empty strings from id 30149 to 30149
 
 msgctxt "#30150"
 msgid "Oops, sorry about that!"
