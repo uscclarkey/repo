@@ -1,3 +1,6 @@
+v1.0.8
+Revamped the look and source.
+
 v1.0.7
 fixed script error
 

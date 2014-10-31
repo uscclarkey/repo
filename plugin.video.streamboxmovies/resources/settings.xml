@@ -1,30 +1,11 @@
 <settings>
-    <category label="Settings">
-	<setting id="meta" type="bool" label="Enable Meta Data" default="true"/>
-	<setting id="fanart"        type="bool"      label="Enable Fanart" default="true" enable="!eq(-1,false)"/>
-	<setting id="results"       type="labelenum" label="Results per Page"       values="5|10|15|20|25"             default="20"/>
-        <setting id="sort"          type="enum"      label="Sort Results By"        values="Release Date|Rating|Views" default="0"/>
-        <setting id="play_best"     type="bool"      label="Autoplay Best Quality"  default="true"/>
-        <setting id="movie-folder"  type="folder"    label="Movie Library Folder"   default="special://userdata/addon_data/plugin.video.streamboxmovies/Movies"/>
-        <setting id="tvshow-folder" type="folder"    label="TV Library Folder"      default="special://userdata/addon_data/plugin.video.streamboxmovies/TVShows"/>
 
-	
-        <!-- Google Analytics --> 
-        <setting id="pop_time"   type="text" label="For POP UP" default="2000-01-01 00:00:00" visible="false"/>
-        <setting id="ga_time"    type="text" label="GA Called"  default="2000-01-01 00:00:00" visible="false"/>
-        <setting id="visitor_ga" type="text" label="GA visitor" default=""                    visible="false"/>
-        <setting id="timezone"   type="text" label="timezone"   default=""                    visible="false"/>
-    </category>
-    <category label="Downloads">
-        <setting id="download_folder" type="folder" label="Default download folder"      default=""/>
-        <setting id="ask_folder"      type="bool"   label="Ask for folder"               default="false"/>
-        <setting id="ask_filename"    type="bool"   label="Ask for filename"             default="false"/>
-        <setting id="download_best"   type="bool"   label="Always download Best Quality" default="true" />
-    </category>
-    <category label="Auto-View">
-	<setting id="auto-view" type="bool"   label="Enable Automatic View" default="false"/>
-	<setting id="movies"    type="number" label="Movies View"                default="50"  enable="!eq(-1,false)"/>
-	<setting id="episode"   type="number" label="Episodes View"              default="503" enable="!eq(-1,false)"/>
-	<setting id="default"   type="number" label="Default View"               default="50"  enable="!eq(-1,false)"/>
-    </category>
+<category label="Auto-View">
+
+<setting id="auto-view" type="bool" label="[COLOR red]Enable Autoview[/COLOR]" default="false"/>
+
+<setting id="movies-view" type="number" label="Global View" default="500" enable="!eq(-1,false)"/>
+
+</category>
+
 </settings>
