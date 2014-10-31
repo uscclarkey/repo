@@ -77,7 +77,7 @@
 
 </addon>
 
-<addon id="plugin.video.streamboxmovies" name="StreamBox Movies" version="1.0.8" provider-name="Uscclarkey">
+<addon id="plugin.video.streamboxmovies" name="StreamBox Movies" version="1.0.9" provider-name="Uscclarkey">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
