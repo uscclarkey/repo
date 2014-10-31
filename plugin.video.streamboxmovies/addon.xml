@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.streamboxmivies" name="StreamBox Movies" version="1.0.8" provider-name="Uscclarkey">
+<addon id="plugin.video.streamboxmovies" name="StreamBox Movies" version="1.0.8" provider-name="Uscclarkey">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -7,7 +7,7 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Stream Movies</summary>
+    <summary lang="en">Stream Movies, no links</summary>
     <description lang="en">Stream all the latest movies. With no links, just click and watch. For more info and instructions please visit the StreamBox Movies page of our website [COLOR blue]www.streamboxlive.wordpress.com[/COLOR]</description>
     <disclaimer lang="en">StreamBox movies does not host any files, it simply provides you a link to the file that is easily found on the web. thank you!!</disclaimer>
     <platform>all</platform>
