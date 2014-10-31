@@ -63,7 +63,7 @@ def GENRES(url):
 
 def SEARCH():
     search_entered =''
-    keyboard = xbmc.Keyboard(search_entered, 'Search Movies HD')
+    keyboard = xbmc.Keyboard(search_entered, 'Search StreamBox Movies')
     keyboard.doModal()
     if keyboard.isConfirmed():
         search_entered = keyboard.getText().replace(' ','+')
