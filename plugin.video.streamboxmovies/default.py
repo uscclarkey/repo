@@ -15,7 +15,7 @@ def CATEGORIES():
         addDir2('Recently Added','http://movieshd.co/?filtre=date&cat=0',1,artpath+'movies.png','',fanart)
         addDir2('Most Viewed','http://movieshd.co/?filtre=views&cat=0',1,artpath+'movies.png','',fanart)
         addDir2('Highest Rated','http://movieshd.co/?filtre=rate&cat=0',1,artpath+'movies.png','',fanart)
-        addDir2('Genres','url',2,artpath+'genres.png','',fanart)
+        addDir2('Genres','url',2,artpath+'genres.png','',fanart) 
         addDir2('Search','url',3,artpath+'search.png','',fanart)
 
 def GETMOVIES(url,name):
@@ -90,8 +90,8 @@ def PLAYLINK(name,url):
                         match=re.compile("frameborder='.+?' src='(.+?)?").findall(link)
                         videomega_url = match[0]
         except:
-                match=re.compile("src=\'(.+?)\'").findall(link)
-                videomega_id_url = match[2]
+                match=re.compile("<script type=\'text/javascript\' src=\'(.+?)\'>").findall(link)
+                videomega_id_url = match[3]
                 print videomega_id_url
                 req = urllib2.Request(videomega_id_url)
                 req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
