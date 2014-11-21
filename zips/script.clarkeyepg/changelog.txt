@@ -1,4 +1,4 @@
-1.8a
+1.8b
 Huge Update! changed the epg data to new url. We now have full control over what channels we show and how many days.
 
 1.7
