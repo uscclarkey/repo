@@ -135,7 +135,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
-<addon id="script.clarkeyepg" name="Clarkey EPG" version="1.7" provider-name="Uscclarkey">
+<addon id="script.clarkeyepg" name="Clarkey EPG" version="1.8a" provider-name="Uscclarkey">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -188,7 +188,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<description lang="sk">TV Program s podporou XMLTV a streamovania</description>
 		<description lang="sv">TV-guide med XML-TV och strömningsstöd</description>
 		<description lang="zh">支持XMLTV和流的电视指南</description>
-		<disclaimer lang="en">I have not created this add-on and have no control over the listings or or channels available. I have simply re-skinned an already existing and working add-on. All credit has to go to kinkin, rayw1986 and twinther.</disclaimer>
+		<disclaimer lang="en">I have not created this add-on. But! I do have control over the listings and the channels available. I have re-skinned an already existing and working add-on. All credit has to go to kinkin, rayw1986 and twinther.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GPLv2</license>

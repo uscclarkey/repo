@@ -2,7 +2,7 @@
 #      Copyright (C) 2013 Tommy Winther
 #      http://tommy.winther.nu
 #
-#      Modified for FTV Guide (09/2014 onwards)
+#      Modified for My TV Guide (09/2014 onwards)
 #      by Thomas Geppert [bluezed] - bluezed.apps@gmail.com
 #
 #  This Program is free software; you can redistribute it and/or modify
@@ -813,27 +813,27 @@ class Source(object):
 
 class XMLTVSource(Source):
     PLUGIN_DATA = xbmc.translatePath(os.path.join("special://profile/addon_data","script.clarkeyepg"))
-    FTV_BASIC = 'guide_basic.xmltv'
-    FTV_ALL = 'guide.xmltv'
-    FTV_UKBASIC = 'guide_ukbasic.xmltv'
-    FTV_UKSKY = 'guide_uksky.xmltv'
-    FTV_USTV = 'guide_ustvnow.xmltv'
-    FTV_USUKBASIC = 'guide_usukbasic.xmltv'
-    FTV_URL = 'http://remoteman.tv/ftv/'
+    EPG_BASIC = 'guide.xmltv'
+    EPG_ALL = 'guide.xmltv'
+    EPG_UKBASIC = 'guide.xmltv'
+    EPG_UKSKY = 'guide.xmltv'
+    EPG_USTV = 'guide.xmltv'
+    EPG_USUKBASIC = 'guide.xmltv'
+    EPG_URL = 'https://dl.dropboxusercontent.com/u/12710347/TvGuide/'
     KEY = 'xmltv'
     INI_FILE = 'addons.ini'
-    TYPE_FTV_ALL = 0
-    TYPE_FTV_BASIC = 1
-    TYPE_FTV_UKBASIC = 2
-    TYPE_FTV_UKSKY = 3
-    TYPE_FTV_USTV = 4
-    TYPE_FTV_USUKBASIC = 5
+    TYPE_EPG_ALL = 0
+    TYPE_EPG_BASIC = 1
+    TYPE_EPG_UKBASIC = 2
+    TYPE_EPG_UKSKY = 3
+    TYPE_EPG_USTV = 4
+    TYPE_EPG_USUKBASIC = 5
     TYPE_CUSTOM = 6
     INTERVAL_ALWAYS = 0
     INTERVAL_12 = 1
     INTERVAL_24 = 2
     INTERVAL_48 = 3
-    LOGO_SOURCE_FTV = 0
+    LOGO_SOURCE_EPG = 0
     LOGO_SOURCE_CUSTOM = 1
 
     def __init__(self, addon):
@@ -842,23 +842,23 @@ class XMLTVSource(Source):
         self.xmltvInterval = int(addon.getSetting('xmltv.interval'))
         self.logoSource = int(addon.getSetting('logos.source'))
 
-        if (self.logoSource == XMLTVSource.LOGO_SOURCE_FTV):
-            self.logoFolder = XMLTVSource.FTV_URL + 'logos/'
+        if (self.logoSource == XMLTVSource.LOGO_SOURCE_EPG):
+            self.logoFolder = XMLTVSource.EPG_URL + 'logos/'
         else:
             self.logoFolder = str(addon.getSetting('logos.folder'))
 
-        if (self.xmltvType == XMLTVSource.TYPE_FTV_ALL):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_ALL)
-        elif (self.xmltvType == XMLTVSource.TYPE_FTV_BASIC):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_BASIC)
-        elif (self.xmltvType == XMLTVSource.TYPE_FTV_UKBASIC):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_UKBASIC)
-        elif (self.xmltvType == XMLTVSource.TYPE_FTV_UKSKY):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_UKSKY)
-        elif (self.xmltvType == XMLTVSource.TYPE_FTV_USTV):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_USTV)
-        elif (self.xmltvType == XMLTVSource.TYPE_FTV_USUKBASIC):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.FTV_USUKBASIC)
+        if (self.xmltvType == XMLTVSource.TYPE_EPG_ALL):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_ALL)
+        elif (self.xmltvType == XMLTVSource.TYPE_EPG_BASIC):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_BASIC)
+        elif (self.xmltvType == XMLTVSource.TYPE_EPG_UKBASIC):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_UKBASIC)
+        elif (self.xmltvType == XMLTVSource.TYPE_EPG_UKSKY):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_UKSKY)
+        elif (self.xmltvType == XMLTVSource.TYPE_EPG_USTV):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_USTV)
+        elif (self.xmltvType == XMLTVSource.TYPE_EPG_USUKBASIC):
+            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_USUKBASIC)
         elif (self.xmltvType == XMLTVSource.TYPE_CUSTOM):
             self.xmltvFile = str(addon.getSetting('xmltv.file')) # uses local file provided by user!
 
@@ -889,7 +889,7 @@ class XMLTVSource(Source):
  
         if (fetchFile):
             f = open(path,'wb')
-            f.write(urllib2.urlopen(XMLTVSource.FTV_URL + name).read())
+            f.write(urllib2.urlopen(XMLTVSource.EPG_URL + name).read())
             f.close()
 
             if (name <> XMLTVSource.INI_FILE):
@@ -897,6 +897,12 @@ class XMLTVSource(Source):
         else:
             xbmc.log('[script.tvguide] Remote file fetching not due yet...', xbmc.LOGDEBUG)
         return path
+
+        gmt = addon.getSetting('gmtfrom').replace('GMT', '')
+        if gmt == '':
+            self.offset = 0
+        else:
+            self.offset = int(gmt)
 
     def getDataFromExternal(self, date, progress_callback=None):
 
@@ -970,7 +976,7 @@ class XMLTVSource(Source):
                     logo = None
                     if logoFolder:
                         logoFile = os.path.join(logoFolder, title + '.png')
-                        if (self.logoSource == XMLTVSource.LOGO_SOURCE_FTV):
+                        if (self.logoSource == XMLTVSource.LOGO_SOURCE_EPG):
                             logo = logoFile.replace(' ', '%20') # needed due to fetching from a server!
                         elif xbmcvfs.exists(logoFile):
                             logo = logoFile # local file instead of remote!
