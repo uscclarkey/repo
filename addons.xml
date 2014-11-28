@@ -106,7 +106,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.wliptv" name="WLIPTV.com" version="1.0.3" provider-name="Uscclarkey, Mikey1234">
+<addon id="plugin.video.wliptv" name="WLIPTV" version="1.0.4" provider-name="Uscclarkey, Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -114,8 +114,8 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">WLIPTV.com</summary>
-    <description lang="en">NTV.mx have new servers for some countries so this is an edited version of ntv to work with new accounts. Stream all of your favourites sports, movies and tv from wliptv.com
+    <summary lang="en">WLIPTV</summary>
+    <description lang="en">NTV.mx have new servers for some countries so this is an edited version of ntv to work with new accounts. Stream all of your favourites sports, movies and tv from wliptv.
 For more info and instructions on how to use this add-on please visit the WLIPTV section of our website [COLOR blue]www.streamboxlive.wordpress.com[/COLOR]</description>
     <platform>all</platform>
   </extension>

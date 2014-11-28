@@ -48,7 +48,7 @@ def AUTH():
         else:
             dialog = xbmcgui.Dialog()
             winput=re.compile('"message":"(.+?)"').findall(html)
-            if dialog.yesno("wliptv.com", winput[0],'', 'Please Try Again'):
+            if dialog.yesno("wliptv", winput[0],'', 'Please Try Again'):
                 SIGNIN()
             else:
                 EXIT()
@@ -100,7 +100,7 @@ def SIGNIN():
     
 def Launch():        
     dialog = xbmcgui.Dialog()
-    if dialog.yesno("wliptv.com", 'Do you Wish To Register','', "Or Sign In",'Register','Sign In'):
+    if dialog.yesno("wliptv", 'Do you Wish To Register','', "Or Sign In",'Register','Sign In'):
     
         SIGNIN()
     
@@ -114,13 +114,13 @@ def Launch():
         url='http://www.wliptv.com/index.php?c=1&a=1&xbmc=1&r=xbmc&accdata={"email":"%s","firstname":"%s","lastname":"%s","psw":"%s","cntid":"%s","phnnm":"%s"}'%(email,firstname,surname,password,country_id,phone)
         link=OPEN_URL(url)
         if 'success' in link:
-            dialog.ok("wliptv.com", 'Thank You For Registering','Please Open Your Email Client', 'And Verify Your Email Address')
+            dialog.ok("wliptv", 'Thank You For Registering','Please Open Your Email Client', 'And Verify Your Email Address')
             ADDON.setSetting('user',email)
             ADDON.setSetting('pass',password)
             ADDON.setSetting('firstrun','true')
         else:
             winput=re.compile('"message":"(.+?)"').findall(link)
-            if dialog.yesno("wliptv.com", winput[0],'', 'Exit And Restart Again'):
+            if dialog.yesno("wliptv", winput[0],'', 'Exit And Restart Again'):
                 Launch()
             else:
                 EXIT()

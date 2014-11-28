@@ -272,12 +272,12 @@ def CARDDETAILS(cat):
 	        if 'success' in link:
 	            dialog = xbmcgui.Dialog()
 	            winput= data['message']
-	            dialog.ok("wliptv.com", '',winput, '')
+	            dialog.ok("wliptv", '',winput, '')
 	        else:
 	            dialog = xbmcgui.Dialog()
 	            winput= data['message']
-	            dialog.ok("wliptv.com", '',winput, '')
-	            if dialog.yesno("wliptv.com", "Do You Want To Try Again", ""):
+	            dialog.ok("wliptv", '',winput, '')
+	            if dialog.yesno("wliptv", "Do You Want To Try Again", ""):
 	               CARDDETAILS(cat)
 	            else:
 	                return
@@ -318,12 +318,12 @@ class card_payment(xbmcgui.WindowXMLDialog):
             if 'success' in link:
                 dialog = xbmcgui.Dialog()
                 winput= data['message']
-                dialog.ok("wliptv.com", '',winput, '')
+                dialog.ok("wliptv", '',winput, '')
             else:
                 dialog = xbmcgui.Dialog()
                 winput= data['message']
-                dialog.ok("wliptv.com", '',winput, '')
-                if dialog.yesno("wliptv.com", "Do You Want To Try Again", ""):
+                dialog.ok("wliptv", '',winput, '')
+                if dialog.yesno("wliptv", "Do You Want To Try Again", ""):
                     card_payment('thingy.xml',ADDON.getAddonInfo('path'),'DefaultSkin',cat=cat).show() 
                 else: return
             
@@ -334,7 +334,7 @@ class card_payment(xbmcgui.WindowXMLDialog):
     
 def CARDPAY(cat):
     dialog = xbmcgui.Dialog()
-    if dialog.yesno("wliptv.com", "Are You Happy To Continue",'', "Please Input Card Details"):
+    if dialog.yesno("wliptv", "Are You Happy To Continue",'', "Please Input Card Details"):
         card_payment('thingy.xml',ADDON.getAddonInfo('path'),'DefaultSkin',cat=cat).show()
         
     else:
@@ -352,10 +352,10 @@ def PAYSUBS(cat):
     elif 'failure' in link:
         dialog = xbmcgui.Dialog()
         winput= data['message']
-        dialog.ok("wliptv.com", '',winput, '')
+        dialog.ok("wliptv", '',winput, '')
         return
     else:
-        if dialog.yesno("wliptv.com", "You Have a Similar Subscription",'', "What Do You Want To Do","Extend","Create New"):
+        if dialog.yesno("wliptv", "You Have a Similar Subscription",'', "What Do You Want To Do","Extend","Create New"):
                 print '######################################   CREATE NEW'
                 link = net.http_GET(URL+'&force=1', headers={'User-Agent' : UA}).content
                 data = json.loads(link)
@@ -364,7 +364,7 @@ def PAYSUBS(cat):
                     CARDPAY(cat)
                 elif 'failure' in link:
                     winput= data['message']
-                    dialog.ok("wliptv.com", '',winput, '')
+                    dialog.ok("wliptv", '',winput, '')
                     return
         else:
                 print '######################################   EXTEND'
@@ -392,7 +392,7 @@ def PAYSUBS(cat):
 	                    CARDPAY(cat)
 	                elif 'failure' in link:
 	                    winput= data['message']
-	                    dialog.ok("wliptv.com", '',winput, '')
+	                    dialog.ok("wliptv", '',winput, '')
 	                    return
     
             
@@ -460,10 +460,10 @@ def PLAY_STREAM(name,url,iconimage,cat):
         try:
             match=re.compile('"message":"(.+?)"').findall(link)
             dialog = xbmcgui.Dialog()
-            dialog.ok("wliptv.com", '', match[0].replace('\/','/'))
+            dialog.ok("wliptv", '', match[0].replace('\/','/'))
         except:
             dialog = xbmcgui.Dialog()
-            dialog.ok("wliptv.com", '', 'Please Sign Up To Watch The Streams')
+            dialog.ok("wliptv", '', 'Please Sign Up To Watch The Streams')
         
     else:
         match=re.compile('"src":"(.+?)","type":"rtmp"').findall(link)
