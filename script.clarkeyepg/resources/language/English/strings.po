@@ -163,11 +163,11 @@ msgid "URL"
 msgstr ""
 
 msgctxt "#30126"
-msgid "Clarkey EPG (All)"
+msgid "All Channels"
 msgstr ""
 
 msgctxt "#30127"
-msgid "Clarkey EPG (Basic)"
+msgid "StreamBox Live Channels"
 msgstr ""
 
 msgctxt "#30128"

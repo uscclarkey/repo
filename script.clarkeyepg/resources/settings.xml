@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <settings>
 	<category label="30101">
-		<setting id="xmltv.type" label="30123" type="enum" default="0" lvalues="30126|30127|30133|30134|30135|30136|30142"/>
+		<setting id="xmltv.type" label="30123" type="enum" default="0" lvalues="30126|30127|30142"/>
         <setting id="xmltv.interval" label="30128" type="enum" default="2" lvalues="30129|30130|30131|30132" visible="lt(-1,6)" />
-        <setting id="xmltv.file" label="30103" type="file" visible="eq(-2,6)" />
+        <setting id="xmltv.file" label="30103" type="file" visible="eq(-2,2)" />
         <setting id="gmtfrom" label="Time Zone" type="labelenum"  default="GMT"
 					values="GMT-12|GMT-11|GMT-10|GMT-9|GMT-8|GMT-7|GMT-6|GMT-5|GMT-4|GMT-3|GMT-2|GMT-1|GMT|GMT+1|GMT+2|GMT+3|GMT+4|GMT+5|GMT+6|GMT+7|GMT+8|GMT+9|GMT+10|GMT+11|GMT+12"
 					visible="false" />
