@@ -1,0 +1,26 @@
+v1.2
+fix
+
+v1.1
+little fix again
+
+v1.0.10
+edited the icons
+
+v1.0.9
+quick fix
+
+v1.0.8
+Revamped the look and source.
+
+v1.0.7
+fixed script error
+
+v1.0.6
+Update for gotham
+
+v1.0.5
+General Fixes
+
+v1.0.4
+Changed library settings

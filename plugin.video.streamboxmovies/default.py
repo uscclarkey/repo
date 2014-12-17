@@ -1,6 +1,6 @@
-import urllib,urllib2,re,xbmcplugin,xbmcgui,urlresolver,sys,xbmc,xbmcaddon,os
+import urllib,urllib2,re,xbmcplugin,xbmcgui,urlresolver,sys,xbmc,xbmcaddon,os,random
 from t0mm0.common.addon import Addon
-from t0mm0.common.net import Net
+from t0mm0.common.net import Net as net
 from metahandler import metahandlers
 
 addon_id = 'plugin.video.streamboxmovies'
@@ -11,12 +11,48 @@ fanart = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , '
 icon = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.PNG'))
 artpath = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id + '/resources/art/'))
 
+def showText(heading, text):
+    id = 10147
+    xbmc.executebuiltin('ActivateWindow(%d)' % id)
+    xbmc.sleep(100)
+    win = xbmcgui.Window(id)
+    retry = 50
+    while (retry > 0):
+        try:
+            xbmc.sleep(10)
+            retry -= 1
+            win.getControl(1).setLabel(heading)
+            win.getControl(5).setText(text)
+            return
+        except:
+            pass
+        
 def CATEGORIES():
-        addDir2('Recently Added','http://movieshd.co/?filtre=date&cat=0',1,artpath+'movies.png','',fanart)
-        addDir2('Most Viewed','http://movieshd.co/?filtre=views&cat=0',1,artpath+'movies.png','',fanart)
-        addDir2('Highest Rated','http://movieshd.co/?filtre=rate&cat=0',1,artpath+'movies.png','',fanart)
-        addDir2('Genres','url',2,artpath+'genres.png','',fanart) 
-        addDir2('Search','url',3,artpath+'search.png','',fanart)
+        addDir2('Featured','http://movieshd.co/watch-online/category/featured?filtre=date',1,icon,'',fanart)
+        addDir2('Recently Added','http://movieshd.co/?filtre=date&cat=0',1,icon,'',fanart)
+        addDir2('Most Viewed','http://movieshd.co/?filtre=views&cat=0',1,icon,'',fanart)
+        addDir2('Highest Rated','http://movieshd.co/?filtre=rate&cat=0',1,icon,'',fanart)
+        addDir2('Genres','url',2,icon,'',fanart)
+        addDir2('Bollywood','http://movieshd.co/watch-online/category/bollywood',1,icon,'',fanart) 
+        addDir2('Search','url',3,icon,'',fanart)
+        addLink('','','',icon,fanart)
+
+                
+def TWITTER():
+        text=''
+        twit = 'http://twitrss.me/twitter_user_to_rss/?user=movieshd_co'
+        twit += '?%d' % (random.randint(1, 1000000000000000000000000000000000000000))
+        response = net().http_GET(twit)
+        link = response.content
+        match=re.compile("<description><!\[CDATA\[(.+?)\]\]></description>.+?<pubDate>(.+?)</pubDate>",re.DOTALL).findall(link)
+        for status, dte in match:
+            status = status.replace('\n',' ')
+            status = status.encode('ascii', 'ignore').decode('ascii').replace('&#x27;','\'').replace('&#xA0;','').replace('&#x2026;','')
+            dte = '[COLOR red][B]'+dte+'[/B][/COLOR]'
+            dte = dte.replace('+0000','').replace('2014','').replace('2015','')
+            text = text+dte+'\n'+status+'\n'+'\n'
+        showText('@movieshd_co', text)
+        quit()
 
 def GETMOVIES(url,name):
         req = urllib2.Request(url)
@@ -35,7 +71,6 @@ def GETMOVIES(url,name):
                                                         if not 'Download' in name2:
                                                                 addDir(name2,url,100,'',len(match),isFolder=False)
         match=re.compile('<a class="next page-numbers" href="(.+?)">Next videos &raquo;</a>').findall(link)
-        print match
         if len(match)>0:
                 addDir('Next Page>>',match[0],1,artpath+'nextpage.png',len(match),isFolder=True)
         xbmc.executebuiltin('Container.SetViewMode(500)')
@@ -77,55 +112,53 @@ def SEARCH():
         GETMOVIES(url,name)
 
 def PLAYLINK(name,url):
-        req = urllib2.Request(url)
-        req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-        response = urllib2.urlopen(req)
-        link=response.read()
-        response.close()
         try:
-                match=re.compile("'text/javascript'>ref='(.+?)?';width.*iframe").findall(link)
-                if (len(match) == 1):
-                        videomega_url = "http://videomega.tv/iframe.php?ref=" + match[0] 
-                if (len(match) < 1):
+            req = urllib2.Request(url)
+            print 'here'
+            req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+            response = urllib2.urlopen(req)
+            link=response.read()
+            response.close()
+            match=re.compile('src="http://videomega.tv/validatehash.php\?hashkey=(.+?)">').findall(link)
+            if len(match)==0:
+                match=re.compile("src=\'http://videomega.tv/validatehash.php\?hashkey=(.+?)\'>").findall(link)
+            videomega_id_url = "http://videomega.tv/validatehash.php?hashkey="+ match[0]
+            print match
+             
+            req = urllib2.Request(videomega_id_url)
+            req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+            response = urllib2.urlopen(req)
+            link=response.read()
+            response.close()
+            match=re.compile('var ref="(.+?)";').findall(link)
+            vididresolved = match[0]
+            videomega_url = 'http://videomega.tv/iframe.php?ref='+vididresolved
+        except:
+               req = urllib2.Request(url)
+               req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+               response = urllib2.urlopen(req)
+               link=response.read()
+               response.close()
+               match=re.compile("ref=\'(.+?)'").findall(link)
+               print match
+               if (len(match) > 0):
+                        videomega_url = "http://videomega.tv/iframe.php?ref=" + match[2]
+                        print videomega_url
+               if (len(match) == 0):
                         match=re.compile("frameborder='.+?' src='(.+?)?").findall(link)
                         videomega_url = match[0]
-        except:
-                match=re.compile("<script type=\'text/javascript\' src=\'(.+?)\'>").findall(link)
-                videomega_id_url = match[3]
-                print videomega_id_url
-                req = urllib2.Request(videomega_id_url)
-                req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-                response = urllib2.urlopen(req)
-                link=response.read()
-                response.close()
-                match=re.compile('var ref="(.+?)";').findall(link)
-                vididresolved = match[0]
-                print vididresolved
-                videomega_url = 'http://videomega.tv/iframe.php?ref='+vididresolved
 
         req = urllib2.Request(videomega_url)
         req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
         response = urllib2.urlopen(req)
         link=response.read()
         response.close()
-
-
-        
         url = re.compile('document.write.unescape."(.+?)"').findall(link)[0]
         url = urllib.unquote(url)
         stream_url = re.compile('file: "(.+?)"').findall(url)[0]
-       
-
-
-        playlist = xbmc.PlayList(1)
-        playlist.clear()
-        listitem = xbmcgui.ListItem(name, iconImage="DefaultVideo.png")
-        listitem.setInfo("Video", {"Title":name})
-        listitem.setProperty('mimetype', 'video/x-msvideo')
-        listitem.setProperty('IsPlayable', 'true')
-        playlist.add(stream_url,listitem)
-        xbmcPlayer = xbmc.Player(xbmc.PLAYER_CORE_AUTO)
-        xbmcPlayer.play(playlist)
+        liz=xbmcgui.ListItem(name, iconImage=icon,thumbnailImage=icon); liz.setInfo( type="Video", infoLabels={ "Title": name } )
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
+        xbmc.Player ().play(stream_url, liz, False)
 
 def get_params():
         param=[]
@@ -177,6 +210,15 @@ def addDir(name,url,mode,iconimage,itemcount,isFolder=True):
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=isFolder,totalItems=itemcount)
         return ok
 
+def addLink(name,url,mode,iconimage,fanart,description=''):
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&description="+str(description)
+        ok=True
+        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
+        liz.setInfo( type="Video", infoLabels={ "Title": name, 'plot': description } )
+        liz.setProperty('fanart_image', fanart)
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
+        return ok
+
 params=get_params(); url=None; name=None; mode=None; site=None
 try: site=urllib.unquote_plus(params["site"])
 except: pass
@@ -194,6 +236,7 @@ if mode==None or url==None or len(url)<1: CATEGORIES()
 elif mode==1: GETMOVIES(url,name)
 elif mode==2: GENRES(url)
 elif mode==3: SEARCH()
+elif mode==4: TWITTER()
 elif mode==100: PLAYLINK(name,url)
 
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
