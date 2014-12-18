@@ -815,7 +815,7 @@ class XMLTVSource(Source):
     PLUGIN_DATA = xbmc.translatePath(os.path.join("special://profile/addon_data","script.clarkeyepg"))
     EPG_BASIC = 'guide_sbl.xmltv'
     EPG_ALL = 'guide.xmltv'
-    EPG_UKBASIC = 'guide.xmltv'
+    EPG_UKBASIC = 'guide_wliptv.xmltv'
     EPG_UKSKY = 'guide.xmltv'
     EPG_USTV = 'guide.xmltv'
     EPG_USUKBASIC = 'guide.xmltv'
@@ -824,7 +824,8 @@ class XMLTVSource(Source):
     INI_FILE = 'addons.ini'
     TYPE_EPG_ALL = 0
     TYPE_EPG_BASIC = 1
-    TYPE_CUSTOM = 2
+    TYPE_EPG_UKBASIC = 2
+    TYPE_CUSTOM = 3
     INTERVAL_ALWAYS = 0
     INTERVAL_12 = 1
     INTERVAL_24 = 2

@@ -191,7 +191,7 @@ msgid "every 48 hrs"
 msgstr ""
 
 msgctxt "#30133"
-msgid "UK (Freeview)"
+msgid "WLIPTV"
 msgstr ""
 
 msgctxt "#30134"
