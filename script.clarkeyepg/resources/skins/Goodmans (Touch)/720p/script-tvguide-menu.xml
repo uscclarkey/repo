@@ -50,13 +50,14 @@
             <aligny>top</aligny>
 			<wrapmultiline>true</wrapmultiline>
 			<autoscroll time="3600" delay="6000" repeat="6000">true</autoscroll>
-			<label>Supported Plugins
-The following Kodi plugins are currently supported by Clarke EPG: StreamBox Live, WLIPTV, IPTV, TVCatchup, ExpatTV, NTV, Filmon, Not Filmon, Sports Devil, Veetle, Sporting Streams, RamFM, Muzu, Music Video Jukebox, Tekosman, Listenliveeu, Movie db, TV Player, SkyGo + (Launcher), MX NCAA, MX BBC, MX RTE.
+			<label>Channel Hiding &amp; Moving
+While in this menu, if you choose 'Channels' to the left, you will be presented with a list of all the channels. Clicking on one with toggle it on or off. Pressing left, however, will slot the channel out of its place and you can then move it up or down your list. This is an easy way to get your guide just how you want it.
 
-Channel Hiding &amp; Moving
-While in this menu, if you choose 'Channels' to the left, you will be presented with a list of all the channels in your source XMLTV. Clicking on one with toggle it on or off. Pressing left, however, will slot the channel out of its place and you can then move it up or down your list. This is an easy way to get your guide just how you want it. Be warned, though, changing to another source in the main settings will force you to lose any channel settings you may have made.
-
-For any more help please visit streamboxlive.wordpress.com</label>
+For any more help please, 
+Email sean@experiencegroupspain.com 
+Call +34 952883168
+Or pop into our office at: 
+Centro Comercial Bena Vista, Local 167, Estepona</label>
         </control>
 			
         <control type="image" id="4100">
@@ -106,7 +107,7 @@ For any more help please visit streamboxlive.wordpress.com</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.clarkeyepg 30304]</label>
+            <label>$ADDON[script.tvguide 30304]</label>
         </control>
         <control type="label"><!-- Choose Stream Text -->
             <posx>20</posx>
@@ -115,7 +116,7 @@ For any more help please visit streamboxlive.wordpress.com</label>
             <height>200</height>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.clarkeyepg 30305]</label>
+            <label>$ADDON[script.tvguide 30305]</label>
             <wrapmultiline>true</wrapmultiline>
 			<visible>false</visible>
         </control>
@@ -159,7 +160,7 @@ For any more help please visit streamboxlive.wordpress.com</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.clarkeyepg 30307]</label>
+            <label>$ADDON[script.tvguide 30307]</label>
         </control>
         <control type="button" id="4004"><!-- QUIT -->
             <posx>20</posx>
@@ -174,7 +175,7 @@ For any more help please visit streamboxlive.wordpress.com</label>
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.clarkeyepg 30308]</label>
+            <label>$ADDON[script.tvguide 30308]</label>
 			<visible>false</visible>
         </control>
 		
