@@ -1,3 +1,6 @@
+1.14
+added auto startup feature
+
 1.13
 Moved the logo down so it sits behind the preview box.
 

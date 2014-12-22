@@ -49,6 +49,8 @@ try:
     ADDON = xbmcaddon.Addon(id = 'script.clarkeyepg')
     if ADDON.getSetting('cache.data.on.xbmc.startup') == 'true':
         Service()
+    if ADDON.getSetting('autostart') == "true":
+        xbmc.executebuiltin("RunAddon(script.clarkeyepg)")
 except source.SourceNotConfiguredException:
     pass  # ignore
 except Exception, ex:
