@@ -1,26 +1,6 @@
 <?xml version="1.0"?>
 <streams>
   <stream>
-    <title>BBC One World Cup</title>
-    <info resolution="" bitrate="" />
-    <swfUrl>http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=54</swfUrl>
-    <link>"rtmp://fml.BC83.systemcdn.net/"</link>
-    <pageUrl>http://www.filmon.com/tv/bbc-one</pageUrl>
-    <playpath>mp4:14.high.stream.mp4?6fb0914a89a1db80524b1cf2e7eec54a4c7f98e27ddff5c9fa319c2bfa4a88d58774a9a5ed517c96dd0f86579d71a23e5d87d2b500a57f9b73c25ba13cdf578c16a26947d1a2d9fea4</playpath>
-    <language />
-    <advanced>-a 20BC83/tv/ -o- -b 96000000</advanced>
-  </stream>
-  <stream>
-    <title>ITV One World Cup</title>
-    <info resolution="" bitrate="" />
-    <swfUrl>http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=54</swfUrl>
-    <link>"rtmp://fml.BC83.systemcdn.net/"</link>
-    <pageUrl>http://www.filmon.com/tv/itv1</pageUrl>
-    <playpath>mp4:11.high.stream.mp4?6fb0914a89a1db80524b1cf2e7eec54a4c7f98e27ddff5c9fa319c2bfa4a88d58774a9a5ed517c96dd0f86579d71a23e5d87d2b500a57f9b73c25ba13cdf578c16a26947d1a2d9fea4</playpath>
-    <language />
-    <advanced>-a 20BC83/tv/ -o- -b 96000000</advanced>
-  </stream>
-  <stream>
     <title>30a TV [Borg TV Update]</title>
     <info resolution="" bitrate="" />
     <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>
@@ -37,36 +17,6 @@
     <link>"rtmp://live308.edge.filmon.com:1935/"</link>
     <pageUrl>https://www.filmon.com/</pageUrl>
     <playpath>95.low.stream</playpath>
-    <language />
-    <advanced>-a live/?id=1ad5aac39bb13fbe025cd35458c1cc72497ff182cce286e93572b7df5e8a5f4efa029c21f34956351ad29ea1abd1f57aa5e30cfb6474d9703197c5c5aa4b5885f7166e1282fa08e6aac448048d30300232781b76e5c6975982c14aeda995117e3bf04c0c7745f86fbf1d39732ed38be496a377f853e83b968198c10605b4c0ef04bd07387cabb8eac9654b9eef9649ce2c644dd6e8238e8c -o- -b 96000000</advanced>
-  </stream>
-  <stream>
-    <title>5* [Borg TV Update]</title>
-    <info resolution="" bitrate="" />
-    <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>
-    <link>"rtmp://live308.edge.filmon.com:1935/"</link>
-    <pageUrl>https://www.filmon.com/</pageUrl>
-    <playpath>851.low.stream</playpath>
-    <language />
-    <advanced>-a live/?id=1ad5aac39bb13fbe025cd35458c1cc72497ff182cce286e93572b7df5e8a5f4efa029c21f34956351ad29ea1abd1f57aa5e30cfb6474d9703197c5c5aa4b5885f7166e1282fa08e6aac448048d30300232781b76e5c6975982c14aeda995117e3bf04c0c7745f86fbf1d39732ed38be496a377f853e83b968198c10605b4c0ef04bd07387cabb8eac9654b9eef9649ce2c644dd6e8238e8c -o- -b 96000000</advanced>
-  </stream>
-  <stream>
-    <title>5*+1 [Borg TV Update]</title>
-    <info resolution="" bitrate="" />
-    <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>
-    <link>"rtmp://live308.edge.filmon.com:1935/"</link>
-    <pageUrl>https://www.filmon.com/</pageUrl>
-    <playpath>854.low.stream</playpath>
-    <language />
-    <advanced>-a live/?id=1ad5aac39bb13fbe025cd35458c1cc72497ff182cce286e93572b7df5e8a5f4efa029c21f34956351ad29ea1abd1f57aa5e30cfb6474d9703197c5c5aa4b5885f7166e1282fa08e6aac448048d30300232781b76e5c6975982c14aeda995117e3bf04c0c7745f86fbf1d39732ed38be496a377f853e83b968198c10605b4c0ef04bd07387cabb8eac9654b9eef9649ce2c644dd6e8238e8c -o- -b 96000000</advanced>
-  </stream>
-  <stream>
-    <title>5USA*+1 [Borg TV Update]</title>
-    <info resolution="" bitrate="" />
-    <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>
-    <link>"rtmp://live308.edge.filmon.com:1935/"</link>
-    <pageUrl>https://www.filmon.com/</pageUrl>
-    <playpath>848.low.stream</playpath>
     <language />
     <advanced>-a live/?id=1ad5aac39bb13fbe025cd35458c1cc72497ff182cce286e93572b7df5e8a5f4efa029c21f34956351ad29ea1abd1f57aa5e30cfb6474d9703197c5c5aa4b5885f7166e1282fa08e6aac448048d30300232781b76e5c6975982c14aeda995117e3bf04c0c7745f86fbf1d39732ed38be496a377f853e83b968198c10605b4c0ef04bd07387cabb8eac9654b9eef9649ce2c644dd6e8238e8c -o- -b 96000000</advanced>
   </stream>
@@ -267,6 +217,26 @@
     <link>"rtmp://live304.edge.filmon.com:1935/"</link>
     <pageUrl>https://www.filmon.com/</pageUrl>
     <playpath>361.low.stream</playpath>
+    <language />
+    <advanced>-a live/?id=1ad5aac39bb13fbeaebb547fd6a9901829086091b587da1a37b6064d0599db2674417140588bd4cffd45c5c26b4f995823024a55e966fef015955eca9eb324df1f0d6f199d571d9196eaa7a31bf9f5bfd19836edb7453186c5c98ad9a5165bee0df80f5c9c6b357b3340b1f06f394a8f22ff43667034e6516a55754b950d5e205281243bb7c44a539596d672375227fc57a177940d452465 -o- -b 96000000</advanced>
+  </stream>
+  <stream>
+    <title>BBC 1 Scotland</title>
+    <info resolution="" bitrate="" />
+    <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>
+    <link>"rtmp://204.107.27.246/live/"</link>
+    <pageUrl>https://www.filmon.com/</pageUrl>
+    <playpath>3166.low.stream</playpath>
+    <language />
+    <advanced>-a live/?id=1ad5aac39bb13fbeaebb547fd6a9901829086091b587da1a37b6064d0599db2674417140588bd4cffd45c5c26b4f995823024a55e966fef015955eca9eb324df1f0d6f199d571d9196eaa7a31bf9f5bfd19836edb7453186c5c98ad9a5165bee0df80f5c9c6b357b3340b1f06f394a8f22ff43667034e6516a55754b950d5e205281243bb7c44a539596d672375227fc57a177940d452465 -o- -b 96000000</advanced>
+  </stream>
+  <stream>
+    <title>BBC 1 Wales</title>
+    <info resolution="" bitrate="" />
+    <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>
+    <link>"rtmp://live303.edge.filmon.com:1935/"</link>
+    <pageUrl>https://www.filmon.com/</pageUrl>
+    <playpath>3227.low.stream</playpath>
     <language />
     <advanced>-a live/?id=1ad5aac39bb13fbeaebb547fd6a9901829086091b587da1a37b6064d0599db2674417140588bd4cffd45c5c26b4f995823024a55e966fef015955eca9eb324df1f0d6f199d571d9196eaa7a31bf9f5bfd19836edb7453186c5c98ad9a5165bee0df80f5c9c6b357b3340b1f06f394a8f22ff43667034e6516a55754b950d5e205281243bb7c44a539596d672375227fc57a177940d452465 -o- -b 96000000</advanced>
   </stream>
@@ -1731,10 +1701,10 @@
     <advanced>-a live/?id=1ad5aac39bb13fbe6507060897d19c620d4a2a26c8b73e80693328a998acab03d371e7cbd1daedfa2a97eb74c9a6ef31588aa71e4d35263f197526ad6a2652ee1b03a01e88bdf60612faec06b27bcc7388f791e77b8516bbdcd357410abc144cd0004156ba84495a3d43719115c2798ccad9b383cc4551d81395908ae30af2c040d71e363ac6f5fd9ad3b0ceb7b7e35d19ad96957bbf4d88 -o- -b 96000000</advanced>
   </stream>
   <stream>
-    <title>ITV1 [Borg TV Update]</title>
+    <title>ITV [Borg TV Update]</title>
     <info resolution="" bitrate="" />
     <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>
-    <link>"rtmp://fml.105D.systemcdn.net/20105D/tv/"</link>
+    <link>"rtmp://live302.edge.filmon.com:1935/"</link>
     <pageUrl>https://www.filmon.com/</pageUrl>
     <playpath>11.low.stream</playpath>
     <language />
@@ -1791,6 +1761,16 @@
     <advanced>-a live/?id=1ad5aac39bb13fbebea8bfe4314e8964ead6fb736ecceffbf80969acd91eb9190a54d09327e84f553f6cebe6414f22c25d4219cbdf80bf1a66e50b8604cb5e941bd50468091d786d5c0e8f4abaa78e56709f614cbf7409fa1bf971857f6daea71c70df0c1ec6e82d0e0e684f275da39a3a94e58d6d2ea21228e541ec33eeecb2567a7ece1a586ad961cebd350068ce5fe02e90db6add14f7 -o- -b 96000000</advanced>
   </stream>
   <stream>
+    <title>ITVBe</title>
+    <info resolution="" bitrate="" />
+    <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>
+    <link>"rtmp://live300.edge.filmon.com:1935/"</link>
+    <pageUrl>https://www.filmon.com/</pageUrl>
+    <playpath>3211.low.stream</playpath>
+    <language />
+    <advanced>-a live/?id=0ad5aac39bb13fbe07702603136f12fc14ce591d40f1d76ed1710a8b23c874b0260f173f1fae9a52af70fce9f6aca0253055fc1350a205a8efc341d5113d603fc2b59ec092e4a4dbf870a07be6c7b3a01fcfb3a8976e1bb2cc480b655f747def04edd42523366dfe13b7ebb6affe456ae43ebfb19b94d18f6430992ee5abe1c931b04fc7607f0b3c882091b8601b0f7162d592801522f3a75fce608bc588fd99befce100232af4a861448520a10f0157 -o- -b 96000000</advanced>
+  </stream>
+    <stream>
     <title>ITV4+1 [Borg TV Update]</title>
     <info resolution="" bitrate="" />
     <swfUrl>https://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf?v=28</swfUrl>

@@ -9,10 +9,13 @@
         <setting id="stream_type" type="enum" values="HLS|RTMP" label="10011" default="0" visible="false" />
         <setting id="auto_switch" type="bool" label="10010" default="true" visible="false"/>
         <setting id="download_path" type="folder" label="10005" default="notset"/>
+        <setting id="movie_directory" type="folder" label="10020" default="set" visible="false"/>
+        <setting id="show_ch_id" type="bool" label="10025" default="true" />
+        <setting id="root_channel" type="number" label="10026" default="689" />
         <setting id="separator" type="lsep" label="10006"/>
         <setting id="my_videos" type="bool" label="10007" default="true" visible="false" />
         <setting id="my_audio" type="bool" label="10008" default="true" visible="false" />
         <setting id="other_menu" type="bool" label="10009" default="true" visible="false" />
-        <setting id="sort_alpha" type="bool" label="10019" default="false" />
+        <setting id="sort_alpha" type="bool" label="10019" default="true" />
 	</category>
 </settings>

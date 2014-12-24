@@ -5,6 +5,7 @@ kinkin
 import urllib,urllib2,re,xbmcplugin,xbmcgui,os
 import settings
 import time,datetime
+import calendar
 from datetime import date
 from threading import Timer
 from hashlib import md5
@@ -36,6 +37,8 @@ FAV_MOV = settings.favourite_movies()
 SORT_ALPHA = settings.sort_alpha()
 DOWNLOAD_PATH = settings.download_path()
 MOVIE_DIR = settings.movie_directory()
+SHOW_ID = settings.show_ch_id()
+ROOT_CH = settings.root_channel()
 cookie_jar = settings.cookie_jar()
 addon_path = os.path.join(xbmc.translatePath('special://home/addons'), '')
 fanart = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'fanart.jpg'))
@@ -59,6 +62,13 @@ def open_url(url):
     response.close()
     return link
 	
+def GET_URL(url):
+    header_dict = {}
+    header_dict['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+    header_dict['User-Agent'] = 'User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
+    req = net.http_GET(url, headers=header_dict).content
+    return req
+	
 def keep_session():
     currentWindow = xbmcgui.getCurrentWindowId()
     #if currentWindow == 10000:
@@ -66,7 +76,7 @@ def keep_session():
         #lourl = "http://www.filmon.com/api/logout?session_key=%s" % (session_id)
         #open_url(lourl)
         #xbmcgui.Window(10000).clearProperty("session_id")
-        #print 'streamboxlive..........logged out of Filmon'
+        #print 'StreamBox Live..........logged out of Filmon'
         #return
     session_id = xbmcgui.Window(10000).getProperty("session_id")
     url = "http://www.filmon.com/api/keep-alive?session_key=%s" % (session_id)
@@ -100,40 +110,42 @@ FILMON_SESSION = xbmcgui.Window(10000).getProperty("session_id")
 
 def CATEGORIES():
     hidden_links = read_from_file(HIDDEN_FILE)
-    addDir('Recordings','url',131,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'f_record.jpg')), '', '')
-    addDir('Favourites','url',415,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'featured.png')), '', '')
+    addDir('My Recordings','url',131,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'f_record.jpg')), '', '')
+    addDir('Favourite Channels','url',415,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'my_channels.jpg')), '', '')
     session_id = xbmcgui.Window(10000).getProperty("session_id")
     url = "%s%s%s" % (base_url,'/tv/api/groups?session_key=', (session_id))
     link = open_url(url)
-    all_groups = regex_get_all(link, '{', 'channels_count')
+    all_groups = regex_get_all(link, '{', '_count')
     for groups in all_groups:
+        alias = regex_from_to(groups, 'alias":"', '",')
         group_id = regex_from_to(groups, 'group_id":"', '",')
+        channels=regex_from_to(groups,'channels":',',"channels').replace('[','').replace(']','').replace('"','')
         title = regex_from_to(groups, 'title":"', '",')
         thumb = regex_from_to(groups, 'logo_148x148_uri":"', '",').replace('\\', '')
         url = regex_from_to(groups, 'group_id":"', '",')
         if not title in hidden_links:
-            addDir(title,group_id,123,thumb, '','')
+            addDir(title,group_id,123,thumb, alias,channels)
             setView('episodes', 'episodes-view')
 
 		
-def group_channels(url, title):
+def group_channels(url, title,alias,channels):#1416096000
     gt = str(title)
     name_lst = []
     session_id = xbmcgui.Window(10000).getProperty("session_id")
     url = "%s%s%s%s%s" % (base_url, 'api/group/', url, '?session_key=', session_id)
-    link = open_url(url)
-    all_channels = regex_from_to(link, 'channels":', 'channels_count')
-    channels = regex_get_all(all_channels, '{"id"', 'teleport_technology')
-    for channel in channels:
-        channel_id = regex_from_to(channel, '"id":', ',')
-        title = regex_from_to(channel, 'title":"', '",').encode("utf-8")
+    link = GET_URL(url)
+    data=json.loads(link)
+    channels=data['channels']
+    for c in channels:
+        channel_id=c['id']
+        title=c['title']
+        description=c['description']
         name_lst.append(title)
-        if not 'description":null' in channel:
-            description = clean_file_name(regex_from_to(channel, 'description":"', '",'), use_blanks=False)
-        else:
-            description=""
+        if SHOW_ID:
+            title="%s (%s)" % (title,channel_id)
         thumb = 'http://static.filmon.com/couch/channels/%s/extra_big_logo.png' % channel_id
-        addDirPlayable(title,channel_id,125,thumb,"",description, "", "grp")
+        if 'BBC Music Magazine' not in title:
+            addDirPlayable(title,str(channel_id),125,thumb,"","not available", "", "grp")
         setView('episodes', 'episodes-view')
 
     # read from channel list
@@ -151,10 +163,10 @@ def group_channels(url, title):
             if st_grp == gt  and st_name not in name_lst:#
                 addDirPlayable(st_name,gt,125,thumb,par,"", "", "lst")
 
-    
+    setView('episodes', 'episodes-view')
     if SORT_ALPHA:    
         xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
-		
+	
 def favourites():
     session_id = xbmcgui.Window(10000).getProperty("session_id")
     url='http://www.filmon.com/api/favorites?session_key=%s&run=get'% (session_id)
@@ -164,6 +176,8 @@ def favourites():
     for id in channel_ids:
         channel_id = regex_from_to(id, '"id":', ',')
         title = regex_from_to(id, 'title":"', '",').encode("utf-8")
+        if SHOW_ID:
+            title="%s (%s)" % (title,channel_id)
         description = clean_file_name(regex_from_to(id, 'description":"', '",'), use_blanks=False)
         thumb = 'http://static.filmon.com/couch/channels/%s/extra_big_logo.png' % channel_id
         addDirPlayable(title,channel_id,125,thumb,"",description, "", "fav")
@@ -201,6 +215,7 @@ def tv_guide(name, url, iconimage):
             except:
                 start = regex_from_to(p, 'startdatetime":', ',"')
             start_time = datetime.datetime.fromtimestamp(int(start))
+            print start_time
             end_time = datetime.datetime.fromtimestamp(int(regex_from_to(p, 'enddatetime":"', '"')))
         except:
             start_time = datetime.datetime.fromtimestamp(int(regex_from_to(p, 'startdatetime":', ',')))
@@ -227,7 +242,7 @@ def tv_guide(name, url, iconimage):
 
 		
 def play_filmon(name,url,iconimage,ch_id):
-    plsource='StreamBox Live'
+    plsource='FTV'
     GID = ch_id
     grpurl = url
     origname=name
@@ -239,9 +254,9 @@ def play_filmon(name,url,iconimage,ch_id):
         swap_ch = ch_id
 
     if url == "PAY TV":
-        url = '689'
+        url = ROOT_CH
     if url == "UK LIVE TV":
-        url = '689'
+        url = ROOT_CH
     if len(url)>6:
         url=ch_id	
     dp = xbmcgui.DialogProgress()
@@ -253,7 +268,7 @@ def play_filmon(name,url,iconimage,ch_id):
     try:
         link = open_url(url)
     except:
-        url = "%s%s%s%s%s" % (base_url, 'api/channel/', '689', '?session_key=', session_id)
+        url = "%s%s%s%s%s" % (base_url, 'api/channel/', ROOT_CH, '?session_key=', session_id)
         plsource='GUIDE'
         link = open_url(url)
     nowplaying = regex_from_to(link, 'tvguide":', 'upnp_enabled')
@@ -299,13 +314,12 @@ def play_filmon(name,url,iconimage,ch_id):
             app='live/?id=' + url.split('=')[1]
     swapout_url = regex_from_to(url,'rtmp://','/')
     if grpurl == "UK LIVE TV":
-        name = name.replace('689', swap_ch)
+        name = name.replace(ROOT_CH, swap_ch)
         url=url.replace(swapout_url,swap_url)
     if grpurl == "PAY TV":
-        name = name.replace('689', swap_ch)
+        name = name.replace(ROOT_CH, swap_ch)
         url=url.replace(swapout_url,swap_url)
     if plsource=='GUIDE':
-        print GID
         # read from channel list
         s = read_from_file(channel_list)
         search_list = s.split('\n')
@@ -319,7 +333,7 @@ def play_filmon(name,url,iconimage,ch_id):
                 par = "%s<>%s" % (st_id, st_url)
                 thumb = 'http://static.filmon.com/couch/channels/%s/extra_big_logo.png' % str(st_id).rstrip()
                 if st_id == GID:
-                    name = name.replace('689', st_id)
+                    name = name.replace(ROOT_CH, st_id)
                     url=url.replace(swapout_url,st_url)
 
     if FILMON_QUALITY == '480p':
@@ -329,7 +343,7 @@ def play_filmon(name,url,iconimage,ch_id):
     playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
     playlist.clear()
     handle = str(sys.argv[1])
-    if grpurl=='UK LIVE TV' or grpurl=='PAY TV' or plsource=='GUIDE':
+    if grpurl=='UK LIVE TV' or grpurl=='PAY TV' or plsource=='GUIDE' or len(pr_list)==0:
         listitem = xbmcgui.ListItem(origname, iconImage=iconimage, thumbnailImage=iconimage, path=STurl)
     else:
         listitem = xbmcgui.ListItem(p_name + ' ' + n_p_name, iconImage=iconimage, thumbnailImage=iconimage, path=STurl)
@@ -374,7 +388,7 @@ def play_ng(name,url,iconimage,link):
     chname=name
     ng_link=link
     ng_id=url
-    url='689'
+    url=ROOT_CH
     dp = xbmcgui.DialogProgress()
     dp.create('Opening ' + name.upper())
     session_id = xbmcgui.Window(10000).getProperty("session_id")
@@ -382,21 +396,28 @@ def play_ng(name,url,iconimage,link):
     utc_now = datetime.datetime.now()
     channel_name=name.upper()
     link = open_url(url)
-    streams = re.compile('"id":(.+?),"quality":"high","url":"(.+?)","name":"(.+?)","is_adaptive":"(.+?)","watch-timeout":(.+?)}').findall(link)
+    streams = re.compile('"id":(.+?),"quality":"high","url":"(.+?)","name":"(.+?)","is_adaptive":(.+?),"watch-timeout":(.+?)}').findall(link)
     for id,url,name,adaptive,wt in streams:
         url = url.replace("\/", "/")
         name = name
         id=id
         if name.endswith('m4v'):
             app = 'vodlast'
-        else:
+        elif '=' in url:
             app='live/?id=' + url.split('=')[1]
-    name = name.replace('689', ng_id)
-    url = "%s/%s" % (ng_link,app)
+        elif '?' in name:
+            app='live/?id=' + name.split('?')[1]
+            name=name.split('?')[0].replace('mp4:','')
+        else:app="no_app"
+    name = name.replace(ROOT_CH, ng_id)
+    print app,ng_link
+    url = "%s/%s" % (ng_link.replace(':1935',''),app.replace('live/live/','live/'))
     if FILMON_QUALITY == '480p':
         name = name.replace('low','high')
-		
-    STurl = str(url) + ' playpath=' + name + ' app=' + app + ' swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf' + ' tcUrl=' + url + ' pageUrl=http://www.filmon.com/' + ' live=1 timeout=45 swfVfy=1'
+    if app=="no_app":
+        STurl = str(url) + ' playpath=' + name + ' swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf' + ' tcUrl=' + url + ' pageUrl=http://www.filmon.com/' + ' live=1 timeout=45 swfVfy=1'
+    else:		
+        STurl = str(url) + ' playpath=' + name + ' app=' + app + ' swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf' + ' tcUrl=' + url + ' pageUrl=http://www.filmon.com/' + ' live=1 timeout=45 swfVfy=1'
     playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
     playlist.clear()
     handle = str(sys.argv[1])
@@ -601,53 +622,6 @@ def play_od(name, url, iconimage):
         xbmcPlayer.play(STurl,listitem)
     dp.close()
 
-
-def my_addons():
-    addons = os.listdir(addon_path)
-    for a in addons:
-        if a.startswith('plugin.video') and a != 'plugin.video.streamboxlive'  and a != 'plugin.video.adblocker' and a != 'plugin.video.gachecker' and not a.endswith('zip'):
-            plugin_path = os.path.join(addon_path, a)
-            iconimage = os.path.join(addon_path, a, 'icon.png')
-            xml = os.path.join(addon_path, a, 'addon.xml')
-            text = open(xml, 'r')
-            r = text.read()
-            text.close()
-            try:
-                id = strip_text(r, ' id="', '"')
-            except:
-                id = strip_text(r, " id='", "'")
-            try:
-                name = strip_text(r, ' name="', '"')
-            except:
-                name = strip_text(r, " name='", "'")
-
-            addDirPlayable(name,a,143,iconimage,"","","","")
-			
-def my_addons_audio():
-    addons = os.listdir(addon_path)
-    for a in addons:
-        if a.startswith('plugin.audio'):
-            plugin_path = os.path.join(addon_path, a)
-            iconimage = os.path.join(addon_path, a, 'icon.png')
-            xml = os.path.join(addon_path, a, 'addon.xml')
-            text = open(xml, 'r')
-            r = text.read()
-            text.close()
-            try:
-                id = strip_text(r, ' id="', '"')
-            except:
-                id = strip_text(r, " id='", "'")
-            try:
-                name = strip_text(r, ' name="', '"')
-            except:
-                name = strip_text(r, " name='", "'")
-
-            addDirPlayable(name,a,143,iconimage,"","","","")
-
-def run_addon(name, url, iconimage):
-    url = "XBMC.Container.Update(plugin://%s)" % url
-    xbmc.executebuiltin(url)
-
  
 def play(name, url, iconimage):  
     link = open_url(url)
@@ -819,7 +793,6 @@ def youtube_videos(name,url,iconimage):
     next_page_url = keep_url+"start-index=%d&max-results=%d" % ( start_index+max_results , max_results)
 
     addDir(">> Next page",next_page_url,395,"",'','')
-
 		
 def regex_from_to(text, from_string, to_string, excluding=True):
     if excluding:
@@ -1007,27 +980,7 @@ def wait_dl_only(time_to_wait, title):
     else:
         print 'Done waiting'
         return True
-		
-def create_all_strm_file(name, url, mode, dir_path, iconimage):
-    listname=url
-    try:
-        url = 'http://gappcenter.com/app/cartoon/mapi.php?action=getlistcontent&cate=%s&pageindex=0&pagesize=1000&os=newiosfull&version=2.1&deviceid=&token=&time=&device=iphone' % url
-        link = open_url(url)
-        if not 'Link' in link:
-            list = read_from_file(cartoonlinks)
-            link = regex_from_to(list, name + '<<', '>>')
-    except:
-        list = read_from_file(cartoonlinks)
-        link = regex_from_to(list, name + '<<', '>>')
-    match = re.compile('"Name":"(.+?)","Type":"(.+?)","Link":"(.+?)","Image":"(.+?)"').findall(link)
-    for title,type,url,iconimage in match:
-        if listname=='picasa_disneycollection':
-            title=title[5:]
-        url=url.replace('\/', '/')
-        iconimage=iconimage.replace('\/', '/')
-        create_strm_file(title, url, '396', dir_path, iconimage)
-    xbmc.sleep(1000)
-    scan_library()
+
 		
 def create_strm_file(name, url, mode, dir_path, iconimage):
     strm_string = create_url(name, mode, url=url, iconimage=iconimage)
@@ -1040,7 +993,7 @@ def create_strm_file(name, url, mode, dir_path, iconimage):
         stream_file.close()
         scan_library()
     #except:
-        #xbmc.log("[streamboxlive] Error while creating strm file for : " + name)
+        #xbmc.log("[StreamBox Live] Error while creating strm file for : " + name)
 		
 def create_url(name, mode, url, iconimage):
     name = urllib.quote(str(name))
@@ -1139,12 +1092,10 @@ def addLink(name,url,iconimage,description,status,download_link, p_id, start, p_
 
 
 def addDir(name,url,mode,iconimage,ch_fanart,description):
-        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&ch_fanart="+urllib.quote_plus(ch_fanart)+"&description="+str(description)
         ok=True
         contextMenuItems = []
         contextMenuItems.append(('Hide Channel Group', 'XBMC.RunPlugin(%s?mode=10&url=%s)'% (sys.argv[0],str(name))))
-        if url == 'picasa_topmovie' or url == 'picasa_topcartoon' or url == 'picasa_disneycollection':
-            contextMenuItems.append(("Add ALL to XBMC Library",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=402&iconimage=%s)'%(sys.argv[0],urllib.quote(name), urllib.quote(url),urllib.quote(iconimage))))	
         liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name, 'plot': description } )
         liz.addContextMenuItems(contextMenuItems, False)
@@ -1159,6 +1110,8 @@ def addDirPlayable(name,url,mode,iconimage,ch_fanart, description, start, functi
         liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
         liz.setInfo( type="Video", infoLabels={ "Title": name, 'plot': description } )
         liz.setProperty('fanart_image', fanart)
+        if function=="grp":
+            contextMenuItems.append(("Add to Favourites",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=135&iconimage=%s)'%(sys.argv[0],name,url,iconimage)))
         if function=="fav":
             contextMenuItems.append(("Remove from Favourites",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=137&iconimage=%s)'%(sys.argv[0],name,url,iconimage)))
         if function != 'od' and function != 'gb'and function != 'djr' and function != 'ng' and function != '' and function != 'favlist':
@@ -1166,15 +1119,10 @@ def addDirPlayable(name,url,mode,iconimage,ch_fanart, description, start, functi
             contextMenuItems.append(("Add to StreamBox Live Favourites",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=410&iconimage=%s&ch_fanart=%s)'%(sys.argv[0],urllib.quote(name),urllib.quote(url),urllib.quote(iconimage),ch_fanart)))
         if function == 'favlist':
             contextMenuItems.append(("Remove from StreamBox Live Favourites",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=416&iconimage=%s&ch_fanart=%s)'%(sys.argv[0],urllib.quote(name),urllib.quote(url),urllib.quote(iconimage),ch_fanart)))
-        if function == 'djr':
-            contextMenuItems.append(("Play All Videos",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=303&iconimage=%s)'%(sys.argv[0],urllib.quote(name), urllib.quote(url),iconimage)))
         if function == 'ng':
             contextMenuItems.append(("Add Channel to Group",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=112&iconimage=%s)'%(sys.argv[0],urllib.quote(start), str(ch_fanart),str(description))))
             contextMenuItems.append(("Add to StreamBox Live Favourites",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=410&iconimage=%s&ch_fanart=%s)'%(sys.argv[0],urllib.quote(name),urllib.quote(url),urllib.quote(iconimage),ch_fanart)))
-        if ch_fanart == 'picasa_topmovie' or ch_fanart == 'picasa_topcartoon' or ch_fanart == 'picasa_disneycollection':
-            contextMenuItems.append(("Add to XBMC Library",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=401&iconimage=%s)'%(sys.argv[0],urllib.quote(name), urllib.quote(url),urllib.quote(iconimage))))
-            contextMenuItems.append(("Download",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=403&iconimage=%s)'%(sys.argv[0],urllib.quote(name), urllib.quote(url),urllib.quote(iconimage))))
-            contextMenuItems.append(("Add to StreamBox Live Favourites",'XBMC.RunPlugin(%s?name=%s&url=%s&mode=411&iconimage=%s&ch_fanart=%s)'%(sys.argv[0],urllib.quote(name),urllib.quote(url),urllib.quote(iconimage),ch_fanart)))			
+	
         liz.addContextMenuItems(contextMenuItems, replaceItems=False)
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
         return ok
@@ -1213,6 +1161,10 @@ try:
         ch_fanart=urllib.unquote_plus(params["ch_fanart"])
 except:
         pass
+try:
+        description=urllib.unquote_plus(params["description"])
+except:
+        pass
 
 
 if mode==None or url==None or len(url)<1:
@@ -1242,7 +1194,7 @@ elif mode == 10:
         add_to_list(url, HIDDEN_FILE)
 		
 elif mode==123:
-        group_channels(url, name)
+        group_channels(url, name,ch_fanart,description)
 		
 elif mode==125:
         play_filmon(name, url, iconimage, ch_fanart)
@@ -1277,15 +1229,6 @@ elif mode == 137:
 		
 elif mode == 139:
         download_rec(name, url, iconimage)
-
-elif mode == 141:
-        my_addons()
-
-elif mode == 145:
-        my_addons_audio()		
-
-elif mode == 143:
-        run_addon(name, url, iconimage)	
 
 elif mode == 199:
         on_demand()
@@ -1325,7 +1268,7 @@ elif mode == 303:
 
 elif mode == 310:
         disney_play(name, url, iconimage)
-
+		
 elif mode==401:
         create_strm_file(name, url, '396', MOVIE_DIR, iconimage)
 

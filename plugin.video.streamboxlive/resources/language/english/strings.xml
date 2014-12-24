@@ -8,6 +8,8 @@
     <string id="10010">Play SD stream if timeout value is too low</string>
     <string id="10005">FilmOn Download Path</string>
     <string id="10020">Movie Directory</string>
+    <string id="10025">Show Channel ID in listings</string>
+    <string id="10026">Root Channel ID (Playable channel for Non-Geo)</string>
     <string id="10006">Menu Options</string>
     <string id="10007">My Video Addons</string>
     <string id="10008">My Audio Addons</string>

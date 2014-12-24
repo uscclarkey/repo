@@ -54,6 +54,15 @@ def auto_switch():
         return True
     else:
         return False
+		
+def show_ch_id():
+    if ADDON.getSetting('show_ch_id') == 'true':
+        return True
+    else:
+        return False
+		
+def root_channel():
+    return ADDON.getSetting('root_channel') 
 
 def download_path():
     return ADDON.getSetting('download_path')

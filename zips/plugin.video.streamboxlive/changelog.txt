@@ -1,3 +1,6 @@
+v1.4
+Fixed non uk problem. Merry Christmas.
+
 v1.3c
 Major update added TV guide and favs
 

@@ -84,7 +84,7 @@
 
 <addon id="plugin.video.streamboxlive"
        name="StreamBox Live"
-       version="1.3c"
+       version="1.4"
        provider-name="Uscclarkey">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
