@@ -442,5 +442,5 @@ msgid "Streaming using that addon is now disabled."
 msgstr ""
 
 msgctxt "#30900"
-msgid "Autostart ClarkeyEPG when Kodi starts up."
+msgid "Autostart Clarkey EPG when Kodi starts up."
 msgstr ""

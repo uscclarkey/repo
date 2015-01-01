@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.clarkeyepg" name="Clarkey EPG" version="1.14" provider-name="Uscclarkey">
+<addon id="script.clarkeyepg" name="Clarkey EPG" version="1.14a" provider-name="Uscclarkey">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py"/>
-     <extension point="xbmc.service" library="service.py" start="login"/>
+        <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="be">TV Guide with XMLTV and streaming support</summary>
 		<summary lang="ca">Guia de TV amb suport de XMLTV i flux de dades</summary>
