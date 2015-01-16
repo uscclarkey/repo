@@ -1,4 +1,4 @@
-1.14b
+1.14c
 Fixed a minor text bug.
 
 1.14a
