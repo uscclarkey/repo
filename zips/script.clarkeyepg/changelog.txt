@@ -1,3 +1,6 @@
+1.14b
+Fixed a minor text bug.
+
 1.14a
 fixed some text issues
 

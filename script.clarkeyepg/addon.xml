@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.clarkeyepg" name="Clarkey EPG" version="1.14a" provider-name="Uscclarkey">
+<addon id="script.clarkeyepg" name="Clarkey EPG" version="1.14b" provider-name="Uscclarkey">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
+                <import addon="plugin.video.streamboxlive" version="1.3c"/>
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py"/>
         <extension point="xbmc.service" library="service.py" start="login"/>

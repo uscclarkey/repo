@@ -879,10 +879,10 @@ class XMLTVSource(Source):
                 (self.xmltvInterval == XMLTVSource.INTERVAL_24 and diff >= 86400) or
                 (self.xmltvInterval == XMLTVSource.INTERVAL_48 and diff >= 172800)):
                 fetchFile = True
-                xbmc.log('[script.tvguide] Interval reached, fetching remote file...', xbmc.LOGDEBUG)
+                xbmc.log('[script.clarkeyepg] Interval reached, fetching remote file...', xbmc.LOGDEBUG)
         else:
             fetchFile = True
-            xbmc.log('[script.tvguide] Interval set to always or file doesn\'t exist. Fetching...', xbmc.LOGDEBUG)
+            xbmc.log('[script.clarkeyepg] Interval set to always or file doesn\'t exist. Fetching...', xbmc.LOGDEBUG)
  
         if (fetchFile):
             f = open(path,'wb')
@@ -892,7 +892,7 @@ class XMLTVSource(Source):
             if (name <> XMLTVSource.INI_FILE):
                 self.needReset = True
         else:
-            xbmc.log('[script.tvguide] Remote file fetching not due yet...', xbmc.LOGDEBUG)
+            xbmc.log('[script.clarkeyepg] Remote file fetching not due yet...', xbmc.LOGDEBUG)
         return path
 
         gmt = addon.getSetting('gmtfrom').replace('GMT', '')
