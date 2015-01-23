@@ -89,7 +89,7 @@
                 <font>font13</font>
                 <textcolor>ffffffff</textcolor>
 				<visible>false</visible>
-                <label>$ADDON[script.tvguide 30501]</label>
+                <label>$ADDON[script.clarkeyepg 30501]</label>
             </control>
         </control>
 
@@ -102,7 +102,7 @@
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.tvguide 30500]</label>
+            <label>$ADDON[script.clarkeyepg 30500]</label>
         </control>
 		<control type="label">
             <description>Help and Tips</description>
@@ -198,7 +198,7 @@
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.tvguide 30502]</label>
+            <label>$ADDON[script.clarkeyepg 30502]</label>
             <texturefocus>tvguide-program-grey-focus.png</texturefocus>
             <texturenofocus>tvguide-program-grey.png</texturenofocus>
             <onleft>6000</onleft>
@@ -214,7 +214,7 @@
             <aligny>center</aligny>
             <font>font13</font>
             <textcolor>ffffffff</textcolor>
-            <label>$ADDON[script.tvguide 30503]</label>
+            <label>$ADDON[script.clarkeyepg 30503]</label>
             <texturefocus>tvguide-program-grey-focus.png</texturefocus>
             <texturenofocus>tvguide-program-grey.png</texturenofocus>
             <onleft>6003</onleft>
