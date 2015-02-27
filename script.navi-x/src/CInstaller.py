@@ -86,43 +86,45 @@ class CInstaller(xbmcgui.Window):
     #              mediaitem=CMediaItem object to load
     # Return     : -
     ######################################################################
-    def InstallPlugin(self, URL='', mediaitem=CMediaItem()):            
+    def InstallPlugin(self,URL='',mediaitem=CMediaItem()):            
         if URL != '':
-            self.URL = URL
+            self.URL=URL
         else:
-            self.URL = mediaitem.URL
+            self.URL=mediaitem.URL
         
-        urlopener = CURLLoader()
-        result = urlopener.urlopen(self.URL, mediaitem)
+        urlopener=CURLLoader()
+        result=urlopener.urlopen(self.URL,mediaitem)
         if result["code"] == 0:
-            self.URL = urlopener.loc_url
+            self.URL=urlopener.loc_url
         
         
         #retrieve the type of plugin
         index=mediaitem.type.find(":")
         if index != -1:
-            subdir = mediaitem.type[index+1:] + '\\'
+            subdir=mediaitem.type[index+1:]+'\\'
         else:
-            subdir = ''
+            subdir=''
         
-        SetInfoText("Downloading... ", setlock=True)
+        SetInfoText("Downloading... ",setlock=True)
         
         #download the file.
-        loader = CFileLoader2()
-        loader.load(self.URL, tempCacheDir + 'plugin.zip', content_type='zip')
+        loader=CFileLoader2()
+        loader.load(self.URL,tempCacheDir+'plugin.zip',content_type='zip')
         if loader.state != 0:
             if loader.state == -2:
-                dialog = xbmcgui.Dialog()
-                dialog.ok(" Installer", "Failed. Not a ZIP file.", "Use the standard Download feature.")
+                dialog=xbmcgui.Dialog()
+                dialog.ok(" Installer","Failed. Not a ZIP file.","Use the standard Download feature.")
             return -2
-        filename = loader.localfile
+        filename=loader.localfile
         
         SetInfoText("Installing... ", setlock=True)
         
-        result = self.unzip_file_into_dir(filename, pluginDir + subdir)    
-                     
+        result=self.unzip_file_into_dir(filename,pluginDir+subdir)
+        
+        xbmc.executebuiltin("XBMC.UpdateLocalAddons()"); 
+        
         return result
-
+        
     ######################################################################
     # Description: Handles Installation of a skin ZIP file.
     # Parameters : URL = URL of the file
@@ -211,10 +213,11 @@ class CInstaller(xbmcgui.Window):
     #              dir = destination directory
     # Return     : -
     ######################################################################                    
-    def unzip_file_into_dir(self, file, dir):
-        chk_confirmation = False
-
-        if os.path.exists(dir) == False:
+    def unzip_file_into_dir(self,file,dir):
+        chk_confirmation=False
+        dir=xbmc.translatePath(dir)
+        print {'folder':dir,'file':file}
+        if os.path.exists(dir)==False:
             try:
                 os.makedirs(dir) #create the directory
             except IOError:

@@ -71,21 +71,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.ntv" name="NTV.mx" version="3.2.8" provider-name=".[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">NTV.mx</summary>
-    <description lang="en">Stream all of your favourites sports,movies and tv from NTV.mx</description>
-    <platform>all</platform>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="login" />
-</addon>
-
 <addon
   id="plugin.video.SportsDevil"
   version="1.8.6.9"
@@ -128,30 +113,7 @@
 
 </addon>
 
-<addon id="plugin.video.streamboxmovies" name="StreamBox Movies" version="1.2a" provider-name="Uscclarkey">
-
-  <requires>
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"  version="2.1.2"/>
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="repository.uscclarkey"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Stream Movies, no links</summary>
-    <description lang="en">Stream all the latest movies. With no links, just click and watch. For more info and instructions please visit the StreamBox Movies page of our website [COLOR blue]www.streamboxlive.wordpress.com[/COLOR]</description>
-    <disclaimer lang="en">StreamBox movies does not host any files, it simply provides you a link to the file that is easily found on the web. thank you!!</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.tvplayer" name="Tv Player" version="0.0.2" provider-name="Mikey1234">
+<addon id="plugin.video.tvplayer" name="Tv Player" version="0.1.1" provider-name="Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -159,8 +121,8 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Watch All Your Uk TV</summary>
-    <description lang="en">Watch All Your Uk TV</description>
+    <summary lang="en">Cartoon HD</summary>
+    <description lang="en">Watch All Your Favourite Cartoons</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -262,12 +224,15 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 
 <addon id="script.navi-x"
        name="Navi-X"
-       version="3.8.2"
-       provider-name="Team Navi-X and XBMCHUB.com">
+       version="4.0"
+       provider-name="Team Navi-X and TVADDONS.ag">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
-    <import addon="repository.xbmchub" optional="true" />
     <import addon="script.module.urlresolver"  />
+    <import addon="script.module.t0mm0.common"  />
+    <import addon="script.module.addon.common" optional="false" />
+    <import addon="repository.xbmchub" optional="true" />
+    <import addon="plugin.video.youtube" optional="false" />
   </requires>
   <extension point="xbmc.python.script" library="default.py" >
     <provides>executable video</provides>
@@ -277,10 +242,10 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <minversion>28764</minversion>
-    <summary>Media Browser Addon for XBMC.</summary>
-    <description>Navi-X is the oldest and most trusted add-on for XBMC, used by millions of people worldwide. You'll find everything from live television to your favourite movies and television shows, easily accessible.</description>
+    <summary>Media Browser Addon for Kodi</summary>
+    <description>Navi-X is the oldest and most trusted add-on for Kodi, used by millions of people worldwide. You'll find everything from live television to your favourite movies and television shows, easily accessible.</description>
     <disclaimer>http://www.navixtreme.com/terms/</disclaimer>
-    <forum>http://www.xbmchub.com/forums/forums/38-NAVI-X-MEDIA-BROWSER</forum>
+    <forum>http://forums.tvaddons.ag/forums/38-NAVI-X-MEDIA-BROWSER-FOR-KODI</forum>
     <website>http://www.navixtreme.com/</website>
     <source></source>
     <email></email>

@@ -287,7 +287,11 @@ def getRemote(url,args={}):
         from CServer import nxserver
         if args['cookie']>'':
             args['cookie']=args['cookie']+'; '
-        args['cookie']=args['cookie']+'; nxid='+nxserver.user_id
+        args['cookie']=args['cookie']+'; nxid='+str(nxserver.user_id).strip()
+        #if len(str(args['cookie']).strip()) > 0:
+        #    args['cookie']=args['cookie']+'; '
+        #args['cookie']=args['cookie']+'nxid='+str(nxserver.user_id).strip()
+        #print {'cookies':args['cookie']}
 
     try:
         hdr={'User-Agent':args['agent'], 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Referer':args['referer'], 'Cookie':args['cookie']}
@@ -300,6 +304,7 @@ def getRemote(url,args={}):
         except:
             print "Unexpected error:", sys.exc_info()[0]
 
+    #if len(rdefaults['agent']) > 0:
     try:
         if args['method'] == 'get':
             req=urllib2.Request(url=url, headers=hdr)
@@ -338,6 +343,7 @@ def getRemote(url,args={}):
 
         response.close()
     except IOError:         
+        print "*** IOError *** "+str(sys.exc_info()[0])
         oret = {
             'content': str(sys.exc_info()[0]),
       	    'headers':'',
@@ -600,7 +606,9 @@ def literal_eval(node_or_string):
 ######################################################################
 def parse_headers(URL, entry=CMediaItem()):
     headers = { 'User-Agent' : user_agent_default }
-    index = URL.find('|')
+    try:
+        index = URL.find('|')
+    except: index = -1
     if index != -1:
         dtmp = parse_qs(URL[index+1:])
         URL=URL[:index]

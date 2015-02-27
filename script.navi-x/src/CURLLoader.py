@@ -61,8 +61,8 @@ class CURLLoader:
         try:
         	#import urlresolver; 
         	if urlresolver.HostedMediaFile(mediaitem.URL).valid_url()==True:
-        		print "valid url for local UrlResolver"; 
-        		self.loc_url=urlresolver.HostedMediaFile(mediaitem.URL).resolve(); print "loc_url:"; print self.loc_url; 
+        		print "CURLL line64 valid url for local UrlResolver"; 
+        		self.loc_url=urlresolver.HostedMediaFile(mediaitem.URL).resolve(); print "CURLL searchline65 loc_url: "+ str(self.loc_url); 
         		if '://' in self.loc_url: self.processed=True; return {"code":0}; 
         except urllib2.URLError, e: print e; pass
         except Exception, e: print e; pass
@@ -108,6 +108,7 @@ class CURLLoader:
         try:
           if (not result["code"] == 0) and ('http' in mediaitem.URL): ## Thus far result['code'] seems to be 0 even if online processor fails.
               #import urlresolver; 
+              #if (URL.find('http://www.youtube.com') != -1) or (mediaitem.processor=="http://www.navixtreme.com/proc/youtube"): return result
               print "using urlresolver method as final fallback attempt"; print "mediaitem.URL"; 
               if urlresolver.HostedMediaFile(mediaitem.URL).valid_url()==True:
                 print "valid url"; 

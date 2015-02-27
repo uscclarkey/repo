@@ -1,7 +1,7 @@
 ### ####################################################################### ### 
 ### import splash_highway as splash
-### splash.do_My_Splash('http://xbmchub.com/images/index-logo.png',5); 
-### splash.do_My_Splash('http://xbmchub.com/images/index-logo.png',2,True,100,100,600,400); 
+### splash.do_My_Splash('http://i.imgur.com/NAiexjN.png',5); 
+### splash.do_My_Splash('http://i.imgur.com/NAiexjN.png',2,True,100,100,600,400); 
 ### splash.do_My_TextSplash("Hello Player.\n",artj('text_splash01'),8,TxtColor='0xFFFFFFFF',Font='font14',BorderWidth=70); 
 ### ####################################################################### ### 
 import xbmc,xbmcgui,time
@@ -25,7 +25,7 @@ class MyWindowCountDown(xbmcgui.WindowDialog):
 	#def onControl(self,control): 
 	#def onFocus(self,control): 
 	#def onAction(self,action): 
-def do_My_Splash(img='http://xbmchub.com/images/index-logo.png',HowLong=10,resize=False,L=0,T=0,W=1280,H=720): #HowLong in seconds.
+def do_My_Splash(img='http://i.imgur.com/NAiexjN.png',HowLong=10,resize=False,L=0,T=0,W=1280,H=720): #HowLong in seconds.
 	if resize==False: maxW=1280; maxH=720; W=maxW/2; H=maxH/2; L=maxW/4; T=maxH/4; 
 	TempWindow2=MyWindowCountDown(bgArt=img,L=L,T=T,W=W,H=H); 
 	StartTime=time.clock(); 
@@ -55,7 +55,7 @@ class MyWindowCountDownWithText(xbmcgui.WindowDialog):
 	#def onFocus(self,control): 
 	#def onAction(self,action): 
 
-def do_My_TextSplash(msg='',img='http://xbmchub.com/images/index-logo.png',HowLong=10,resize=False,L=0,T=0,W=1280,H=720,TxtColor='0xFFFFFFFF',Font='font14',BorderWidth=10): #HowLong in seconds.
+def do_My_TextSplash(msg='',img='http://i.imgur.com/NAiexjN.png',HowLong=10,resize=False,L=0,T=0,W=1280,H=720,TxtColor='0xFFFFFFFF',Font='font14',BorderWidth=10): #HowLong in seconds.
 	if resize==False: maxW=1280; maxH=720; W=maxW/2; H=maxH/2; L=maxW/4; T=maxH/4; 
 	TempWindow2=MyWindowCountDownWithText(msg=msg,bgArt=img,L=L,T=T,W=W,H=H,TxtColor=TxtColor,Font=Font,BorderWidth=BorderWidth); 
 	StartTime=time.clock(); 
@@ -90,7 +90,7 @@ class MyWindowCountDownWithText2(xbmcgui.WindowDialog):
 	def onAction(self,action): 
 		if action in [10,92,7]: self.close() ## Escape, Backspace, Select ##
 
-def do_My_TextSplash2(msg='',img='http://xbmchub.com/images/index-logo.png',HowLong=10,resize=False,L=0,T=0,W=1280,H=720,TxtColor='0xFFFFFFFF',Font='font14',BorderWidth=10,ImgexitBtn=''): #HowLong in seconds.
+def do_My_TextSplash2(msg='',img='http://i.imgur.com/NAiexjN.png',HowLong=10,resize=False,L=0,T=0,W=1280,H=720,TxtColor='0xFFFFFFFF',Font='font14',BorderWidth=10,ImgexitBtn=''): #HowLong in seconds.
 	if resize==False: maxW=1280; maxH=720; W=maxW/2; H=maxH/2; L=maxW/4; T=maxH/4; 
 	TempWindow2=MyWindowCountDownWithText2(msg=msg,bgArt=img,L=L,T=T,W=W,H=H,TxtColor=TxtColor,Font=Font,BorderWidth=BorderWidth,ImgexitBtn=ImgexitBtn); 
 	#StartTime=time.clock(); 
@@ -99,7 +99,7 @@ def do_My_TextSplash2(msg='',img='http://xbmchub.com/images/index-logo.png',HowL
 	TempWindow2.doModal(); 
 	try: del self.TempWindow2; 
 	except: pass
-def do_My_TextSplash3(msg='',img='http://xbmchub.com/images/index-logo.png',HowLong=10,resize=False,L=0,T=0,W=1280,H=720,TxtColor='0xFFFFFFFF',Font='font14',BorderWidth=10,ImgexitBtn=''): #HowLong in seconds.
+def do_My_TextSplash3(msg='',img='http://i.imgur.com/NAiexjN.png',HowLong=10,resize=False,L=0,T=0,W=1280,H=720,TxtColor='0xFFFFFFFF',Font='font14',BorderWidth=10,ImgexitBtn=''): #HowLong in seconds.
 	if resize==False: maxW=1280; maxH=720; W=1000; H=650; L=(maxW-W)/2; T=(maxH-H)/2; 
 	TempWindow2=MyWindowCountDownWithText2(msg=msg,bgArt=img,L=L,T=T,W=W,H=H,TxtColor=TxtColor,Font=Font,BorderWidth=BorderWidth,ImgexitBtn=ImgexitBtn); 
 	#StartTime=time.clock(); 

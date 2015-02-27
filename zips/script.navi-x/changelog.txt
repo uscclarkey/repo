@@ -1,5 +1,233 @@
 Navi-X Changelog:
 
+
+V4.0
+Starting with this version you can view all update and change info in the Updates section of the Navi-X add-on
+
+-------------------------------------------------------------------------------
+3.8.4bcd
+- fixed bug in CDownLoader for bad urls in the queue
+- restated variable assignment in CBackgroundLoader to fix crashing in thumbview
+3.8.4b
+- 'Green' set back to default color scheme.
+- NAVI icon set back to original artwork.
+- Domain selection removed from addon settings.
+3.8.3
+- version up for testing.
+3.8.2.035
+- Fixed mistakes on the skin coding adjustments for default values.
+3.8.2.034
+- Setup for 1080i to make use of the colordiffusion method that 720p uses.
+- Adjusted 1080i\skin2.xml for versions of xbmc/kodi before helix that took a different posX number.
+- Adjusted 1080i\skin2h.xml from 1280x720 to 1920x1080.
+- Re-flushed 1080i folder of skin files off to 720p version.
+3.8.2.033
+- Prep for Testing of possible release version.
+- settings.py (?)Code clean-up.
+- settings.py (?) and CPlayList.py (?) and navix.py (?): PlayList variable name adjustments.
+- settings.py (?): Domain / home2.plx changes.
+- service.py (?): Code clean-up and message changed.
+3.8.2.032
+- 1080i skin attempt.  May still need some modifications.
+3.8.2.031
+- ...
+3.8.2.030
+- Third Teir failsafe to myxbmc.plx for home page.
+- Removal of GoogleCode and OffShoreGit domains.
+3.8.2.029
+- CDialogBrowse.py (?): Allowed for more than 42 digit folders.  Allowed 'http://' and 'ftp://' urls via browse.
+3.8.2.028
+- Testing xbmc.gui requirement values.  No requirement.
+3.8.2.027
+- Testing xbmc.gui requirement values.  With requirement.
+3.8.2.026
+- Testing xbmc.gui requirement values.  With optional requirement.
+3.8.2.025
+- default.py (?) and resources/settings.xml (?): Skin Option(s).
+- ...
+- Tester's Password identifier prompt cloaking.
+3.8.2.024
+- Search History issue fixed.
+- Testing on Kodi 14-RC1 (Helix).  Seems to still skin2h.xml(s).
+3.8.2.023
+- Testing: Another alternative method for tester's password usage.
+- CPlayList.py (?): local playlist files additions for: xml, php, html, htm.
+- Testing: Sahara server php tester's password passing system coding for alternative method for testers.
+- ...
+3.8.2.022
+- navix.py (?) and CPlayList.py (?): import error handling for playlists for urlresolver (host plugins and t0mm0 module).
+3.8.2.021
+- navix.py (~755+): Auto-refreshing page upon error.
+- navix.py (~291+): Added sub-function doPageBack().
+- navix.py (~718): print statement to check for an problem's location.
+* *** Note to self to look into this at a later time.
+- navix.py (~1082,~1227): #'d out some busy state commands. to allow addon not to be held up upon page not found.
+- ...
+3.8.2.020
+- Removal of tmp.icon=value for <thumbnail>'s.
+* *** Hopefull fix for linux.
+- ...
+3.8.2.019
+- CPlaylist.py(?) and navix.py(?): Additional error handling.
+3.8.2.018
+- CDownLoader.py (~179+): Addeded check to make sure that playlist-type files downloaded will be given a .plx so that they'll be usable locally without changing the filename.
+- ... busy state checking and error handling in several files.
+3.8.2.017
+- navix.py (?): error handling for info labels @ bottom.
+3.8.2.016
+- CPlayList.py (?): playlist error handling.
+3.8.2.015
+- CFileLoader.py (?): playlist fixes.
+3.8.2.014
+- CFileLoader.py (~288+) and settings.py (?): Default navix page expires for special overrealmly used pages. Put the CachedPagesAndTimes array in settings.py.
+- CBackgroundLoader.py (~115): Fixed to check for "sort" in item's name and that item's thumb is currently set to either "default" or is empty.
+3.8.2.013
+- Adjusted Protocol Label and added ItemUrl Label.
+- Made Playlist fixes for XML playlists and image errors.
+3.8.2.012
+- CPlayList.py: <sublink> added, with checks to make sure URL isn't already filled and value is resolvable via urlresolver.
+3.8.2.011
+- Preparing for Staff Testing.
+- Some code/spacing clean-up in settings.py.
+- settings.xml and settings.py: Making options adjustable.
+- CFileLoader.py (~346-349): Setup the timeout to use the setting from settings.py.
+- settings.py: adding a default string option for SettingsG(settings,d) function.
+- settings.py: setting DebugForTesting to False.
+- default.py: Adding some print statements for testing.
+- default.py: XBMCHUB Repository installer set for v1.0.5.
+- Preparing for Staff Testing.
+- Rewrite protocol image addition.
+- Trying out a new icon.png
+3.8.2.010
+- Testing.
+- ...
+- Testing.
+- ...pulled navix.py from crzen, blank/partial page fix.
+- Setup for use of xml playlists.
+- Using the Protocol image to show rather stuff is being gotten locally, remotely, from cache, exc.
+- Added a protocol image, image-type, object to 720 and pal169 skin file(s).
+- Cleaned up code/spacing in skin.py.
+- ...
+- thumb_download_local.png and item in myxbmc.plx
+- ... more work and fixes by crzen.
+- Testing
+* *** src/libs2.py (~288+): cookies.
+- user_id: str() and .strip()
+* *** src/CServer.py (~85,~149)
+* *** src/CFileLoader.py (~254)
+* *** src/libs2.py (~290)
+3.8.2.009
+- addon.xml (?)
+- services.py (?): text message changed.
+- src/navix.py (ALL):
+* *** A bit of code cleanup throughout.
+- Merging TheHighway's src/navix.py (~180+:__init__) with CRZEN's src/navix.py (~291+:__init__)
+* *** code to resetting one home playlist to another when changing in settings.
+...
+- init/* (?) and init/My Downloads/* (?) and init/My Playlists/* (?): ....
+- downlmenu.plx (?) and myxbmc.plx (?): ....
+- src/CFileLoader.py (?) and src/CDownloader.py (?) and src/navix.py (?): ....
+...
+- default.py (~357+):
+* *** Changed the text for the splash message on version change.
+- src/navix.py (~180+:__init__) and settings.py (~152):
+* *** code to resetting one home playlist to another when changing in settings.
+- src/settings.py (~247,~251) and CPlaylist.py (~155):
+* *** Adjustments to Sahara domain url path.
+- Edited downlmenu.plx and myxbmc.plx.
+- src/settings.py (~35+:UrlDoGet,~45+UrlDoPost) and src/ CServer.py (~115+:nxLogin,~63+:login,~147+is_user_logged_in)
+* *** Fixed Navi-X Login in Login functions and is logged in check function.
+* *** Error handling added for get and post url functions in settings.py
+* *** Added post url function in settings.py
+3.8.2.008
+- src/settings.py (~303+) and default.py (~272+) and resources/settings.xml (~4):
+* *** Additional Color Schemes.
+- src/settings.py (~230,~234,~242-253) and resources/settings.xml (~3) and CPlaylist.py (~155,~158):
+* *** Testers versions of navi-x updates page fixes for use on new server.
+* *** HomePlaylist/ parsing adjustments.
+* *** Sahara url as Sahara and Default options for Domain.
+- Some added Error Handling for Login functionality.
+- Additoinal Graphics and Graphic Change(s).
+3.8.2.007
+- URL=addon://plugin.video.addonname/... usage in playlists
+* *** extra coded added around that line.
+* *** src/CFileLoader.py (~132): elif 'addons://' in URL: ... some lines of code attitions.
+3.8.2.006
+- Setup for type=addon in playlists to goto an already installed addon.
+* *** Example 2: type=addon URL=plugin.video.1channel?mode=GetFilteredResults&section=tv&sort=date
+* *** Example 1: type=addon URL=plugin.video.1channel
+* *** src/navix.py (~1534): InstallApp(): elif type == 'addon':... some lines of code additions.
+* *** src/navix.py (~1119): type=='addon'
+- Startup fixes / tweaks.
+* *** default.py (~26): merged some of the imports.
+* *** default.py (~320): added a makedir if not exist for profile folder.
+- Fixed path issue for when installing an addon from a playlist.
+* *** Example: type=plugin URL=http://...url...address.../filename.zip
+* *** This has to do with type=plugin in playlists for installing an addon to special://home/addons/.
+* *** src/CInstaller.py (~line 219): unzip_file_into_dir(): dir=xbmc.translatePath(dir)
+3.8.2.005
+- Sort By Users image.
+- Graphic and Skin changes.
+- Adjustments to Skin alignments for Gotham/Helix.
+- Merging recent changes from TheHighway and CRZEN.
+3.8.2.004
+- added a previous arrow and sort icon for thumbnail view
+- fixed thunbnail view for playlists so that they show correctly
+- added some support for downloading button art from certain sources in thumbnail view
+...
+- changed My Downloads entry in My XBMC to be downloads menu
+- added My Favorites directory and My Downloads entries to myxbmc.plx 
+- changed \ to / in My Playlists.plx for the readme.plx so the file can be read
+- removed CDownLoader.py from Navi-X folder because of a conflict with CDownLoader,py in Navi-X/src
+- added readme entry to /init/downloads.plx
+- put MY Downloads folder back into Navi-X folder for the new readme to work
+*	*** may want to move to profile directory so its not lost while up/down grading ***
+- created readme.txt in Navi-X/My Downloads
+- changed the example .plx's to .txt's in Navi-X/examples so that they can be read (for new installs)
+- Added example entries to My Playlist.plx (for new installs)
+- prevented a possible double server hit when the server is up (may not actually be occurring)
+- split off timeout for searches to give them more time to complete
+- redid timeout assignment to get it working right for different file types
+- fixed download for files including files of unknown size and playlists					
+*	 **** comes up with cannot download file error if server is down **** 
+*	 - changed/fixed first time downloads of known sized files.    
+*	 - changed/fixed appended downloads of known sized files.
+*	 - fixed first time downloads of unknown sized files.   
+*	 - created a way of appending downloads of unknown sized files.
+*	 - created a new function to:
+*		  get the file size and/or
+*		  format the outputs of the reported download sizes to (Unknown or 0.0)
+*	 - change location popup and bottom status to (Unknown, Bytes,KB,MB,GB,TB)
+*	 - handled url.open error which fixes a lockup situation when appending files that would require navi restart.
+*	 - renamed add_queue function  to add_list and added support for new incomplete download feature
+*		  Added the removal of duplicate entries in downloadqueue,plx and incdownloads.plx
+- created incomplete downloads (incdownloads.plx) to keep track of partial downloaded files
+*		*** may want to move to profile directory so its not lost while up/down grading ***
+*		- created incdownloads.plx in the init folder
+*        - created sub menu items for new incomplete download file menu in navix.py
+- fixed a bug where download enties/files were not being removed in completed downloads list
+- created an output for reporting which file failed to download
+- cleaned up the code a little
+*	- removed unneeded commented out section in CDownLoader.py
+*	- removed duplicate code block in navix.py
+...
+3.8.2.003
+- Skin files setup to use appropriate skin setup dependant upon XBMC major version number.
+* skin2.xml for < 14 and skin2h.xml for 14+.
+- Text Label for Thumbview posx position adjusted from 115 to 15 for items.
+...
+3.8.2.002
+- Select Menu ListItems Text Color.
+- List Icons Diffusing.
+* skin #'s 112, 120.
+- Right-MENU Add to Favorites has been fixed.  The list # needed updated.
+3.8.2.001
+- Skin coloring.
+- usage in playlist path lines.
+* root/ or root\ .
+* dev site's path.
+* dev site's \Playlists\ path.
+
 -------------------------------------------------------------------------------
 3.8.2
 - src/navix.py line 621'ish

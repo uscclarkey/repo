@@ -68,9 +68,11 @@ class CDownLoader(threading.Thread):
             self.MainWindow = kwargs['window']
         if (kwargs.has_key('playlist_src')): 
             self.playlist_src = kwargs['playlist_src']  
+        if (kwargs.has_key('playlist_inc')): 
+            self.playlist_inc = kwargs['playlist_inc']       
         if (kwargs.has_key('playlist_dst')): 
             self.playlist_dst = kwargs['playlist_dst']       
-       
+
         threading.Thread.__init__(self)    
 
         self.setDaemon(True) #make a daemon thread   
@@ -127,13 +129,13 @@ class CDownLoader(threading.Thread):
             size_check_skip=False
             
         if size_check_skip:
-            print "Mega URL; skipping size check"
+            print("Mega URL; skipping size check")
             size=0
             urlopener = CURLLoader()
             result = urlopener.geturl_processor(entry)
             URL=entry.URL
             loc_url=URL
-            self.processed=entry.processed
+            self.processed=entry.processed          
             self.loc_url=URL
             url_stripped = re.sub('\?.*$', '', loc_url) # strip GET-method args
             url_stripped = re.sub('\|.*$', '', url_stripped) # strip header info if any
@@ -171,8 +173,11 @@ class CDownLoader(threading.Thread):
         if size_check_skip:
             heading="Download File"
         else:
-            size_MB = float(size) / (1024 * 1024)
-            heading = "Download File: (Size = %.1f MB)" % size_MB
+            size_string, raw_size = self.file_size(size,'')
+            heading = "Download File: (Size = %s)" % size_string
+            
+        if (entry.type=='playlist') and (localfile.lower().endswith('.plx')==False):
+            localfile+='.plx'
         
         #browsewnd = CDialogBrowse("CBrowseskin.xml", os.getcwd())
         curdir = addon.getAddonInfo('path')
@@ -204,88 +209,90 @@ class CDownLoader(threading.Thread):
         self.state = 0 #success    
         ext='' #no extension
         size = 0
+        try:
+            URL, headers = parse_headers(entry.URL)
         
-        URL, headers = parse_headers(entry.URL)
-    
-        if URL[:3] == 'ftp':
-            #FTP
-            ext = getFileExtension(URL)
-            if ext != '':
-                ext = '.' + ext
-        else:
-            #HTTP
-            urlopener = CURLLoader()
-            result = urlopener.urlopen(URL, entry)
-            if result["code"] != 0:
-                self.state = -1 #URL does not point to internet file.
-                return ext, size
-            loc_url = urlopener.loc_url
-            self.processed=urlopener.processed
-
-            #Now we try to open the URL. If it does not exist an error is
-            #returned.
-            try:
-                #headers = { 'User-Agent' : 'Mozilla/4.0 (compatible;MSIE 7.0;Windows NT 6.0)'}
-                req = urllib2.Request(loc_url, None, headers)
-                f = urllib2.urlopen(req)
-                #loc_url=f.geturl()
-                size_string = f.headers['Content-Length']
-                #print ['size_string',size_string]
-                size = int(size_string)
-                f.close()
-            except:
-                size = 0
-            
-            #special handing for some URL's
-            pos = URL.find('http://www.youtube.com') #find last 'http' in the URL
-            if pos != -1:
-                ext='.mp4'
+            if URL[:3] == 'ftp':
+                #FTP
+                ext = getFileExtension(URL)
+                if ext != '':
+                    ext = '.' + ext
             else:
-#todo: deprecated            
-                pos = URL.find("flyupload.com")
-                if pos != -1:
-                    ext='.avi'
-                else:                             
-                    #extract the file extension
-                    url_stripped = re.sub('\?.*$', '', loc_url) # strip GET-method args
-                    re_ext = re.compile('(\.\w+)$') # find extension
-                    match = re_ext.search(url_stripped)
-                    if match is None:
-                        #ext = ""
-                        ext = getFileExtension(loc_url)
-                        if ext != '':
-                            ext = '.' + ext
+                #HTTP
+                urlopener = CURLLoader()
+                result = urlopener.urlopen(URL, entry);
+                if result["code"] != 0:
+                    self.state = -1; print('URL does not point to internet file.')
+                    return ext, size
+                loc_url = urlopener.loc_url#; print('line223 loc_url= ' +str(loc_url))
+                self.processed=urlopener.processed#; print('self.processed= ' +str(self.processed))
+
+                #Now we try to open the URL. If it does not exist an error is
+                #returned.
+                try:
+                    #headers = { 'User-Agent' : 'Mozilla/4.0 (compatible;MSIE 7.0;Windows NT 6.0)'}
+                    req = urllib2.Request(loc_url, None, headers)
+                    size_string,size_raw = self.file_size(0,req)
+                    size = int(size_raw)
+                except Exception, e: size = 0; print('ERROR line 237' +str(e))
+                #loc_url=f.geturl()
+                try:
+                    #special handing for some URL's
+                    pos = URL.find('http://www.youtube.com') #find last 'http' in the URL
+                    if pos != -1:
+                        ext='.mp4'
                     else:
-                        ext = match.group(1)
-
+          #todo: deprecated            
+                        pos = URL.find("flyupload.com")
+                        if pos != -1:
+                            ext='.avi'
+                        else:                             
+                            #extract the file extension
+                            url_stripped = re.sub('\?.*$', '', loc_url) # strip GET-method args
+                            re_ext = re.compile('(\.\w+)$') # find extension
+                            match = re_ext.search(url_stripped)
+                            if match is None:
+                                #ext = ""
+                                ext = getFileExtension(loc_url)
+                                if ext != '':
+                                    ext = '.' + ext
+                            else:
+                                ext = match.group(1)
+                except Exception, e: print('ERROR line 261','e =' +str(e))
             # processed youtube URL
-#the code below is failing. Do we still need it?
-#            match=re.search('youtube\.com/.*?&itag=(\d+)', loc_url)
-#            if match:
-#                fmt=int(match.group(1))
-#                if [5,6,34,35].index(fmt) >= 0:
-#                    ext='.flv'
-#                elif [43,44,45,46,100,101,46,102].index(fmt) >= 0:
-#                    ext='.webm'
-#                else:
-#                    ext='.mp4' # [18,22,37,38,83,82,85,84] - default to instead of testing for
+    #the code below is failing. Do we still need it?
+    #            match=re.search('youtube\.com/.*?&itag=(\d+)', loc_url)
+    #            if match:
+    #               fmt=int(match.group(1))
+    #                if [5,6,34,35].index(fmt) >= 0:
+    #                    ext='.flv'
+    #                elif [43,44,45,46,100,101,46,102].index(fmt) >= 0:
+    #                    ext='.webm'
+    #                else:
+    #                    ext='.mp4' # [18,22,37,38,83,82,85,84] - default to instead of testing for
 
-        # safety net
-        if len(ext)>6:
-            ext='.avi'
-
-        ##print [ext, size]
-        ##if (ext.lower()=='.plx') and (size==0): size=1
+            # safety net
+            if len(ext)>6:
+                ext='.avi'
+        except Exception,e:
+            print '\t\t\t Error CDL 278 ' + str(e)
         return ext, size
         
     ######################################################################
-    # Description: Adds an item to the local download queue playlist
+    # Description: Adds an item to the local playlists: queue, incomplete downloads, 
+    #                     or completed downloads. while removing duplicate entries
     # Parameters : URL=source
     # Return     : -
     ######################################################################
-    def add_queue(self, entry):
+    def add_list(self, entry,item_list):
+        #if item_list == 'incdl': loc_list = RootDir + incomplete_downloads; playlist = self.playlist_inc
+        #elif item_list== 'cmpdl': loc_list = RootDir + downloads_complete; playlist = self.playlist_dst
+        #else: item_list ='queue'; loc_list = RootDir + downloads_queue; playlist = self.playlist_src
+        
+        if item_list == 'incdl': loc_list = datapaths + incomplete_downloads; playlist = self.playlist_inc
+        elif item_list== 'cmpdl': loc_list = datapaths + downloads_complete; playlist = self.playlist_dst
+        else: item_list ='queue'; loc_list = datapaths + downloads_queue; playlist = self.playlist_src
         self.state = 0 #success
-
         tmp = CMediaItem() #create new item
         tmp.type = entry.type
         tmp.name = entry.name
@@ -295,9 +302,14 @@ class CDownLoader(threading.Thread):
         tmp.player = entry.player
         tmp.processor = entry.processor
         tmp.background = entry.background
-        self.playlist_src.add(tmp)
-        self.playlist_src.save(RootDir + downloads_queue)
-
+        #### remove duplicates from list then add new item
+        pos = 0
+        for line in open(loc_list,'r'):
+            if line == '#\n' : pos+=1
+            elif entry.DLloc in line: playlist.remove(pos-1)
+        playlist.save(loc_list)         
+        playlist.add(tmp); playlist.save(loc_list)
+        
     ######################################################################
     # Description: Downloads a URL to local disk
     # Parameters : shutdown = true if auto shutdown after download.
@@ -318,18 +330,21 @@ class CDownLoader(threading.Thread):
             if self.state == 0:
                 #Download file completed successfully
                 self.playlist_src.remove(0)
-                self.playlist_src.save(RootDir + downloads_queue)
-                counter = counter + 1
+                #self.playlist_src.save(RootDir + downloads_queue)
+                self.playlist_src.save(datapaths + downloads_queue)
+                counter += 1
             elif self.state == -1:     
                 #Downlaod failed
                 dialog = xbmcgui.Dialog()
-                if dialog.yesno("Error", "Download failed. Retry?") == False:
+                if dialog.yesno("Error",str(self.playlist_src.list[0].name),"Download failed. Retry?") == False:
                     self.playlist_src.remove(0)
-                    self.playlist_src.save(RootDir + downloads_queue)
-                    counter = counter + 1
+                    #self.playlist_src.save(RootDir + downloads_queue)
+                    self.playlist_src.save(datapaths + downloads_queue)
+                    counter += 1
                                             
             #Display the updated Queue playlist
             if (self.MainWindow.pl_focus == self.MainWindow.downloadqueue) or \
+               (self.MainWindow.pl_focus == self.MainWindow.incompletelist) or \
                (self.MainWindow.pl_focus == self.MainWindow.downloadslist):
                 self.MainWindow.ParsePlaylist(reload=False) #display download list
                
@@ -367,158 +382,160 @@ class CDownLoader(threading.Thread):
             return
 
         #Continue with HTTP download
-        self.MainWindow.dlinfotekst.setLabel('(' + header + ')' + " Retrieving file info...") 
-
-        entry.processed=self.processed
-
+        self.MainWindow.dlinfotekst.setLabel('(' + header + ')' + " Retrieving file info...")
+            
         # set custom headers if specified
         URL, headers=parse_headers(URL, entry)
+        try:
+            cookies = ''
+            if URL.find(nxserver_URL) != -1:
+                cookies='platform='+platform+'; version='+Version+'.'+SubVersion
+                cookies=cookies+'; nxid='+nxserver.user_id
+                headers={'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4','Cookie':cookies}
+                #headers={'User-Agent':'Mozilla/4.0 (compatible;MSIE 7.0;Windows NT 6.0)','Cookie':cookies}
+        except Exception,e: 
+            print('ERROR line 397 cookies ' +str(e))
+            #print 'headers =    ' + str(headers)
 
         #Get the direct URL to the mediaitem given URL      
         urlopener = CURLLoader()
-        result = urlopener.urlopen(URL, entry)
-        if result["code"] != 0:
-            self.state = -1 #failed to download the file
-            print "urlopener.urlopen failed"
+        self.processed=urlopener.processed            #### needed or will fault the next line at times
+        entry.processed=self.processed
+        try:
+            result = urlopener.urlopen(URL, entry)
+            if result["code"] != 0:
+                self.state = -1 #failed to open the file
+                print("urlopener.urlopen failed line 408  " + str(result))
+                line2 = '%s  %s' % ('failed to open', str(entry.name))
+                self.MainWindow.dlinfotekst.setLabel(line2)
+                return
+        except Exception,e:
+            self.state = -1 #failed to open the file
+            print("urlopener.urlopen failed line 414  " + str(e))
+            line2 = '%s  %s' % ('failed to open', str(entry.name))
+            self.MainWindow.dlinfotekst.setLabel(line2)
             return
 
         URL = urlopener.loc_url
-      
-        try:
-#            oldtimeout=socket_getdefaulttimeout()
-#            socket_setdefaulttimeout(url_open_timeout)
+        
+#       oldtimeout=socket_getdefaulttimeout()
+#       socket_setdefaulttimeout(url_open_timeout)
 
-            existSize=0 #existing size = 0 Bytes
+        existSize=0 #existing size = 0 Bytes
 
-            if os.path.exists(localfile):
-                #Append to the existing file. Because opening a file for append no longer works,
-                #we need to copy the existing file in a new file.
-                self.MainWindow.dlinfotekst.setLabel("Preparing append to file...")            
-                existSize = os.path.getsize(localfile)
-                
-                #Message("Exist size: " + str(existSize))
-                
-                backupfile = localfile[0:-1] + '~'
-                os.rename(localfile, backupfile)
-                
-                file2 = open(backupfile, "rb")
-                file = open(localfile, "wb")
-                bytes= 0
-                while (bytes < existSize):
-                    chunk = 100 * 1024
-                    if (bytes + chunk) > existSize:
-                        chunk = existSize-bytes #remainder
-                    file.write(file2.read(chunk))
-                    bytes = bytes + chunk
+        if os.path.exists(localfile): 
+            existSize = os.path.getsize(localfile)
+            #Message("Exist size: " + str(existSize))
+            #If the file exists, then only download the remainder
+            NoRangeEntry = headers
+            for RangeEntry in 'Ranges','Range','':
+                if RangeEntry != '':
+                    try:            #### test for range support
+                        headers[RangeEntry] = 'bytes=%s-' % existSize
+                        req = urllib2.Request(URL, None, headers)
+                        f = urllib2.urlopen(req)
+                        break
+                    except: pass         #Expected error: HTTP Error 416: Requested Range Not Satisfiable'
+                else:           #### if ranges are not supported
+                    try:
+                        req = urllib2.Request(URL, None, NoRangeEntry)
+                        f = urllib2.urlopen(req)
+                    except Exception as e:
+                        self.state = -1; print('ERROR URL= ' + str(URL)); print('failed to open the URL file line 444 '+ str(e))
+                        line2 = '%s  %s' % ('failed to open', str(entry.name))
+                        self.MainWindow.dlinfotekst.setLabel(line2); return
 
-                    percent = 100 * bytes / existSize
-                    line2 = '(%s) - %d ' % (header, percent) + '%' + ' Append...' 
-                    self.MainWindow.dlinfotekst.setLabel(line2)
+        else:   # if the file does not exist
+            #print('URL = ' +str(URL)); print('headers = ' + str(headers))
+            try:
+                req = urllib2.Request(URL, None, headers)
+                f = urllib2.urlopen(req)
+            except Exception as e:
+                self.state = -1; print ('failed to open the URL file line 454', str(e))
+                line2 = '%s %s' % ('failed to download', str(entry.name))
+                self.MainWindow.dlinfotekst.setLabel(line2); return
             
-                file2.close()                
-                os.remove(backupfile)
-                                   
-                #If the file exists, then only download the remainder 
-                headers['Range'] = 'bytes=%s-' % existSize
+        try: size_string,size_raw = self.file_size(0,req)     #### gets size of remote URL file or sets size_string = Unknown and size_raw = 0
+        except Exception as e:
+            self.state = -1; print ('failed to open the URL file line460', str(e))
+            line2 = '%s  %s' % ('failed to download', str(entry.name)) 
+            self.MainWindow.dlinfotekst.setLabel(line2); return
 
-            else: 
-                #file does not exist 
-                file = open(localfile, "wb")           
+        #If the file exists, but we already have the whole thing, don't download again
+        size = size_raw  #The remaining bytes
+        
+        file = open(localfile,'ab+')           #### opens and/or creates the destination file
+        #Message("Remaining: " + str(size))
             
-            #destination is already open            
-
-            self.MainWindow.dlinfotekst.setLabel('(' + header + ')' + " Downloading file...")  
+        if ((size > 0) and (size != existSize)) or size == 0:
+            bytes = existSize #bytes downloaded already
+            size = int(size) + int(existSize) #total size
+            #Message("Total: " + str(size))
+            total_chunks = 0
             
-            req = urllib2.Request(URL, None, headers)
-            f = urllib2.urlopen(req)
-                        
-            #If the file exists, but we already have the whole thing, don't download again
-            size_string = f.headers['Content-Length']
-            size = int(size_string) #The remaining bytes
+            #DL-speed calculation
+            starttime=time.time()
+            startSize = bytes
+            deltatime = 0
+            deltasize = 0
+            dlspeed = 0
             
-            #Message("Remaining: " + str(size))
-                        
-#todo: size may be existsize if file is downloaded exactly 50%            
-            ##print ['size',str(size)]
-            ##if (size == 1) and (size != existSize):
-            ##    bytes = existSize #bytes downloaded already
-            ##    size = size + existSize #total size
-            ##    #Message("Total: " + str(size))
-            ##    size_MB = float(size) / (1024 * 1024) #total size MB
-            ##    #DL-speed calculation
-            ##    starttime = time.time(); startsize = bytes deltatime = 0; deltasize = 0; dlspeed = 0
-            ##    #download in chunks of 100kBytes                
-            ##    data=f.read()
-            ##    file.write(data)
-            ##    f.close() #close the URL
-            ##    file.close() #close the destination file                 
-            ##    #if (self.killed == True) or (self.running == False):
-            ##    #    self.state = -2 #failed to download the file
-            #elif (size > 0) and (size != existSize):
-            if (size > 0) and (size != existSize):
-                bytes = existSize #bytes downloaded already
-                size = size + existSize #total size
-                #Message("Total: " + str(size))
-                
-                size_MB = float(size) / (1024 * 1024) #total size MB
-
-                #DL-speed calculation
-                starttime = time.time()
-                startsize = bytes
-                deltatime = 0
-                deltasize = 0
-                dlspeed = 0
+            self.add_list(entry,'incdl')             #### add to incomplete downloads, removing existing duplicate entries
+            try:
+                self.MainWindow.dlinfotekst.setLabel('(' + header + ')' + " Downloading file...")
 
                 #download in chunks of 100kBytes                
-                while (bytes < size) and (self.killed == False) and (self.running == True):
+                while ((bytes < size) or (size == 0) or (size_string == 'Unknown')) and (self.killed == False) and (self.running == True):
                     chunk = 100 * 1024 #100kBytes chunks
-                    if (bytes + chunk) > size:
+                    total_chunks += chunk           #### total chunks read
+                    if ((bytes + chunk) > size and size!=0) and (size_string != 'Unknown'):
                         chunk = size-bytes #remainder
                     data = f.read(chunk)
-                    file.write(data)
+                    #### if total_chunks <= whats already downloaded dont write it for unknown file size (append issue)
+                    if data !='' and (size_string == 'Unknown') and (total_chunks > os.path.getsize(localfile)): file.write(data)
+                    elif data !='' and (size_string != 'Unknown'): file.write(data)           #### write statement for files of known size
                     bytes = bytes + chunk
-                            
-                    percent = 100 * bytes / size
-                    done = float(bytes) / (1024 * 1024)
                     
+                    if size == 0 or size_string == 'Unknown' : percent = 'Unknown %'
+                    else: percent = str(100 * bytes / size) + '%'
+                    size_string,r_size = self.file_size(size,req)
+                    done,r_size = self.file_size(bytes,'')
+
                     deltatime = time.time() - starttime
                     if deltatime >=5: #update every 5 seconds
                         #calculate the download speed                        
-                        deltasize = bytes - startsize
+                        deltasize = bytes - startSize
                         dlspeed = (deltasize / 1024) / deltatime                        
                         starttime = time.time()
-                        startsize = bytes
-                    
-                    line2 = '(%s) %.1f MB - %d%% - %dkB/s' % (header, size_MB, percent, dlspeed)
+                        startSize = bytes
+                                            
+                    line2 = '(%s) %s of %s - %s - %dkB/s' % (header, done, size_string, percent, dlspeed)
                     self.MainWindow.dlinfotekst.setLabel(line2)
-                
+                    if (size >= 0 or size_string == 'Unknown') and data == '': break
                 f.close() #close the URL
-                file.close() #close the destination file                 
+            except Exception as e:
+                self.state = -1; print ('failed to download the file CDLline 517', str(e))
+                line2 = '%s  %s' % ('failed to download', str(entry.name))
+                self.MainWindow.dlinfotekst.setLabel(line2)
 
-                if (self.killed == True) or (self.running == False):
-                    self.state = -2 #failed to download the file
-                        
-#        except IOError:    
-        except:        
-            self.state = -1 #failed to download the file
-            return
+            if (self.killed == True) or (self.running == False):
+                self.state = -1 #failed to download the file
 
         file.close() #close the destination file  
 #        socket_setdefaulttimeout(oldtimeout)
   
         #add the downloaded file to the download list
         if self.state == 0:
-            tmp = CMediaItem() #create new item
-            tmp.type = entry.type
-            tmp.name = entry.name
-            tmp.thumb = entry.thumb
-            tmp.URL = entry.DLloc
-            tmp.player = entry.player
-            self.playlist_dst.add(tmp)
-            self.playlist_dst.save(RootDir + downloads_complete)
-        
+            self.add_list(entry,'cmpdl')
+            #### remove from Incomplete Downloads
+            #pos = 0; incdl = RootDir + incomplete_downloads
+            pos = 0; incdl = datapaths + incomplete_downloads
+            for line in open(incdl,'r'):
+                if line == '#\n' : pos+=1
+                elif entry.DLloc in line: self.playlist_inc.remove(pos-1)
+            self.playlist_inc.save(incdl)
+
         #end of function
-            
 
     ######################################################################
     # Description: Downloads a FTP URL to local disk
@@ -549,9 +566,9 @@ class CDownLoader(threading.Thread):
             index2 = URL.find(':',6,index)
             if index2 != -1:
                 username = URL[6:index2]
-                print 'user: ' + username
+                print ('user: ' + username)
                 password = URL[index2+1:index]
-                print 'password: ' + password            
+                print ('password: ' + password)           
             URL = URL[index+1:]
         else:
             URL = URL[6:]
@@ -571,8 +588,8 @@ class CDownLoader(threading.Thread):
             port = int(host[index+1:])
             host = host[:index]
             
-        print 'host: ' + host    
-        print 'port: ' + str(port)
+        print ('host: ' + host)    
+        print ('port: ' + str(port))
             
         #split path and file
         index = path.rfind('/')
@@ -582,18 +599,18 @@ class CDownLoader(threading.Thread):
         else:
             file = ''        
         
-        print 'path: ' + path
-        print 'file: ' + file
+        print ('path: ' + path)
+        print ('file: ' + file)
 ########################        
         try:
             self.f = ftplib.FTP()
             self.f.connect(host,port)
-        except (socket.error, socket.gaierror), e:
-            print 'ERROR: cannot reach "%s"' % host
+        except (socket.error, socket.gaierror) as e:
+            print ('ERROR: cannot reach "%s"' % host)
             self.state = -1 #failed to download the file
             return
 
-        print '*** Connected to host "%s"' % host
+        print ('*** Connected to host "%s"' % host)
 
         try:
             if username != '':
@@ -601,22 +618,22 @@ class CDownLoader(threading.Thread):
             else:
                 self.f.login()
         except ftplib.error_perm:
-            print 'ERROR: cannot login anonymously'
+            print ('ERROR: cannot login anonymously')
             self.f.quit()
             self.state = -1 #failed to download the file
             return
 
-        print '*** Logged in as "anonymous"'
+        print ('*** Logged in as "anonymous"')
 
         try:
             self.f.cwd(path)
         except ftplib.error_perm:
-            print 'ERROR: cannot CD to "%s"' % path
+            print ('ERROR: cannot CD to "%s"' % path)
             self.f.quit()
             self.state = -1 #failed to download the file
             return
 
-        print '*** Changed to "%s" folder' % path
+        print ('*** Changed to "%s" folder' % path)
 
         #retrieve the file
         self.bytes = 0
@@ -629,24 +646,17 @@ class CDownLoader(threading.Thread):
             self.percent2 = 0
             self.f.retrbinary('RETR %s' % file, self.download_fileFTP_callback)
         except ftplib.error_perm:
-            print 'ERROR: cannot read file "%s"' % file
+            print ('ERROR: cannot read file "%s"' % file)
             os.unlink(self.file)
         else:
-            print '*** Downloaded "%s" to CWD' % file
+            print ('*** Downloaded "%s" to CWD' % file)
         
         self.f.quit()
        
         self.file.close()
        
         if self.state == 0:
-            tmp = CMediaItem() #create new item
-            tmp.type = entry.type
-            tmp.name = entry.name
-            tmp.thumb = entry.thumb
-            tmp.URL = entry.DLloc
-            tmp.player = entry.player
-            self.playlist_dst.add(tmp)
-            self.playlist_dst.save(RootDir + downloads_complete)    
+            self.add_list(entry,'cmpdl')            #### add to completed downloads
     
         #end of function
 
@@ -702,53 +712,54 @@ class CDownLoader(threading.Thread):
         dialog.create("Download Speed Test", entry.name)        
         dialog.update(0, entry.name)
     
-        try:
-            bytes= 0
-            chunk = 100 * 1024
-            
-            #rembember the user agent set the processor
-            index = URL.find('|User-Agent=')
-            if index != -1:
-                useragent = URL[index+12:]
-                URL = URL[:index]
-            else:
-                useragent = 'Mozilla/4.0 (compatible;MSIE 7.0;Windows NT 6.0)'
-            
-            #headers = { 'User-Agent' : 'Mozilla/4.0 (compatible;MSIE 7.0;Windows NT 6.0)'}
-            headers = { 'User-Agent' : useragent}
-            req = urllib2.Request(URL, None, headers)
-            f = urllib2.urlopen(req)      
-            
-            size_string = f.headers['Content-Length']
-            size = int(size_string)     
-            
-            file = open(tempCacheDir + "dltest", "wb")
-            starttime = time.time()
-            deltatime = 0
-            updatetime = 0
+        #try:
+        bytes= 0
+        chunk = 100 * 1024
         
-            while deltatime < 10: #10 seconds
-                if(dialog.iscanceled()):
-                    break
-            
-                if (bytes >= size): # got the complete file
-                    break;
-            
-                file.write(f.read(chunk))
-                bytes = bytes + chunk
-            
-                deltatime = time.time() - starttime
-                if (deltatime - updatetime) >= 1.0:
-                    dialog.update(deltatime*10, entry.name)
-                    #dialog.update(deltatime*10, str(deltatime-updatetime))
-                    updatetime = deltatime
+        #rembember the user agent set the processor
+        index = URL.find('|User-Agent=')
+        if index != -1:
+            useragent = URL[index+12:]
+            URL = URL[:index]
+        else:
+            useragent = 'Mozilla/4.0 (compatible;MSIE 7.0;Windows NT 6.0)'
+        
+        #headers = { 'User-Agent' : 'Mozilla/4.0 (compatible;MSIE 7.0;Windows NT 6.0)'}
+        headers = { 'User-Agent' : useragent}
+        req = urllib2.Request(URL, None, headers)
+        f = urllib2.urlopen(req)
+        
+        size_rb,size_raw = self.file_size(0,req)             ####
+        #size_raw = f.headers['Content-Length']          ####
+        size = int(size_raw)     
+        
+        file = open(tempCacheDir + "dltest", "wb")
+        starttime = time.time()
+        deltatime = 0
+        updatetime = 0
+    
+        while deltatime < 10: #10 seconds
+            if(dialog.iscanceled()):
+                break
+        
+            if (bytes >= size): # got the complete file
+                break;
+        
+            file.write(f.read(chunk))
+            bytes = bytes + chunk
+        
+            deltatime = time.time() - starttime
+            if (deltatime - updatetime) >= 1.0:
+                dialog.update(int(deltatime*10), entry.name)            ####
+                #dialog.update(deltatime*10, str(deltatime-updatetime))
+                updatetime = deltatime
 
-            f.close()
-            file.close()                
-            os.remove(tempCacheDir + "dltest")
+        f.close()
+        file.close()                
+        os.remove(tempCacheDir + "dltest")
                 
-        except IOError:
-            pass
+        #except IOError:
+            #pass
   
         dialog.close()        
         
@@ -766,4 +777,30 @@ class CDownLoader(threading.Thread):
         
         return 0
 
-                
+    #########################################################################
+    # Call Description ex: string_size, raw_size = self.file_size(size,req)
+    # Parameters : size = number
+    #              requ format example = [urllib2.Request(URL, None, headers)]
+    # Returns: ts_size as a rounded string ex:(1.1 KB) or Unknown 
+    #          fl_size as a number ex:(1132)
+    #########################################################################
+    def file_size(self,r_size=0,requ=''):
+        ts_size = 'Unknown'; fl_size = 0
+        if (r_size == 0 or r_size == 'Unknown') and requ == '': return ts_size, fl_size 
+        try:
+            if r_size == 0 and requ != '':
+                fr = urllib2.urlopen(requ)
+                #print(fr.headers)
+                if 'Content-Length' not in fr.headers: return ts_size, fl_size
+                fl_size = fr.headers['Content-Length']; fr.close()
+                r_size = (fl_size)
+            size_bt = float(r_size)
+            if fl_size  >= 0 and r_size != 0:
+                if (size_bt / 10**3 ) < 1  : ts_size = str(size_bt) +' Bs'
+                elif (size_bt / 10**6)  < 1 : ts_size = str(round(size_bt / 10**3,1)) +' KB'
+                elif (size_bt / 10**9)  < 1 : ts_size = str(round(size_bt / 10**6,1)) +' MB'
+                elif (size_bt / 10**12)  < 1: ts_size = str(round(size_bt / 10**9,1)) +' GB'
+                else: ts_size = str(round(size_bt /10**12,1)) +' TB'
+        except Exception, e: print('ERROR line783 CDownLoader.fl_size function: '+'e = ' + str(e))
+        return  ts_size, fl_size
+        #end of function                      

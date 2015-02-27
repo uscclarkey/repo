@@ -60,34 +60,52 @@ class CServer:
     # Parameters : -
     # Return     : -
     ######################################################################            
-    def login(self):
+    def login(self): ## http://www.navixtreme.com/members/
+        ## http://www.navixtreme.com/members/
+        ## POST /members/ action=takelogin&ajax=1&username=###[]###&password=###[]###&rndval=###[numbers]###
+        ## 
+        ## 
+        ## 
         keyboard = xbmc.Keyboard('', 'Enter User name')
         keyboard.doModal()
         if (keyboard.isConfirmed() != True):
             return -2
-            
+        
         username = keyboard.getText()
-
+        
         keyboard = xbmc.Keyboard('', 'Enter Password')
         keyboard.doModal()
         if (keyboard.isConfirmed() != True):
             return -2
-            
+        
         password = keyboard.getText()
-                   
+        
         #login to the Navi-X server
-        self.user_id = self.nxLogin(username, password)
-        if self.user_id == '':
+        self.user_id=self.nxLogin(username,password)
+        self.user_id=str(self.user_id).strip()
+        if (self.user_id=='') or (self.user_id=="<class 'urllib2.HTTPError'>") or (self.user_id=="<type 'exceptions.ValueError'>"):
             #failed
+            print {'user_id':self.user_id}
+            self.user_id=''
+            self.save_user_id()
+            #xbmcgui.Dialog().ok("Login",'Failed',' ',' ')
             return -1
-
-        print "Login to the NXServer was successful"
-
-        #save the returned user ID
-        self.save_user_id()             
-        #success   
-        return 0          
-
+        elif len(self.user_id)==48:
+            #	xbmcgui.Dialog().ok("Login",'Successful',' ',' ')
+            print "Login to the NXServer was successful"
+            
+            #save the returned user ID
+            self.save_user_id()
+            #success   
+            return 0
+        else:
+            #failed
+            print {'user_id':self.user_id}
+            self.user_id=''
+            self.save_user_id()
+            #xbmcgui.Dialog().ok("Login",'Failed',' ',' ')
+            return -1
+        
     ######################################################################
     # Description: Login function for Navi-Xtreme login.
     # Parameters : username: user name
@@ -95,30 +113,43 @@ class CServer:
     # Return     : blowfish-encrypted string identifying the user for 
     #              saving locally, or an empty string if the login failed.
     ######################################################################  
-    def nxLogin(self, username, password):
-        return getRemote('http://www.navixtreme.com/login/',{
-            'method':'post',
-            'postdata':urllib.urlencode({'username':username,'password':password})
-        })['content']
-
+    def nxLogin(self, username, password, LoginUrl='http://www.navixtreme.com/members/'):
+        ## POST /members/ action=takelogin&ajax=1&username=###[]###&password=###[]###&rndval=###[numbers]###
+        LoginUrl='http://www.navixtreme.com/login/'
+        #return str(getRemote(LoginUrl,{'method':'post',
+        #    'postdata':urllib.urlencode({'username':username,'password':password,'action':'takelogin','ajax':'1'})
+        #})['content'])
+        #try: 
+        print'Attempting to login'
+        html=UrlDoPost(LoginUrl,{'username':username,'password':password,'action':'takelogin','ajax':'1','rndval':''})
+        #except: html=''
+        print 'Length: '+str(len(html)); #print html
+        return html
+        #return str(getRemote('http://www.navixtreme.com/login/',{
+        #    'method':'post',
+        #    'postdata':urllib.urlencode({'username':username,'password':password})
+        #})['content'])
+        
     ######################################################################
     # Description: -
     # Parameters : -
     # Return     : -
     ######################################################################                     
-    def logout(self):
+    def logout(self): ## http://www.navixtreme.com/members/?action=signout
         #empty the user ID
         self.user_id=''
         self.save_user_id()
-
+        
     ######################################################################
     # Description: -
     # Parameters : -
     # Return     : -
     ######################################################################             
     def is_user_logged_in(self):
-        if self.user_id != '':
-            return True  
+        self.user_id=str(self.user_id).strip()
+        if (self.user_id != '') and (self.user_id !="<class 'urllib2.HTTPError'>") or (self.user_id=="<type 'exceptions.ValueError'>"):
+            if (len(self.user_id) != 48): return False
+            return True
         return False
 
     ######################################################################

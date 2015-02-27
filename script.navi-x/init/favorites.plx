@@ -6,5 +6,5 @@ player=default
 #
 type=playlist
 name=Navi-X Home
-URL=http://navi-x.googlecode.com/svn/trunk/Playlists/home2.plx
+URL=http://havana.navixtreme.com/Playlists/home2.plx
 #

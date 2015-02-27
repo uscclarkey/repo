@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.navi-x"
        name="Navi-X"
-       version="3.8.2"
-       provider-name="Team Navi-X and XBMCHUB.com">
+       version="4.0"
+       provider-name="Team Navi-X and TVADDONS.ag">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
-    <import addon="repository.xbmchub" optional="true" />
     <import addon="script.module.urlresolver"  />
+    <import addon="script.module.t0mm0.common"  />
+    <import addon="script.module.addon.common" optional="false" />
+    <import addon="repository.xbmchub" optional="true" />
+    <import addon="plugin.video.youtube" optional="false" />
   </requires>
   <extension point="xbmc.python.script" library="default.py" >
     <provides>executable video</provides>
@@ -16,10 +19,10 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <minversion>28764</minversion>
-    <summary>Media Browser Addon for XBMC.</summary>
-    <description>Navi-X is the oldest and most trusted add-on for XBMC, used by millions of people worldwide. You'll find everything from live television to your favourite movies and television shows, easily accessible.</description>
+    <summary>Media Browser Addon for Kodi</summary>
+    <description>Navi-X is the oldest and most trusted add-on for Kodi, used by millions of people worldwide. You'll find everything from live television to your favourite movies and television shows, easily accessible.</description>
     <disclaimer>http://www.navixtreme.com/terms/</disclaimer>
-    <forum>http://www.xbmchub.com/forums/forums/38-NAVI-X-MEDIA-BROWSER</forum>
+    <forum>http://forums.tvaddons.ag/forums/38-NAVI-X-MEDIA-BROWSER-FOR-KODI</forum>
     <website>http://www.navixtreme.com/</website>
     <source></source>
     <email></email>

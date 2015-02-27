@@ -1,7 +1,7 @@
 import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os
 
 import json
-
+import base64
 
 ADDON = xbmcaddon.Addon(id='plugin.video.tvplayer')
 
@@ -10,8 +10,9 @@ ADDON = xbmcaddon.Addon(id='plugin.video.tvplayer')
 
 
 def CATEGORIES():
-    xunity='http://d3gbuig838qdtm.cloudfront.net/json/tvp/channels.json'
-    response=OPEN_URL(xunity)
+   
+
+    response=OPEN_URL('http://d3gbuig838qdtm.cloudfront.net/json/tvp/channels.json')
     
     link=json.loads(response)
 
@@ -30,12 +31,15 @@ def CATEGORIES():
             status='[COLOR red]   (%s)[/COLOR]'%status
         icon='http://static.simplestream.com/tvplayer/logos/150/Inverted/%s.png' % id    
         addDir(name+status,id,200,icon,'')
-                 
+    if ADDON.getSetting('sort')== 'true':    
+        xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_TITLE)             
     setView('movies', 'default') 
        
                
  
 def OPEN_URL(url):
+    if ADDON.getSetting('proxy')== 'true':
+        url='http://www.justproxy.co.uk/index.php?q='+base64.b64encode(url)
     req = urllib2.Request(url)
     req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
     response = urllib2.urlopen(req)
@@ -43,40 +47,42 @@ def OPEN_URL(url):
     response.close()
     return link
     
-    
+
+
     
 def PLAY_STREAM(name,url,iconimage):
-    url='http://uapi.staging.simplestream.com/tvplayer/stream/live/id/%s' % url
-    response=OPEN_URL(url)
+    url='http://d2sy1af2shs9ve.cloudfront.net/tvplayer/streams/playlist/%s' % url
+    
+    response=OPEN_URL(url)    
+    
     link=json.loads(response)
 
-    server='http://cdn.live.testing.simplestream.com'
+    
      
     stream=link['stream']
 
-    m3u8=OPEN_URL(stream)
     
-    if not 'chunklist' in m3u8:
-        M3U8_PATH=xbmc.translatePath(os.path.join(ADDON.getAddonInfo('path'), 'yo.m3u8'))
-        
-        match=re.compile('(.+?)\n(.+?)\n(.+?)\n(.+?)\n(.+?)\n(.+?)\n(.+?)\n').findall (m3u8)
-     
-        a=match[0][0]
-        b=match[0][1]
-        c=server+match[0][2]
-        d=match[0][3]
-        e=server+match[0][4]
-        f=match[0][5]
-        g=server+match[0][6]
-      
-        write_me='%s\n%s\n%s' %(a,f,g)       
-        h = open(M3U8_PATH, mode='w')
-        h.write(str(write_me))
-        h.close()
 
-        M3U8_PATH=M3U8_PATH
+    server='http://'+re.compile('http://(.+?)/').findall (stream)[0]
+
+    m3u8=OPEN_URL(stream)        
+    
+    if not 'chunklist' in  m3u8 :
+        #M3U8_PATH=xbmc.translatePath(os.path.join(ADDON.getAddonInfo('path'), 'yo.m3u8'))
+        if not 'http' in m3u8:
+
+            match=re.compile('(.+?)\n').findall (m3u8)
+            amount =len(match)-1
+            g=server+match[amount]
+        else:
+            match=re.compile('http://(.+?)\n').findall (m3u8)
+            amount =len(match)-1
+            g='http://'+match[amount]
+            
+        M3U8_PATH=g
     else:
-        M3U8_PATH=stream
+            
+            M3U8_PATH=stream
     liz = xbmcgui.ListItem(name, iconImage='DefaultVideo.png', thumbnailImage=iconimage)
     liz.setInfo(type='Video', infoLabels={'Title':name})
     liz.setProperty("IsPlayable","true")

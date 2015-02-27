@@ -73,39 +73,46 @@ class CDialogBrowse(xbmcgui.WindowXMLDialog):
             self.onAction1(action)        
         
     def onAction1(self, action):
-        if (action == ACTION_PREVIOUS_MENU) or (action == ACTION_PARENT_DIR) or (action == ACTION_PREVIOUS_MENU2):
-            self.state = -1 #success
+        if (action==ACTION_PREVIOUS_MENU) or (action==ACTION_PARENT_DIR) or (action==ACTION_PREVIOUS_MENU2):
+            self.state= -1 #success
             self.close() #exit
                        
-        if action == ACTION_SELECT_ITEM:
-            if self.getFocus() == self.getControl(BUTTON_OK):
-                if os.path.exists(self.dir) == False:
-                    dialog = xbmcgui.Dialog()
+        if action==ACTION_SELECT_ITEM:
+            if self.getFocus()==self.getControl(BUTTON_OK):
+                if (self.dir.lower().startswith('http://')==False) and (self.dir.lower().startswith('ftp://')==False):
+                    self.state=0 #success
+                    self.close() #exit
+                elif os.path.exists(self.dir)==False:
+                    dialog=xbmcgui.Dialog()
                     dialog.ok("Error", "Destination directory does not exist")
                 else:
-                    self.state = 0 #success
+                    self.state=0 #success
                     self.close() #exit
-            if self.getFocus() == self.getControl(BUTTON_CANCEL):
-                self.state = -1 #success
+            if self.getFocus()==self.getControl(BUTTON_CANCEL):
+                self.state= -1 #success
                 self.close() #exit
-            if self.getFocus() == self.getControl(BUTTON_EDIT):
-                keyboard = xbmc.Keyboard(self.dir + self.filename)
+            if self.getFocus()==self.getControl(BUTTON_EDIT):
+                keyboard=xbmc.Keyboard(self.dir+self.filename)
                 keyboard.doModal()
                 
-                if (keyboard.isConfirmed() == True):
-                    fn = keyboard.getText()
-                    pos = fn.rfind(SEPARATOR) #find last '\' in the string
-                    if pos != -1:
-                        self.dir = fn[:pos+1]
-                        filename = fn[pos+1:]
+                if (keyboard.isConfirmed()==True):
+                    fn=keyboard.getText()
+                    pos=fn.rfind(SEPARATOR) #find last '\' in the string
+                    if fn.lower().startswith('http://') or fn.lower().startswith('ftp://'):
+                        filename=fn
+                        self.filename=fn
+                    elif pos != -1:
+                        self.dir=fn[:pos+1]
+                        filename=fn[pos+1:]
                         if len(filename) > 42:
-                            dialog = xbmcgui.Dialog()
-                            dialog.ok("Error", "Filename exceeds 42 characters.")
+                            dialog=xbmcgui.Dialog()
+                            dialog.ok("Error","Filename exceeds 42 characters.")
+                            self.filename=filename
                         else:
-                            self.filename = filename
-                            
-                    self.SetLabel(self.dir + self.filename)
-
+                            self.filename=filename
+                    
+                    self.SetLabel(self.dir+self.filename)
+                    
             if self.getFocus() == self.getControl(BUTTON_BROWSE):             
                 dialog = xbmcgui.Dialog()
                 fn = dialog.browse(self.type,'Xbox Media Center', 'files', '', False, False)

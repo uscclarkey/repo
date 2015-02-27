@@ -83,7 +83,7 @@ class CDialogLogin(xbmcgui.WindowXMLDialog):
         
     def logout(self):
         self.user_id=''
-        self.write_user_id()
+        self.write_user_id() #There is no such function.
             
     def is_user_logged_in(self):
         if self.user_id != '':

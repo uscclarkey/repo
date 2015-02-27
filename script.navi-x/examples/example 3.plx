@@ -8,10 +8,10 @@ title=PC Zapper
 #
 #next the playlist entries:
 type=text
-name=example 3.plx
+name=Example 3: txt
 thumb=default
-#the next line shows that an URL can also point to a local file.
-URL=examples\example 3.plx
+#the next line shows that a URL can also point to a local file.
+URL=examples/example 3.txt
 #
 type=video
 name=TMF
