@@ -1,11 +1,801 @@
+<channels>
 
-
-
-
+<channel>
 <name>UKTV</name>
-<link>https://raw.githubusercontent.com/uscclarkey/repo/master/IPTV/UKTV.xml</link>
 <thumbnail></thumbnail>
+<fanart></fanart>
+<items>
 
-<name>Sports</name>
-<link>https://raw.githubusercontent.com/uscclarkey/repo/master/IPTV/Sports.xml</link>
+<item>
+<title>[COLOR=yellow]----- Entertainment Channels -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/entertainment.png</thumbnail>
+</item>
+
+
+<item>
+<title>BBC One</title>
+<link>http://37.220.29.186:8000/bbc1/bbc1/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20One.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Two</title>
+<link>http://37.220.29.186:8000/bbc2/bbc2/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Two.png</thumbnail>
+</item>
+
+<item>
+<title>ITV One</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV1.png</thumbnail>
+</item>
+
+<item>
+<title>ITV Choice</title>
+<link></link>
+<thumbnail>http://tbivision.com/wp-content/uploads/2013/02/itv_choice_logo2.jpg</thumbnail>
+</item>
+
+<item>
+<title>Channel Four</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%204.png</thumbnail>
+</item>
+
+<item>
+<title>Channel Five</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Channel%205.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Three / CBBC</title>
+<link>http://37.220.29.186:8000/bbc3/bbc3/index.m3u</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20THREE.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Four / CBeebies</title>
+<link>http://37.220.29.186:8000/bbc4/bbc4/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20FOUR.png</thumbnail>
+</item>
+
+<item>
+<title>ITV Two</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV2.png</thumbnail>
+</item>
+
+<item>
+<title>ITV Three</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV3.png</thumbnail>
+</item>
+
+<item>
+<title>ITV Four</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/ITV4.png</thumbnail>
+</item>
+
+<item>
+<title>ITV Be</title>
+<link></link>
 <thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Dave</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Dave.png</thumbnail>
+</item>
+
+<item>
+<title>E4</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/E4.png</thumbnail>
+</item>
+
+<item>
+<title>More4</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/More4.png</thumbnail>
+</item>
+
+<item>
+<title>5 USA</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/5%20USA.png</thumbnail>
+</item>
+
+<item>
+<title>5*</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Pick TV</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Pick.png</thumbnail>
+</item>
+
+<item>
+<title>RTE 1</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/RTE%20One.png</thumbnail>
+</item>
+
+<item>
+<title>RTE 2</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/RTE%20Two.png</thumbnail>
+</item>
+
+<item>
+<title>SyFy</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/SYFY.png</thumbnail>
+</item>
+
+<item>
+<title>Bio</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Comedy Central</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Comedy%20Central.png</thumbnail>
+</item>
+
+<item>
+<title>FX</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/FX.png</thumbnail>
+</item>
+
+<item>
+<title>Crime Investigation</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Crime%20and%20Investigation.png</thumbnail>
+</item>
+
+<item>
+<title>UKTV Gold</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/GOLD.png</thumbnail>
+</item>
+
+<item>
+<title>Sky One</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%201.png</thumbnail>
+</item>
+
+<item>
+<title>London Live</title>
+<link>http://bcoveliveios-i.akamaihd.net/hls/live/217434/3083279840001/master_900.m3u8</link>
+<thumbnail>http://www.cision.com/uk/wp-content/uploads/2013/09/London-Live.jpg</thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+===================================================================================================================================
+
+<item>
+<title>[COLOR=yellow]----- Documentarie Channels -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/documentaries.png</thumbnail>
+</item>
+
+<item>
+<title>Discovery Channel</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Discovery%20Channel.png</thumbnail>
+</item>
+
+<item>
+<title>Animal Planet</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Animal%20Planet.png</thumbnail>
+</item>
+
+<item>
+<title>History</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/History.png</thumbnail>
+</item>
+
+<item>
+<title>Bio</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>National Geographic</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Nat%20Geo.png</thumbnail>
+</item>
+
+<item>
+<title>National Geographic Wild</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Nat%20Geo%20Wild.png</thumbnail>
+</item>
+
+<item>
+<title>WWF (wildlife channel)</title>
+  <link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Nasa HD</title>
+<link>http://public.infozen.cshls.lldns.net/infozen/public/public/public_1000.m3u8</link>
+<thumbnail>http://www.hdtvmagazine.us/news/images/nasa-logo.jpg</thumbnail>
+</item> 
+
+
+===================================================================================================================================
+
+<item>
+<title>[COLOR=yellow]----- Movie Channels -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/movies.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Movies Premiere</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Premiere.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Movies Action</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Action.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Movies Drama</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Drama.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Movies Comedy</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Comedy.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Movies Family</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Family.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Movies Thriller</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Thriller.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Movies SciFi Horror</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sci-fiHorror.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Movies Modern Greats</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Modern%20Greats.png</thumbnail>
+</item>
+
+<item>
+<title>True Movies 1</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-MOVIES1-1-2.jpg</thumbnail>
+</item>
+
+<item>
+<title>True Movies 2</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-MOVIES2-2-4.jpg</thumbnail>
+</item>
+
+<item>
+<title>True Entertainment</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/TRUE-2013-ID-ENTERTAINMENT-1-6.jpg</thumbnail>
+</item>
+
+<item>
+<title>MBC 1   (Eng movies but arabic subs and adverts)</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>MBC 2</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>MBC 3</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>MBC 4</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>MBC Action</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+===================================================================================================================================
+
+<item>
+<title>[COLOR=yellow]----- Kids Channels -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/kids.png</thumbnail>
+</item>
+
+<item>
+<title>Disney Channel</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Disney%20Channel.png</thumbnail>
+</item>
+
+<item>
+<title>Cartoon Network</title>
+<link>rtmp://80.82.78.15:443/liverepeater playpath=rtmp://93.174.95.125:1935/edge/_definst_/p78zj79dhlxx3ws live=1 pageUrl=http://popeoftheplayers.pw/Vd?u#bt!25 timeout=15 token=#atd%#$ZH timeout=10</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Cartoon%20Network.png</thumbnail>
+</item>
+
+<item>
+<title>Nickelodeon</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Nickelodeon.png</thumbnail>
+</item>
+
+<item>
+<title>Cartoonito</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Cartoonito.png</thumbnail>
+</item>
+
+<item>
+<title>Boomerang</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Baby TV</title>
+<link>http://202.75.23.33/live/ch27/03.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+===================================================================================================================================
+
+<item>
+<title>[COLOR=yellow]----- News Channels -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/news.png</thumbnail>
+</item>
+
+<item>
+<title>Sky News</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20News.png</thumbnail>
+</item>
+
+<item>
+<title>BBC News</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20News.png</thumbnail>
+</item>
+
+<item>
+<title>MSNBC</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>France24</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/France%2024.png</thumbnail>
+</item>
+
+<item>
+<title>Aljazeera Eng</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Al%20Jazeera%20English.png</thumbnail>
+</item>
+
+<item>
+<title>Russia News</title>
+  <link>http://odna.octoshape.net/f3f5m2v4/cds/ch1_720p/playlist.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>EuroNews</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Euronews.png</thumbnail>
+</item>
+
+<item>
+<title>CNN</title>
+<link>http://hls.novotelecom.ru/streaming/cnn/tvrec/playlist.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CNN.png</thumbnail>
+</item>
+
+<item>
+<title>CNBC</title>
+<link>http://livestation_hls-lh.akamaihd.net/i/cnbc_en@106428/master.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/CNBC.png</thumbnail>
+</item>
+
+<item>
+<title>Bloomberg</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+<item>
+<title>BBC World News</title>
+<link>http://93.184.221.133/hls-live/20C1A9/bbc_world/ls_satlink/b_828.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20World%20News.png</thumbnail>
+</item>
+
+===================================================================================================================================
+
+<item>
+<title>[COLOR=yellow]----- Music Channels -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/music.png</thumbnail>
+</item>
+
+<item>
+<title>4Music</title>
+<link>http://csm-e.cds1.yospace.com/csm/live/86550614.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Heat</title>
+<link>http://csm-e.cds1.yospace.com/csm/live/86561584.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>The Box</title>
+<link>http://csm-e.cds1.yospace.com/csm/live/86561631.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Smash Hits!</title>
+<link>http://csm-e.cds1.yospace.com/csm/live/86561609.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Kiss</title>
+<link>http://csm-e.cds1.yospace.com/csm/live/86561716.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Magic</title>
+<link>http://csm-e.cds1.yospace.com/csm/live/86561776.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Vevo</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/appleman.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Heart TV</title>
+<link>rtmp://cdn-sov-2.musicradio.com:80/LiveVideo/Heart</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Heart%20TV.png</thumbnail>
+</item>
+
+<item>
+<title>Capital TV</title>
+<link>rtmp://cdn-sov-2.musicradio.com:80/LiveVideo/Capital</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Capital%20TV.png</thumbnail>
+</item>
+
+<item>
+<title>MTV</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/MTV.png</thumbnail>
+</item>
+
+<item>
+<title>MTV Hits</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/MTV%20HITS.png</thumbnail>
+</item>
+
+<item>
+<title>MTV Rocks</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/MTV.png</thumbnail>
+</item>
+
+<item>
+<title>MTV Dance</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/MTV%20DANCE.png</thumbnail>
+</item>
+</items>
+</channel>
+
+<channel>
+<name>Sports</name>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<items>
+
+<item>
+<title>BT Sports 1</title>
+<link>http://37.220.29.186:8000/live/bt1/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BT%20Sport%201.png</thumbnail>
+</item>
+
+<item>
+<title>BT Sports 2</title>
+<link>http://37.220.29.186:8000/live/bt2/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BT%20Sport%202.png</thumbnail>
+</item>
+
+<item>
+<title>Eurosport 1</title>
+<link>http://149.255.39.122/aasd/8814/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Eurosport.png</thumbnail>
+</item>
+
+<item>
+<title>Eurosport 2</title>
+<link>http://149.255.39.122/aasd/8815/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Eurosport%202.png</thumbnail>
+</item>
+
+<item>
+<title>FightBox</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BoxNation</title>
+<link>http://167.114.41.220:8080/boxnation/boxnationnn/index.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>At The Races</title>
+<link>http://167.114.41.220:8080/at/racess/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/At%20The%20Races.png</thumbnail>
+</item>
+
+<item>
+<title>Racing UK</title>
+<link>http://167.114.41.220:8080/racing/uuk/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Racing%20UK.png</thumbnail>
+</item>
+
+<item>
+<title>Sports Tonight</title>
+<link>rtmp://freeview.fms.visionip.tv/live/ playpath=sports_tonight-sports_tonight-live-25f-16x9-HD swfUrl=http://negmtv.altervista.org/play/jwplayer.flash.swf live=1 timeout=13 pageUrl=http://negmtv.altervista.org/</link>
+<thumbnail>http://i.imgur.com/nsEzVwr.png</thumbnail>
+</item>
+
+<item>
+<title>Dubai Racing</title>
+  <link>http://cdnehlsdubairacing2.endavomedia.com/smil:dmilivedubairacing2.smil/gmswf.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Classic Football</title>
+  <link>http://46.249.213.93/iPhone/broadcast/classicgoals-tablet.3gp/classicgoals-tablet.3gp-mr667k.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Automotive TV</title>
+  <link>rtsp://46.249.213.87/broadcast/automotivetv-tablet.3gp</link>
+<thumbnail></thumbnail>
+</item>
+
+========================================================================================================
+
+<item>
+<title>[COLOR yellow]----- Sky Sports -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/sky%20sports.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 1</title>
+<link>http://167.114.41.220:8080/TSP1/TSP1/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%201.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 2</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%202.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 3</title>
+<link>http://37.220.29.186:8000/Tsp3/Tsp3/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%203.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 4</title>
+<link>http://37.220.29.186:8000/Tsp4/Tsp4/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%204.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 5</title>
+<link>http://167.114.41.220:8080/skyup5/skh5/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%205.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports F1</title>
+<link>http://37.220.29.186:8000/spf1/spf1/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%20F1.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports News</title>
+<link>rtmp://server.ppvmania.tv:1935/live playpath=channel6v swfUrl=http://hqzone.tv/jwplayer5/jwplayer/player.swf pageUrl=http://www.hqzone.tv/forums/view.php?pg=4 live=true timeout=10 swfVfy=true token=WY846p1E1g15W7s</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%20News.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]----- BeIN Sports -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/bein%20sports.png</thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 1</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 2</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 3</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 4</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 5</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 6</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 7</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 8</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 9</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 10</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 11</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 12</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 13</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 14</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 15</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+</items>
+</channel>
+</channels>
