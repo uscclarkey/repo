@@ -3,5 +3,9 @@
 
 
 <name>UKTV</name>
-<link>http://xty.me/xunitytalk/playlist/cartoonhd/picasa_tom_and_jerry.xml</link>
+<link>https://raw.githubusercontent.com/uscclarkey/repo/master/IPTV/UKTV.xml</link>
+<thumbnail></thumbnail>
+
+<name>Sports</name>
+<link>https://raw.githubusercontent.com/uscclarkey/repo/master/IPTV/Sports.xml</link>
 <thumbnail></thumbnail>
