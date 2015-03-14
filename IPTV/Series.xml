@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+
+
+<item>
+<title>2 Broke Girls</title>
+<link>rtmp://198.27.75.99/app playpath=2bg01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?2bg01/</link>
+<thumbnail>http://www.williambrucewest.com/wp-content/uploads/2013/01/CBS_2_BROKE_GIRLS_205_CLIP1_IMAGE_640x480_7686723707.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]2 Broke Girls[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>All In The Family</title>
+<link>rtmp://198.27.75.99/app playpath=aitf swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?aitf live=true</link>
+<thumbnail>http://sharetv.org/images/all_in_the_family-show.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]All In The Family[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>American Dad</title>
+<link>rtmp://192.99.38.122/app playpath=americandad02  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex3.php?americandad02
+</link>
+<thumbnail>http://www-deadline-com.vimg.net/wp-content/uploads/2013/05/american-dad-may-12-finale__130513162451.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]American Dad[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Anger Management</title>
+<link>rtmp://198.27.75.99/app playpath=anger01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://www.eonline.com/eol_images/Entire_Site/2012527/reg_600.Sheen.mh.062712.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Anger Management[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Arrested Development</title>
+<link>rtmp://198.27.75.99/app playpath=arrested01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://www-deadline-com.vimg.net/wp-content/uploads/2012/08/arrested_development__120807003750.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Arrested Development[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Becker</title>
+<link>rtmp://198.27.75.99/app playpath=beck swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://static-l3.blogcritics.org/10/01/22/124169/becker-show.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Becker[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Big Bang Theory</title>
+<link>rtmp://198.27.74.25/app playpath=tbbt02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://www.chicagonow.com/gwynspiration-weight-loss/files/2013/02/the-big-bang-theory-10.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Big Bang Theory[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Bones</title>
+<link>rtmp://198.27.74.25/app playpath=bones02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://www.disneydreaming.com/wp-content/uploads/2010/03/Fox-Bones-TV-Show-Jordin-Sparks.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Bones[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Boy Meets World</title>
+<link>rtmp://198.27.75.99/app playpath=bmw swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?bmw live=true</link>
+<thumbnail>http://a.abcnews.com/images/Entertainment/abc_boy_meets_world_nt_121105_wmain.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Boy Meets World[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Breaking Bad</title>
+<link>rtmp://198.27.74.25/app playpath=bad02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://photos.appleinsider.com/13.09.23-Breaking_Bad.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Breaking Bad[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Burn Notice</title>
+<link>rtmp://192.99.38.122/app playpath=burnnotice03  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex3.php?burnnotice03
+</link>
+<thumbnail>http://www.studiosystemnews.com/wp-content/uploads/2013/06/burn_notice_1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Burn Notice[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Cheers</title>
+<link>rtmp://198.27.75.99/app playpath=cheers01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://blog.wesellrestaurants.com/Portals/147530/images/Cheers%20Sign.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Cheers[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Community</title>
+<link>rtmp://198.27.75.99/app playpath=community01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://flavorwire.files.wordpress.com/2011/12/community1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Community[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Cops</title>
+<link>rtmp://198.27.75.99/app playpath=cops01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/1/18/COPS_intertitle.png</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Cops[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Cosby Show</title>
+<link>rtmp://198.27.75.99/app playpath=cosby swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?cosby live=true</link>
+<thumbnail>http://static.guim.co.uk/sys-images/Media/Pix/pictures/2012/4/30/1335795023210/The-Cosby-Show-008.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Cosby Show[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Curb Your Enthusiasm</title>
+<link>rtmp://198.27.74.25/app playpath=curbs03 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://seriesandtv.com/wp-content/uploads/2010/08/Curb-Your-Enthusiasm-casting-call-open-audition.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Curb Your Enthusiasm[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Dinosaurs</title>
+<link>rtmp://198.27.75.99/app playpath=dinos03 swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?dinos live=true</link>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/184017/p184017_b_h3_aa/dinosaurs.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Dinosaurs[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Drew Carey Show</title>
+<link>rtmp://198.27.75.99/app playpath=drewcarey swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?drewcarey live=true</link>
+<thumbnail>http://tvmegasite.net/images/primetime/drew/castpic7.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Drew Carey Show[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Eastbound & Down</title>
+<link>rtmp://198.27.75.99/app playpath=east swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?east live=true</link>
+<thumbnail>http://static.tvtropes.org/pmwiki/pub/images/eastbound-down.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Eastbound & Down[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Everybody Loves Raymond</title>
+<link>rtmp://192.99.38.122/app playpath=elr02  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex3.php?elr02
+</link>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/184243/p184243_b_h3_aa/everybody-loves-raymond.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Everybody Loves Raymond[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Family Guy</title>
+<link>rtmp://192.99.38.122/app playpath=familyguy02  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindextab1.php?familyguy02</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/1/1c/Griffin_family.png</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Family Guy[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Frasier</title>
+<link>rtmp://198.27.74.25/app playpath=frasier02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/183920/p183920_b_h3_aa/frasier.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Frasier[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Fresh Prince Of Bel Air</title>
+<link>rtmp://198.27.74.25/app playpath=freshprince02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://www.tonedeaf.com.au/wp-content/uploads/39616_Fresh-Prince-Of-Bel-Air1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Fresh Prince Of Bel Air[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Friends</title>
+<link>rtmp://198.27.74.25/app playpath=friends02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://collider.com/wp-content/uploads/friends-tv-show.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Friends[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Full House</title>
+<link>rtmp://198.27.75.99/app playpath=fullhouse swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?fullhouse live=true</link>
+<thumbnail>http://static.tvtropes.org/pmwiki/pub/images/full_house_1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Full House[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Futurama</title>
+<link>rtmp://198.27.75.99/app playpath=2501  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindextab2.php?2501</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/d/de/Futurama_title_screen.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Futurama[/COLOR]</desc>
+</item>
+
+
+
+<item>
+<title>Game of Thrones</title>
+<link>rtmp://198.27.75.99/app playpath=got02 swfUrl=http://www.tgun.tv/locked/player.swf live=1 pageUrl=http://www.tgun.tv</link>
+<thumbnail>http://img2.wikia.nocookie.net/__cb20110406150536/gameofthrones/images/2/2c/Season_1_Poster.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Game of Thrones[/COLOR]</desc>
+</item> 
+
+
+<item>
+<title>Growing Pains</title>
+<link>rtmp://198.27.75.99/app playpath=gpain swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?gpain live=true</link>
+<thumbnail>http://kirkcameron.com/wp-content/uploads/2012/06/growing_pains_pc.jpeg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Growing Pains[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Hanging With Mr. Cooper</title>
+<link>rtmp://198.27.75.99/app playpath=cooper swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?cooper live=true</link>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/184173/p184173_b_h3_aa/hangin-with-mr-cooper.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Hanging With Mr. Cooper[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Hanging With Mr. Cooper 2</title>
+<link>rtmp://50.7.28.162/flash playpath=12188 swfUrl=http://static2.sawlive.tv/player.swf live=1 pageUrl=http://sawlive.tv/embed/watch/NTJiZmNkM2VkOTAwOmE3NjU2OTZlOmM1N2M1ODJmMDVhN2Q3YzE1ODNlNTlhNTY0MG/E2YjhiODljMGJjOTc6M2FkMWE5YjFhZDgyNjZhNTkzMjE4MWM5NTdiOTUxNDE_/</link>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/184173/p184173_b_h3_aa/hangin-with-mr-cooper.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Hanging With Mr. Cooper 2[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Home Improvement</title>
+<link>rtmp://198.27.75.99/app playpath=home01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://1.bp.blogspot.com/-RkCCrd_5BA8/UJY3s3pI0sI/AAAAAAAAAEw/GxTVdaZwq5k/s1600/Home+Improvement.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Home Improvement[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>How I Met Your Mother</title>
+<link>rtmp://198.27.74.25/app playpath=himym02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2009/9/8/1252411098121/How-I-met-Your-Mother-001.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]How I Met Your Mother[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>It's Always Sunny In Philadelphia</title>
+<link>rtmp://198.27.74.25/app playpath=sunny02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://wpc.556e.edgecastcdn.net/80556E/img.news/NE9v5gagxZERcf_1_1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]It's Always Sunny In Philadelphia[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Just Shoot Me</title>
+<link>rtmp://198.27.75.99/app playpath=shootme swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://timstvshowcase.com/justshoot1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Just Shoot Me[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The King Of Queens</title>
+<link>rtmp://198.27.74.25/app playpath=koq02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://www.kstc45.com/kstc45images/koqCast.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The King Of Queens[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>King Of The Hill</title>
+<link>rtmp://192.99.38.122/app playpath=koth02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?koth02</link>
+<thumbnail>http://static.tvtropes.org/pmwiki/pub/images/kingofthehill.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]King Of The Hill[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Malcolm In The Middle</title>
+<link>rtmp://198.27.75.99/app playpath=malcolm swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?malcolm live=true</link>
+<thumbnail>http://comm3263.files.wordpress.com/2011/05/936full-malcolm-in-the-middle-photo1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Malcolm In The Middle[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Married With Children</title>
+<link>rtmp://198.27.74.25/app playpath=mwc02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://images2.wikia.nocookie.net/__cb20091228183917/muppet/images/1/11/Married_with_children.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Married With Children[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>MASH</title>
+<link>rtmp://198.27.74.25/app playpath=mash02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://i500.listal.com/image/2981119/500full.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]MASH[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Middle</title>
+<link>rtmp://198.27.75.99/app playpath=middle swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?middle live=true</link>
+<thumbnail>http://tvbythenumbers.zap2it.com/wp-content/uploads/2010/09/the_middle-500x340.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Middle[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Modern Family</title>
+<link>rtmp://198.27.75.99/app playpath=mfamily01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/3560360/p3560360_b_h3_ab/modern-family.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Modern Family[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>New Girl</title>
+<link>rtmp://198.27.75.99/app playpath=ng swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?ng live=true</link>
+<thumbnail>http://feministfiction.com/wp-content/uploads/2012/11/Jess_and_the_Guys.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]New Girl[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>News Radio</title>
+<link>rtmp://198.27.75.99/app playpath=nradio swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?nradio live=true</link>
+<thumbnail>http://images.zap2it.com/assets/p183992_b_h3_aa/newsradio.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]News Radio[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Night Court</title>
+<link>rtmp://198.27.75.99/app playpath=nightcourt swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?nightcourt live=true</link>
+<thumbnail>http://images.zap2it.com/assets/p184004_b_h3_aa/night-court.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Night Court[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Northern Exposure</title>
+<link>rtmp://198.27.75.99/app playpath=northern swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?northern live=true</link>
+<thumbnail>http://ginacarbone.files.wordpress.com/2010/10/northern_exposure-show.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Northern Exposure[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Office</title>
+<link>rtmp://198.27.74.25/app playpath=office02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://static.hypable.com/wp-content/uploads/2012/08/the-office-key-art-season-8-1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Office[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Perfect Strangers</title>
+<link>rtmp://198.27.75.99/app playpath=ps swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?ps live=true</link>
+<thumbnail>http://basementrejects.com/wp-content/uploads/2014/01/perfect-strangers-season-1-1-title-card-balki-bartokomous-larry-appleton-bronson-pinchot-mark-linn-baker-review-episode-guide-list.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Perfect Strangers[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Rescue Me</title>
+<link>rtmp://198.27.75.99/app playpath=rescue swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?rescueme live=true</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/6/62/Rescue_Me_logo.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Rescue Me[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Roseanne</title>
+<link>rtmp://198.27.75.99/app playpath=roseanne01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://www.mikethefanboy.com/wp/wp-content/uploads/2011/10/227_468058.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Roseanne[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Rules Of Engagement</title>
+<link>rtmp://198.27.74.25/app playpath=roe02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://premierguidemedia.com/wp-content/uploads/2010/12/RULES-OF-ENGAGEMENT.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Rules Of Engagement[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Scrubs</title>
+<link>rtmp://198.27.74.25/app playpath=scrubs02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/8/86/Scrubs-Cast-Scrubs-DVD.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Scrubs[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Seinfeld</title>
+<link>rtmp://198.27.75.99/app playpath=seinfeld02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://jivetshirts.com/wp-content/uploads/2013/03/seinfeld-cast.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Seinfeld[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Seinfeld 2</title>
+<link>rtmp://198.27.74.25/app playpath=seinfeld03 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://jivetshirts.com/wp-content/uploads/2013/03/seinfeld-cast.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Seinfeld 2[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Simpsons</title>
+<link>rtmp://198.27.75.99/app playpath=2502 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://pinchemexicano8.files.wordpress.com/2009/05/the-simpsons-title-screen-generator-php.jpeg?w=418&h=313</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Simpsons[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Sopranos</title>
+<link>rtmp://198.27.75.99/app playpath=sopranos swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?sopranos live=true</link>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/184487/p184487_b_h3_aa/the-sopranos.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Sopranos[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The Sopranos 2</title>
+<link>rtmp://204.45.157.234/flash playpath=12190 swfUrl=http://static2.sawlive.tv/player.swf live=1 pageUrl=http://sawlive.tv/embed/watch/OTdlYmNhMzQ5YTU1OmE0NjE3OTphMDRiNmE5MjlmZWYzYjk4ZTZmOGVlMGJjYTA2Mz/BmMWYwNzRhZjgzOjdiMjA0MGJhOTE1NmRkYjlhYmI1YjU5NjNjNGJmOWQ5/</link>
+<thumbnail>http://images.zap2it.com/tvbanners/h3/AllPhotos/184487/p184487_b_h3_aa/the-sopranos.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Sopranos 2[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>South Park</title>
+<link>rtmp://192.99.38.122/app playpath=southp02  swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex4.php?southp02</link>
+<thumbnail>http://www.casinogamesonnet.com/images/slots/south-park-slot-logo.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]South Park[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Star Trek</title>
+<link>rtmp://173.192.81.172/app playpath=15434?MTQwNzM3NTUzNjtiMTZjZTEyMDU3YzM0Njk3N2MwY2YwNjRkMDYyODJjNA==  swfUrl=http://cdn.shidurlive.com/player.swf  pageUrl=http://www.shidurlive.com/stream/4e7a51334d6a59314e6d493d/f23275ae8ec7
+</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Star Trek[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Star Trek Deep Space Nine</title>
+<link>rtmp://192.99.38.122/app playpath=ds902  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex3.php?ds902</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Star Trek Deep Space Nine[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Star Trek Enterprise</title>
+<link>rtmp://192.99.38.122/app playpath=trekent02  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex3.php?trekent02</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Star Trek Enterprise[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Star Trek The Next Generation</title>
+<link>rtmp://192.99.38.122/app playpath=tng02  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex3.php?tng02
+</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Star Trek The Next Generation[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Star Trek Voyager</title>
+<link>rtmp://192.99.38.122/app playpath=voy02  swfUrl=http://www.tgun.tv/locked/player.swf  pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex3.php?voy02
+</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/2b/TOSopeninglogo.png</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Star Trek Voyager[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>That 70s Show</title>
+<link>rtmp://198.27.75.99/app playpath=that70sshow swfUrl=http://www.tgun.tv/lock/player.swf pageUrl=http://www.tgun.tv/menus/players/playerindex6.php?that70sshow live=true</link>
+<thumbnail>http://farm4.staticflickr.com/3414/3515688966_6bb5507fb1.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]That 70s Show[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Third Rock From The Sun</title>
+<link>rtmp://198.27.75.99/app playpath=rock swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://ic.pics.livejournal.com/lmx_v3point3/24280146/15057/15057_original.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Third Rock From The Sun[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Three's Company</title>
+<link>rtmp://198.27.75.99/app playpath=3scom01 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://www.idealaunch.com/blog/wp-content/uploads/2009/12/Threes_Company.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Three's Company[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Tom & Jerry</title>
+<link>rtmp://204.45.108.2/ctv playpath=tom swfUrl=http://www.canaistv.net/swf/player.swf live=r.ates pageUrl=http://www.canaistv.net/tvamigos/tomejerry.html/</link>
+<thumbnail>http://animatedviews.com/wp-content/uploads/2011/10/TomJerBD1-01.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Tom & Jerry[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Trailor Park Boys</title>
+<link>rtmp://198.27.74.25/app playpath=tpb02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://1.bp.blogspot.com/-2fVfRrNidfM/TiXH0IRhuOI/AAAAAAAAARc/o-1jZhMezM8/s640/trailer_park_boys__the_big_dirty__2006_9872+2.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Trailor Park Boys[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>Two And A Half Men</title>
+<link>rtmp://198.27.74.25/app playpath=men02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://img.ksl.com/slc/2503/250349/25034995.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Two And A Half Men[/COLOR]</desc>
+</item>
+
+<item>
+<title>The Walking Dead</title>
+<link>rtmp://198.27.75.99/app playpath=twd02 swfUrl=http://www.tgun.tv/locked/player.swf pageUrl=http://www.tgun.tv/menus/players/dlock/playerindex5.php?twd02</link>
+<thumbnail>http://i1.kym-cdn.com/photos/images/original/000/518/075/4b9.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The Walking Dead[/COLOR]</desc>
+</item>
+
+
+
+<item>
+<title>Will & Grace</title>
+<link>rtmp://198.27.75.99/app playpath=wag swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>https://www.glaad.org/sites/default/files/about_cast001_0.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]Will & Grace[/COLOR]</desc>
+</item>
+
+
+<item>
+<title>The X Files</title>
+<link>rtmp://198.27.74.25/app playpath=xfiles02 swfUrl=http://www.tgun.tv/lock/player.swf live=1 pageUrl=http://www.tgun.tv/menus/players/playerindex5.php?2bg01/</link>
+<thumbnail>http://cdn.springboard.gorillanation.com/storage//upl_images/xfliesMM.jpg</thumbnail>
+<mode>liveresolve</mode>
+<desc>[COLOR gold]The X Files[/COLOR]</desc>
+</item>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+<title>BBC Radio 1</title>
+<link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio1_p</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Radio%201.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Radio 2</title>
+  <link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio2_p</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Radio%202.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Radio 3</title>
+<link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio3_p</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Radio%203.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Radio 4</title>
+<link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio4_p</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Radio%204.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Radio 5 Live</title>
+  <link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_5live_p</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BBC%20Five%20Live.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Radio 5 Live Sports Extra</title>
+<link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_5sportxtra_p</link>
+<thumbnail>http://static.rad.io/images/broadcasts/0b/36/11931/w175.png</thumbnail>
+</item>
+
+<item>
+<title>BBC Radio 6</title>
+<link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_6music_p</link>
+<thumbnail>http://www.headsdown.org/wp-content/uploads/2010/12/6a01116901308f970c01310f9de140970c-500wi.jpg</thumbnail>
+</item>
+
+<item>
+<title>Gold</title>
+  <link>http://ice-the.musicradio.com/GoldMP3</link>
+<thumbnail>http://www.thywill.co.uk/assets/images/gold-radio-logo.gif</thumbnail>
+</item>
+
+<item>
+<title>Capital FM</title>
+  <link>http://ice-the.musicradio.com/CapitalMP3</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Capital_FM_Network_logo.png/200px-Capital_FM_Network_logo.png</thumbnail>
+</item>
+
+<item>
+<title>Smooth Radio</title>
+  <link>http://media-ice.musicradio.com/SmoothLondonMP3</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Magic</title>
+  <link>http://icy-e-05.sharp-stream.com:80/magic1054.mp3</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>RTE Radio 1</title>
+  <link>http://icecast2.rte.ie/radio1</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>RTE Radio 2</title>
+  <link>http://icecast2.rte.ie/2fm</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>RTE Radio 2xm</title>
+  <link>http://icecast2.rte.ie/2xm</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>RTE Gold</title>
+  <link>http://icecast2.rte.ie/gold</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Central FM Sapin</title>
+  <link>https://streaming.dragonstack.com:2199/tunein/atngrand.ram</link>
+<thumbnail>http://www.centralfm.com/images/logo-white.png</thumbnail>
+</item>
+
+<item>
+<title>Absolute Radio 60's</title>
+  <link>http://stream.timlradio.co.uk/ABSOLUTE60SIRMP3</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Absolute Radio 70's</title>
+  <link>http://stream.timlradio.co.uk/ABSOLUTE70SIRMP3</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Absolute Radio 80's</title>
+  <link>http://stream.timlradio.co.uk/ABSOLUTE80SIRMP3</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Absolute Radio 90's</title>
+  <link>http://stream.timlradio.co.uk/ABSOLUTE90SIRMP3</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Absolute Radio 00's</title>
+  <link>http://stream.timlradio.co.uk/ABSOLUTE00SIRMP3</link>
+<thumbnail></thumbnail>
+</item>

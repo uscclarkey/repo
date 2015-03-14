@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+<title>BT Sports 1</title>
+<link>http://37.220.29.186:8000/live/bt1/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BT%20Sport%201.png</thumbnail>
+</item>
+
+<item>
+<title>BT Sports 2</title>
+<link>http://37.220.29.186:8000/live/bt2/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/BT%20Sport%202.png</thumbnail>
+</item>
+
+<item>
+<title>Eurosport 1</title>
+<link>http://149.255.39.122/aasd/8814/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Eurosport.png</thumbnail>
+</item>
+
+<item>
+<title>Eurosport 2</title>
+<link>http://149.255.39.122/aasd/8815/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Eurosport%202.png</thumbnail>
+</item>
+
+<item>
+<title>FightBox</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BoxNation</title>
+<link>http://167.114.41.220:8080/boxnation/boxnationnn/index.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>At The Races</title>
+<link>http://167.114.41.220:8080/at/racess/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/At%20The%20Races.png</thumbnail>
+</item>
+
+<item>
+<title>Racing UK</title>
+<link>http://167.114.41.220:8080/racing/uuk/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Racing%20UK.png</thumbnail>
+</item>
+
+<item>
+<title>Sports Tonight</title>
+<link>rtmp://freeview.fms.visionip.tv/live/ playpath=sports_tonight-sports_tonight-live-25f-16x9-HD swfUrl=http://negmtv.altervista.org/play/jwplayer.flash.swf live=1 timeout=13 pageUrl=http://negmtv.altervista.org/</link>
+<thumbnail>http://i.imgur.com/nsEzVwr.png</thumbnail>
+</item>
+
+<item>
+<title>Dubai Racing</title>
+  <link>http://cdnehlsdubairacing2.endavomedia.com/smil:dmilivedubairacing2.smil/gmswf.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Classic Football</title>
+  <link>http://46.249.213.93/iPhone/broadcast/classicgoals-tablet.3gp/classicgoals-tablet.3gp-mr667k.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>Automotive TV</title>
+  <link>rtsp://46.249.213.87/broadcast/automotivetv-tablet.3gp</link>
+<thumbnail></thumbnail>
+</item>
+
+========================================================================================================
+
+<item>
+<title>[COLOR yellow]----- Sky Sports -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/sky%20sports.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 1</title>
+<link>http://167.114.41.220:8080/TSP1/TSP1/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%201.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 2</title>
+<link></link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%202.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 3</title>
+<link>http://37.220.29.186:8000/Tsp3/Tsp3/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%203.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 4</title>
+<link>http://37.220.29.186:8000/Tsp4/Tsp4/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%204.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 5</title>
+<link>http://167.114.41.220:8080/skyup5/skh5/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%205.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports F1</title>
+<link>http://37.220.29.186:8000/spf1/spf1/index.m3u8</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%20F1.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports News</title>
+<link>rtmp://server.ppvmania.tv:1935/live playpath=channel6v swfUrl=http://hqzone.tv/jwplayer5/jwplayer/player.swf pageUrl=http://www.hqzone.tv/forums/view.php?pg=4 live=true timeout=10 swfVfy=true token=WY846p1E1g15W7s</link>
+<thumbnail>https://dl.dropboxusercontent.com/u/12710347/logos/Sky%20Sports%20News.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]----- BeIN Sports -----[/COLOR]</title>
+<link>http://.com timeout=1</link>
+<thumbnail>https://raw.githubusercontent.com/uscclarkey/repo/master/logos/bein%20sports.png</thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 1</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 2</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 3</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 4</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 5</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 6</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 7</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 8</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 9</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 10</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 11</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 12</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 13</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 14</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>BeIN Sports 15</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
