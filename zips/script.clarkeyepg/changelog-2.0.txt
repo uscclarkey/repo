@@ -1,3 +1,9 @@
+1.16
+Fixed Loading Message
+
+1.14c
+Fixed a minor text bug.
+
 1.14a
 fixed some text issues
 
