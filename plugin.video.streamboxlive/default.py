@@ -12,6 +12,7 @@ from hashlib import md5
 from helpers import clean_file_name
 import json
 import glob
+import shutil
 from threading import Thread
 import cookielib
 import plugintools
@@ -44,13 +45,12 @@ addon_path = os.path.join(xbmc.translatePath('special://home/addons'), '')
 fanart = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'fanart.jpg'))
 iconart = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'icon.png'))
 channel_list = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive/helpers', 'channel.list'))
-cartoonlinks = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive/helpers', 'cartoonlinks.list'))
 group_list = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive/helpers', 'groups.list'))
 xml_list = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive/helpers', 'FilmOn.xml'))
-ct_list = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive/helpers', 'cartoons.list'))
 base_url = 'http://www.filmon.com/'
 disneyjrurl = 'http://www.disney.co.uk/disney-junior/content/video.jsp?b='
 session_url = 'http://www.filmon.com/api/init/'
+trans_table = ''.join( [chr(i) for i in range(128)] + [' '] * 128 )
 
 
 
@@ -76,12 +76,12 @@ def keep_session():
         #lourl = "http://www.filmon.com/api/logout?session_key=%s" % (session_id)
         #open_url(lourl)
         #xbmcgui.Window(10000).clearProperty("session_id")
-        #print 'StreamBox Live..........logged out of Filmon'
+        #print 'FilmOn.TV..........logged out of Filmon'
         #return
     session_id = xbmcgui.Window(10000).getProperty("session_id")
     url = "http://www.filmon.com/api/keep-alive?session_key=%s" % (session_id)
     open_url(url)
-    print 'StreamBox Live..........Filmon session kept alive'
+    print 'FilmOn.TV..........Filmon session kept alive'
     tloop = Timer(60.0, keep_session)
     tloop.start()
 
@@ -98,11 +98,11 @@ if not xbmcgui.Window(10000).getProperty("session_id"):
     if FILMON_ACCOUNT:
         login_url = "%s%s%s%s%s%s" % ("http://www.filmon.com/api/login?session_key=", session_id, "&login=", FILMON_USER, "&password=", FILMON_PASS)
         login = open_url(login_url)
-        print "StreamBox Live......Logged in"
+        print "FilmOn.TV......Logged in"
         xbmcgui.Window(10000).setProperty("session_id", session_id)
         keep_session()
     else:
-        print "StreamBox Live......Not logged in"
+        print "FilmOn.TV......Not logged in"
         xbmcgui.Window(10000).setProperty("session_id", session_id)
         keep_session()
             
@@ -110,6 +110,8 @@ FILMON_SESSION = xbmcgui.Window(10000).getProperty("session_id")
 
 def CATEGORIES():
     hidden_links = read_from_file(HIDDEN_FILE)
+    addDir('FilmOn Demand ','url',199,'http://www.filmon.com/tv/themes/filmontv/img/mobile/filmon-logo-stb.png', '', '')
+    addDir('My Channels','url',122,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'my_channels.jpg')), '', '')
     addDir('My Recordings','url',131,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'f_record.jpg')), '', '')
     addDir('Favourite Channels','url',415,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'my_channels.jpg')), '', '')
     session_id = xbmcgui.Window(10000).getProperty("session_id")
@@ -130,10 +132,14 @@ def CATEGORIES():
 		
 def group_channels(url, title,alias,channels):#1416096000
     gt = str(title)
+    if gt=="KIDS":
+        addDir('Disney Junior Videos','http://www.disney.co.uk/disney-junior/content/video.jsp',301,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'disney_junior.jpg')), '', '')
+        addDir('Disney Classic','http://gdata.youtube.com/feeds/api/users/UCa0h983kQj5OYa06gYhxgiw/uploads?start-index=1&max-results=50',395,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'mickey.gif')),'','')
     name_lst = []
     session_id = xbmcgui.Window(10000).getProperty("session_id")
     url = "%s%s%s%s%s" % (base_url, 'api/group/', url, '?session_key=', session_id)
-    link = GET_URL(url)
+    link = GET_URL(url).translate(trans_table)#.encode("utf-8", 'ignore')#.replace('\u00a0','').replace('\u00ae','').replace('\u00e9','').replace('\u00e0','')
+    link=cleanlink(link)
     data=json.loads(link)
     channels=data['channels']
     for c in channels:
@@ -144,8 +150,8 @@ def group_channels(url, title,alias,channels):#1416096000
         if SHOW_ID:
             title="%s (%s)" % (title,channel_id)
         thumb = 'http://static.filmon.com/couch/channels/%s/extra_big_logo.png' % channel_id
-        if 'BBC Music Magazine' not in title:
-            addDirPlayable(title,str(channel_id),125,thumb,"","not available", "", "grp")
+        #if 'BBC Music Magazine' not in title:
+        addDirPlayable(title,str(channel_id),125,thumb,"na",'description', "na", "grp")
         setView('episodes', 'episodes-view')
 
     # read from channel list
@@ -223,7 +229,7 @@ def tv_guide(name, url, iconimage):
         description = regex_from_to(p, 'programme_description":"', '"')
         p_name = regex_from_to(p, 'programme_name":"', '"')
         allow_dvr = regex_from_to(p, 'allow_dvr":', ',')
-        channel_id = regex_from_to(p, 'channel_id":"', '",')
+        channel_id = regex_from_to(p, 'channel_id":', ',"')
         title = "%s - %s" % (start_time.strftime('%d %b %H:%M'),p_name)
         try:
             matchthumb = regex_from_to(p, 'type":"2"', 'cop')
@@ -300,18 +306,24 @@ def play_filmon(name,url,iconimage,ch_id):
         except:
             p_name = programme_name
             n_p_name = ""
-    if not '"quality":"low"' in link:
-        streams = re.compile('"id":(.+?),"quality":"high","url":"(.+?)","name":"(.+?)","is_adaptive":"(.+?)","watch-timeout":(.+?)}').findall(link)
+    streamlink=regex_from_to(link, '"streams":', ']}')
+    if not '"quality":"low"' in streamlink:
+        streams = re.compile('"id":(.+?),"quality":"high","url":"(.+?)","name":"(.+?)","is_adaptive":(.+?),"watch-timeout":(.+?)}').findall(streamlink)
     else:
-        streams = re.compile('"id":(.+?),"quality":"low","url":"(.+?)","name":"(.+?)","is_adaptive":"(.+?)","watch-timeout":(.+?)}').findall(link)
+        streams = re.compile('"id":(.+?),"quality":"low","url":"(.+?)","name":"(.+?)","is_adaptive":(.+?),"watch-timeout":(.+?)}').findall(streamlink)
     for id,url,name,adaptive,wt in streams:
         url = url.replace("\/", "/")
         name = name
         id=id
+        if not '=' in url:
+            url=url+name		
         if name.endswith('m4v'):
             app = 'vodlast'
         else:#rtmp://204.107.26.234/live/?
-            app='live/?id=' + url.split('=')[1]
+            if  not '=' in url:
+                app='NA'
+            else:
+                app='live/?id=' + url.split('=')[1]
     swapout_url = regex_from_to(url,'rtmp://','/')
     if grpurl == "UK LIVE TV":
         name = name.replace(ROOT_CH, swap_ch)
@@ -338,8 +350,11 @@ def play_filmon(name,url,iconimage,ch_id):
 
     if FILMON_QUALITY == '480p':
         name = name.replace('low','high')
-		
-    STurl = str(url) + ' playpath=' + name + ' app=' + app + ' swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf' + ' tcUrl=' + url + ' pageUrl=http://www.filmon.com/' + ' live=1 timeout=45 swfVfy=1'
+
+    if app=='NA':
+        STurl = str(url) + ' playpath=' + name + ' swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf' + ' tcUrl=' + url + ' pageUrl=http://www.filmon.com/' + ' live=1 timeout=45 swfVfy=1'
+    else:
+        STurl = str(url) + ' playpath=' + name + ' app=' + app + ' swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf' + ' tcUrl=' + url + ' pageUrl=http://www.filmon.com/' + ' live=1 timeout=45 swfVfy=1'
     playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
     playlist.clear()
     handle = str(sys.argv[1])
@@ -495,9 +510,9 @@ def download_rec(name, url, iconimage):
         dlThread.start()
         wait_dl_only(WAITING_TIME, "Starting Download")
         if os.path.exists(data_path):
-            notification('StreamBox Live - Download started', name.upper(), '5000', iconart)
+            notification('FilmOn.TV - Download started', name.upper(), '5000', iconart)
         else:
-            notification('StreamBox Live - Download failed', name.upper(), '5000', iconart)
+            notification('FilmOn.TV - Download failed', name.upper(), '5000', iconart)
        
 
 class DownloadThread(Thread):
@@ -510,7 +525,7 @@ class DownloadThread(Thread):
         path = str(self.path)
         data = self.data
         urllib.urlretrieve(data, path)
-        notification('StreamBox Live - Download finished', name.upper(), '5000', iconart)
+        notification('FilmOn.TV - Download finished', name.upper(), '5000', iconart)
         xbmc.executebuiltin(notify)	
 		
 def on_demand()	:
@@ -635,62 +650,6 @@ def play(name, url, iconimage):
         xbmcPlayer = xbmc.Player()
         xbmcPlayer.play(playlist)
 
-def cartoons(name,url):
-    addDir('Top Movies','picasa_topmovie',398,'https://lh4.googleusercontent.com/-xwlVx-Rv1qw/UrQN_iy5w0I/AAAAAAAABnY/l_wjhLjykuY/s630/marvel-rankings.jpg', '', '')
-    addDir('Disney','picasa_disneycollection',398,'https://lh6.googleusercontent.com/-srGy1JeuoxU/UmpVe7gEGBI/AAAAAAAABbA/m0LgdL3mAwQ/s640/WaltDisneyPicturesSpecialPoster.jpeg', '', '')
-    addDir('Disney Junior Videos','http://www.disney.co.uk/disney-junior/content/video.jsp',301,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'disney_junior.jpg')), '', '')
-    addDir('IMDB','picasa_imdb',398,'https://lh5.googleusercontent.com/-U-eB6iRwwns/UxxNvZrXHFI/AAAAAAAACmA/8HAwCVDzuSg/s800/imdb_top_250_bg.jpg', '', '')
-    addDir('Disney Classic','http://gdata.youtube.com/feeds/api/users/UCa0h983kQj5OYa06gYhxgiw/uploads?start-index=1&max-results=50',395,xbmc.translatePath(os.path.join('special://home/addons/plugin.video.streamboxlive', 'art', 'mickey.gif')),'','')
-    addDir('Top Cartoons','picasa_topcartoon',398,'https://lh5.googleusercontent.com/-l6lQqrU7BW0/UrQqqA4AlqI/AAAAAAAAIyE/LqwNMn_RBHo/s800/Disney-Pixar-Wallpaper-for-Desktop1.jpg', '', '')
-    addDir('Other Cartoons','url',397,'https://lh6.googleusercontent.com/-jcF96PO3xPA/UpaegauaWNI/AAAAAAAABgY/FnNZ5kRj3fI/s800/the_simpsons.jpg', '', '')
-	
-def other_cartoons(name,url):
-    list = read_from_file(ct_list)
-    match = re.compile('"Name":"(.+?)","Action":"(.+?)","Type":"(.+?)","ImageVideo":(.+?),"Image":"(.+?)"').findall(list)
-    for name,action,type,iv,iconimage in match:
-        if action != 'picasa_topmovie' and action != 'picasa_disneycollection' and action != 'picasa_topimdb' and action != 'picasa_topcartoon':
-            url = 'http://gappcenter.com/app/cartoon/mapi.php?action=getlistcontent&cate=%s&pageindex=0&pagesize=1000&os=newiosfull&version=2.1&deviceid=&token=&time=&device=iphone' % action
-            addDir(name,action,398,iconimage, '', '')
-    xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
-
-def cartoon_list(name,url):
-    listname=url
-    try:
-        url = 'http://gappcenter.com/app/cartoon/mapi.php?action=getlistcontent&cate=%s&pageindex=0&pagesize=1000&os=newiosfull&version=2.1&deviceid=&token=&time=&device=iphone' % url
-        link = open_url(url)
-        if not 'Link' in link:
-            list = read_from_file(cartoonlinks)
-            link = regex_from_to(list, name + '<<', '>>')
-    except:
-        list = read_from_file(cartoonlinks)
-        link = regex_from_to(list, name + '<<', '>>')
-    match = re.compile('"Name":"(.+?)","Type":"(.+?)","Link":"(.+?)","Image":"(.+?)"').findall(link)
-    for title,type,url,iconimage in match:
-        if listname=='picasa_disneycollection':
-            title=title[5:]
-        url=url.replace('\/', '/')
-        iconimage=iconimage.replace('\/', '/')
-        addDirPlayable(title,url,396,iconimage,listname, '', '', '')
-    xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
-
-def play_cartoons(name,url,iconimage):
-    if 'auengine.com' in url:
-        link=open_url(url)
-        url=re.compile("url: '(.+?)'").findall(link)[0]
-        
-    if 'animeonhand.com' in url:
-        html=open_url(url)
-        url=re.compile("'file': '(.+?)'").findall(link)[0]
-  
-    handle = str(sys.argv[1])
-    listitem = xbmcgui.ListItem(name, iconImage=iconimage, thumbnailImage=iconimage, path=url)
-    if handle != "-1":	
-        listitem.setProperty("IsPlayable", "true")
-        xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, listitem)
-    else:
-        xbmcPlayer = xbmc.Player()
-        xbmcPlayer.play(url,listitem)	
-        
 		
 def disney_jr(url):
     link = open_url(url)#.replace('\n','')
@@ -730,7 +689,7 @@ def disney_play(name, url, iconimage):
 	
 def disney_playlist(name, url, iconimage):
     dp = xbmcgui.DialogProgress()
-    dp.create("StreamBox Live",'Creating Playlist')
+    dp.create("FilmOn.TV",'Creating Playlist')
     playlist = []
     link = open_url(url)
     stream = regex_get_all(link, 'analyticsAssetName', 'progressive')
@@ -992,8 +951,7 @@ def create_strm_file(name, url, mode, dir_path, iconimage):
         stream_file.write(strm_string)
         stream_file.close()
         scan_library()
-    #except:
-        #xbmc.log("[StreamBox Live] Error while creating strm file for : " + name)
+
 		
 def create_url(name, mode, url, iconimage):
     name = urllib.quote(str(name))
@@ -1056,6 +1014,11 @@ def scan_library():
 		
 link = open_url(session_url)
 session_key = regex_from_to(link, 'session_key":"', '"')
+
+
+def cleanlink(link):
+    data=link.replace('\u00a0',' ').replace('\u00ae','').replace('\u00e9','').replace('\u00e0','').replace('\u2013','').replace('\u00e7','').replace('\u00f1','')
+    return data
    
 
 def get_params():
@@ -1241,18 +1204,6 @@ elif mode == 202:
 
 elif mode == 203:
         play_od(name, url, iconimage)
-		
-elif mode == 399:
-        cartoons(name,url)
-		
-elif mode == 398:
-        cartoon_list(name,url)
-		
-elif mode == 397:
-        other_cartoons(name,url)
-		
-elif mode == 396:
-        play_cartoons(name,url,iconimage)
 		
 elif mode == 395:
         youtube_videos(name,url,iconimage)
