@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 #      Copyright (C) 2014 Tommy Winther
 #      http://tommy.winther.nu
@@ -28,8 +29,11 @@ import xbmcaddon
 
 
 class StreamsService(object):
-    def __init__(self):
-        path = xbmc.translatePath(os.path.join("special://profile/addon_data","script.clarkeyepg",'addons.ini'))
+    def __init__(self, addon):
+        if (int(addon.getSetting('addons.ini.type')) == 0):
+            path = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.clarkeyepg', 'addons.ini'))
+        else:
+            path = str(addon.getSetting('addons.ini.file'))
 
         self.addonsParser = ConfigParser.ConfigParser(dict_type=OrderedDict)
         self.addonsParser.optionxform = lambda option: option
@@ -40,7 +44,7 @@ class StreamsService(object):
 
     def loadFavourites(self):
         entries = list()
-        path = xbmc.translatePath('special://userdata/favourites.xml')
+        path = xbmc.translatePath(os.path.join('special://profile', 'favourites.xml'))
         if os.path.exists(path):
             f = open(path)
             xml = f.read()

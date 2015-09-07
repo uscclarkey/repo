@@ -343,8 +343,8 @@ msgid "[B]Edit channel order and visibility[/B]"
 msgstr "[B]Bearbeite Senderreihenfolge und Anzeigeoptionen[B/]"
 
 msgctxt "#30501"
-msgid "Move up and down to change the position of[CR]the channel. Select or navigate left to accept[CR]the position."
-msgstr "Auf- und Abbewegen um die Position des [CR]Kanals. Auswahl oder Navigation nach Links um die [CR]Position zu akzeptieren."
+msgid "Press left to pull a channel out, then move it up or down. When in place, press right again to set. Pressing on a channel in the list will enable or disable it.[CR]On touch devices long press on a channel to pull it out, move the list to the desired place and then long press on the pulled out channel to put it in its new place."
+msgstr "Nach Links drücken um einen Kanal zu wählen, dann auf oder ab um ihn zu verschieben. Wenn gewünschte Position erreicht nach Rechts drücken. Auf einen Kanal klicken um ihn zu deaktivieren oder wieder zu aktivieren.[CR]Auf Touchscreens lange auf einen Kanal drücken um ihn auszuwählen, dann Kanalliste an gewünschte Position schieben und wieder lang auf den gewählten Kanal drücken."
 
 msgctxt "#30502"
 msgid "Save"
@@ -421,3 +421,19 @@ msgstr "addon, welches nicht installiert ist."
 msgctxt "#30804"
 msgid "Streaming using that addon is now disabled."
 msgstr "Streaming mit diesem Addon ist jetzt deaktiviert."
+
+msgctxt "#30900"
+msgid "Autostart FTV Guide when Kodi starts up"
+msgstr "Beim Start von Kodi automatisch starten"
+
+msgctxt "#31000"
+msgid "Connection problem"
+msgstr "Verbindungsfehler"
+
+msgctxt "#31001"
+msgid "It was not possible to update from the server."
+msgstr "Das Update vom Server ist fehlgeschlagen."
+
+msgctxt "#31002"
+msgid "Current local data will be kept for now..."
+msgstr "Die lokal Daten bleiben weiterhin bestehen..."

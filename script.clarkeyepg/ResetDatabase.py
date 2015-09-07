@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Copyright (C) 2014 Sean Poyser and Richard Dean (write2dixie@gmail.com)
 #
@@ -61,5 +62,5 @@ if __name__ == '__main__':
         d.ok('Clarkey EPG', 'The database has been successfully deleted.', 'It will be re-created next time you start the guide')
     else:
         d = xbmcgui.Dialog()
-        d.ok('Clarkey EPG', 'Failed to delete database.', 'Database may be locked,', 'please restart XBMC and try again')
+        d.ok('Clarkey EPG', 'Failed to delete database.', 'Database may be locked,', 'please restart Kodi and try again')
 

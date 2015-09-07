@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 #      Copyright (C) 2012 Tommy Winther
 #      http://tommy.winther.nu
@@ -25,12 +26,11 @@ import notification
 import xbmc
 import source
 
-
 class Service(object):
     def __init__(self):
         self.database = source.Database()
         self.database.initialize(self.onInit)
-
+            
     def onInit(self, success):
         if success:
             self.database.updateChannelAndProgramListCaches(self.onCachesUpdated)
@@ -46,7 +46,7 @@ class Service(object):
         self.database.close(None)
 
 try:
-    ADDON = xbmcaddon.Addon(id = 'script.clarkeyepg')
+    ADDON = xbmcaddon.Addon('script.clarkeyepg')
     if ADDON.getSetting('cache.data.on.xbmc.startup') == 'true':
         Service()
     if ADDON.getSetting('autostart') == "true":
@@ -54,4 +54,4 @@ try:
 except source.SourceNotConfiguredException:
     pass  # ignore
 except Exception, ex:
-    xbmc.log('[script.clarkeyepg] Uncaugt exception in service.py: %s' % str(ex) , xbmc.LOGDEBUG)
+    xbmc.log('[script.clarkeyepg] Uncaught exception in service.py: %s' % str(ex) , xbmc.LOGDEBUG)

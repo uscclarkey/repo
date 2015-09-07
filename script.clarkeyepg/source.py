@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 #
 #      Copyright (C) 2013 Tommy Winther
 #      http://tommy.winther.nu
 #
-#      Modified for My TV Guide (09/2014 onwards)
+#      Modified for EPG Guide (09/2014 onwards)
 #      by Thomas Geppert [bluezed] - bluezed.apps@gmail.com
 #
 #  This Program is free software; you can redistribute it and/or modify
@@ -24,10 +25,11 @@ import os
 import threading
 import datetime
 import time
-import urllib2
 from xml.etree import ElementTree
 
 from strings import *
+from guideTypes import *
+from fileFetcher import *
 
 import xbmc
 import xbmcgui
@@ -307,19 +309,18 @@ class Database(object):
         sqlite3.register_adapter(datetime.datetime, self.adapt_datetime)
         sqlite3.register_converter('timestamp', self.convert_datetime)
 
-        # if the xmltv data needs to be loaded the database
-        # should be reset to avoid ghosting!
-        if self.source.needReset:
+        if not self._isCacheExpired(date) and not self.source.needReset:
+            return
+        else:
+            # if the xmltv data needs to be loaded the database
+            # should be reset to avoid ghosting!
             self.updateInProgress = True
             c = self.conn.cursor()
             c.execute("DELETE FROM updates")
             c.execute("UPDATE sources SET channels_updated=0")
             self.conn.commit()
             c.close()
-            self.updateInProgress = False
             self.source.needReset = False
-        if not self._isCacheExpired(date):
-            return
 
         self.updateInProgress = True
         self.updateFailed = False
@@ -583,9 +584,13 @@ class Database(object):
             return []
 
         c = self.conn.cursor()
-        c.execute('SELECT p.*, (SELECT 1 FROM notifications n WHERE n.channel=p.channel AND n.program_title=p.title AND n.source=p.source) AS notification_scheduled FROM programs p WHERE p.channel IN (\'' + ('\',\''.join(channelMap.keys())) + '\') AND p.source=? AND p.end_date > ? AND p.start_date < ?', [self.source.KEY, startTime, endTime])
+        c.execute(
+            'SELECT p.*, (SELECT 1 FROM notifications n WHERE n.channel=p.channel AND n.program_title=p.title AND n.source=p.source) AS notification_scheduled FROM programs p WHERE p.channel IN (\'' + (
+                '\',\''.join(channelMap.keys())) + '\') AND p.source=? AND p.end_date > ? AND p.start_date < ?',
+            [self.source.KEY, startTime, endTime])
         for row in c:
-            program = Program(channelMap[row['channel']], row['title'], row['start_date'], row['end_date'], row['description'], row['image_large'], row['image_small'], row['notification_scheduled'])
+            program = Program(channelMap[row['channel']], row['title'], row['start_date'], row['end_date'],
+                              row['description'], row['image_large'], row['image_small'], row['notification_scheduled'])
             programList.append(program)
 
         return programList
@@ -812,94 +817,55 @@ class Source(object):
 
 
 class XMLTVSource(Source):
-    PLUGIN_DATA = xbmc.translatePath(os.path.join("special://profile/addon_data","script.clarkeyepg"))
-    EPG_BASIC = 'guide_sbl.xmltv'
-    EPG_ALL = 'guide.xmltv'
-    EPG_UKBASIC = 'guide_wliptv.xmltv'
-    EPG_UKSKY = 'guide.xmltv'
-    EPG_USTV = 'guide.xmltv'
-    EPG_USUKBASIC = 'guide.xmltv'
-    EPG_URL = 'https://2c98c0c42a24475961c6c4cbee8d3456fe33b790.googledrive.com/host/0B4aCAaKzgvpYX1V6bFVaamI0Rms/'
+    PLUGIN_DATA = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.clarkeyepg'))
     KEY = 'xmltv'
+    INI_TYPE_EPG = 0
+    INI_TYPE_CUSTOM = 1
     INI_FILE = 'addons.ini'
-    TYPE_EPG_ALL = 0
-    TYPE_EPG_BASIC = 1
-    TYPE_EPG_UKBASIC = 2
-    TYPE_CUSTOM = 3
-    INTERVAL_ALWAYS = 0
-    INTERVAL_12 = 1
-    INTERVAL_24 = 2
-    INTERVAL_48 = 3
     LOGO_SOURCE_EPG = 0
     LOGO_SOURCE_CUSTOM = 1
 
     def __init__(self, addon):
+        gType = GuideTypes()
+
         self.needReset = False
+        self.fetchError = False
         self.xmltvType = int(addon.getSetting('xmltv.type'))
         self.xmltvInterval = int(addon.getSetting('xmltv.interval'))
         self.logoSource = int(addon.getSetting('logos.source'))
+        self.addonsType = int(addon.getSetting('addons.ini.type'))
 
-        if (self.logoSource == XMLTVSource.LOGO_SOURCE_EPG):
-            self.logoFolder = XMLTVSource.EPG_URL + 'logos/'
+        # make sure the folder in the user's profile exists or create it!
+        if not os.path.exists(XMLTVSource.PLUGIN_DATA):
+            os.makedirs(XMLTVSource.PLUGIN_DATA)
+
+        if self.logoSource == XMLTVSource.LOGO_SOURCE_EPG:
+            self.logoFolder = MAIN_URL + 'logos/'
         else:
             self.logoFolder = str(addon.getSetting('logos.folder'))
 
-        if (self.xmltvType == XMLTVSource.TYPE_EPG_ALL):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_ALL)
-        elif (self.xmltvType == XMLTVSource.TYPE_EPG_BASIC):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_BASIC)
-        elif (self.xmltvType == XMLTVSource.TYPE_EPG_UKBASIC):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_UKBASIC)
-        elif (self.xmltvType == XMLTVSource.TYPE_EPG_UKSKY):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_UKSKY)
-        elif (self.xmltvType == XMLTVSource.TYPE_EPG_USTV):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_USTV)
-        elif (self.xmltvType == XMLTVSource.TYPE_EPG_USUKBASIC):
-            self.xmltvFile = self.updateLocalFile(XMLTVSource.EPG_USUKBASIC)
-        elif (self.xmltvType == XMLTVSource.TYPE_CUSTOM):
-            self.xmltvFile = str(addon.getSetting('xmltv.file')) # uses local file provided by user!
+        if self.xmltvType == gType.CUSTOM_FILE_ID:
+            self.xmltvFile = str(addon.getSetting('xmltv.file'))  # uses local file provided by user!
+        else:
+            self.xmltvFile = self.updateLocalFile(gType.getGuideDataItem(self.xmltvType, gType.GUIDE_FILE), addon)
 
         # make sure the ini file is fetched as well if necessary
-        self.updateLocalFile(XMLTVSource.INI_FILE)
+        if self.addonsType == XMLTVSource.INI_TYPE_EPG:
+            self.updateLocalFile(XMLTVSource.INI_FILE, addon)
 
         if not self.xmltvFile or not xbmcvfs.exists(self.xmltvFile):
             raise SourceNotConfiguredException()
 
-    def updateLocalFile(self, name):
+    def updateLocalFile(self, name, addon):
         path = os.path.join(XMLTVSource.PLUGIN_DATA, name)
-        fetchFile = not os.path.exists(path) # always fetch if file doesn't exist!
- 
-        # check the interval if not set to "Always"
-        if (not fetchFile and self.xmltvInterval <> XMLTVSource.INTERVAL_ALWAYS):
-            modTime = datetime.datetime.fromtimestamp(os.path.getmtime(path))
-            td = datetime.datetime.now() - modTime
-            # need to do it this way cause Android doesn't support .total_seconds() :(
-            diff = (td.microseconds + (td.seconds + td.days * 24 * 3600) * 10**6) / 10**6
-            if ((self.xmltvInterval == XMLTVSource.INTERVAL_12 and diff >= 43200) or
-                (self.xmltvInterval == XMLTVSource.INTERVAL_24 and diff >= 86400) or
-                (self.xmltvInterval == XMLTVSource.INTERVAL_48 and diff >= 172800)):
-                fetchFile = True
-                xbmc.log('[script.clarkeyepg] Interval reached, fetching remote file...', xbmc.LOGDEBUG)
-        else:
-            fetchFile = True
-            xbmc.log('[script.clarkeyepg] Interval set to always or file doesn\'t exist. Fetching...', xbmc.LOGDEBUG)
- 
-        if (fetchFile):
-            f = open(path,'wb')
-            f.write(urllib2.urlopen(XMLTVSource.EPG_URL + name).read())
-            f.close()
+        fetcher = FileFetcher(name, addon)
+        retVal = fetcher.fetchFile()
+        if retVal == fetcher.FETCH_OK and name <> XMLTVSource.INI_FILE:
+            self.needReset = True
+        elif retVal == fetcher.FETCH_ERROR:
+            xbmcgui.Dialog().ok(strings(FETCH_ERROR_TITLE), strings(FETCH_ERROR_LINE1), strings(FETCH_ERROR_LINE2))
 
-            if (name <> XMLTVSource.INI_FILE):
-                self.needReset = True
-        else:
-            xbmc.log('[script.clarkeyepg] Remote file fetching not due yet...', xbmc.LOGDEBUG)
         return path
-
-        gmt = addon.getSetting('gmtfrom').replace('GMT', '')
-        if gmt == '':
-            self.offset = 0
-        else:
-            self.offset = int(gmt)
 
     def getDataFromExternal(self, date, progress_callback=None):
 
@@ -917,34 +883,48 @@ class XMLTVSource(Source):
         fileUpdated = datetime.datetime.fromtimestamp(stat.st_mtime())
         return fileUpdated > channelsLastUpdated
 
-    def parseXMLTVDate(self, dateString):
-        if dateString is not None:
-            if dateString.find(' ') != -1:
-                # remove timezone information
-                dateString = dateString[:dateString.find(' ')]
-            t = time.strptime(dateString, '%Y%m%d%H%M%S')
-            dt = datetime.datetime(t.tm_year, t.tm_mon, t.tm_mday, t.tm_hour, t.tm_min, t.tm_sec)
-
-            dt1 = datetime.datetime.utcnow() + datetime.timedelta(hours = 0)
-            dt2 = datetime.datetime.now()
-
-            d = datetime.datetime(dt1.year, 4, 1)
-            dston = d - datetime.timedelta(days=d.weekday() + 1)
-            d = datetime.datetime(dt1.year, 11, 1)
-            dstoff = d - datetime.timedelta(days=d.weekday() + 1)
-            if dston <=  dt1 < dstoff:
-                dt1 = dt1 + datetime.timedelta(hours = 1)
+    def parseXMLTVDate(self, origDateString):
+        if origDateString.find(' ') != -1:
+            # get timezone information
+            dateParts = origDateString.split()
+            if len(dateParts) == 2:
+                dateString = dateParts[0]
+                offset = dateParts[1]
+                if len(offset) == 5:
+                    offSign = offset[0]
+                    offHrs = int(offset[1:3])
+                    offMins = int(offset[-2:])
+                    td = datetime.timedelta(minutes=offMins, hours=offHrs)
+                else:
+                    td = datetime.timedelta(seconds=0)
+            elif len(dateParts) == 1:
+                dateString = dateParts[0]
+                td = datetime.timedelta(seconds=0)
             else:
-                dt1 = dt1
+                return None
 
-            if dt2 >= dt1:
-                dtd = (dt2 - dt1).seconds/60/60
-                dt = dt + datetime.timedelta(hours = int(dtd))
+            # normalize the given time to UTC by applying the timedelta provided in the timestamp
+            xbmc.log('[script.clarkeyepg] Date to normalize: ' + dateString, xbmc.LOGDEBUG)
+            try:
+                t_tmp = datetime.datetime.strptime(dateString, '%Y%m%d%H%M%S')
+            except TypeError:
+                t_tmp = datetime.datetime.fromtimestamp(time.mktime(time.strptime(dateString, '%Y%m%d%H%M%S')))
+            if offSign == '+':
+                t = t_tmp - td
+            elif offSign == '-':
+                t = t_tmp + td
             else:
-                dtd = (dt1 - dt2).seconds/60/60
-                dt = dt - datetime.timedelta(hours = int(dtd))
+                t = t_tmp
 
-            return dt
+            # get the local timezone offset in seconds
+            is_dst = time.daylight and time.localtime().tm_isdst > 0
+            utc_offset = - (time.altzone if is_dst else time.timezone)
+            td_local = datetime.timedelta(seconds=utc_offset)
+
+            t = t + td_local
+            xbmc.log('[script.clarkeyepg] Import Time adjusted from: ' + str(t_tmp) + ' to: ' + str(t), xbmc.LOGDEBUG)
+            return t
+
         else:
             return None
 
@@ -974,9 +954,9 @@ class XMLTVSource(Source):
                     if logoFolder:
                         logoFile = os.path.join(logoFolder, title + '.png')
                         if (self.logoSource == XMLTVSource.LOGO_SOURCE_EPG):
-                            logo = logoFile.replace(' ', '%20') # needed due to fetching from a server!
+                            logo = logoFile.replace(' ', '%20')  # needed due to fetching from a server!
                         elif xbmcvfs.exists(logoFile):
-                            logo = logoFile # local file instead of remote!
+                            logo = logoFile  # local file instead of remote!
                     streamElement = elem.find("stream")
                     streamUrl = None
                     if streamElement is not None:

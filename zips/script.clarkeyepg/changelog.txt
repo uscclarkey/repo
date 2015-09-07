@@ -1,3 +1,9 @@
+2.1
+Update for loading guide data, now comes from repo.
+
+2.0
+Little update to guide data
+
 1.16
 Fixed Loading Message
 

@@ -5,5 +5,5 @@ Clarkey EPG allows you to combine some of your favourite live TV plugins for use
 
 Based on the original TV Guide by twinther.
 
-
-For official support go to http://streamboxlive.wordpress.com
+**PLEASE NOTE:** 
+This repository is used for development purposes only and may contain untested, experimental and unstable code. 

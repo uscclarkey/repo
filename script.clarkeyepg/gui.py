@@ -59,6 +59,7 @@ ACTION_MOUSE_MOVE = 107
 KEY_NAV_BACK = 92
 KEY_CONTEXT_MENU = 117
 KEY_HOME = 159
+KEY_ESC = 61467
 
 CHANNELS_PER_PAGE = 8
 
@@ -133,7 +134,7 @@ class TVGuide(xbmcgui.WindowXML):
         self.channelIdx = 0
         self.focusPoint = Point()
         self.epgView = EPGView()
-        self.streamingService = streaming.StreamsService()
+        self.streamingService = streaming.StreamsService(ADDON)
         self.player = xbmc.Player()
         self.database = None
 
@@ -189,13 +190,17 @@ class TVGuide(xbmcgui.WindowXML):
             self.epgView.width = control.getWidth()
             self.epgView.cellHeight = control.getHeight() / CHANNELS_PER_PAGE
 
-        try:
-            self.database = src.Database()
-        except src.SourceNotConfiguredException:
-            self.onSourceNotConfigured()
-            self.close()
-            return
-        self.database.initialize(self.onSourceInitialized, self.isSourceInitializationCancelled)
+        if self.database:
+            self.onRedrawEPG(self.channelIdx, self.viewStartDate)
+        else:
+            try:
+                self.database = src.Database()
+            except src.SourceNotConfiguredException:
+                self.onSourceNotConfigured()
+                self.close()
+                return
+            self.database.initialize(self.onSourceInitialized, self.isSourceInitializationCancelled)
+            
         self.updateTimebar()
 
     def onAction(self, action):
@@ -267,7 +272,12 @@ class TVGuide(xbmcgui.WindowXML):
                 self._showOsd()
 
     def onActionEPGMode(self, action):
-        if action.getId() in [ACTION_PARENT_DIR, KEY_NAV_BACK, ACTION_PREVIOUS_MENU]:
+        if action.getId() in [ACTION_PARENT_DIR, KEY_NAV_BACK]:
+            self.close()
+            return
+
+        # catch the ESC key
+        elif action.getId() == ACTION_PREVIOUS_MENU and action.getButtonCode() == KEY_ESC:
             self.close()
             return
 
@@ -321,10 +331,12 @@ class TVGuide(xbmcgui.WindowXML):
             self.viewStartDate -= datetime.timedelta(minutes=self.viewStartDate.minute % 30,
                                                      seconds=self.viewStartDate.second)
             self.onRedrawEPG(self.channelIdx, self.viewStartDate)
-        elif action.getId() in [KEY_CONTEXT_MENU] and controlInFocus is not None:
+        elif action.getId() in [KEY_CONTEXT_MENU, ACTION_PREVIOUS_MENU] and controlInFocus is not None:
             program = self._getProgramFromControl(controlInFocus)
             if program is not None:
                 self._showContextMenu(program)
+        else:
+            xbmc.log('[script.clarkeyepg] Unhandled ActionId: ' + str(action.getId()), xbmc.LOGDEBUG)
 
     def onClick(self, controlId):
         if controlId in [self.C_MAIN_LOADING_CANCEL, self.C_MAIN_MOUSE_EXIT]:
@@ -409,6 +421,15 @@ class TVGuide(xbmcgui.WindowXML):
         elif buttonClicked == PopupMenu.C_POPUP_QUIT:
             self.close()
 
+        elif buttonClicked == PopupMenu.C_POPUP_LIBMOV:
+            xbmc.executebuiltin('ActivateWindow(Videos,videodb://movies/titles/)')
+
+        elif buttonClicked == PopupMenu.C_POPUP_LIBTV:
+            xbmc.executebuiltin('ActivateWindow(Videos,videodb://tvshows/titles/)')
+			
+        elif buttonClicked == PopupMenu.C_POPUP_VIDEOADDONS:
+            xbmc.executebuiltin('ActivateWindow(Videos,addons://sources/video/)')
+			
     def setFocusId(self, controlId):
         control = self.getControl(controlId)
         if control:
@@ -450,8 +471,13 @@ class TVGuide(xbmcgui.WindowXML):
 
         if program.channel.logo is not None:
             self.setControlImage(self.C_MAIN_LOGO, program.channel.logo)
+        else:
+            self.setControlImage(self.C_MAIN_LOGO, '')
+
         if program.imageSmall is not None:
             self.setControlImage(self.C_MAIN_IMAGE, program.imageSmall)
+        else:
+            self.setControlImage(self.C_MAIN_IMAGE, 'tvguide-logo-epg.png')
 
         if ADDON.getSetting('program.background.enabled') == 'true' and program.imageLarge is not None:
             self.setControlImage(self.C_MAIN_BACKGROUND, program.imageLarge)
@@ -943,7 +969,11 @@ class PopupMenu(xbmcgui.WindowXMLDialog):
     C_POPUP_CHANNEL_LOGO = 4100
     C_POPUP_CHANNEL_TITLE = 4101
     C_POPUP_PROGRAM_TITLE = 4102
-
+    C_POPUP_LIBMOV = 80000
+    C_POPUP_LIBTV = 80001
+    C_POPUP_VIDEOADDONS = 80002
+	
+	
     def __new__(cls, database, program, showRemind):
         return super(PopupMenu, cls).__new__(cls, 'script-tvguide-menu.xml', ADDON.getAddonInfo('path'), SKIN)
 
@@ -1036,19 +1066,22 @@ class ChannelsMenu(xbmcgui.WindowXMLDialog):
         self.database = database
         self.channelList = database.getChannelList(onlyVisible=False)
         self.swapInProgress = False
+        
+        self.selectedChannel = 0
 
     def onInit(self):
         self.updateChannelList()
         self.setFocusId(self.C_CHANNELS_LIST)
 
     def onAction(self, action):
-        if action.getId() in [ACTION_PARENT_DIR, ACTION_PREVIOUS_MENU, KEY_NAV_BACK, KEY_CONTEXT_MENU]:
+        if action.getId() in [ACTION_PARENT_DIR, KEY_NAV_BACK]:
             self.close()
             return
 
-        if self.getFocusId() == self.C_CHANNELS_LIST and action.getId() == ACTION_LEFT:
+        if self.getFocusId() == self.C_CHANNELS_LIST and action.getId() in [ACTION_PREVIOUS_MENU, KEY_CONTEXT_MENU, ACTION_LEFT]:
             listControl = self.getControl(self.C_CHANNELS_LIST)
             idx = listControl.getSelectedPosition()
+            self.selectedChannel = idx
             buttonControl = self.getControl(self.C_CHANNELS_SELECTION)
             buttonControl.setLabel('[B]%s[/B]' % self.channelList[idx].title)
 
@@ -1056,6 +1089,14 @@ class ChannelsMenu(xbmcgui.WindowXMLDialog):
             self.setFocusId(self.C_CHANNELS_SELECTION)
 
         elif self.getFocusId() == self.C_CHANNELS_SELECTION and action.getId() in [ACTION_RIGHT, ACTION_SELECT_ITEM]:
+            self.getControl(self.C_CHANNELS_SELECTION_VISIBLE).setVisible(True)
+            xbmc.sleep(350)
+            self.setFocusId(self.C_CHANNELS_LIST)
+            
+        elif self.getFocusId() == self.C_CHANNELS_SELECTION and action.getId() in [ACTION_PREVIOUS_MENU, KEY_CONTEXT_MENU]:
+            listControl = self.getControl(self.C_CHANNELS_LIST)
+            idx = listControl.getSelectedPosition()
+            self.swapChannels(self.selectedChannel, idx)
             self.getControl(self.C_CHANNELS_SELECTION_VISIBLE).setVisible(True)
             xbmc.sleep(350)
             self.setFocusId(self.C_CHANNELS_LIST)
@@ -1139,7 +1180,6 @@ class ChannelsMenu(xbmcgui.WindowXMLDialog):
         xbmc.sleep(50)
         self.swapInProgress = False
 
-
 class StreamSetupDialog(xbmcgui.WindowXMLDialog):
     C_STREAM_STRM_TAB = 101
     C_STREAM_FAVOURITES_TAB = 102
@@ -1182,7 +1222,7 @@ class StreamSetupDialog(xbmcgui.WindowXMLDialog):
         self.player = xbmc.Player()
         self.previousAddonId = None
         self.strmFile = None
-        self.streamingService = streaming.StreamsService()
+        self.streamingService = streaming.StreamsService(ADDON)
 
     def close(self):
         if self.player.isPlaying():
