@@ -28,6 +28,8 @@ also you will need to edit the addon.xml to your liking !
 
 this is what it looks like
 
+test!
+
 <addon id="repository.YourRepo" name="HELLO REPO" version="1.0" provider-name="HELLO Your Name"> 
 	<extension point="xbmc.addon.repository" name="HELLO Addon Repository">                     <------------change the CHANGEME
 		<info compressed="false">http://dl.dropbox.com/u/CHANGEME/My-Repo/addons.xml</info>    <------------change the CHANGEME
