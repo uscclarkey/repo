@@ -1,3 +1,6 @@
+2.2
+now grabs epg data from dropbox instead of google (more stable)
+
 2.1
 Update for loading guide data, now comes from repo.
 
