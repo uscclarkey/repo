@@ -25,7 +25,7 @@ import urllib2
 import datetime
 import zlib
 
-MAIN_URL = 'http://dl.dropboxusercontent.com/u/12710347/TvGuide/'
+MAIN_URL = 'https://dl.dropboxusercontent.com/u/12710347/TvGuide/'
 
 class FileFetcher(object):
     INTERVAL_ALWAYS = 0
