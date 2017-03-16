@@ -1,0 +1,68 @@
+2.7
+Update guide url again!
+
+2.5
+Changed data source back to dropbox because google have discontinued the host side of google drive
+
+2.4
+Changed data source to google
+
+2.3
+dropbox changes to secure file download.
+
+2.2
+now grabs epg data from dropbox instead of google (more stable)
+
+2.1
+Update for loading guide data, now comes from repo.
+
+2.0
+Little update to guide data
+
+1.16
+Fixed Loading Message
+
+1.14c
+Fixed a minor text bug.
+
+1.14a
+fixed some text issues
+
+1.13
+Moved the logo down so it sits behind the preview box.
+
+1.11
+Moved to google for faster loading.
+
+1.10
+added WLIPTV
+
+1.9
+edited xmltv files.
+
+1.8b
+Huge Update! changed the epg data to new url. We now have full control over what channels we show and how many days.
+
+1.7
+small fixes
+
+1.6
+re-render
+
+1.5e
+update
+
+1.5d
+update :)
+
+1.5c
+try dropbox
+
+1.5
+epg update
+
+1.1
+guide update
+
+1.0
+Initial release

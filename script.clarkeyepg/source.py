@@ -821,7 +821,7 @@ class XMLTVSource(Source):
     KEY = 'xmltv'
     INI_TYPE_EPG = 0
     INI_TYPE_CUSTOM = 1
-    INI_FILE = 'addons.ini'
+    INI_FILE = '0B4aCAaKzgvpYQVNuY3VWSFNrdHc'
     LOGO_SOURCE_EPG = 0
     LOGO_SOURCE_CUSTOM = 1
 
@@ -840,7 +840,7 @@ class XMLTVSource(Source):
             os.makedirs(XMLTVSource.PLUGIN_DATA)
 
         if self.logoSource == XMLTVSource.LOGO_SOURCE_EPG:
-            self.logoFolder = MAIN_URL + 'logos/'
+            self.logoFolder = 'https://raw.githubusercontent.com/uscclarkey/repo/master/logos/'
         else:
             self.logoFolder = str(addon.getSetting('logos.folder'))
 

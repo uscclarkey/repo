@@ -31,7 +31,7 @@ import xbmcaddon
 class StreamsService(object):
     def __init__(self, addon):
         if (int(addon.getSetting('addons.ini.type')) == 0):
-            path = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.clarkeyepg', 'addons.ini'))
+            path = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.clarkeyepg', '0B4aCAaKzgvpYQVNuY3VWSFNrdHc'))
         else:
             path = str(addon.getSetting('addons.ini.file'))
 

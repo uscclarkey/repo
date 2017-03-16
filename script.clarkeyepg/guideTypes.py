@@ -45,11 +45,11 @@ class GuideTypes(object):
 
     guideTypes = []
     guideParser = ConfigParser.ConfigParser()
-    filePath = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.clarkeyepg', 'guides.ini'))
+    filePath = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.clarkeyepg', '0B4aCAaKzgvpYYnM5S1RPMXpIdDA'))
 
     def __init__(self):
         try:
-            fetcher = FileFetcher('guides.ini', ADDON)
+            fetcher = FileFetcher('0B4aCAaKzgvpYYnM5S1RPMXpIdDA', ADDON)
             if fetcher.fetchFile() < 0:
                 xbmcgui.Dialog().ok(strings(FETCH_ERROR_TITLE), strings(FETCH_ERROR_LINE1), strings(FETCH_ERROR_LINE2))
 
